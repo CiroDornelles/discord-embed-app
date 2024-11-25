@@ -2,7 +2,6 @@
   "strength": {
     "name": "Força",
     "nameOriginal": "Strength",
-    "flavorText": "O guerreiro ergue sua espada com um único movimento fluido, a lâmina pesada parecendo leve como uma pena em suas mãos poderosas.",
     "description": "A Força alimenta feitos de puro poder muscular, como trazer uma espada longa em um longo arco para afundar através de armadura e músculo, esmagar os ossos e tendões da garganta de seu inimigo com suas próprias mãos, ou empurrar uma pedra na frente da boca de uma caverna antes que os primeiros raios do sol apareçam no horizonte. No campo de batalha ensanguentado ou em uma taverna encharcada de cerveja, a Força é usada quando um personagem se envolve em combate corpo a corpo. Além disso, levantar, quebrar, carregar itens e saltar, todos exigem este conjunto de dados. Seja uma massa hulking de morto-vivo ou um feixe musculoso de força bruta, aqueles com muitos pontos em Força são literalmente os movimentadores e agitadores do mundo.",
     "levels": {
       "1": "Pobre: Alguns baldes de água fazem você suar. Ou o que serve como suor.",
@@ -15,7 +14,6 @@
   "dexterity": {
     "name": "Destreza",
     "nameOriginal": "Dexterity",
-    "flavorText": "Com a graça de um predador, ela desliza entre as sombras do castelo, seus movimentos tão silenciosos quanto a própria noite.",
     "description": "Destreza é o traço ligado a feitos de velocidade, agilidade e precisão, como equilibrar uma espada na cabeça enquanto dança ao som de música viva e ondulante, arremessar uma az-zegaya no ventre de um padre em fuga enquanto você dispara a cavalo, ou saltar de pedra em pedra escorregadia sobre um rio escuro e caudaloso o mais rápido possível. Armas de alcance são ameaças sérias nos dedos ágeis do personagem com alta Destreza, e fugas ousadas pelas ruas e becos mais movimentados são possíveis para aqueles que se concentram neste traço. Por que esmagar quando você pode se curvar e então atacar de um ângulo inesperado?",
     "levels": {
       "1": "Pobre: Ficar em um pé só sem cair é um desafio. Pelo bem daqueles ao seu redor, mantenha os dois pés no chão o tempo todo.",
@@ -28,7 +26,6 @@
   "stamina": {
     "name": "Vigor",
     "nameOriginal": "Stamina",
-    "flavorText": "Mesmo após horas de perseguição implacável, o caçador continua sua marcha, ignorando as feridas e o cansaço que consumiriam um mortal comum.",
     "description": "De todos os Atributos Físicos, o Vigor é o único que transborda não apenas para o que o corpo pode suportar, mas também para o que a mente irá perseverar. Feitos de Vigor incluem atravessar um vasto deserto, pegadas sangrentas se afastando do campo de batalha que você abandonou para buscar abrigo do sol nascente, conter seus gritos enquanto o martelo do padre desce sobre suas articulações inflamadas junto com as palavras em latim penetrando em seu crânio, e suportar as feridas e lesões que a praga deste verão trouxe a todas as costas de Cartago a Sevilha. O personagem que se concentra em Vigor irá suportar força bruta, doenças, tortura, perseguições e mais. Talvez fiquem ensanguentados e machucados, mas permanecerão de pé.",
     "levels": {
       "1": "Pobre: Como você sobreviveu à infância é um mistério. Os efeitos da doença crônica não te trataram com gentileza.",
