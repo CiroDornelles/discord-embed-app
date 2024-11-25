@@ -1,0 +1,83 @@
+{
+  "name": "Esportes",
+  "nameOriginal": "Athletics",
+  "flavorText": "\"Eu venci,\" Karl ofegou, virando-se para celebrar sua vitória. \"Eu te venci, Alex!\" Apenas o silêncio respondeu. \"Alex? Onde você está?\"",
+  "description": "Esportes é o domínio dos fisicamente talentosos. Abrange atividades do campo esportivo, não do campo de batalha. Correr, saltar, esquivar de ataques e arremessar objetos são todos exemplos de façanhas de Esportes.",
+  "levels": {
+    "1": {
+      "name": "Novato",
+      "description": "Movimentar-se e usar seus músculos é uma parte cotidiana de sua vida, e isso é visível."
+    },
+    "2": {
+      "name": "Praticante",
+      "description": "Competir em eventos locais não é problema para você. Geralmente você vence."
+    },
+    "3": {
+      "name": "Competente",
+      "description": "Em torneios, muitos o consideram um adversário digno, se não formidável."
+    },
+    "4": {
+      "name": "Experiente",
+      "description": "Você está no topo do seu campo. Poucos podem competir contra você e ter esperança de ter alguma chance."
+    },
+    "5": {
+      "name": "Mestre",
+      "description": "Você define o padrão de perfeição na arena."
+    }
+  },
+  "possessedBy": [
+    "Artistas",
+    "Lanceiros",
+    "Escudeiros",
+    "Guerreiros",
+    "Jovens"
+  ],
+  "specialties": {
+    "default": [
+      {
+        "id": "climbing",
+        "name": "Escalada",
+        "nameOriginal": "Climbing",
+        "description": "Você tem talento especial para escalar superfícies verticais."
+      },
+      {
+        "id": "dancing",
+        "name": "Dança",
+        "nameOriginal": "Dancing",
+        "description": "Seus movimentos são especialmente graciosos e rítmicos."
+      },
+      {
+        "id": "juggling",
+        "name": "Malabarismo",
+        "nameOriginal": "Juggling",
+        "description": "Você tem uma coordenação excepcional para manipular múltiplos objetos no ar."
+      },
+      {
+        "id": "running",
+        "name": "Corrida",
+        "nameOriginal": "Running",
+        "description": "Você é particularmente veloz e resistente em corridas."
+      },
+      {
+        "id": "swimming",
+        "name": "Natação",
+        "nameOriginal": "Swimming",
+        "description": "Você se move com destreza excepcional na água."
+      },
+      {
+        "id": "thrown",
+        "name": "Arremesso",
+        "nameOriginal": "Thrown Objects",
+        "description": "Você tem precisão notável ao arremessar objetos."
+      },
+      {
+        "id": "tumbling",
+        "name": "Acrobacias",
+        "nameOriginal": "Tumbling",
+        "description": "Você é especialmente hábil em cambalhotas e movimentos acrobáticos."
+      }
+    ],
+    "custom": []
+  },
+  "type": "talent"
+}
