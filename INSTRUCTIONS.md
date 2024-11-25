@@ -173,15 +173,7 @@ Cada atributo e habilidade é armazenado em formato JSON com a seguinte estrutur
 {
   "name": "Nome em Português",
   "nameOriginal": "Nome Original em Inglês",
-  "flavorText": {
-    "characters": [
-      {
-        "name": "Nome do Personagem",
-        "speech": "Fala do Personagem",
-        "description": "Descrição da ação (opcional)"
-      }
-    ]
-  },
+  "flavorText": "Texto descritivo que será exibido em itálico",
   "description": "Descrição detalhada do atributo/habilidade",
   "levels": {
     "1": {
