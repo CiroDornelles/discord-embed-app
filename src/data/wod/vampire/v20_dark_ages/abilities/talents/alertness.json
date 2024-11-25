@@ -1,0 +1,95 @@
+{
+  "name": "Prontidão",
+  "nameOriginal": "Alertness",
+  "flavorText": {
+    "characters": [
+      {
+        "name": "Brígido",
+        "speech": "Você ouviu isso?"
+      },
+      {
+        "name": "Jovan",
+        "speech": "Ouvir o quê?",
+        "description": "Brígido ofegou quando dedos brancos se enrolaram ao redor do pescoço de Jovan, garras irregulares rasgando carne como papel e sangue jorrando do ferimento dilacerado."
+      }
+    ]
+  },
+  "description": "Prontidão permite que os personagens percebam mudanças físicas em seu ambiente, como itens fora do lugar, mudanças no cenário e sons estranhos. Geralmente combinada com Percepção, Prontidão é útil para o personagem que deseja ser o primeiro a descobrir quaisquer segredos que o mundo possa guardar.",
+  "levels": {
+    "1": {
+      "name": "Novato",
+      "description": "Uma chuva forte começando a cair não escaparia à sua percepção."
+    },
+    "2": {
+      "name": "Praticante",
+      "description": "Seus sentidos frequentemente captam sons, objetos ou cheiros que outros perdem ou ignoram."
+    },
+    "3": {
+      "name": "Competente",
+      "description": "Você é a pessoa que todos querem de vigia."
+    },
+    "4": {
+      "name": "Experiente",
+      "description": "Se pode ser notado, você nota."
+    },
+    "5": {
+      "name": "Mestre",
+      "description": "Nada escapa de você. Nada."
+    }
+  },
+  "possessedBy": [
+    "Ladrões",
+    "Caçadores",
+    "Mensageiros",
+    "Sentinelas",
+    "Vagabundos"
+  ],
+  "specialties": {
+    "default": [
+      {
+        "id": "ambushes",
+        "name": "Emboscadas",
+        "nameOriginal": "Ambushes",
+        "description": "Você é particularmente atento a sinais de emboscadas e armadilhas."
+      },
+      {
+        "id": "manifestations",
+        "name": "Manifestações Angelicais/Demoníacas",
+        "nameOriginal": "Angelic/Demonic Manifestations",
+        "description": "Você desenvolveu um sexto sentido para perceber presenças sobrenaturais."
+      },
+      {
+        "id": "crowds",
+        "name": "Multidões",
+        "nameOriginal": "Crowds",
+        "description": "Você é especialmente hábil em notar detalhes e movimentos suspeitos em meio a grandes grupos de pessoas."
+      },
+      {
+        "id": "forests",
+        "name": "Florestas",
+        "nameOriginal": "Forests",
+        "description": "Você está sintonizado com os sons e movimentos naturais da floresta."
+      },
+      {
+        "id": "noises",
+        "name": "Ruídos",
+        "nameOriginal": "Noises",
+        "description": "Você tem um ouvido particularmente aguçado para sons fora do comum."
+      },
+      {
+        "id": "paranoia",
+        "name": "Paranoia",
+        "nameOriginal": "Paranoia",
+        "description": "Sua constante desconfiança o torna especialmente atento a ameaças."
+      },
+      {
+        "id": "traps",
+        "name": "Armadilhas",
+        "nameOriginal": "Traps",
+        "description": "Você desenvolveu um olhar apurado para detectar armadilhas e dispositivos ocultos."
+      }
+    ],
+    "custom": []
+  },
+  "type": "talent"
+}
