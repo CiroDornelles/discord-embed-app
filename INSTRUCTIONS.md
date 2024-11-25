@@ -77,3 +77,134 @@ if (new URLSearchParams(window.location.search).has('frame_id')) {
 - [Discord Developer Portal](https://discord.com/developers/applications)
 - [Discord Developer Documentation](https://discord.com/developers/docs)
 - [Discord SDK Reference](https://discord.com/developers/docs/activities/sdk-starter-kit)
+
+## Objetivos do Projeto
+
+### 1. Sistema de Atributos 
+- [x] Atributos Físicos (Força, Destreza, Vigor)
+- [x] Atributos Sociais (Carisma, Manipulação, Aparência)
+- [x] Atributos Mentais (Percepção, Inteligência, Raciocínio)
+
+### 2. Sistema de Habilidades 
+#### Talentos (em progresso)
+- [x] Prontidão (Alertness)
+- [ ] Esportes (Athletics)
+- [ ] Consciência (Awareness)
+- [ ] Briga (Brawl)
+- [ ] Empatia (Empathy)
+- [ ] Expressão (Expression)
+- [ ] Intimidação (Intimidation)
+- [ ] Liderança (Leadership)
+- [ ] Manha (Subterfuge)
+- [ ] Lábia (Streetwise)
+
+#### Perícias (pendente)
+- [ ] Arqueirismo (Archery)
+- [ ] Ofícios (Crafts)
+- [ ] Etiqueta (Etiquette)
+- [ ] Herbalismo (Herbalism)
+- [ ] Armas de Lâmina (Melee)
+- [ ] Performance (Performance)
+- [ ] Cavalgar (Ride)
+- [ ] Furtividade (Stealth)
+- [ ] Sobrevivência (Survival)
+- [ ] Comércio (Commerce)
+
+#### Conhecimentos (pendente)
+- [ ] Acadêmicos (Academics)
+- [ ] Sabedoria Popular (Hearth Wisdom)
+- [ ] Investigação (Investigation)
+- [ ] Direito (Law)
+- [ ] Linguística (Linguistics)
+- [ ] Medicina (Medicine)
+- [ ] Ocultismo (Occult)
+- [ ] Política (Politics)
+- [ ] Senescalia (Seneschal)
+- [ ] Teologia (Theology)
+
+### 3. Estrutura de Dados 
+- [x] Formato JSON para atributos
+- [x] Formato JSON para habilidades incluindo:
+  - História de exemplo (flavor text)
+  - Descrição da habilidade
+  - Níveis de proficiência (1-5)
+  - Tipos de personagens que a possuem
+  - Especialidades padrão
+- [ ] Sistema para especialidades personalizadas
+
+### 4. Funcionalidades Planejadas 
+- [ ] Exportação para diferentes VTTs (Foundry, Roll20)
+- [ ] Exportação para PDF
+- [ ] Sistema de tooltips para descrições
+- [ ] Interface para adicionar especialidades personalizadas
+- [ ] Validação de dados usando Zod
+
+### 5. Organização do Projeto 
+- [x] Estrutura de diretórios para diferentes jogos do World of Darkness
+- [x] Separação por versões (V20, Dark Ages)
+- [x] Organização modular dos componentes
+
+## Estrutura de Diretórios
+
+```
+src/
+└── data/
+    └── wod/
+        └── vampire/
+            ├── v20/
+            │   └── attributes/
+            └── v20_dark_ages/
+                ├── attributes/
+                │   ├── physical.json
+                │   ├── social.json
+                │   └── mental.json
+                └── abilities/
+                    ├── talents/
+                    ├── skills/
+                    └── knowledges/
+```
+
+## Formato dos Dados
+
+### Atributos e Habilidades
+Cada atributo e habilidade é armazenado em formato JSON com a seguinte estrutura:
+
+```json
+{
+  "name": "Nome em Português",
+  "nameOriginal": "Nome Original em Inglês",
+  "flavorText": {
+    "characters": [
+      {
+        "name": "Nome do Personagem",
+        "speech": "Fala do Personagem",
+        "description": "Descrição da ação (opcional)"
+      }
+    ]
+  },
+  "description": "Descrição detalhada do atributo/habilidade",
+  "levels": {
+    "1": {
+      "name": "Nome do Nível",
+      "description": "Descrição do que é possível neste nível"
+    }
+    // ... níveis 2-5
+  },
+  "possessedBy": [
+    "Tipo de Personagem 1",
+    "Tipo de Personagem 2"
+  ],
+  "specialties": [
+    {
+      "name": "Nome da Especialidade",
+      "nameOriginal": "Nome Original da Especialidade"
+    }
+  ]
+}
+```
+
+## Próximos Passos
+1. Resolver problemas com o arquivo alertness.json
+2. Continuar a implementação das habilidades de Talentos
+3. Desenvolver o sistema de especialidades personalizadas
+4. Começar a implementação das funcionalidades planejadas
