@@ -1,19 +1,7 @@
 {
   "name": "Prontidão",
   "nameOriginal": "Alertness",
-  "flavorText": {
-    "characters": [
-      {
-        "name": "Brígido",
-        "speech": "Você ouviu isso?"
-      },
-      {
-        "name": "Jovan",
-        "speech": "Ouvir o quê?",
-        "description": "Brígido ofegou quando dedos brancos se enrolaram ao redor do pescoço de Jovan, garras irregulares rasgando carne como papel e sangue jorrando do ferimento dilacerado."
-      }
-    ]
-  },
+  "flavorText": "\"Você ouviu isso?\" Brígido mal teve tempo de avisar antes que dedos pálidos se enrolassem ao redor do pescoço de Jovan, garras irregulares rasgando carne como papel.",
   "description": "Prontidão permite que os personagens percebam mudanças físicas em seu ambiente, como itens fora do lugar, mudanças no cenário e sons estranhos. Geralmente combinada com Percepção, Prontidão é útil para o personagem que deseja ser o primeiro a descobrir quaisquer segredos que o mundo possa guardar.",
   "levels": {
     "1": {
