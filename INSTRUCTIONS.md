@@ -122,7 +122,21 @@ if (new URLSearchParams(window.location.search).has('frame_id')) {
 - [ ] Senescalia (Seneschal)
 - [ ] Teologia (Theology)
 
-### 3. Estrutura de Dados 
+### 3. Sistema de Backgrounds (Completo)
+- [x] Aliados (Allies)
+- [x] Identidade Alternativa (Alternate Identity)
+- [x] Contatos (Contacts)
+- [x] Domínio (Domain)
+- [x] Fama (Fame)
+- [x] Geração (Generation)
+- [x] Rebanho (Herd)
+- [x] Influência (Influence)
+- [x] Mentor (Mentor)
+- [x] Recursos (Resources)
+- [x] Servidores (Retainers)
+- [x] Status (Status)
+
+### 4. Estrutura de Dados 
 - [x] Formato JSON para atributos
 - [x] Formato JSON para habilidades incluindo:
   - História de exemplo (flavor text)
@@ -132,14 +146,14 @@ if (new URLSearchParams(window.location.search).has('frame_id')) {
   - Especialidades padrão
 - [ ] Sistema para especialidades personalizadas
 
-### 4. Funcionalidades Planejadas 
+### 5. Funcionalidades Planejadas 
 - [ ] Exportação para diferentes VTTs (Foundry, Roll20)
 - [ ] Exportação para PDF
 - [ ] Sistema de tooltips para descrições
 - [ ] Interface para adicionar especialidades personalizadas
 - [ ] Validação de dados usando Zod
 
-### 5. Organização do Projeto 
+### 6. Organização do Projeto 
 - [x] Estrutura de diretórios para diferentes jogos do World of Darkness
 - [x] Separação por versões (V20, Dark Ages)
 - [x] Organização modular dos componentes

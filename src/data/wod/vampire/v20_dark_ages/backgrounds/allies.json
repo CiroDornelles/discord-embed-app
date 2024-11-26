@@ -1,0 +1,28 @@
+{
+    "name": "Aliados",
+    "originalName": "Allies",
+    "description": "Aliados são mortais que o apoiam voluntariamente, sem coerção. Eles nem sempre estão disponíveis para oferecer assistência; eles têm suas próprias preocupações também, mas podem fornecer acesso indireto aos seus próprios Backgrounds, como Contatos, Influência ou Recursos. No entanto, nada é de graça. Se você pedir favores a seus amigos, eles podem pedir um favor em troca.",
+    "system": "Pontos de Aliados podem ser compartilhados entre uma coterie de personagens.",
+    "levels": [
+        {
+            "level": 1,
+            "description": "Um aliado de influência e poder moderados"
+        },
+        {
+            "level": 2,
+            "description": "Dois aliados, ambos de poder moderado"
+        },
+        {
+            "level": 3,
+            "description": "Três aliados, um dos quais é bastante influente"
+        },
+        {
+            "level": 4,
+            "description": "Quatro aliados, um dos quais é muito influente"
+        },
+        {
+            "level": 5,
+            "description": "Cinco aliados, um dos quais é extremamente influente"
+        }
+    ]
+}

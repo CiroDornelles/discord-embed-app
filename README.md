@@ -78,6 +78,20 @@ Uma aplicação web para criar e gerenciar fichas de personagem do Vampire: The 
 - Senescalia (Seneschal)
 - Teologia (Theology)
 
+### Sistema de Backgrounds (Completo)
+- [x] Aliados (Allies)
+- [x] Identidade Alternativa (Alternate Identity)
+- [x] Contatos (Contacts)
+- [x] Domínio (Domain)
+- [x] Fama (Fame)
+- [x] Geração (Generation)
+- [x] Rebanho (Herd)
+- [x] Influência (Influence)
+- [x] Mentor (Mentor)
+- [x] Recursos (Resources)
+- [x] Servidores (Retainers)
+- [x] Status (Status)
+
 ### Funcionalidades Planejadas 
 - Exportação para diferentes VTTs (Foundry, Roll20)
 - Exportação para PDF
