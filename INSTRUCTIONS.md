@@ -136,7 +136,87 @@ if (new URLSearchParams(window.location.search).has('frame_id')) {
 - [x] Servidores (Retainers)
 - [x] Status (Status)
 
-### 4. Estrutura de Dados 
+### 4. Sistema de Disciplinas (Pendente)
+#### Disciplinas Básicas
+- [ ] Animalism (Animalismo)
+- [ ] Auspex (Auspício)
+- [ ] Celerity (Celeridade)
+- [ ] Chimerstry (Quimerismo)
+- [ ] Dementation (Dementação)
+- [ ] Dominate (Dominação)
+- [ ] Fortitude (Fortitude)
+- [ ] Necromancy (Necromancia)
+- [ ] Obfuscate (Ofuscação)
+- [ ] Obtenebration (Obteneração)
+- [ ] Potence (Potência)
+- [ ] Presence (Presença)
+- [ ] Protean (Proteísmo)
+- [ ] Quietus (Quietus)
+- [ ] Serpentis (Serpentis)
+- [ ] Thaumaturgy (Taumaturgia)
+- [ ] Valeren (Valeren)
+- [ ] Vicissitude (Vicissitude)
+
+#### Trilhas de Taumaturgia
+- [ ] Path of Blood (Trilha do Sangue)
+- [ ] Outras trilhas principais
+
+#### Trilhas de Necromancia
+- [ ] Sepulchre Path (Trilha do Sepulcro)
+- [ ] Outras trilhas principais
+
+### 5. Sistema de Qualidades e Defeitos (Pendente)
+#### Qualidades (Merits)
+##### Físicas
+- [ ] Acute Sense (Sentido Aguçado)
+- [ ] Ambidextrous (Ambidestro)
+- [ ] Catlike Balance (Equilíbrio Felino)
+- [ ] E outras qualidades físicas
+
+##### Sociais
+- [ ] Allies (Aliados)
+- [ ] Elysium Regular (Frequentador do Elísio)
+- [ ] Prestigious Sire (Senhor Prestigioso)
+- [ ] E outras qualidades sociais
+
+##### Mentais
+- [ ] Common Sense (Bom Senso)
+- [ ] Concentration (Concentração)
+- [ ] Language (Idioma)
+- [ ] E outras qualidades mentais
+
+##### Sobrenaturais
+- [ ] Additional Discipline (Disciplina Adicional)
+- [ ] Light Sleeper (Sono Leve)
+- [ ] Medium (Médium)
+- [ ] E outras qualidades sobrenaturais
+
+#### Defeitos (Flaws)
+##### Físicos
+- [ ] Bad Sight (Má Visão)
+- [ ] Deformity (Deformidade)
+- [ ] Lame (Manco)
+- [ ] E outros defeitos físicos
+
+##### Sociais
+- [ ] Dark Secret (Segredo Sombrio)
+- [ ] Enemy (Inimigo)
+- [ ] Infamous Sire (Senhor Infame)
+- [ ] E outros defeitos sociais
+
+##### Mentais
+- [ ] Amnesia (Amnésia)
+- [ ] Nightmares (Pesadelos)
+- [ ] Short Fuse (Pavio Curto)
+- [ ] E outros defeitos mentais
+
+##### Sobrenaturais
+- [ ] Blood Madness (Loucura Sanguínea)
+- [ ] Cursed (Amaldiçoado)
+- [ ] Weak-Willed (Fraco de Vontade)
+- [ ] E outros defeitos sobrenaturais
+
+### 6. Estrutura de Dados 
 - [x] Formato JSON para atributos
 - [x] Formato JSON para habilidades incluindo:
   - História de exemplo (flavor text)
@@ -146,14 +226,14 @@ if (new URLSearchParams(window.location.search).has('frame_id')) {
   - Especialidades padrão
 - [ ] Sistema para especialidades personalizadas
 
-### 5. Funcionalidades Planejadas 
+### 7. Funcionalidades Planejadas 
 - [ ] Exportação para diferentes VTTs (Foundry, Roll20)
 - [ ] Exportação para PDF
 - [ ] Sistema de tooltips para descrições
 - [ ] Interface para adicionar especialidades personalizadas
 - [ ] Validação de dados usando Zod
 
-### 6. Organização do Projeto 
+### 8. Organização do Projeto 
 - [x] Estrutura de diretórios para diferentes jogos do World of Darkness
 - [x] Separação por versões (V20, Dark Ages)
 - [x] Organização modular dos componentes
