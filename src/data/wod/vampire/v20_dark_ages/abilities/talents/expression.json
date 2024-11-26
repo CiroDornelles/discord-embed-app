@@ -1,0 +1,76 @@
+{
+  "name": "Expressão",
+  "nameOriginal": "Expression",
+  "flavorText": "\"E-E-Eu só acho,\" Silvio gaguejou. Ele se encolheu, sentindo o olhar de Flávia sobre ele. Era mais quente que o sol.",
+  "description": "Às vezes é mais fácil convencer as pessoas do que forçá-las à submissão. Expressão é uma arte que tem sido valorizada através dos tempos, e muitas guerras foram evitadas ou iniciadas porque um bom argumento foi clara e expertamente apresentado. Fatos nem sempre são necessários; a habilidade de manejar palavras com maestria, marcar significados nas mentes dos ouvintes e deslizar o ponto em seus corações pode realizar muito mais. Note que ser capaz de apresentar seu caso usando citações e alegorias de outros não significa que você necessariamente saiba lê-las. Ler e escrever é para acadêmicos. Dar vida a elas para influenciar aqueles que escutarão? Esse é seu trabalho.",
+  "levels": {
+    "1": {
+      "name": "Novato",
+      "description": "Você consegue apresentar seu caso. Pode tropeçar algumas vezes, mas transmite seu ponto com um pouco de floreio."
+    },
+    "2": {
+      "name": "Praticante",
+      "description": "Você tem domínio da oratória. As pessoas frequentemente acenam com a cabeça enquanto você fala."
+    },
+    "3": {
+      "name": "Competente",
+      "description": "Suas habilidades oratórias o beneficiam de várias maneiras. Não só as pessoas desejam ouvir suas palavras, mas frequentemente pagarão para que você as pronuncie."
+    },
+    "4": {
+      "name": "Especialista",
+      "description": "Seu estilo e convenções de fala são bem conhecidos e eficazes. Muitos o imitam."
+    },
+    "5": {
+      "name": "Mestre",
+      "description": "Sua maneira de apresentar argumentos os torna irrefutáveis. O discurso dura apenas algumas voltas antes que você emerja triunfante."
+    }
+  },
+  "possessedBy": [
+    "Menestréis",
+    "Poetas",
+    "Pregadores",
+    "Agitadores",
+    "Professores"
+  ],
+  "specialties": {
+    "default": [
+      {
+        "id": "acting",
+        "name": "Atuação",
+        "nameOriginal": "Acting",
+        "description": "Você tem talento especial para incorporar diferentes personagens e transmitir emoções através da performance dramática."
+      },
+      {
+        "id": "conversation",
+        "name": "Conversação",
+        "nameOriginal": "Conversation",
+        "description": "Você é particularmente hábil na arte do diálogo e da troca verbal informal."
+      },
+      {
+        "id": "improvisation",
+        "name": "Improvisação",
+        "nameOriginal": "Improvisation",
+        "description": "Você tem um dom natural para criar narrativas e argumentos no calor do momento."
+      },
+      {
+        "id": "poetry",
+        "name": "Poesia",
+        "nameOriginal": "Poetry",
+        "description": "Você domina a arte de compor e recitar versos que tocam a alma dos ouvintes."
+      },
+      {
+        "id": "preaching",
+        "name": "Pregação",
+        "nameOriginal": "Preaching",
+        "description": "Você é especialmente eficaz em transmitir mensagens espirituais e morais de forma inspiradora."
+      },
+      {
+        "id": "storytelling",
+        "name": "Narrativa",
+        "nameOriginal": "Storytelling",
+        "description": "Você é mestre na arte de contar histórias que prendem a atenção e imaginação da audiência."
+      }
+    ],
+    "custom": []
+  }
+}
