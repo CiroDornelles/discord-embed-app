@@ -1,0 +1,41 @@
+{
+    "disciplineName": "Animalismo",
+    "abilities": [
+        {
+            "name": "Comando Animal",
+            "originalName": "Animal Command",
+            "description": "Capacidade de dar ordens simples a animais",
+            "system": {
+                "type": "passive",
+                "mechanics": {
+                    "activation": "automatic",
+                    "requirements": {
+                        "disciplineLevel": 2
+                    }
+                }
+            }
+        },
+        {
+            "name": "Vínculo Animal",
+            "originalName": "Animal Bond",
+            "description": "Capacidade de criar um vínculo especial com um animal",
+            "system": {
+                "type": "active",
+                "mechanics": {
+                    "activation": "action",
+                    "cost": {
+                        "bloodPoints": 1
+                    },
+                    "requirements": {
+                        "disciplineLevel": 3,
+                        "traits": {
+                            "attribute": "Carisma",
+                            "ability": "Empatia com Animais",
+                            "difficulty": 7
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "name": "Animalismo",
+    "originalName": "Animalism",
+    "description": "Descrição geral da disciplina...",
+    "system": {
+        "description": "Regras gerais que se aplicam a toda disciplina",
+        "mechanics": {
+            "rollType": "standard",
+            "difficulty": 6,
+            "traits": {
+                "attribute": "Carisma",
+                "ability": "Empatia com Animais"
+            },
+            "modifiers": [
+                {
+                    "condition": "Animal hostil",
+                    "value": +2,
+                    "description": "Aumenta dificuldade ao lidar com animais hostis"
+                }
+            ]
+        }
+    },
+    "prerequisites": {
+        "clans": ["Gangrel", "Nosferatu", "Tzimisce"],
+        "bloodline": ["Laibon"]
+    }
+}

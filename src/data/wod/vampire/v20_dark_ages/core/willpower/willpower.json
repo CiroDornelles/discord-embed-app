@@ -1,0 +1,103 @@
+{
+    "name": "Força de Vontade",
+    "originalName": "Willpower",
+    "description": "Mede a força interior do personagem e sua capacidade de superar adversidades. Possui uma classificação permanente e um conjunto temporário de pontos. A classificação é usada para testes, enquanto os pontos são gastos. Um personagem sem pontos de Força de Vontade está exausto mental, física e espiritualmente, e não consegue mais reunir energia para realizar uma ação ou causa.",
+    "system": {
+        "mechanics": {
+            "range": {
+                "min": 1,
+                "max": 10,
+                "default": 3
+            },
+            "creation": {
+                "description": "Na criação do personagem, a Força de Vontade é igual à sua Coragem",
+                "baseAttribute": "Courage"
+            },
+            "points": {
+                "type": "pool",
+                "description": "Pontos temporários que podem ser gastos durante a história",
+                "tracking": "squares",
+                "recovery": {
+                    "rate": 1,
+                    "period": "day",
+                    "condition": "Com descanso adequado"
+                }
+            },
+            "usage": [
+                {
+                    "type": "automatic",
+                    "description": "Gasto de 1 ponto garante sucesso automático em uma ação",
+                    "cost": 1,
+                    "effect": "Sucesso automático em uma ação (não pode ser usado em rolagens de dano)",
+                    "limitations": [
+                        "Não pode ser usado em rolagens de dano",
+                        "Deve ser declarado antes da rolagem",
+                        "Apenas um ponto pode ser gasto por turno"
+                    ]
+                },
+                {
+                    "type": "resistance",
+                    "description": "Usado para resistir a efeitos mentais e sobrenaturais",
+                    "roll": {
+                        "difficulty": "Variável",
+                        "poolType": "rating",
+                        "success": "Resiste ao efeito",
+                        "failure": "Afetado pelo efeito"
+                    }
+                }
+            ]
+        },
+        "ratings": {
+            "1": {
+                "name": "Sem Fibra",
+                "originalName": "Spineless",
+                "description": "Facilmente manipulado e sem força de vontade"
+            },
+            "2": {
+                "name": "Fraco",
+                "originalName": "Weak",
+                "description": "Raramente mantém suas convicções"
+            },
+            "3": {
+                "name": "Não Assertivo",
+                "originalName": "Unassertive",
+                "description": "Tem dificuldade em se impor"
+            },
+            "4": {
+                "name": "Hesitante",
+                "originalName": "Diffident",
+                "description": "Frequentemente inseguro de suas decisões"
+            },
+            "5": {
+                "name": "Determinado",
+                "originalName": "Certain",
+                "description": "Possui convicção em suas ações"
+            },
+            "6": {
+                "name": "Confiante",
+                "originalName": "Confident",
+                "description": "Raramente duvida de suas decisões"
+            },
+            "7": {
+                "name": "Determinado",
+                "originalName": "Determined",
+                "description": "Forte senso de propósito"
+            },
+            "8": {
+                "name": "Controlado",
+                "originalName": "Controlled",
+                "description": "Mantém o controle mesmo sob pressão extrema"
+            },
+            "9": {
+                "name": "Vontade de Ferro",
+                "originalName": "Iron-willed",
+                "description": "Quase impossível de dobrar ou quebrar"
+            },
+            "10": {
+                "name": "Inabalável",
+                "originalName": "Unshakable",
+                "description": "Força de vontade legendária"
+            }
+        }
+    }
+}

@@ -1,0 +1,137 @@
+{
+    "name": "Geração",
+    "originalName": "Generation",
+    "description": "Representa a distância do vampiro de Caim, o primeiro vampiro. Quanto menor o número da geração, mais poderoso é o vampiro.",
+    "system": {
+        "mechanics": {
+            "range": {
+                "min": 3,
+                "max": 13,
+                "default": 13
+            },
+            "generations": {
+                "3": {
+                    "name": "Terceira Geração",
+                    "description": "Antediluvianos",
+                    "bloodPool": {
+                        "max": "???",
+                        "perTurn": "???"
+                    },
+                    "attributes": {
+                        "maxTraits": 10
+                    }
+                },
+                "4": {
+                    "name": "Quarta Geração",
+                    "description": "Matusaléns",
+                    "bloodPool": {
+                        "max": 50,
+                        "perTurn": 10
+                    },
+                    "attributes": {
+                        "maxTraits": 9
+                    }
+                },
+                "5": {
+                    "name": "Quinta Geração",
+                    "description": "Matusaléns",
+                    "bloodPool": {
+                        "max": 40,
+                        "perTurn": 8
+                    },
+                    "attributes": {
+                        "maxTraits": 8
+                    }
+                },
+                "6": {
+                    "name": "Sexta Geração",
+                    "description": "Matusaléns",
+                    "bloodPool": {
+                        "max": 30,
+                        "perTurn": 6
+                    },
+                    "attributes": {
+                        "maxTraits": 7
+                    }
+                },
+                "7": {
+                    "name": "Sétima Geração",
+                    "description": "Anciões",
+                    "bloodPool": {
+                        "max": 20,
+                        "perTurn": 4
+                    },
+                    "attributes": {
+                        "maxTraits": 6
+                    }
+                },
+                "8": {
+                    "name": "Oitava Geração",
+                    "description": "Anciões",
+                    "bloodPool": {
+                        "max": 15,
+                        "perTurn": 3
+                    },
+                    "attributes": {
+                        "maxTraits": 5
+                    }
+                },
+                "9": {
+                    "name": "Nona Geração",
+                    "description": "Anciões",
+                    "bloodPool": {
+                        "max": 14,
+                        "perTurn": 2
+                    },
+                    "attributes": {
+                        "maxTraits": 5
+                    }
+                },
+                "10": {
+                    "name": "Décima Geração",
+                    "description": "Ancilla",
+                    "bloodPool": {
+                        "max": 13,
+                        "perTurn": 1
+                    },
+                    "attributes": {
+                        "maxTraits": 5
+                    }
+                },
+                "11": {
+                    "name": "Décima Primeira Geração",
+                    "description": "Ancilla",
+                    "bloodPool": {
+                        "max": 12,
+                        "perTurn": 1
+                    },
+                    "attributes": {
+                        "maxTraits": 5
+                    }
+                },
+                "12": {
+                    "name": "Décima Segunda Geração",
+                    "description": "Neonato",
+                    "bloodPool": {
+                        "max": 11,
+                        "perTurn": 1
+                    },
+                    "attributes": {
+                        "maxTraits": 5
+                    }
+                },
+                "13": {
+                    "name": "Décima Terceira Geração",
+                    "description": "Neonato",
+                    "bloodPool": {
+                        "max": 10,
+                        "perTurn": 1
+                    },
+                    "attributes": {
+                        "maxTraits": 5
+                    }
+                }
+            }
+        }
+    }
+}

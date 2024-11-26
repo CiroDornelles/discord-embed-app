@@ -1,0 +1,74 @@
+{
+    "name": "Consciência",
+    "originalName": "Conscience",
+    "alternativeName": "Convicção",
+    "alternativeOriginalName": "Conviction",
+    "description": "Representa o julgamento moral do personagem e deriva de sua atitude e perspectiva. Previne o vampiro de sucumbir à Besta definindo seus impulsos como inaceitáveis.",
+    "alternativeDescription": "Representa a insensibilidade do personagem e dedicação a uma causa geralmente desumana.",
+    "system": {
+        "mechanics": {
+            "range": {
+                "min": 1,
+                "max": 5,
+                "default": 3
+            },
+            "usage": [
+                {
+                    "type": "degeneration",
+                    "description": "Rolado para resistir à perda de Humanidade após ações moralmente questionáveis",
+                    "roll": {
+                        "difficulty": 8,
+                        "success": "Mantém Humanidade atual",
+                        "failure": "Perde 1 ponto de Humanidade"
+                    }
+                },
+                {
+                    "type": "frenzy",
+                    "description": "Pode ser rolado para resistir a frenesi causada por provocações morais",
+                    "roll": {
+                        "difficulty": "Variável",
+                        "success": "Resiste à frenesi",
+                        "failure": "Entra em frenesi"
+                    }
+                }
+            ]
+        },
+        "ratings": {
+            "1": {
+                "conscience": "Descuidado",
+                "originalConscience": "Uncaring",
+                "conviction": "Arrependido",
+                "originalConviction": "Remorseful",
+                "description": "Nível mais baixo de consciência moral/convicção"
+            },
+            "2": {
+                "conscience": "Normal",
+                "originalConscience": "Normal",
+                "conviction": "Justo",
+                "originalConviction": "Righteous",
+                "description": "Nível padrão de consciência moral/convicção"
+            },
+            "3": {
+                "conscience": "Ético",
+                "originalConscience": "Ethical",
+                "conviction": "Ético",
+                "originalConviction": "Ethical",
+                "description": "Forte senso de ética e moralidade"
+            },
+            "4": {
+                "conscience": "Justo",
+                "originalConscience": "Righteous",
+                "conviction": "Descuidado",
+                "originalConviction": "Uncaring",
+                "description": "Alto nível de consciência moral/convicção"
+            },
+            "5": {
+                "conscience": "Arrependido",
+                "originalConscience": "Remorseful",
+                "conviction": "Insensível",
+                "originalConviction": "Callous",
+                "description": "Nível máximo de consciência moral/convicção"
+            }
+        }
+    }
+}

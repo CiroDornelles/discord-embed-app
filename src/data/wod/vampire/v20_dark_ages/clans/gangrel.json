@@ -1,0 +1,45 @@
+{
+    "name": "Gangrel",
+    "nickname": "Selvagens",
+    "originalNickname": "Savages",
+    "description": "Descrição do clã...",
+    "disciplines": {
+        "inClan": [
+            {
+                "name": "Animalismo",
+                "originalName": "Animalism",
+                "cost": {
+                    "current": 5,
+                    "outOfClan": 7
+                }
+            },
+            {
+                "name": "Fortitude",
+                "originalName": "Fortitude",
+                "cost": {
+                    "current": 5,
+                    "outOfClan": 7
+                }
+            },
+            {
+                "name": "Metamorfose",
+                "originalName": "Protean",
+                "cost": {
+                    "current": 5,
+                    "outOfClan": 7
+                }
+            }
+        ],
+        "outOfClan": {
+            "cost": 7,
+            "exceptions": [
+                {
+                    "name": "Ofuscação",
+                    "originalName": "Obfuscate",
+                    "cost": 6,
+                    "reason": "Afinidade com sombras"
+                }
+            ]
+        }
+    }
+}
