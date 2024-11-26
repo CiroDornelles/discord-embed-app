@@ -1,0 +1,6 @@
+{
+    "name": "Sobrevivente",
+    "originalName": "Survivor",
+    "description": "O Sobrevivente sempre consegue seguir em frente, não importa as probabilidades ou oposição. A recusa absoluta do Sobrevivente em aceitar a derrota frequentemente faz a diferença entre sucesso e fracasso.",
+    "regainWillpower": "Recupere um ponto de Força de Vontade sempre que sobreviver a uma situação ameaçadora através de pura tenacidade, ou quando seu conselho faz alguém persistir apesar da oposição."
+}

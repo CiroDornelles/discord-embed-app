@@ -1,0 +1,82 @@
+{
+  "name": "Intimidação",
+  "nameOriginal": "Intimidation",
+  "flavorText": "\"Posso libertá-lo, Calvin, se você apenas me disser quem lhe deu o frasco de sangue para transportar,\" Padre Octavius respondeu calmamente, uniformemente. Ele pousou a mão na testa ensanguentada e suada de Calvin. \"Por favor, meu filho.\" Ele apertou mais o cabo do chicote. \"Por favor.\"",
+  "description": "Entre as muitas armas no arsenal social de uma pessoa, incutir medo nos corações dos outros é uma ferramenta afiada de fato. Ameace os entes queridos das pessoas, sua carne, seu sustento, qualquer coisa que lhes seja cara. Veja como rapidamente elas se dobram à sua vontade.",
+  "levels": {
+    "1": {
+      "name": "Novato",
+      "description": "Aqueles obviamente inferiores a você facilmente sucumbem às suas ameaças."
+    },
+    "2": {
+      "name": "Praticante",
+      "description": "Você já cumpriu suas ameaças várias vezes. Aqueles próximos a você sabem disso e respondem de acordo."
+    },
+    "3": {
+      "name": "Competente",
+      "description": "Sua presença cruel lhe confere uma aura de autoridade. Poucos pensam em questioná-la."
+    },
+    "4": {
+      "name": "Especialista",
+      "description": "O medo o precede. Amigos riem nervosamente ao seu redor. Eles sabem como você pede as coisas."
+    },
+    "5": {
+      "name": "Mestre",
+      "description": "Aqueles que não se dobrarão serão quebrados. Você cuidará disso. Pessoalmente. Todos sabem disso. Um suor frio brota na testa de todos que tremem diante de você."
+    }
+  },
+  "possessedBy": [
+    "Valentões",
+    "Bandidos",
+    "Comandantes",
+    "Senhores",
+    "Torturadores"
+  ],
+  "specialties": {
+    "default": [
+      {
+        "id": "blackmail",
+        "name": "Chantagem",
+        "nameOriginal": "Blackmail",
+        "description": "Você é habilidoso em usar informações comprometedoras para manipular e controlar outros."
+      },
+      {
+        "id": "overt-threats",
+        "name": "Ameaças Diretas",
+        "nameOriginal": "Overt Threats",
+        "description": "Você é particularmente eficaz em fazer ameaças claras e inequívocas."
+      },
+      {
+        "id": "physical-coercion",
+        "name": "Coerção Física",
+        "nameOriginal": "Physical Coercion",
+        "description": "Você sabe como usar a ameaça de violência física para obter o que deseja."
+      },
+      {
+        "id": "politics",
+        "name": "Política",
+        "nameOriginal": "Politics",
+        "description": "Você é especialista em usar ameaças veladas e manobras políticas para intimidar."
+      },
+      {
+        "id": "pulling-rank",
+        "name": "Imposição de Autoridade",
+        "nameOriginal": "Pulling Rank",
+        "description": "Você sabe como usar sua posição ou status para intimidar aqueles abaixo de você."
+      },
+      {
+        "id": "staredowns",
+        "name": "Confronto Visual",
+        "nameOriginal": "Staredowns",
+        "description": "Você é mestre em dominar outros através do olhar e da linguagem corporal."
+      },
+      {
+        "id": "veiled-threats",
+        "name": "Ameaças Veladas",
+        "nameOriginal": "Veiled Threats",
+        "description": "Você é especialista em fazer ameaças sutis e indiretas que são igualmente eficazes."
+      }
+    ],
+    "custom": []
+  }
+}
