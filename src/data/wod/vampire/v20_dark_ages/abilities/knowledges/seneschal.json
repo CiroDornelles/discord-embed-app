@@ -1,0 +1,76 @@
+{
+    "name": "Seneschal",
+    "originalName": "Seneschal",
+    "flavorText": "\"It's essential that the grain you buy be quality.\" He took a big handful in his giant ebon hand, letting it run through his fingers. \"Some men will cut the grain to make a few coins. Those men are foolish.\" The fine gold thread in the embroidery on his luxuriant sleeve caught the light. \"Those men will always be poor. When a king trusts you, you can hold that in your pocket better than gold.\"",
+    "description": "You are the oil that allows the gears of a great house to run smoothly. You handle the books and the market accounts. You manage the number of workers for the harvest, maintain the stables, keep the ponds and forests stocked, and so forth. A good servant is worth their weight in gold, it's said, and it's never truer than here. You will never be caught flat-footed with a surprise hunting party. True experts can tell at a glance the quality of other people's households as well, ferreting out the hidden dust and the half-shined silver that falls beneath the notice of others.",
+    "levels": {
+        "1": {
+            "name": "Novato",
+            "description": "You can manage a small household of 3-5 people, keeping food available and ensuring the standards are presentable."
+        },
+        "2": {
+            "name": "Estudante",
+            "description": "You can manage a modest manor house or oversee a small business. You have mastered double-entry bookkeeping and other basic skills that will serve you well."
+        },
+        "3": {
+            "name": "Versado",
+            "description": "Multiple properties are under your care, and your excellent planning allows your estates to have bread, even during shortages from famine or war."
+        },
+        "4": {
+            "name": "Erudito",
+            "description": "You wrote the book on running a household. No minutia is beneath your notice. When you host kings and queens, the details matter."
+        },
+        "5": {
+            "name": "Mestre",
+            "description": "Not to overstate the case, but you can turn one loaf into two and double the size of a wine cellar with a mere word. Lords and ladies pay a pretty penny for you to handle their great estates."
+        }
+    },
+    "possessedBy": [
+        "Innkeepers",
+        "Stewards",
+        "Seneschals",
+        "Wives"
+    ],
+    "specialties": [
+        "Urban Estate Management",
+        "Farm Management",
+        "Feudal Estate Administration",
+        "Noble Household Management",
+        "Monastery Administration",
+        "Nunnery Management",
+        "Resource Planning",
+        "Staff Management"
+    ],
+    "fieldsOfExpertise": [
+        {
+            "name": "Estate Management",
+            "areas": [
+                "Household Accounting",
+                "Inventory Management",
+                "Staff Supervision",
+                "Property Maintenance",
+                "Resource Allocation"
+            ]
+        },
+        {
+            "name": "Logistics",
+            "areas": [
+                "Food Storage",
+                "Supply Chain Management",
+                "Event Planning",
+                "Crisis Management",
+                "Resource Distribution"
+            ]
+        },
+        {
+            "name": "Specialized Venues",
+            "areas": [
+                "Noble Estates",
+                "Religious Houses",
+                "Urban Properties",
+                "Agricultural Estates",
+                "Trading Posts"
+            ]
+        }
+    ]
+}

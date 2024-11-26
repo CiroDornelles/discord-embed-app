@@ -1,0 +1,79 @@
+{
+    "name": "Theology",
+    "originalName": "Theology",
+    "flavorText": "After fifty years, his eyesight was not what it once was. Brother Thomas dipped his quill in the pot of watered soot and methodically wrote another verse. Wouldn't the Archbishop be surprised to see the obscene drawings that accompanied this little ditty he began composing last year?",
+    "description": "Theology is the science of God, by whatever name you might call him, and never was it more compelling than at this time in history. God was in the smallest mustard seed and in the largest ocean. Plagues were the wrath of God and a bountiful harvest was the blessings of God made manifest. Two questions plagued the minds of medieval theologians: what is the nature of evil and does our free will allow us to act independent of it? To a religious mind every day was a choice to walk with God or dance with the devil in the pale moonlight.",
+    "levels": {
+        "1": {
+            "name": "Novato",
+            "description": "Your understanding of religion is fairly vague. You believe and understand the basic principles: the commandments, the rules, the practices. You can hold a conversation about religion, able to articulate your convictions reasonably well."
+        },
+        "2": {
+            "name": "Estudante",
+            "description": "You have read the holy books of your religion. You can debate religion (as much as your milieu allows) and compose a competent religious tract."
+        },
+        "3": {
+            "name": "Versado",
+            "description": "Your grasp of other religions is strong, despite any disagreement you may have with them. You are occasionally asked to speak to followers of your religion on an official basis."
+        },
+        "4": {
+            "name": "Erudito",
+            "description": "You have made a number of important contributions to doctrine. Your words are powerful: you could raise funds for a cathedral or mosque, incite violence against heretics, or fill people with a holy spirit of inspiration."
+        },
+        "5": {
+            "name": "Mestre",
+            "description": "You have discovered layers to your faith that others can only imagine. You're considered an honored speaker on religion at your forum of choice, no matter where that pulpit stands."
+        }
+    },
+    "possessedBy": [
+        "Monks",
+        "Nuns",
+        "Dabblers",
+        "Priests",
+        "Theologians",
+        "Rabbanim",
+        "A'immah"
+    ],
+    "specialties": [
+        "Confession",
+        "Orthodoxy",
+        "Heresy",
+        "Proselytization",
+        "Conversion",
+        "Religious Texts",
+        "Religious History",
+        "Comparative Religion"
+    ],
+    "fieldsOfExpertise": [
+        {
+            "name": "Religious Doctrine",
+            "areas": [
+                "Sacred Texts",
+                "Religious Law",
+                "Theological Debates",
+                "Church Doctrine",
+                "Religious Philosophy"
+            ]
+        },
+        {
+            "name": "Religious Practice",
+            "areas": [
+                "Rituals",
+                "Prayer",
+                "Meditation",
+                "Religious Ceremonies",
+                "Religious Education"
+            ]
+        },
+        {
+            "name": "Comparative Studies",
+            "areas": [
+                "Christianity",
+                "Judaism",
+                "Islam",
+                "Eastern Religions",
+                "Pagan Faiths"
+            ]
+        }
+    ]
+}

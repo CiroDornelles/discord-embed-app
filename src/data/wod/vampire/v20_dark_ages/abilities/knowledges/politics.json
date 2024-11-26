@@ -1,0 +1,80 @@
+{
+    "name": "Politics",
+    "originalName": "Politics",
+    "flavorText": "She led him through a passage behind the tapestry in the dining hall. \"True power does not reside in a throne.\" Her wool skirts left a trail in the dirt, her pace remarkably fast. His candle trembled with every gasping breath. \"Then where does it reside?\" he asked when they stopped. She swung open a hinged door and shoved a sheathed dagger in his hands. \"Knowing where a king sleeps.\"",
+    "description": "Politics is the great game; some say the greatest game. It can bring unimaginable power, but the wheel of fortune can turn quickly, grinding the ambitious into the finest of powder. History is littered with the names of those who overreached. High-level politics is a mixture of diplomacy and carefully exercised leverage. The more you understand, the more you can bend others to achieve your goals.",
+    "levels": {
+        "1": {
+            "name": "Novato",
+            "description": "You understand the basic machinations of governance. You can stir people up or smooth them down as you need to accomplish what you want."
+        },
+        "2": {
+            "name": "Estudante",
+            "description": "You hold an office of minor significance on a local level. People of influence know your name and take note. Your authority is good, but you are careful not to push too far."
+        },
+        "3": {
+            "name": "Versado",
+            "description": "No matter which level you operate on, you are a canny political player, a savvy climber who is slowly amassing more influence and power. You communicate to commoner and lord with equal fluency."
+        },
+        "4": {
+            "name": "Erudito",
+            "description": "You are a leader and your name is honored. Your place in the annals of history could be mighty indeed. Even still, sometimes you have to look sharp to ensure there is no one ascending to topple you from your place of power."
+        },
+        "5": {
+            "name": "Mestre",
+            "description": "You are a legend and your grip on your lands and people is uncontested. Your skill in politics so flawless that people rarely even realize they are being manipulated into what you want."
+        }
+    },
+    "possessedBy": [
+        "Advisors",
+        "Courtiers",
+        "Governors",
+        "Lords",
+        "Ladies",
+        "Cardinals",
+        "Popes",
+        "Kings",
+        "Queens"
+    ],
+    "specialties": [
+        "Feudal Politics",
+        "Court Politics",
+        "City Politics",
+        "Church Politics",
+        "Bribery",
+        "Law-making",
+        "Diplomacy"
+    ],
+    "fieldsOfExpertise": [
+        {
+            "name": "Political Systems",
+            "areas": [
+                "Feudal Hierarchy",
+                "Church Politics",
+                "City Governance",
+                "Court Intrigue",
+                "Noble Houses"
+            ]
+        },
+        {
+            "name": "Diplomatic Relations",
+            "areas": [
+                "Negotiations",
+                "Alliance Building",
+                "Conflict Resolution",
+                "Treaty Making",
+                "International Relations"
+            ]
+        },
+        {
+            "name": "Power Dynamics",
+            "areas": [
+                "Influence Networks",
+                "Political Leverage",
+                "Resource Management",
+                "Strategic Alliances",
+                "Authority Structures"
+            ]
+        }
+    ]
+}

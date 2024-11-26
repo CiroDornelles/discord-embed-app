@@ -1,0 +1,108 @@
+{
+  "name": "Direito",
+  "nameOriginal": "Law",
+  "flavorText": "'Vossa Majestade, é claro que este homem não sabia que estava invadindo terras reais para caçar o cervo.' Edward caminhou até o pé do trono, ousando erguer seus olhos para fixar os do rei. 'Embora eu saiba que a sentença é morte, misericórdia em tal questão mostraria aos seus súditos sua boa vontade.' O réu enterrou ainda mais sua cabeça no piso de pedra, prostrando-se diante dos cortesãos reunidos. Após um longo momento, o rei acenou com uma mão displicente, sua mão um brilho de rubis. 'Dez chicotadas e está resolvido.'",
+  "description": "Os romanos a chamavam de Justitia, mas você não precisa de latim para saber como funciona. Embora possa haver mil anos de jurisprudência como precedente, a Justiça vendada ainda segura sua espada. Aqueles que têm a bolsa para pagar recebem justiça mais refinada do que aqueles que não têm; o Rei supera o senhor e o senhor supera o camponês. A lei da Igreja (canônica) frequentemente se choca com a lei da terra (decreto real ou direito comum), com o resultado final sendo uma lei tão forte quanto aqueles que a aplicam.",
+  "levels": {
+    "1": {
+      "name": "Novato",
+      "description": "Você estuda avidamente as leis de sua cidade natal e país. Você conhece até mesmo as leis obscuras e acompanha o panorama rapidamente mutável dos precedentes."
+    },
+    "2": {
+      "name": "Estudante",
+      "description": "Você pode defender alguém com confiança em um debate ou ambiente casual, usando com sucesso casos recentes para provar seu ponto."
+    },
+    "3": {
+      "name": "Instruído",
+      "description": "Você poderia ganhar bem a vida como advogado. Seu conselho jurídico traz boas moedas. Seja defendendo os ricos ou os pobres, é preciso um verdadeiro especialista para superá-lo em um ambiente jurídico."
+    },
+    "4": {
+      "name": "Erudito",
+      "description": "Seu cérebro é uma biblioteca de direito e você pode citar decisões, capítulo e versículo, remontando a Justiniano. Você pode compor argumentos jurídicos escritos que podem influenciar reis e papas."
+    },
+    "5": {
+      "name": "Mestre",
+      "description": "Precedente? Em muitos casos, você julgou os casos que criaram o precedente. Suas teorias jurídicas formaram a base de subsequentes emendas legais."
+    }
+  },
+  "possessedBy": [
+    "Advogados",
+    "Juízes",
+    "Reis",
+    "Cardeais",
+    "Proprietários de terras"
+  ],
+  "specialties": {
+    "default": [
+      {
+        "id": "mediation",
+        "name": "Mediação",
+        "nameOriginal": "Mediation",
+        "description": "Você é especialista em mediar disputas legais entre partes."
+      },
+      {
+        "id": "contracts",
+        "name": "Contratos",
+        "nameOriginal": "Contracts",
+        "description": "Você é habilidoso na elaboração e interpretação de contratos."
+      },
+      {
+        "id": "law-type",
+        "name": "Tipo de Lei",
+        "nameOriginal": "Type",
+        "description": "Você é especialista em um tipo específico de lei (ex: Canônica, Tribal, Real, Herança)."
+      },
+      {
+        "id": "pleadings",
+        "name": "Petições",
+        "nameOriginal": "Pleadings",
+        "description": "Você é habilidoso na preparação e apresentação de petições legais."
+      },
+      {
+        "id": "sentencing",
+        "name": "Sentenciamento",
+        "nameOriginal": "Sentencing",
+        "description": "Você é especialista em determinar ou influenciar sentenças apropriadas."
+      }
+    ],
+    "custom": []
+  },
+  "fieldsOfExpertise": {
+    "default": [
+      {
+        "id": "canonical-law",
+        "name": "Direito Canônico",
+        "nameOriginal": "Canonical Law",
+        "description": "Leis e regulamentos da Igreja",
+        "examples": [
+          "Leis eclesiásticas",
+          "Decretos papais",
+          "Direito matrimonial"
+        ]
+      },
+      {
+        "id": "royal-law",
+        "name": "Direito Real",
+        "nameOriginal": "Royal Law",
+        "description": "Leis e decretos da coroa",
+        "examples": [
+          "Decretos reais",
+          "Direito feudal",
+          "Leis de propriedade"
+        ]
+      },
+      {
+        "id": "common-law",
+        "name": "Direito Comum",
+        "nameOriginal": "Common Law",
+        "description": "Leis baseadas em precedentes e costumes",
+        "examples": [
+          "Precedentes judiciais",
+          "Costumes locais",
+          "Direito consuetudinário"
+        ]
+      }
+    ],
+    "custom": []
+  }
+}

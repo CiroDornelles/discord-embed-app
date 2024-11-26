@@ -1,0 +1,70 @@
+{
+  "name": "Cavalgar",
+  "nameOriginal": "Ride",
+  "flavorText": "Oitenta milhas em uma noite não era nada. Ele havia cavalgado com o Grande Khan em suas longas marchas e trocado de montarias sem nunca tocar o chão. O nascer do sol sobre a estepe era algo belo, quando ele ainda estava vivo. Agora, porém, seria sua morte se não alcançassem abrigo antes do amanhecer. \"Só mais um pouco\", ele disse, dando tapinhas no pescoço do cavalo robusto. \"Só um pouco mais rápido.\" A alta grama plumosa, que já passava veloz sob eles, tornou-se um borrão enquanto cavalo e cavaleiro aumentavam a velocidade.",
+  "description": "Cavalgar descreve a afinidade do personagem para viajar a cavalo, lutar montado e, em capacidade limitada, cuidar do animal. Cavaleiros experientes também podem avaliar o valor de outros animais e tratar pequenas enfermidades que os acometem. Eles também são capazes de identificar artesanato de qualidade do inferior quando se trata de equipar sua montaria.",
+  "levels": {
+    "1": {
+      "name": "Novato",
+      "description": "Você pode montar um cavalo com sucesso e fazê-lo responder a comandos simples."
+    },
+    "2": {
+      "name": "Praticante",
+      "description": "Você consegue se manter na sela se seu cavalo se assusta. Você está acostumado com longas cavalgadas e os diferentes ritmos em que os cavalos podem correr, desde que o terreno seja relativamente favorável."
+    },
+    "3": {
+      "name": "Competente",
+      "description": "Você é capaz de lutar montado. Terrenos difíceis não apresentam dificuldade quando se trata de se manter na sela."
+    },
+    "4": {
+      "name": "Especialista",
+      "description": "Você pode guiar seu cavalo através de manobras complicadas e mantê-lo calmo no calor da batalha. Você é conhecido como um dos melhores cavaleiros da região."
+    },
+    "5": {
+      "name": "Mestre",
+      "description": "Você e seu cavalo se movem como um só. Você mal precisa mexer as rédeas ou mover uma perna para fazê-lo responder aos seus comandos."
+    }
+  },
+  "possessedBy": [
+    "Cavalaria",
+    "Nobres",
+    "Cavaleiros",
+    "Artistas",
+    "Mensageiros"
+  ],
+  "specialties": {
+    "default": [
+      {
+        "id": "trick-riding",
+        "name": "Acrobacias",
+        "nameOriginal": "Trick Riding",
+        "description": "Você é especialmente habilidoso em realizar manobras impressionantes montado."
+      },
+      {
+        "id": "jumping",
+        "name": "Saltos",
+        "nameOriginal": "Jumping",
+        "description": "Você tem expertise especial em fazer seu cavalo saltar obstáculos."
+      },
+      {
+        "id": "hunting",
+        "name": "Caça",
+        "nameOriginal": "Hunting",
+        "description": "Você é particularmente eficiente em cavalgar durante atividades de caça."
+      },
+      {
+        "id": "speed",
+        "name": "Velocidade",
+        "nameOriginal": "Speed",
+        "description": "Você é mestre em extrair a máxima velocidade de sua montaria."
+      },
+      {
+        "id": "mounted-combat",
+        "name": "Combate Montado",
+        "nameOriginal": "Mounted Combat",
+        "description": "Você é especialista em lutar enquanto está a cavalo."
+      }
+    ],
+    "custom": []
+  }
+}

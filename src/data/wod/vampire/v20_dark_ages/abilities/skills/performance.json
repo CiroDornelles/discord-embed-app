@@ -1,0 +1,106 @@
+{
+  "name": "Atuação",
+  "nameOriginal": "Performance",
+  "flavorText": "A taverna deveria ter fechado suas portas horas atrás, mas o menestrel continuava tocando canções de bebida, e as pessoas continuavam bebendo. Ele finalmente pousou seu alaúde uma hora antes do nascer do sol. Aqueles que desmaiaram nos bancos acordaram tarde no dia seguinte, com dores no pescoço e letárgicos. O menestrel há muito havia partido.",
+  "description": "Atuação é a habilidade de entreter uma audiência e mantê-la cativada, seja um anfiteatro lotado, um punhado de transeuntes ou um único alvo. Escolha um campo de especialização ao adquirir Atuação. Fora desse campo, trate a Habilidade como se não tivesse pontos. Campos adicionais podem ser comprados com um ponto de experiência.",
+  "levels": {
+    "1": {
+      "name": "Novato",
+      "description": "Você consegue manter uma melodia ou atuar em uma peça sem tropeçar em suas falas."
+    },
+    "2": {
+      "name": "Praticante",
+      "description": "Você é frequentemente convidado para compartilhar seus talentos com a comunidade local."
+    },
+    "3": {
+      "name": "Competente",
+      "description": "Você pode se sustentar com sua habilidade. Pessoas de cidades próximas vêm para vê-lo se apresentar."
+    },
+    "4": {
+      "name": "Especialista",
+      "description": "Você atrai grandes multidões quando viaja para fora de sua região natal, e pode viver confortavelmente com o dinheiro que ganha de suas apresentações."
+    },
+    "5": {
+      "name": "Mestre",
+      "description": "Você poderia fazer os anjos chorarem com suas apresentações. Dizem que você realmente já o fez."
+    }
+  },
+  "possessedBy": [
+    "Atores",
+    "Menestréis",
+    "Nobres",
+    "Figuras Religiosas",
+    "Oradores",
+    "Ladrões"
+  ],
+  "specialties": {
+    "default": [
+      {
+        "id": "stirring-speeches",
+        "name": "Discursos Inspiradores",
+        "nameOriginal": "Stirring Speeches",
+        "description": "Você tem um dom especial para mover as pessoas com suas palavras."
+      },
+      {
+        "id": "courtly-songs",
+        "name": "Canções da Corte",
+        "nameOriginal": "Courtly Songs",
+        "description": "Você é especialista em músicas refinadas apropriadas para ambientes nobres."
+      },
+      {
+        "id": "tavern-songs",
+        "name": "Canções de Taverna",
+        "nameOriginal": "Tavern Songs",
+        "description": "Você é mestre em entreter o público comum com músicas populares e animadas."
+      },
+      {
+        "id": "reading-crowd",
+        "name": "Ler a Plateia",
+        "nameOriginal": "Reading a Crowd",
+        "description": "Você tem talento especial para avaliar e responder ao humor de seu público."
+      }
+    ],
+    "custom": []
+  },
+  "fields": {
+    "default": [
+      {
+        "id": "singing",
+        "name": "Canto",
+        "nameOriginal": "Singing",
+        "description": "A arte de usar a voz para criar música e entreter."
+      },
+      {
+        "id": "acting",
+        "name": "Teatro",
+        "nameOriginal": "Acting",
+        "description": "A arte de interpretar personagens e contar histórias através da atuação."
+      },
+      {
+        "id": "wind-instruments",
+        "name": "Instrumentos de Sopro",
+        "nameOriginal": "Wind Instruments",
+        "description": "Proficiência com flautas, gaitas e outros instrumentos de sopro."
+      },
+      {
+        "id": "string-instruments",
+        "name": "Instrumentos de Corda",
+        "nameOriginal": "String Instruments",
+        "description": "Maestria com alaúdes, harpas e outros instrumentos de corda."
+      },
+      {
+        "id": "dance",
+        "name": "Dança",
+        "nameOriginal": "Dance",
+        "description": "A arte do movimento rítmico e expressão corporal."
+      },
+      {
+        "id": "acrobatics",
+        "name": "Acrobacia",
+        "nameOriginal": "Acrobatics",
+        "description": "Habilidades físicas impressionantes e manobras acrobáticas."
+      }
+    ],
+    "custom": []
+  }
+}

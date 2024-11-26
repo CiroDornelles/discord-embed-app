@@ -1,0 +1,105 @@
+{
+  "name": "Ofícios",
+  "nameOriginal": "Crafts",
+  "flavorText": "A casa tinha salas e mais salas, cada uma um deleite além das mais selvagens imaginações dos convidados. Alguém poderia vagar por seus corredores por dias e nunca ver a mesma câmara duas vezes. Seria tão fácil se perder no labirinto de corredores, para nunca mais ser visto. De fato, sua anfitriã contava com isso.",
+  "description": "A Habilidade Ofícios abrange uma ampla variedade de práticas, desde fazer móveis até a criação de armas e armaduras. Ofícios cobre o ato de fazer itens e ferramentas úteis. Também inclui a capacidade de avaliar a expertise e o valor do trabalho de outra pessoa. Escolha um campo de especialização ao adquirir Ofícios. Fora desse campo, trate a Habilidade como se não tivesse pontos. Campos adicionais podem ser comprados com um ponto de experiência. Tentar lidar com um bem fora do seu campo de especialização é tratado como se a Habilidade estivesse em 0, e as rolagens começam com sua dificuldade aumentada em um.",
+  "levels": {
+    "1": {
+      "name": "Novato",
+      "description": "Suas criações são funcionais. As armas que você forja são úteis, mesmo que não bonitas, e as roupas que você faz manterão o corpo aquecido. Você é capaz de reparar itens em seu campo de especialização."
+    },
+    "2": {
+      "name": "Praticante",
+      "description": "Você pode ganhar dinheiro com seus ofícios. Os bens que você cria são tanto funcionais quanto esteticamente agradáveis."
+    },
+    "3": {
+      "name": "Competente",
+      "description": "Você pode viver de seu ofício. Pessoas de cidades vizinhas procuram encomendar seus serviços. Você pode ter um patrono comissionando seu trabalho."
+    },
+    "4": {
+      "name": "Especialista",
+      "description": "Estudantes o procuram para aprender seus métodos. Seu trabalho é durável, funcional e belo."
+    },
+    "5": {
+      "name": "Mestre",
+      "description": "Suas criações são absolutamente impecáveis, como se feitas por mãos divinas. Itens que você faz durarão centenas, até milhares de anos."
+    }
+  },
+  "possessedBy": [
+    "Artesãos",
+    "Ferreiros",
+    "Costureiras",
+    "Cidadãos",
+    "Nobres"
+  ],
+  "specialties": {
+    "default": [
+      {
+        "id": "commission-work",
+        "name": "Trabalho Comissionado",
+        "nameOriginal": "Commission Work",
+        "description": "Você é particularmente habilidoso em criar itens sob encomenda específica."
+      },
+      {
+        "id": "innovation",
+        "name": "Inovação",
+        "nameOriginal": "Innovation",
+        "description": "Você tem um talento especial para criar designs e técnicas originais."
+      },
+      {
+        "id": "quick-turnaround",
+        "name": "Entrega Rápida",
+        "nameOriginal": "Quick Turnaround",
+        "description": "Você é excepcionalmente eficiente em completar projetos em prazos curtos."
+      },
+      {
+        "id": "evaluation",
+        "name": "Avaliação",
+        "nameOriginal": "Evaluation",
+        "description": "Você é especialista em avaliar a qualidade e o valor do trabalho artesanal."
+      }
+    ],
+    "custom": []
+  },
+  "fields": {
+    "default": [
+      {
+        "id": "armorsmithing",
+        "name": "Armaria",
+        "nameOriginal": "Armorsmithing",
+        "description": "Fabricação e reparo de armaduras e equipamentos de proteção."
+      },
+      {
+        "id": "blacksmithing",
+        "name": "Ferraria",
+        "nameOriginal": "Blacksmithing",
+        "description": "Forja e trabalho com metais para criar ferramentas e itens diversos."
+      },
+      {
+        "id": "dressmaking",
+        "name": "Costura",
+        "nameOriginal": "Dressmaking",
+        "description": "Criação de vestuário e trabalhos com tecidos."
+      },
+      {
+        "id": "woodcarving",
+        "name": "Entalhe em Madeira",
+        "nameOriginal": "Woodcarving",
+        "description": "Trabalho artístico e funcional com madeira."
+      },
+      {
+        "id": "architecture",
+        "name": "Arquitetura",
+        "nameOriginal": "Architecture",
+        "description": "Projeto e supervisão de construções."
+      },
+      {
+        "id": "masonry",
+        "name": "Alvenaria",
+        "nameOriginal": "Masonry",
+        "description": "Trabalho com pedras e construção de estruturas."
+      }
+    ],
+    "custom": []
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "name": "Furtividade",
+  "nameOriginal": "Stealth",
+  "flavorText": "Ela os observou ir e vir durante toda a noite, cautelosa e vigilante. O Xerife queria que ela fosse encontrada, temendo que ela revelasse seus segredos ao Príncipe. Ele olhou diretamente para ela uma vez, o traidor, mas seus olhos deslizaram para longe. Agora, ela estava atrás do Príncipe, tocou seus lábios na curva de sua orelha e sussurrou o que sabia.",
+  "description": "Furtividade é a habilidade de passar despercebido e não detectado através de um espaço, de entrar e sair sem que ninguém perceba. Isso inclui se esconder à vista de todos no meio de uma multidão, seguir um alvo, ou esgueirar-se passando por guardas para ganhar entrada em uma residência. Se a rolagem for contestada, o personagem opõe sua Destreza + Furtividade contra a Percepção + Prontidão do alvo. Tentativas de prestidigitação caem sob Prestidigitação.",
+  "levels": {
+    "1": {
+      "name": "Novato",
+      "description": "Você pode se mover sem ser detectado, desde que ninguém esteja procurando por você."
+    },
+    "2": {
+      "name": "Praticante",
+      "description": "Você conhece os melhores lugares para se esconder e despistar perseguidores em sua cidade natal, e pode se misturar a uma multidão composta por pessoas de sua própria cultura e classe social."
+    },
+    "3": {
+      "name": "Competente",
+      "description": "Você escapa mesmo quando as pessoas estão ativamente procurando por você. Esforços para manter intrusos do lado de fora são meramente um convite para você."
+    },
+    "4": {
+      "name": "Especialista",
+      "description": "Você poderia provocar seu alvo se quisesse, e desaparecer novamente antes que eles piscassem."
+    },
+    "5": {
+      "name": "Mestre",
+      "description": "Você nunca esteve lá. Ninguém jamais o viu. Você se infiltrou em fortalezas e participou das reuniões mais secretas. Seu nome é pronunciado com admiração por bandidos e com consternação por guardiões da lei."
+    }
+  },
+  "possessedBy": [
+    "Ladrões",
+    "Espiões",
+    "Caçadores",
+    "Rastreadores"
+  ],
+  "specialties": {
+    "default": [
+      {
+        "id": "blending-in",
+        "name": "Misturar-se",
+        "nameOriginal": "Blending In",
+        "description": "Você tem um talento especial para se camuflar em qualquer ambiente."
+      },
+      {
+        "id": "crowds",
+        "name": "Multidões",
+        "nameOriginal": "Crowds",
+        "description": "Você é particularmente habilidoso em desaparecer em meio a grandes grupos de pessoas."
+      },
+      {
+        "id": "small-groups",
+        "name": "Pequenos Grupos",
+        "nameOriginal": "Small Groups",
+        "description": "Você é especialista em passar despercebido mesmo em grupos menores."
+      },
+      {
+        "id": "daylight",
+        "name": "Luz do Dia",
+        "nameOriginal": "Daylight",
+        "description": "Você é especialmente eficaz em se mover furtivamente mesmo em condições bem iluminadas."
+      },
+      {
+        "id": "prowl",
+        "name": "Espreitar",
+        "nameOriginal": "Prowl",
+        "description": "Você é mestre na arte de se mover silenciosamente nas sombras."
+      },
+      {
+        "id": "wilderness",
+        "name": "Natureza",
+        "nameOriginal": "Wilderness",
+        "description": "Você é excepcionalmente habilidoso em se mover furtivamente em ambientes naturais."
+      }
+    ],
+    "custom": []
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "name": "Subterfúgio",
+  "nameOriginal": "Subterfuge",
+  "flavorText": "\"Ariq estava comigo\", disse Tolui, soprando seu chá. \"Frequentemente entretenho compatriotas quando eles chegam pela primeira vez à sua grande cidade.\" Ele sorriu para o condestável, que sorriu de volta.",
+  "description": "Subterfúgio é uma maneira elegante de dizer \"mentir\". Embora os motivos por trás das mentiras possam ser bons ou maus, a habilidade de esconder os próprios sentimentos e motivos pode ser usada para realizar feitos de moralidade variada.",
+  "levels": {
+    "1": {
+      "name": "Novato",
+      "description": "Você consegue sustentar pequenas mentiras de curto prazo."
+    },
+    "2": {
+      "name": "Praticante",
+      "description": "Sua habilidade de transmitir convicção pode apaziguar a maioria das dúvidas."
+    },
+    "3": {
+      "name": "Competente",
+      "description": "Mentiras fluem tão facilmente quanto verdades. Você sabe como equilibrar verdades e inverdades para fazer as pessoas duvidarem de seu próprio entendimento em vez de questionarem você."
+    },
+    "4": {
+      "name": "Especialista",
+      "description": "Mesmo sob circunstâncias estressantes, você mantém seu raciocínio e suas histórias em ordem."
+    },
+    "5": {
+      "name": "Mestre",
+      "description": "Sua confiança em suas próprias palavras carrega mais peso do que aquilo que as pessoas sabem ser verdade."
+    }
+  },
+  "possessedBy": [
+    "Cortesãos",
+    "Charlatães",
+    "Hereges",
+    "Menestréis",
+    "Espiões",
+    "Cortejadores"
+  ],
+  "specialties": {
+    "default": [
+      {
+        "id": "changing-subject",
+        "name": "Mudança de Assunto",
+        "nameOriginal": "Changing the Subject",
+        "description": "Você é habilidoso em desviar conversas de tópicos perigosos ou inconvenientes."
+      },
+      {
+        "id": "finding-weaknesses",
+        "name": "Encontrar Fraquezas",
+        "nameOriginal": "Finding Weaknesses",
+        "description": "Você tem talento para identificar e explorar as vulnerabilidades das pessoas."
+      },
+      {
+        "id": "flattery",
+        "name": "Bajulação",
+        "nameOriginal": "Flattery",
+        "description": "Você sabe exatamente como elogiar alguém para conseguir o que deseja."
+      },
+      {
+        "id": "patter",
+        "name": "Lábia",
+        "nameOriginal": "Patter",
+        "description": "Você é mestre em manter um fluxo constante de conversa envolvente e distrativa."
+      },
+      {
+        "id": "seduction",
+        "name": "Sedução",
+        "nameOriginal": "Seduction",
+        "description": "Você é especialista em usar mentiras e meias-verdades para atrair e encantar outros."
+      },
+      {
+        "id": "selective-omission",
+        "name": "Omissão Seletiva",
+        "nameOriginal": "Selective Omission",
+        "description": "Você sabe exatamente quais detalhes omitir para criar a impressão desejada sem tecnicamente mentir."
+      }
+    ],
+    "custom": []
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "name": "Combate Corpo a Corpo",
+  "nameOriginal": "Melee",
+  "flavorText": "\"Os ferreiros forjam espíritos nas lâminas.\" A mulher ergueu o kris para que sua borda ondulada capturasse o luar. Sua oponente nada disse; ela havia perdido a capacidade de falar quando perdeu a luta e sua vida em rápida sucessão. A mulher morta era a última de uma série de atacantes, seus corpos espalhados ao longo da rua como pérolas em um colar. \"Ela estava sedenta esta noite. Assim como eu.\"",
+  "description": "Combate Corpo a Corpo é uma medida da proficiência do personagem com armas de combate próximo (em oposição a armas à distância, cobertas por Arquearia, ou luta desarmada, coberta por Briga). Esta Habilidade inclui a capacidade de usar bastões, espadas, clavas, machados e facas. Algumas armas corpo a corpo podem ser reparadas e fabricadas com base no nível de expertise do personagem, embora fazer armas de metal requeira Ofícios.",
+  "levels": {
+    "1": {
+      "name": "Novato",
+      "description": "Você entende o conceito de colocar a ponta afiada no inimigo e pode manter suas armas."
+    },
+    "2": {
+      "name": "Praticante",
+      "description": "Você pode vencer uma luta um contra um contra alguém de habilidade similar. Você é capaz de reparar suas armas."
+    },
+    "3": {
+      "name": "Competente",
+      "description": "Você poderia se alistar como soldado ou se oferecer como guarda pessoal. Você está familiarizado com várias armas diferentes. Você pode fabricar armas funcionais."
+    },
+    "4": {
+      "name": "Especialista",
+      "description": "Você poderia participar e vencer um torneio de combate. Você é um oponente temível no campo de batalha. As armas que você fabrica não são apenas resistentes, mas também elegantes de se contemplar."
+    },
+    "5": {
+      "name": "Mestre",
+      "description": "Você é praticamente imbatível em combate e é bem treinado em vários tipos de armamento. Suas criações serão usadas e admiradas por séculos."
+    }
+  },
+  "possessedBy": [
+    "Soldados",
+    "Mercenários",
+    "Guardas",
+    "Nobres",
+    "Aventureiros",
+    "Ladrões"
+  ],
+  "specialties": {
+    "default": [
+      {
+        "id": "swords",
+        "name": "Espadas",
+        "nameOriginal": "Swords",
+        "description": "Você é especialmente habilidoso no uso de espadas de todos os tipos."
+      },
+      {
+        "id": "knives",
+        "name": "Facas",
+        "nameOriginal": "Knives",
+        "description": "Você é particularmente eficiente no uso de facas e adagas."
+      },
+      {
+        "id": "axes",
+        "name": "Machados",
+        "nameOriginal": "Axes",
+        "description": "Você tem expertise especial no manejo de machados de combate."
+      },
+      {
+        "id": "clubs",
+        "name": "Clavas",
+        "nameOriginal": "Clubs",
+        "description": "Você é especialista no uso de armas contundentes como clavas e maças."
+      },
+      {
+        "id": "quarterstaff",
+        "name": "Bastão",
+        "nameOriginal": "Quarterstaff",
+        "description": "Você é mestre no uso do bastão como arma de combate."
+      },
+      {
+        "id": "disarm",
+        "name": "Desarmar",
+        "nameOriginal": "Disarm",
+        "description": "Você é habilidoso em desarmar oponentes durante o combate."
+      },
+      {
+        "id": "fighting-from-horseback",
+        "name": "Combate Montado",
+        "nameOriginal": "Fighting From Horseback",
+        "description": "Você é especialista em lutar enquanto monta a cavalo."
+      }
+    ],
+    "custom": []
+  }
+}

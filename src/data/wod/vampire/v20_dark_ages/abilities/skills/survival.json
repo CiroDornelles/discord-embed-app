@@ -1,0 +1,69 @@
+{
+  "name": "Sobrevivência",
+  "nameOriginal": "Survival",
+  "flavorText": "A neve era interminável. Ele havia perdido seus companheiros há horas, seu cavalo assustado não muito depois. Agora, com os dentes batendo, roupas encharcadas, tudo dormente, ele seguiu o impossível aroma de carne quente carregado pelo vento congelante. À frente, um homem estava sentado abrigado em um conjunto de árvores, um coelho assando em um espeto sobre o mais belo fogo que o viajante já vira. O impossível tornou-se possível diante de seus olhos. 'Venha sentar', disse o homem, 'e aqueça-se.' O viajante o fez, percebendo tarde demais que seu salvador não usava casaco, ou que ele não comia, ou que sua boca não salivava pelo coelho, mas por seu convidado.",
+  "description": "Sobrevivência mede o quão bem o personagem pode se mover, adaptar-se e prosperar nos elementos. Às vezes, Sobrevivência é mais sobre viver o suficiente para retornar à civilização do que evitá-la: encontrar seu caminho através da floresta, procurar comida e localizar água potável.",
+  "levels": {
+    "1": {
+      "name": "Novato",
+      "description": "Você sabe como navegar pelo terreno em sua área local. Com os suprimentos adequados, você poderia passar algumas noites ao ar livre em clima ameno."
+    },
+    "2": {
+      "name": "Praticante",
+      "description": "Você pode fazer um abrigo rudimentar e encontrar comida adequada se estiver em um ambiente familiar."
+    },
+    "3": {
+      "name": "Competente",
+      "description": "Você pode manter um grupo de pessoas alimentado e aquecido na natureza. Você é frequentemente solicitado para servir como guia para pessoas não familiarizadas com a região."
+    },
+    "4": {
+      "name": "Especialista",
+      "description": "Nenhum terreno representa grande problema para você. Você pode ganhar a vida conduzindo viajantes com segurança pela região. Você poderia viver completamente da terra se quisesse."
+    },
+    "5": {
+      "name": "Mestre",
+      "description": "Nevascas ferozes, mares tempestuosos e estepes infinitas já lhe jogaram o pior, e você sobreviveu a todos eles."
+    }
+  },
+  "possessedBy": [
+    "Caçadores",
+    "Eremitas",
+    "Penitentes",
+    "Soldados"
+  ],
+  "specialties": {
+    "default": [
+      {
+        "id": "foraging",
+        "name": "Forrageamento",
+        "nameOriginal": "Foraging",
+        "description": "Você é especialmente habilidoso em encontrar comida e recursos na natureza."
+      },
+      {
+        "id": "forests",
+        "name": "Florestas",
+        "nameOriginal": "Forests",
+        "description": "Você tem experiência particular em sobreviver em ambientes florestais."
+      },
+      {
+        "id": "deserts",
+        "name": "Desertos",
+        "nameOriginal": "Deserts",
+        "description": "Você é especialista em sobreviver nas condições extremas do deserto."
+      },
+      {
+        "id": "at-sea",
+        "name": "No Mar",
+        "nameOriginal": "At Sea",
+        "description": "Você é experiente em sobreviver em ambientes marítimos."
+      },
+      {
+        "id": "tracking",
+        "name": "Rastreamento",
+        "nameOriginal": "Tracking",
+        "description": "Você é habilidoso em seguir rastros e pistas na natureza."
+      }
+    ],
+    "custom": []
+  }
+}

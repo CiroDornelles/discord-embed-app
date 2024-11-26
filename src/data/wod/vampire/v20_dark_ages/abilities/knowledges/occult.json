@@ -1,0 +1,125 @@
+{
+  "name": "Ocultismo",
+  "nameOriginal": "Occult",
+  "flavorText": "'Você pensa que o conhecimento do Oculto são cães negros eviscerados em um altar, encantamentos sussurrados à meia-noite sob uma árvore atingida por um raio, contratos assinados com sangue.' Donal passou seu dedo pelas lombadas dos livros em sua biblioteca, o mais novo dos quais tinha várias centenas de anos. O ferreiro nervosamente lambeu seus lábios e tentou falar. Donal ergueu sua mão esquerda, o anel de sinete brilhando à luz de velas, 'Eu posso comprar sua alma tão facilmente com tinta, meu amigo.'",
+  "description": "Conhecer o oculto é compreender o invisível e o inexplicável. O sobrenatural é um buraco que alcança muito mais fundo e escuro do que as pessoas imaginam. Assim que você atinge o fundo, outro túnel se revela, cavando sempre mais fundo. Alguns podem dizer que Ocultismo e Teologia são apenas dois lados de uma moeda que a realidade lança. O milagre de uma pessoa é o encontro fantasmagórico de outra. Ambos requerem fé em algo não facilmente visto ou compreendido. Sobreposições ocorrem entre os dois, especialmente no caso de milagres ou santos. Se a pontuação de Ocultismo de um personagem é alta, os resultados de suas rolagens de Ocultismo tendem a ser mais precisos.",
+  "levels": {
+    "1": {
+      "name": "Novato",
+      "description": "Você pode reconhecer a influência do oculto em sua vizinhança e tem uma compreensão básica das formas mais comuns do sobrenatural."
+    },
+    "2": {
+      "name": "Estudante",
+      "description": "Você fez um estudo do oculto, o que poderia fazer você esbarrar em poderes além de sua compreensão. Suas conclusões dessas experiências podem ser imperfeitas."
+    },
+    "3": {
+      "name": "Instruído",
+      "description": "Você cultivou uma aura de mistério, que permite que você venda respostas de natureza oculta para aqueles que as procuram. Se algumas dessas respostas estão erradas, bem, quem pode saber tudo?"
+    },
+    "4": {
+      "name": "Erudito",
+      "description": "Os mistérios do mundo invisível guardam poucos segredos para você. Você escreveu vários livros sobre o assunto, e outros o consultam como uma autoridade geral por estarem muito assustados para entender com o que estão lidando."
+    },
+    "5": {
+      "name": "Mestre",
+      "description": "Você aconselha reis e papas com grande autoridade. Seja com camponesas com visões ou casos de possessão demoníaca, você é chamado com presteza. Naturalmente, quanto mais importante você é, mais atenção atrairá daqueles que você desvela."
+    }
+  },
+  "possessedBy": [
+    "Hereges",
+    "Inquisidores",
+    "Bruxas",
+    "Caçadores de bruxas",
+    "Videntes",
+    "Pagãos",
+    "Sacerdotes"
+  ],
+  "specialties": {
+    "default": [
+      {
+        "id": "magical-research",
+        "name": "Pesquisa Mágica",
+        "nameOriginal": "Magical Research",
+        "description": "Você é especialista em estudar e documentar fenômenos mágicos."
+      },
+      {
+        "id": "scrying",
+        "name": "Vidência",
+        "nameOriginal": "Scrying",
+        "description": "Você é habilidoso em técnicas de adivinhação e clarividência."
+      },
+      {
+        "id": "vampires",
+        "name": "Vampiros",
+        "nameOriginal": "Vampires",
+        "description": "Você tem conhecimento específico sobre vampiros e suas naturezas."
+      },
+      {
+        "id": "witches",
+        "name": "Bruxas",
+        "nameOriginal": "Witches",
+        "description": "Você é especialista em bruxaria e práticas mágicas."
+      },
+      {
+        "id": "fae",
+        "name": "Fadas",
+        "nameOriginal": "Fae",
+        "description": "Você tem conhecimento profundo sobre o povo feérico."
+      },
+      {
+        "id": "spellcasting",
+        "name": "Lançamento de Feitiços",
+        "nameOriginal": "Spellcasting",
+        "description": "Você é versado na arte de conjurar magias."
+      },
+      {
+        "id": "summoning",
+        "name": "Invocação",
+        "nameOriginal": "Summoning",
+        "description": "Você é especialista em rituais de invocação de entidades."
+      }
+    ],
+    "custom": []
+  },
+  "fieldsOfExpertise": {
+    "default": [
+      {
+        "id": "supernatural-beings",
+        "name": "Seres Sobrenaturais",
+        "nameOriginal": "Supernatural Beings",
+        "description": "Conhecimento sobre diferentes tipos de criaturas sobrenaturais",
+        "examples": [
+          "Vampiros",
+          "Fadas",
+          "Espíritos",
+          "Demônios"
+        ]
+      },
+      {
+        "id": "magical-practices",
+        "name": "Práticas Mágicas",
+        "nameOriginal": "Magical Practices",
+        "description": "Diferentes formas de magia e rituais",
+        "examples": [
+          "Feitiçaria",
+          "Necromancia",
+          "Alquimia",
+          "Rituais"
+        ]
+      },
+      {
+        "id": "occult-lore",
+        "name": "Conhecimento Oculto",
+        "nameOriginal": "Occult Lore",
+        "description": "Tradições e sabedoria esotérica",
+        "examples": [
+          "Grimórios",
+          "Profecias",
+          "Símbolos místicos",
+          "Tradições secretas"
+        ]
+      }
+    ],
+    "custom": []
+  }
+}

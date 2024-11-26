@@ -1,0 +1,76 @@
+{
+  "name": "Arquearia",
+  "nameOriginal": "Archery",
+  "flavorText": "O Príncipe se achava intocável, cercado como estava por seus carniçais e servos. O arqueiro os contou: meia dúzia. Ele fincou seis flechas com pontas de cinzas no chão, encordoou a sétima. Respirou. Disparou.",
+  "description": "Arquearia é tanto uma habilidade doméstica quanto marcial. Com o mesmo arco, uma pessoa pode alimentar sua família ou defender seu lar. Esta habilidade abrange não apenas o uso de arcos e bestas, mas também a proficiência em manter, reparar e, nos níveis mais altos, fabricar as armas.",
+  "levels": {
+    "1": {
+      "name": "Novato",
+      "description": "Você pode atingir consistentemente alvos imóveis a curta distância."
+    },
+    "2": {
+      "name": "Praticante",
+      "description": "Você pode acertar um alvo em movimento e é capaz de manter e reparar seu arco."
+    },
+    "3": {
+      "name": "Competente",
+      "description": "Você pode acertar um alvo enquanto está em movimento. Você pode consistentemente alimentar sua família com suas caçadas. Você já venceu algumas competições locais de arquearia. Você pode fabricar arcos simples por conta própria."
+    },
+    "4": {
+      "name": "Especialista",
+      "description": "Você pode acertar um alvo enquanto tanto você quanto ele estão em movimento. Você é proficiente com, e pode fabricar, vários tipos diferentes de arco."
+    },
+    "5": {
+      "name": "Mestre",
+      "description": "Dizem que você não pode atirar ao redor de esquinas. Eles não te conhecem."
+    }
+  },
+  "possessedBy": [
+    "Caçadores",
+    "Soldados",
+    "Artistas",
+    "Bandidos",
+    "Guardas"
+  ],
+  "specialties": {
+    "default": [
+      {
+        "id": "target-shooting",
+        "name": "Tiro ao Alvo",
+        "nameOriginal": "Target Shooting",
+        "description": "Você é especialmente habilidoso em acertar alvos estacionários com precisão."
+      },
+      {
+        "id": "tournament-competition",
+        "name": "Competição em Torneios",
+        "nameOriginal": "Tournament Competition",
+        "description": "Você tem experiência especial em competições formais de arquearia."
+      },
+      {
+        "id": "long-bow",
+        "name": "Arco Longo",
+        "nameOriginal": "Long Bow",
+        "description": "Você é particularmente eficiente no uso do arco longo, uma arma poderosa que requer grande força e habilidade."
+      },
+      {
+        "id": "crossbow",
+        "name": "Besta",
+        "nameOriginal": "Crossbow",
+        "description": "Você é especialista no uso de bestas, armas que combinam poder de penetração com facilidade de uso."
+      },
+      {
+        "id": "shooting-from-horseback",
+        "name": "Tiro Montado",
+        "nameOriginal": "Shooting From Horseback",
+        "description": "Você é habilidoso na difícil arte de atirar enquanto cavalga."
+      },
+      {
+        "id": "forests",
+        "name": "Florestas",
+        "nameOriginal": "Forests",
+        "description": "Você é especialmente adepto em atirar em ambientes florestais, compensando por obstáculos e cobertura natural."
+      }
+    ],
+    "custom": []
+  }
+}

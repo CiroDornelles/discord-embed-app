@@ -1,0 +1,71 @@
+{
+  "name": "Etiqueta",
+  "nameOriginal": "Etiquette",
+  "flavorText": "\"Você estudou aqui, talvez? Quando criança?\" ele perguntou, enquanto o visitante de seu senhor o conduzia ao salão para mais uma dança.\n\"Não\", disse o homem. Ele se curvou com exatamente a quantidade certa de deferência antes de tomar a mão de seu par. \"Não que eu me lembre.\"\n\"Eu juraria que você tem dançado esses passos por toda sua vida.\"\n\"Apenas esta noite\", disse o homem. \"Apenas com você.\"",
+  "description": "Etiqueta é a habilidade de portar-se apropriadamente em situações sociais, e de avaliar e adaptar-se a tradições e expectativas que são novas para o participante, incluindo maneiras, padrões de fala, vestimenta, movimento e interações sociais. Personagens começam conhecendo a etiqueta básica de sua própria classe e cultura sem precisar ter níveis em Etiqueta.",
+  "levels": {
+    "1": {
+      "name": "Novato",
+      "description": "Você pode comparecer a um evento em sua própria cultura sem se envergonhar, e é capaz de se recuperar graciosamente de pequenos deslizes."
+    },
+    "2": {
+      "name": "Praticante",
+      "description": "Você pode interagir suavemente dentro das camadas superiores da sociedade de sua cultura."
+    },
+    "3": {
+      "name": "Competente",
+      "description": "Quando apresentado a circunstâncias não familiares, você pode captar dicas daqueles ao seu redor e agir de acordo."
+    },
+    "4": {
+      "name": "Especialista",
+      "description": "Sua companhia é procurada por pessoas de todas as posições. Crianças e progênies são instruídas a modelar seu comportamento com base no seu."
+    },
+    "5": {
+      "name": "Mestre",
+      "description": "Não há ambiente que você não possa ler, nenhum costume tão obscuro que você não conheça. Você capta até as mais sutis das nuances, e age de acordo."
+    }
+  },
+  "possessedBy": [
+    "Mercadores",
+    "Nobres",
+    "Soldados",
+    "Espiões",
+    "Emissários",
+    "Líderes Religiosos"
+  ],
+  "specialties": {
+    "default": [
+      {
+        "id": "courtly-manners",
+        "name": "Maneiras Cortesãs",
+        "nameOriginal": "Courtly Manners",
+        "description": "Você é especialmente versado nas complexas etiquetas e protocolos da vida na corte."
+      },
+      {
+        "id": "reading-room",
+        "name": "Ler o Ambiente",
+        "nameOriginal": "Reading a Room",
+        "description": "Você tem um talento especial para avaliar rapidamente a dinâmica social de qualquer situação."
+      },
+      {
+        "id": "heraldry",
+        "name": "Heráldica",
+        "nameOriginal": "Heraldry",
+        "description": "Você é especialista em interpretar e respeitar as tradições e símbolos heráldicos."
+      },
+      {
+        "id": "religious-customs",
+        "name": "Costumes Religiosos",
+        "nameOriginal": "Religious Customs",
+        "description": "Você tem profundo conhecimento dos rituais e práticas religiosas apropriadas."
+      },
+      {
+        "id": "foreign-customs",
+        "name": "Costumes Estrangeiros",
+        "nameOriginal": "Foreign Customs",
+        "description": "Você é particularmente habilidoso em navegar e adaptar-se a costumes de culturas diferentes da sua."
+      }
+    ],
+    "custom": []
+  }
+}
