@@ -1,0 +1,108 @@
+.custom-carousel {
+  touch-action: pan-y pinch-zoom;
+}
+
+.custom-carousel .carousel-indicators {
+  bottom: -40px;
+}
+
+.custom-carousel .carousel-indicators button {
+  background-color: var(--text-secondary);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin: 0 4px;
+  opacity: 0.5;
+}
+
+.custom-carousel .carousel-indicators .active {
+  background-color: var(--accent-red);
+  opacity: 1;
+}
+
+.custom-carousel .carousel-control-prev,
+.custom-carousel .carousel-control-next {
+  width: 10%;
+  opacity: 0.7;
+}
+
+.custom-carousel .carousel-control-prev-icon,
+.custom-carousel .carousel-control-next-icon {
+  background-color: var(--accent-red);
+  border-radius: 50%;
+  padding: 15px;
+  filter: drop-shadow(0 0 5px rgba(139, 0, 0, 0.5));
+}
+
+.carousel-card {
+  padding: 20px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  position: relative;
+  overflow: hidden;
+  background-image: 
+    linear-gradient(135deg, rgba(139, 0, 0, 0.05) 0%, transparent 100%),
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      rgba(139, 0, 0, 0.02) 10px,
+      rgba(139, 0, 0, 0.02) 11px
+    );
+}
+
+.carousel-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--accent-red), transparent);
+}
+
+.carousel-card h4 {
+  color: var(--accent-red);
+  font-family: 'Crimson Text', serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 5px rgba(139, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+}
+
+.text-muted {
+  color: var(--text-secondary) !important;
+  font-style: italic;
+}
+
+/* Animação de hover nos cards */
+.carousel-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px var(--shadow-color),
+              0 0 15px rgba(139, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Adiciona um brilho vermelho sutil nos cantos dos cards */
+.carousel-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at var(--x, 50%) var(--y, 50%),
+    rgba(139, 0, 0, 0.1) 0%,
+    transparent 50%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-card:hover::after {
+  opacity: 1;
+}

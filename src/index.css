@@ -1,38 +1,54 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --primary-dark: #0a0606;
+  --secondary-dark: #1a1212;
+  --accent-red: #8b0000;
+  --text-primary: #d4d4d4;
+  --text-secondary: #a19898;
+  --border-color: #3d2929;
+  --shadow-color: rgba(0, 0, 0, 0.5);
+  --card-bg: #1f1616;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+html {
+  background: var(--primary-dark);
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  padding: 0;
   min-height: 100vh;
+  background: var(--primary-dark);
+  color: var(--text-primary);
+  font-family: 'Crimson Text', serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+  background: var(--primary-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+a {
+  font-weight: 500;
+  color: var(--accent-red);
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
 }
 
 button {
@@ -42,27 +58,69 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: var(--secondary-dark);
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: var(--accent-red);
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+input, select, textarea {
+  background-color: var(--secondary-dark);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 8px;
+  border-radius: 4px;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--accent-red);
+  box-shadow: 0 0 0 2px rgba(139, 0, 0, 0.2);
+}
+
+label {
+  color: var(--text-secondary);
+  font-size: 0.9em;
+  margin-bottom: 4px;
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-red);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    --primary-dark: #ffffff;
+    --secondary-dark: #f9f9f9;
+    --accent-red: #747bff;
+    --text-primary: #213547;
+    --text-secondary: #a19898;
+    --border-color: #3d2929;
   }
   a:hover {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: var(--secondary-dark);
   }
 }

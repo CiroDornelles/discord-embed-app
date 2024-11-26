@@ -40,3 +40,86 @@
 .read-the-docs {
   color: #888;
 }
+
+.app-container {
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  position: relative;
+  min-height: calc(100vh - 4rem);
+  border: 2px solid var(--border-color);
+  position: relative;
+}
+
+/* Cantos góticos */
+.app-container::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border: 2px solid var(--border-color);
+  background: 
+    /* Top left */
+    linear-gradient(to right, var(--accent-red) 2px, transparent 2px) 0 0 no-repeat,
+    linear-gradient(to bottom, var(--accent-red) 2px, transparent 2px) 0 0 no-repeat,
+    /* Top right */
+    linear-gradient(to left, var(--accent-red) 2px, transparent 2px) 100% 0 no-repeat,
+    linear-gradient(to bottom, var(--accent-red) 2px, transparent 2px) 100% 0 no-repeat,
+    /* Bottom right */
+    linear-gradient(to left, var(--accent-red) 2px, transparent 2px) 100% 100% no-repeat,
+    linear-gradient(to top, var(--accent-red) 2px, transparent 2px) 100% 100% no-repeat,
+    /* Bottom left */
+    linear-gradient(to right, var(--accent-red) 2px, transparent 2px) 0 100% no-repeat,
+    linear-gradient(to top, var(--accent-red) 2px, transparent 2px) 0 100% no-repeat;
+  background-size: 30px 30px;
+  pointer-events: none;
+}
+
+/* Ornamentos góticos nos cantos */
+.app-container::after {
+  content: '';
+  position: absolute;
+  inset: -15px;
+  background:
+    /* Top left */
+    radial-gradient(circle at 0 0, transparent 15px, var(--accent-red) 16px, transparent 17px) 0 0,
+    /* Top right */
+    radial-gradient(circle at 100% 0, transparent 15px, var(--accent-red) 16px, transparent 17px) 100% 0,
+    /* Bottom right */
+    radial-gradient(circle at 100% 100%, transparent 15px, var(--accent-red) 16px, transparent 17px) 100% 100%,
+    /* Bottom left */
+    radial-gradient(circle at 0 100%, transparent 15px, var(--accent-red) 16px, transparent 17px) 0 100%;
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* Sobrescrevendo estilos do Bootstrap para combinar com o tema */
+.form-control {
+  background-color: var(--secondary-dark);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.form-control:focus {
+  background-color: var(--secondary-dark);
+  border-color: var(--accent-red);
+  box-shadow: 0 0 0 0.2rem rgba(139, 0, 0, 0.25);
+  color: var(--text-primary);
+}
+
+.form-label {
+  color: var(--text-secondary);
+  font-family: 'Crimson Text', serif;
+  font-size: 1.1em;
+  margin-bottom: 0.5rem;
+}
+
+/* Animação suave para todos os elementos interativos */
+.form-control,
+.btn,
+.card {
+  transition: all 0.3s ease;
+}
