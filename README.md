@@ -4,6 +4,38 @@ Uma aplicação web para criar e gerenciar fichas de personagem do Vampire: The 
 
 ## Objetivos do Projeto
 
+### Segurança e Boas Práticas
+
+#### Autenticação e Autorização
+- Implementação de OAuth 2.0 para autenticação
+- Sistema de roles (admin, user, guest)
+- JWT com rotação de tokens
+- Proteção contra session hijacking
+- Implementação de 2FA (Two-Factor Authentication)
+- Rate limiting para prevenção de força bruta
+
+#### Proteção de Dados
+- Criptografia de dados sensíveis em repouso
+- Implementação de HTTPS/TLS
+- Sanitização de inputs
+- Validação de dados com Zod
+- Headers de segurança (HSTS, CSP, X-Frame-Options)
+- Proteção contra XSS e CSRF
+
+#### Segurança do Código
+- Análise estática de código (ESLint com regras de segurança)
+- Verificação de dependências (npm audit)
+- Secrets management (dotenv, Vault)
+- Logging seguro (sem dados sensíveis)
+- Testes de segurança automatizados
+
+#### Compliance e Documentação
+- Documentação de práticas de segurança
+- Política de privacidade
+- Termos de uso
+- Plano de resposta a incidentes
+- GDPR compliance
+
 ### Sistema de Atributos 
 - Atributos Físicos (Força, Destreza, Vigor)
 - Atributos Sociais (Carisma, Manipulação, Aparência)
