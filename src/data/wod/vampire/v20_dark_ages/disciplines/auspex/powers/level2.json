@@ -1,0 +1,98 @@
+{
+  "name": "Aura Perception",
+  "namePtBr": "Percepção de Aura",
+  "level": 2,
+  "description": {
+    "text": "Using this power, vampires can perceive the psychic auras that surround all living beings. These halos extend a few inches around people's bodies and provide insight into their emotional state, general health, and supernatural nature. Each individual's aura is unique, with colors and patterns that reveal the person's true nature.",
+    "description": "Usando este poder, vampiros podem perceber as auras psíquicas que cercam todos os seres vivos. Estas auréolas se estendem alguns centímetros ao redor dos corpos das pessoas e fornecem insights sobre seu estado emocional, saúde geral e natureza sobrenatural. A aura de cada indivíduo é única, com cores e padrões que revelam a verdadeira natureza da pessoa."
+  },
+  "system": {
+    "activation": {
+      "text": "The character must concentrate for at least one turn to see an aura clearly. The player then rolls Perception + Empathy (difficulty 7).",
+      "description": "O personagem deve se concentrar por pelo menos um turno para ver uma aura claramente. O jogador então rola Percepção + Empatia (dificuldade 7)."
+    },
+    "effects": {
+      "successLevels": {
+        "text": [
+          "One Success: Can perceive the aura's primary color and intensity",
+          "Two Successes: Can perceive the color patterns and their flow",
+          "Three Successes: Can detect subtle shifts and details in the aura",
+          "Four Successes: Can detect deliberate attempts at emotional control",
+          "Five Successes: Can read detailed emotional and physical states"
+        ],
+        "description": [
+          "Um Sucesso: Pode perceber a cor primária e intensidade da aura",
+          "Dois Sucessos: Pode perceber os padrões de cores e seu fluxo",
+          "Três Sucessos: Pode detectar mudanças sutis e detalhes na aura",
+          "Quatro Sucessos: Pode detectar tentativas deliberadas de controle emocional",
+          "Cinco Sucessos: Pode ler estados emocionais e físicos detalhados"
+        ]
+      }
+    },
+    "auraColors": {
+      "emotions": {
+        "text": {
+          "black": "Hatred, malice",
+          "red": "Rage, intense anger",
+          "blue": "Calmness, thoughtfulness",
+          "yellow": "Fear, terror",
+          "green": "Jealousy, envy",
+          "purple": "Spirituality, psychic energy",
+          "rainbow": "Vampire using Dementation",
+          "white": "Static, artificial thought patterns",
+          "gold": "Enlightenment, divine presence"
+        },
+        "description": {
+          "black": "Ódio, malícia",
+          "red": "Fúria, raiva intensa",
+          "blue": "Calma, reflexão",
+          "yellow": "Medo, terror",
+          "green": "Ciúme, inveja",
+          "purple": "Espiritualidade, energia psíquica",
+          "rainbow": "Vampiro usando Dementation",
+          "white": "Estática, padrões de pensamento artificiais",
+          "gold": "Iluminação, presença divina"
+        }
+      }
+    }
+  },
+  "mechanics": {
+    "roll": {
+      "attribute": {
+        "text": "Perception",
+        "description": "Percepção"
+      },
+      "ability": {
+        "text": "Empathy",
+        "description": "Empatia"
+      },
+      "difficulty": 7
+    },
+    "duration": {
+      "text": "Scene",
+      "description": "Cena"
+    },
+    "limitations": {
+      "text": [
+        "Cannot read auras through reflections",
+        "Physical objects between viewer and subject block aura perception",
+        "Multiple auras in close proximity may be confusing"
+      ],
+      "description": [
+        "Não pode ler auras através de reflexos",
+        "Objetos físicos entre observador e sujeito bloqueiam a percepção de aura",
+        "Múltiplas auras em proximidade podem ser confusas"
+      ]
+    }
+  },
+  "storytellerNotes": {
+    "interpretation": {
+      "text": "Aura colors should be interpreted contextually. The same color might have different meanings based on intensity and pattern.",
+      "description": "Cores de aura devem ser interpretadas contextualmente. A mesma cor pode ter significados diferentes baseados em intensidade e padrão."
+    },
+    "supernaturalBeings": {
+      "text": "Supernatural creatures often have distinct aura patterns. Vampires appear pale or washed out, while werewolves might have particularly vibrant or aggressive patterns.",
+      "description": "Criaturas sobrenaturais frequentemente têm padrões de aura distintos. Vampiros aparecem pálidos ou desbotados, enquanto lobisomens podem ter padrões particularmente vibrantes ou agressivos."
+    }
+  }
+}

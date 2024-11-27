@@ -1,0 +1,96 @@
+{
+  "name": "Telepathy",
+  "namePtBr": "Telepatia",
+  "level": 4,
+  "description": {
+    "text": "This power allows a vampire to project their thoughts into another being's mind and read the thoughts of others in return. The vampire can maintain constant contact, sifting through memories and emotions at will, or may simply choose to send a single message.",
+    "description": "Este poder permite a um vampiro projetar seus pensamentos na mente de outro ser e ler os pensamentos de outros em retorno. O vampiro pode manter contato constante, vasculhando memórias e emoções à vontade, ou pode simplesmente escolher enviar uma única mensagem."
+  },
+  "system": {
+    "activation": {
+      "text": "The vampire must make eye contact or touch the target. Roll Intelligence + Empathy (difficulty equals the target's Willpower).",
+      "description": "O vampiro deve fazer contato visual ou tocar o alvo. Role Inteligência + Empatia (dificuldade igual à Força de Vontade do alvo)."
+    },
+    "effects": {
+      "successLevels": {
+        "text": [
+          "One Success: Surface thoughts and current emotions",
+          "Two Successes: Can send and receive simple messages",
+          "Three Successes: Can read recent memories and complex thoughts",
+          "Four Successes: Can probe deep memories and implant suggestions",
+          "Five Successes: Complete access to the target's mind"
+        ],
+        "description": [
+          "Um Sucesso: Pensamentos superficiais e emoções atuais",
+          "Dois Sucessos: Pode enviar e receber mensagens simples",
+          "Três Sucessos: Pode ler memórias recentes e pensamentos complexos",
+          "Quatro Sucessos: Pode sondar memórias profundas e implantar sugestões",
+          "Cinco Sucessos: Acesso completo à mente do alvo"
+        ]
+      }
+    },
+    "resistance": {
+      "text": "Subjects may resist by spending a Willpower point and rolling Willpower (difficulty 7). Each success subtracts one from the telepath's successes.",
+      "description": "Alvos podem resistir gastando um ponto de Força de Vontade e rolando Força de Vontade (dificuldade 7). Cada sucesso subtrai um dos sucessos do telepata."
+    }
+  },
+  "mechanics": {
+    "roll": {
+      "attribute": {
+        "text": "Intelligence",
+        "description": "Inteligência"
+      },
+      "ability": {
+        "text": "Empathy",
+        "description": "Empatia"
+      },
+      "difficulty": "Target's Willpower"
+    },
+    "duration": {
+      "text": "One scene, or until eye contact/physical contact breaks",
+      "description": "Uma cena, ou até que o contato visual/físico seja quebrado"
+    },
+    "range": {
+      "text": "Line of sight for eye contact, touch range for physical contact",
+      "description": "Linha de visão para contato visual, alcance de toque para contato físico"
+    },
+    "limitations": {
+      "text": [
+        "Requires eye contact or physical touch",
+        "Cannot affect multiple targets simultaneously",
+        "Mental static from strong emotions can interfere",
+        "Some supernatural beings are naturally resistant"
+      ],
+      "description": [
+        "Requer contato visual ou toque físico",
+        "Não pode afetar múltiplos alvos simultaneamente",
+        "Estática mental de emoções fortes pode interferir",
+        "Alguns seres sobrenaturais são naturalmente resistentes"
+      ]
+    }
+  },
+  "storytellerNotes": {
+    "mentalIntrusion": {
+      "text": "Deep mental intrusion can be traumatic for both the telepath and the subject. The Storyteller may require Willpower rolls to avoid being overwhelmed by particularly intense memories or emotions.",
+      "description": "Intrusão mental profunda pode ser traumática tanto para o telepata quanto para o sujeito. O Narrador pode exigir rolagens de Força de Vontade para evitar ser sobrecarregado por memórias ou emoções particularmente intensas."
+    },
+    "informationAccess": {
+      "text": [
+        "Surface thoughts are easiest to read",
+        "Buried memories require more successes and concentration",
+        "Strong emotions may leak through even with minimal success",
+        "Deliberate deception is harder to detect than genuine thoughts"
+      ],
+      "description": [
+        "Pensamentos superficiais são mais fáceis de ler",
+        "Memórias enterradas requerem mais sucessos e concentração",
+        "Emoções fortes podem vazar mesmo com sucesso mínimo",
+        "Engano deliberado é mais difícil de detectar que pensamentos genuínos"
+      ]
+    },
+    "supernaturalInteractions": {
+      "text": "Other vampires and supernatural creatures may have special defenses or unique mental landscapes that affect telepathic contact.",
+      "description": "Outros vampiros e criaturas sobrenaturais podem ter defesas especiais ou paisagens mentais únicas que afetam o contato telepático."
+    }
+  }
+}

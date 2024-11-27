@@ -1,0 +1,100 @@
+{
+  "name": "The Spirit's Touch",
+  "namePtBr": "Toque do Espírito",
+  "level": 3,
+  "description": {
+    "text": "By touching an object, a vampire can sense impressions of the object's past and its previous owners. This power allows the vampire to hold an object and experience visions about its history, including significant events and strong emotions associated with it.",
+    "description": "Ao tocar um objeto, um vampiro pode sentir impressões do passado do objeto e seus donos anteriores. Este poder permite ao vampiro segurar um objeto e experimentar visões sobre sua história, incluindo eventos significativos e emoções fortes associadas a ele."
+  },
+  "system": {
+    "activation": {
+      "text": "The character must hold or touch the object for at least a turn. The player rolls Perception + Empathy (difficulty 7).",
+      "description": "O personagem deve segurar ou tocar o objeto por pelo menos um turno. O jogador rola Percepção + Empatia (dificuldade 7)."
+    },
+    "effects": {
+      "successLevels": {
+        "text": [
+          "One Success: Receives basic information and most recent impressions",
+          "Two Successes: Can sense strong emotions and events from the past month",
+          "Three Successes: Can witness specific events from the past year",
+          "Four Successes: Can experience vivid scenes from any point in the object's history",
+          "Five Successes: Can trace the entire history of the object and all who have handled it"
+        ],
+        "description": [
+          "Um Sucesso: Recebe informações básicas e impressões mais recentes",
+          "Dois Sucessos: Pode sentir emoções fortes e eventos do último mês",
+          "Três Sucessos: Pode testemunhar eventos específicos do último ano",
+          "Quatro Sucessos: Pode experimentar cenas vívidas de qualquer ponto na história do objeto",
+          "Cinco Sucessos: Pode traçar toda a história do objeto e todos que o manusearam"
+        ]
+      }
+    },
+    "psychicImpressions": {
+      "text": [
+        "Strong emotions leave deeper impressions",
+        "Violence and death leave particularly vivid impressions",
+        "Objects frequently handled retain more information",
+        "Significant events are easier to detect than mundane ones"
+      ],
+      "description": [
+        "Emoções fortes deixam impressões mais profundas",
+        "Violência e morte deixam impressões particularmente vívidas",
+        "Objetos frequentemente manuseados retêm mais informação",
+        "Eventos significativos são mais fáceis de detectar que os mundanos"
+      ]
+    }
+  },
+  "mechanics": {
+    "roll": {
+      "attribute": {
+        "text": "Perception",
+        "description": "Percepção"
+      },
+      "ability": {
+        "text": "Empathy",
+        "description": "Empatia"
+      },
+      "difficulty": 7
+    },
+    "duration": {
+      "text": "One scene per success",
+      "description": "Uma cena por sucesso"
+    },
+    "limitations": {
+      "text": [
+        "Each use requires one blood point",
+        "Extended contact may cause psychological stress",
+        "Multiple readings of the same object become increasingly difficult",
+        "Very old objects may overwhelm the vampire with information"
+      ],
+      "description": [
+        "Cada uso requer um ponto de sangue",
+        "Contato prolongado pode causar estresse psicológico",
+        "Múltiplas leituras do mesmo objeto se tornam cada vez mais difíceis",
+        "Objetos muito antigos podem sobrecarregar o vampiro com informação"
+      ]
+    }
+  },
+  "storytellerNotes": {
+    "psychicOverload": {
+      "text": "For particularly traumatic or overwhelming visions, the Storyteller may require a Willpower roll (difficulty 8) to avoid being temporarily stunned or taking psychological damage.",
+      "description": "Para visões particularmente traumáticas ou avassaladoras, o Narrador pode exigir uma rolagem de Força de Vontade (dificuldade 8) para evitar ficar temporariamente atordoado ou sofrer dano psicológico."
+    },
+    "informationQuality": {
+      "text": "The information received should be cryptic or symbolic rather than explicit. Strong emotions and dramatic events leave clearer impressions than mundane occurrences.",
+      "description": "A informação recebida deve ser críptica ou simbólica ao invés de explícita. Emoções fortes e eventos dramáticos deixam impressões mais claras que ocorrências mundanas."
+    },
+    "environmentalFactors": {
+      "text": [
+        "Sacred or cursed objects may provide stronger impressions",
+        "Places of power may enhance or interfere with readings",
+        "Multiple significant events may create overlapping impressions"
+      ],
+      "description": [
+        "Objetos sagrados ou amaldiçoados podem fornecer impressões mais fortes",
+        "Lugares de poder podem aumentar ou interferir com as leituras",
+        "Múltiplos eventos significativos podem criar impressões sobrepostas"
+      ]
+    }
+  }
+}

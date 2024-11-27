@@ -1,0 +1,108 @@
+{
+  "name": "Psychic Projection",
+  "namePtBr": "Projeção Psíquica",
+  "level": 5,
+  "description": {
+    "text": "By projecting their consciousness out of their physical body, a vampire can enter a state of astral projection. While in this form, the vampire can travel instantly anywhere they can imagine, pass through solid objects, and observe events without being detected. Their astral form appears as a ghostly, luminous version of their physical body.",
+    "description": "Ao projetar sua consciência para fora de seu corpo físico, um vampiro pode entrar em um estado de projeção astral. Nesta forma, o vampiro pode viajar instantaneamente para qualquer lugar que possa imaginar, atravessar objetos sólidos e observar eventos sem ser detectado. Sua forma astral aparece como uma versão fantasmagórica e luminosa de seu corpo físico."
+  },
+  "system": {
+    "activation": {
+      "text": "The player rolls Perception + Awareness (difficulty 7). The vampire's consciousness exits the physical body within one turn of falling into a deep trance.",
+      "description": "O jogador rola Percepção + Prontidão (dificuldade 7). A consciência do vampiro sai do corpo físico dentro de um turno após entrar em um transe profundo."
+    },
+    "effects": {
+      "successLevels": {
+        "text": [
+          "One Success: Can project within line of sight",
+          "Two Successes: Can project anywhere in the local area",
+          "Three Successes: Can project to any known location",
+          "Four Successes: Can project to unknown but described locations",
+          "Five Successes: Can instantly project anywhere in the world"
+        ],
+        "description": [
+          "Um Sucesso: Pode se projetar dentro da linha de visão",
+          "Dois Sucessos: Pode se projetar em qualquer lugar na área local",
+          "Três Sucessos: Pode se projetar para qualquer local conhecido",
+          "Quatro Sucessos: Pode se projetar para locais desconhecidos mas descritos",
+          "Cinco Sucessos: Pode se projetar instantaneamente para qualquer lugar no mundo"
+        ]
+      }
+    },
+    "astralCapabilities": {
+      "text": [
+        "Can pass through solid objects",
+        "Move at incredible speeds",
+        "Observe without being detected by normal means",
+        "Communicate telepathically with other projecting beings",
+        "Cannot affect the physical world directly"
+      ],
+      "description": [
+        "Pode atravessar objetos sólidos",
+        "Mover-se em velocidades incríveis",
+        "Observar sem ser detectado por meios normais",
+        "Comunicar-se telepaticamente com outros seres projetando",
+        "Não pode afetar o mundo físico diretamente"
+      ]
+    }
+  },
+  "mechanics": {
+    "roll": {
+      "attribute": {
+        "text": "Perception",
+        "description": "Percepção"
+      },
+      "ability": {
+        "text": "Awareness",
+        "description": "Prontidão"
+      },
+      "difficulty": 7
+    },
+    "duration": {
+      "text": "One hour per success",
+      "description": "Uma hora por sucesso"
+    },
+    "range": {
+      "text": "Varies by success level",
+      "description": "Varia por nível de sucesso"
+    },
+    "limitations": {
+      "text": [
+        "Physical body is vulnerable while projecting",
+        "Must spend one blood point per hour to maintain projection",
+        "Cannot use other Disciplines while projecting",
+        "Sunlight can trap the vampire in astral form"
+      ],
+      "description": [
+        "Corpo físico fica vulnerável durante a projeção",
+        "Deve gastar um ponto de sangue por hora para manter a projeção",
+        "Não pode usar outras Disciplinas enquanto projetado",
+        "Luz solar pode prender o vampiro na forma astral"
+      ]
+    }
+  },
+  "storytellerNotes": {
+    "astralCombat": {
+      "text": "Conflicts between astral beings are resolved using Willpower rolls. The aggressor rolls Willpower (difficulty 6), while the defender rolls Willpower (difficulty 8). The winner can either force the other being to materialize or push them away.",
+      "description": "Conflitos entre seres astrais são resolvidos usando rolagens de Força de Vontade. O agressor rola Força de Vontade (dificuldade 6), enquanto o defensor rola Força de Vontade (dificuldade 8). O vencedor pode forçar o outro ser a se materializar ou empurrá-lo para longe."
+    },
+    "environmentalHazards": {
+      "text": [
+        "Magical wards can block astral travel",
+        "Powerful supernatural beings can detect astral forms",
+        "Some locations may be naturally resistant to astral intrusion",
+        "The Shroud between life and death can affect astral travel"
+      ],
+      "description": [
+        "Proteções mágicas podem bloquear viagem astral",
+        "Seres sobrenaturais poderosos podem detectar formas astrais",
+        "Alguns locais podem ser naturalmente resistentes à intrusão astral",
+        "O Véu entre vida e morte pode afetar viagem astral"
+      ]
+    },
+    "returnDifficulties": {
+      "text": "If the physical body is moved while the vampire is projecting, they must make a Perception + Awareness roll (difficulty 8) to locate it. Failure means they must search for their body, which could take hours or even nights.",
+      "description": "Se o corpo físico for movido enquanto o vampiro está projetado, ele deve fazer uma rolagem de Percepção + Prontidão (dificuldade 8) para localizá-lo. Falha significa que ele deve procurar seu corpo, o que pode levar horas ou até noites."
+    }
+  }
+}
