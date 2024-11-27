@@ -1,0 +1,79 @@
+{
+  "name": "Sense the Sin",
+  "namePtBr": "Sentir o Pecado",
+  "level": 1,
+  "description": {
+    "text": "Every jewel has a fault, and every man has a vice. The best way to shatter a jewel is to strike that fault, and the best way to shatter a man is to hammer his vice. This power allows the Baali to find a target's particular vice and glean their secrets with a glance.",
+    "description": "Toda joia tem uma falha, e todo homem tem um vício. A melhor maneira de estilhaçar uma joia é golpear essa falha, e a melhor maneira de estilhaçar um homem é martelar seu vício. Este poder permite ao Baali encontrar o vício particular de um alvo e extrair seus segredos com um olhar."
+  },
+  "system": {
+    "text": "Roll Perception + Empathy against living or undead beings; the difficulty is equal to the subject's Self-Control or Instinct +4. Success indicates the Baali has gleaned insight into the subject's weakness. With one success, this is information like a low Virtue, weak Willpower, or recent actions that violated the subject's Road. Two successes might yield a beloved vice or casual secret. Three or more yield a central Derangement or formative trauma from the subject's past.",
+    "description": "Role Percepção + Empatia contra seres vivos ou mortos-vivos; a dificuldade é igual ao Autocontrole ou Instinto do alvo +4. O sucesso indica que o Baali obteve insights sobre a fraqueza do alvo. Com um sucesso, esta é uma informação como uma Virtude baixa, Força de Vontade fraca, ou ações recentes que violaram a Estrada do alvo. Dois sucessos podem revelar um vício amado ou um segredo casual. Três ou mais revelam um Desequilíbrio central ou trauma formativo do passado do alvo."
+  },
+  "mechanics": {
+    "roll": {
+      "dice": {
+        "text": "Perception + Empathy",
+        "description": "Percepção + Empatia"
+      },
+      "difficulty": {
+        "text": "Subject's Self-Control/Instinct +4",
+        "description": "Autocontrole/Instinto do alvo +4"
+      }
+    },
+    "targets": {
+      "valid": {
+        "text": "Living or undead beings",
+        "description": "Seres vivos ou mortos-vivos"
+      }
+    },
+    "results": {
+      "oneSuccess": {
+        "text": "Reveals low Virtue, weak Willpower, or recent Road violations",
+        "description": "Revela Virtude baixa, Força de Vontade fraca, ou violações recentes da Estrada",
+        "examples": [
+          {
+            "text": "Low Virtue scores",
+            "description": "Pontuações baixas de Virtude"
+          },
+          {
+            "text": "Weak Willpower rating",
+            "description": "Classificação fraca de Força de Vontade"
+          },
+          {
+            "text": "Recent Road transgressions",
+            "description": "Transgressões recentes da Estrada"
+          }
+        ]
+      },
+      "twoSuccesses": {
+        "text": "Reveals beloved vices or casual secrets",
+        "description": "Revela vícios amados ou segredos casuais",
+        "examples": [
+          {
+            "text": "Personal vices",
+            "description": "Vícios pessoais"
+          },
+          {
+            "text": "Minor secrets",
+            "description": "Segredos menores"
+          }
+        ]
+      },
+      "threeSuccesses": {
+        "text": "Reveals central Derangement or formative trauma",
+        "description": "Revela Desequilíbrio central ou trauma formativo",
+        "examples": [
+          {
+            "text": "Major psychological conditions",
+            "description": "Condições psicológicas importantes"
+          },
+          {
+            "text": "Past traumatic experiences",
+            "description": "Experiências traumáticas do passado"
+          }
+        ]
+      }
+    }
+  }
+}

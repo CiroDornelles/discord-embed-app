@@ -1,0 +1,71 @@
+{
+  "name": "Phantasm",
+  "namePtBr": "Fantasma",
+  "level": 3,
+  "description": {
+    "text": "Phantasm allows the vampire to give motion to an illusion created with Ignis Fatuus or Chimaera. Thus the user can create images of a roaring fire, a living moving being, or even a flag fluttering in the wind.",
+    "description": "Fantasma permite ao vampiro dar movimento a uma ilusão criada com Ignis Fatuus ou Quimera. Assim, o usuário pode criar imagens de um fogo rugindo, um ser vivo em movimento, ou até mesmo uma bandeira tremulando ao vento."
+  },
+  "system": {
+    "text": "After creating an illusion with Ignis Fatuus or Chimaera, spend one blood point to make the illusion move. As long as the vampire concentrates on the illusion, he can make it move in any way he wishes, within reason. He can make an illusion of a person appear to move and talk as though she was real, or he can make the illusion of a sparkling ballroom with billowing drapes and flickering candelabras. If the vampire wishes to take any complicated action besides maintaining the illusion, he must first succeed on a Willpower roll. If the roll fails, the illusion will dissipate completely. Once the creator stops concentrating on the illusion, it can continue in simple repetitive motions that could be described in a simple sentence, such as a horse nervously pawing at the ground. After that, the illusion cannot be controlled by the creator. He can allow it to move as he last directed, or dispel it as with Ignis Fatuus.",
+    "description": "Após criar uma ilusão com Ignis Fatuus ou Quimera, gaste um ponto de sangue para fazer a ilusão se mover. Enquanto o vampiro se concentrar na ilusão, ele pode fazê-la se mover de qualquer maneira que desejar, dentro da razão. Ele pode fazer uma ilusão de uma pessoa parecer se mover e falar como se fosse real, ou pode criar a ilusão de um salão de baile cintilante com cortinas ondulantes e candelabros tremeluzentes. Se o vampiro desejar realizar qualquer ação complicada além de manter a ilusão, ele deve primeiro ter sucesso em um teste de Força de Vontade. Se o teste falhar, a ilusão se dissipará completamente. Uma vez que o criador pare de se concentrar na ilusão, ela pode continuar em movimentos repetitivos simples que possam ser descritos em uma frase simples, como um cavalo nervosamente batendo o casco no chão. Depois disso, a ilusão não pode ser controlada pelo criador. Ele pode permitir que ela se mova conforme sua última direção, ou dissipá-la como com Ignis Fatuus."
+  },
+  "requirements": {
+    "prerequisites": {
+      "powers": {
+        "text": "Requires an existing illusion created by Ignis Fatuus or Chimaera",
+        "description": "Requer uma ilusão existente criada por Ignis Fatuus ou Quimera"
+      }
+    },
+    "cost": {
+      "blood": {
+        "text": "One blood point",
+        "description": "Um ponto de sangue"
+      }
+    },
+    "concentration": {
+      "text": "Requires active concentration for complex movements",
+      "description": "Requer concentração ativa para movimentos complexos"
+    }
+  },
+  "mechanics": {
+    "movement": {
+      "controlled": {
+        "text": "While concentrating, can create any reasonable movement",
+        "description": "Durante a concentração, pode criar qualquer movimento razoável",
+        "examples": {
+          "text": ["Person moving and talking", "Sparkling ballroom with moving elements"],
+          "description": ["Pessoa se movendo e falando", "Salão de baile cintilante com elementos em movimento"]
+        }
+      },
+      "autonomous": {
+        "text": "After concentration ends, can maintain simple repetitive motions",
+        "description": "Após o fim da concentração, pode manter movimentos repetitivos simples",
+        "examples": {
+          "text": "Horse pawing at the ground",
+          "description": "Cavalo batendo o casco no chão"
+        }
+      }
+    },
+    "limitations": {
+      "actions": {
+        "text": "Complicated actions require Willpower roll",
+        "description": "Ações complicadas requerem teste de Força de Vontade",
+        "failure": {
+          "text": "Failed roll causes illusion to dissipate completely",
+          "description": "Falha no teste causa dissipação completa da ilusão"
+        }
+      },
+      "control": {
+        "text": "After concentration ends, illusion cannot be controlled again",
+        "description": "Após o fim da concentração, a ilusão não pode ser controlada novamente"
+      }
+    },
+    "options": {
+      "postConcentration": {
+        "text": ["Continue last directed movement", "Dispel illusion"],
+        "description": ["Continuar último movimento direcionado", "Dissipar ilusão"]
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "name": "Abombwe",
+  "namePtBr": "Abombwe",
+  "description": {
+    "text": "The Bonsam claim heritage from a hunter possessed by a darkness from a time before the light. It is impossible to trace the veracity of this statement, but the Discipline of Abombwe certainly taps into both primal darkness and predatory prowess.",
+    "description": "Os Bonsam alegam herança de um caçador possuído por uma escuridão de um tempo antes da luz. É impossível rastrear a veracidade desta afirmação, mas a Disciplina de Abombwe certamente acessa tanto a escuridão primordial quanto a proeza predatória."
+  },
+  "source": {
+    "book": "Dark Ages Vampire",
+    "mechanics": {
+      "type": {
+        "text": "Physical and mystical discipline focusing on primal power",
+        "description": "Disciplina física e mística focada em poder primordial"
+      }
+    }
+  },
+  "bloodline": {
+    "name": "Bonsam",
+    "description": {
+      "text": "A bloodline claiming descent from an ancient hunter touched by primordial darkness",
+      "description": "Uma linhagem que alega descendência de um antigo caçador tocado pela escuridão primordial"
+    }
+  },
+  "nature": {
+    "type": {
+      "text": "Primal and predatory powers",
+      "description": "Poderes primordiais e predatórios"
+    },
+    "origin": {
+      "text": "Derived from ancient darkness predating light",
+      "description": "Derivado de uma escuridão antiga que precede a luz"
+    },
+    "manifestation": {
+      "text": "Combination of physical prowess and mystical darkness",
+      "description": "Combinação de proeza física e escuridão mística"
+    }
+  },
+  "mechanics": {
+    "focus": {
+      "primary": {
+        "text": "Enhancement of predatory nature",
+        "description": "Aprimoramento da natureza predatória"
+      },
+      "secondary": {
+        "text": "Manipulation of primordial darkness",
+        "description": "Manipulação da escuridão primordial"
+      }
+    },
+    "themes": {
+      "hunting": {
+        "text": "Emphasis on hunting and predatory abilities",
+        "description": "Ênfase em habilidades de caça e predatórias"
+      },
+      "darkness": {
+        "text": "Connection to ancient, primal darkness",
+        "description": "Conexão com a escuridão antiga e primordial"
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "Bardo",
+  "description": {
+    "text": "As the story goes, this Discipline was created by Osiris himself. Tied to the Road of Humanity, a mastery of Bardo does not equal Golconda. Golconda relies on the vampire accepting and transcending what he is, whilst Bardo relies on denying it. If a practitioner of Bardo abandoned the rigorous meditation that accompanies this Discipline, he would be no closer to Humanity than he was before.",
+    "description": "Segundo a história, esta Disciplina foi criada pelo próprio Osíris. Ligada à Estrada da Humanidade, o domínio do Bardo não equivale a Golconda. Golconda depende do vampiro aceitar e transcender o que ele é, enquanto Bardo depende de negá-lo. Se um praticante de Bardo abandonar a rigorosa meditação que acompanha esta Disciplina, ele não estaria mais próximo da Humanidade do que estava antes."
+  },
+  "requirements": {
+    "road": {
+      "name": "Humanity",
+      "description": "Road of Humanity (no other moral code suffices)",
+      "rule": "Must maintain Road of Humanity dots equal to Bardo level",
+      "effects": {
+        "text": "Lost levels return as the Road increases",
+        "description": "Níveis perdidos retornam conforme a Estrada aumenta"
+      }
+    }
+  },
+  "source": {
+    "book": "V20 Dark Ages",
+    "creator": "Osiris"
+  },
+  "mechanics": {
+    "roadRequirement": {
+      "text": "The Penitent must maintain Road of Humanity dots equal to his Bardo level, or else lose any levels in excess of his Road",
+      "description": "O Penitente deve manter pontos na Estrada da Humanidade iguais ao seu nível de Bardo, ou perderá quaisquer níveis que excedam sua Estrada"
+    },
+    "meditation": {
+      "text": "Requires rigorous meditation to maintain",
+      "description": "Requer meditação rigorosa para manter"
+    }
+  },
+  "comparison": {
+    "golconda": {
+      "text": "Unlike Golconda, which relies on accepting and transcending vampiric nature",
+      "description": "Diferente de Golconda, que depende de aceitar e transcender a natureza vampírica"
+    },
+    "approach": {
+      "text": "Relies on denying vampiric nature",
+      "description": "Depende de negar a natureza vampírica"
+    }
+  }
+}

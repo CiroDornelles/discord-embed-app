@@ -1,0 +1,56 @@
+{
+  "name": "Chimerstry",
+  "namePtBr": "Quimérismo",
+  "description": {
+    "text": "Chimerstry gives the Ravnos control over illusions. Where the power comes from is anyone's guess. Many Ravnos attribute it to the self-enlightened state of seeing past the maya of the world. Yet, even those that do not believe in the illusions of reality can easily manipulate illusions. Some European Ravnos believe that the power comes from their founder drinking the blood of fairies, but the veracity of that claim is as ephemeral as the illusions the power controls.",
+    "description": "Quimérismo dá aos Ravnos controle sobre ilusões. A origem deste poder é uma incógnita. Muitos Ravnos o atribuem ao estado auto-iluminado de ver além da maya do mundo. No entanto, mesmo aqueles que não acreditam nas ilusões da realidade podem facilmente manipular ilusões. Alguns Ravnos europeus acreditam que o poder vem de seu fundador ter bebido o sangue de fadas, mas a veracidade dessa afirmação é tão efêmera quanto as ilusões que o poder controla."
+  },
+  "system": {
+    "text": "The Discipline allows the Ravnos to shape reality to his own vision and will, creating realistic illusions and phantasms to confuse the senses or trick the minds of his victims. Mortals and vampires alike fall prey to these illusions unless the vampire has learned in sufficient levels of Auspex (see p. 195). Victims of Chimerstry can see through the illusions if they can \"prove\" the illusion's falsehood (e.g. a person who attempts to lean against an illusionary wall and passes through will no longer see the wall at all), and incredible illusions (e.g. monsters rising from the sea, or flying horses) give a chance for the victim to realize their falsehood with a roll of Perception + Alertness (difficulty 6).",
+    "description": "A Disciplina permite ao Ravnos moldar a realidade de acordo com sua própria visão e vontade, criando ilusões realistas e fantasmas para confundir os sentidos ou enganar as mentes de suas vítimas. Tanto mortais quanto vampiros caem presas dessas ilusões, a menos que o vampiro tenha aprendido níveis suficientes de Auspex (veja p. 195). Vítimas do Quimérismo podem ver através das ilusões se puderem \"provar\" a falsidade da ilusão (por exemplo, uma pessoa que tenta se apoiar em uma parede ilusória e passa através dela não verá mais a parede), e ilusões incríveis (por exemplo, monstros surgindo do mar ou cavalos voadores) dão uma chance para a vítima perceber sua falsidade com uma rolagem de Percepção + Prontidão (dificuldade 6)."
+  },
+  "mechanics": {
+    "detection": {
+      "auspex": {
+        "text": "Vampires with sufficient levels of Auspex can see through illusions",
+        "description": "Vampiros com níveis suficientes de Auspex podem ver através das ilusões",
+        "reference": "See p. 195"
+      },
+      "proving": {
+        "text": "Victims can see through illusions if they can prove their falsehood",
+        "description": "Vítimas podem ver através das ilusões se puderem provar sua falsidade",
+        "example": {
+          "text": "Passing through an illusory wall reveals its non-existence",
+          "description": "Passar através de uma parede ilusória revela sua não-existência"
+        }
+      },
+      "incredibleIllusions": {
+        "roll": {
+          "attribute": "Perception",
+          "ability": "Alertness",
+          "difficulty": 6
+        },
+        "examples": {
+          "text": "Monsters rising from the sea, flying horses",
+          "description": "Monstros surgindo do mar, cavalos voadores"
+        }
+      }
+    }
+  },
+  "origins": {
+    "theories": {
+      "maya": {
+        "text": "Self-enlightened state of seeing past the maya of the world",
+        "description": "Estado auto-iluminado de ver além da maya do mundo"
+      },
+      "fairy": {
+        "text": "European Ravnos believe their founder drank fairy blood",
+        "description": "Ravnos europeus acreditam que seu fundador bebeu sangue de fada"
+      }
+    }
+  },
+  "usage": {
+    "text": "The Charlatans use Chimerstry as a potent tool in dealing with the world around them",
+    "description": "Os Charlatães usam o Quimérismo como uma ferramenta potente para lidar com o mundo ao seu redor"
+  }
+}

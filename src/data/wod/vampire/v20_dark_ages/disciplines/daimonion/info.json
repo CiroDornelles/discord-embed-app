@@ -1,0 +1,66 @@
+{
+  "name": "Daimonion",
+  "namePtBr": "Daimonion",
+  "description": {
+    "text": "Ripped from the whispers of those bound to the earth, a voice torn from the throat of the first sorcerers who called to the Abyss sings through Baali blood. Daimonion is a cry across Creation, stretching from this world to a place forsaken, and power comes along the echo that returns. Someday, the Baali bloodline will scream, and that shout will shatter the world. For now, they use Daimonion to softly lull others to sleep and bid them dream of fire and darkness.",
+    "description": "Arrancada dos sussurros daqueles ligados à terra, uma voz rasgada da garganta dos primeiros feiticeiros que chamaram o Abismo canta através do sangue Baali. Daimonion é um grito através da Criação, estendendo-se deste mundo a um lugar abandonado, e o poder vem junto com o eco que retorna. Um dia, a linhagem Baali gritará, e esse grito despedaçará o mundo. Por enquanto, eles usam Daimonion para suavemente embalar outros ao sono e fazê-los sonhar com fogo e escuridão."
+  },
+  "system": {
+    "text": "Characters with True Faith are more resistant to the Baali's darkness. Subtract a victim's True Faith rating from all rolls to activate Daimonion powers against her. This includes secondary targeting rolls, such as the roll to hit with Tormented Essence.",
+    "description": "Personagens com Fé Verdadeira são mais resistentes à escuridão dos Baali. Subtraia o nível de Fé Verdadeira da vítima de todas as rolagens para ativar poderes de Daimonion contra ela. Isso inclui rolagens de alvejamento secundárias, como a rolagem para acertar com Essência Atormentada."
+  },
+  "source": {
+    "book": "Dark Ages Vampire",
+    "mechanics": {
+      "resistance": {
+        "trueFaith": {
+          "text": "True Faith rating is subtracted from all Daimonion power rolls",
+          "description": "Nível de Fé Verdadeira é subtraído de todas as rolagens de poderes de Daimonion"
+        }
+      }
+    }
+  },
+  "bloodline": {
+    "name": "Baali",
+    "description": {
+      "text": "A bloodline of demon-worshipping vampires who seek to awaken ancient horrors",
+      "description": "Uma linhagem de vampiros adoradores de demônios que buscam despertar horrores antigos"
+    }
+  },
+  "nature": {
+    "type": {
+      "text": "Corrupting and infernal powers",
+      "description": "Poderes corruptores e infernais"
+    },
+    "origin": {
+      "text": "Derived from ancient sorcerers who called to the Abyss",
+      "description": "Derivado de antigos feiticeiros que chamaram o Abismo"
+    },
+    "manifestation": {
+      "text": "Powers manifest through whispers, dreams, and darkness",
+      "description": "Poderes se manifestam através de sussurros, sonhos e escuridão"
+    }
+  },
+  "mechanics": {
+    "limitations": {
+      "trueFaith": {
+        "text": "True Faith provides resistance to all Daimonion powers",
+        "description": "Fé Verdadeira fornece resistência a todos os poderes de Daimonion",
+        "effect": {
+          "text": "Subtract True Faith rating from all power activation rolls",
+          "description": "Subtraia o nível de Fé Verdadeira de todas as rolagens de ativação de poder"
+        }
+      }
+    },
+    "scope": {
+      "primary": {
+        "text": "Mental and spiritual corruption",
+        "description": "Corrupção mental e espiritual"
+      },
+      "secondary": {
+        "text": "Dream manipulation and darkness manifestation",
+        "description": "Manipulação de sonhos e manifestação de escuridão"
+      }
+    }
+  }
+}

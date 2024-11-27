@@ -1,0 +1,79 @@
+{
+  "name": "Unseen Hibernation",
+  "namePtBr": "Hibernação Oculta",
+  "level": 3,
+  "description": {
+    "text": "The Laibon makes his lair inside natural formations, plants, or earth by melting into the darkness hidden under their surface. A natural object significantly altered or sculpted by man is not suitable for this power; a wooden hut cannot be used, but a tree with carvings on it might do.",
+    "description": "O Laibon faz seu covil dentro de formações naturais, plantas ou terra derretendo-se na escuridão escondida sob sua superfície. Um objeto natural significativamente alterado ou esculpido pelo homem não é adequado para este poder; uma cabana de madeira não pode ser usada, mas uma árvore com entalhes pode servir."
+  },
+  "system": {
+    "text": "The player spends a blood point. Unseen Hibernation is automatic and takes a turn to complete. The character falls into a consciousness one step above torpor during this time and his player must make a Road roll (difficulty 6) for the character to rouse prematurely. The difficulty of rolls to locate the character increase by two. Astral individuals cannot affect him directly, instead meeting with writhing darkness as their hands pass through him. Violence upon the submerged vampire expels him from the object in a blinding spray (everyone near the vampire, and the vampire are at +2 difficulty on Perception for the turn). The vampire subtracts two from his Initiative for the first turn upon expulsion, but may act normally after that.",
+    "description": "O jogador gasta um ponto de sangue. Hibernação Oculta é automática e leva um turno para completar. O personagem cai em uma consciência um passo acima do torpor durante este tempo e seu jogador deve fazer uma rolagem de Estrada (dificuldade 6) para o personagem despertar prematuramente. A dificuldade das rolagens para localizar o personagem aumenta em dois. Indivíduos astrais não podem afetá-lo diretamente, em vez disso encontrando escuridão contorcida quando suas mãos passam através dele. Violência contra o vampiro submerso o expulsa do objeto em um spray cegante (todos próximos ao vampiro, e o vampiro têm +2 de dificuldade em Percepção pelo turno). O vampiro subtrai dois de sua Iniciativa no primeiro turno após a expulsão, mas pode agir normalmente depois disso."
+  },
+  "requirements": {
+    "cost": {
+      "blood": {
+        "text": "One blood point",
+        "description": "Um ponto de sangue"
+      }
+    },
+    "time": {
+      "text": "One turn to complete",
+      "description": "Um turno para completar"
+    },
+    "location": {
+      "valid": {
+        "text": "Natural formations, plants, or earth",
+        "description": "Formações naturais, plantas ou terra"
+      },
+      "invalid": {
+        "text": "Man-made or significantly altered objects",
+        "description": "Objetos feitos pelo homem ou significativamente alterados"
+      }
+    }
+  },
+  "mechanics": {
+    "state": {
+      "consciousness": {
+        "text": "One step above torpor",
+        "description": "Um passo acima do torpor"
+      },
+      "awakening": {
+        "roll": {
+          "text": "Road roll (difficulty 6) for premature awakening",
+          "description": "Rolagem de Estrada (dificuldade 6) para despertar prematuro"
+        }
+      }
+    },
+    "protection": {
+      "detection": {
+        "text": "Location roll difficulties increased by 2",
+        "description": "Dificuldades de rolagens de localização aumentadas em 2"
+      },
+      "astral": {
+        "text": "Immune to astral effects, appears as writhing darkness",
+        "description": "Imune a efeitos astrais, aparece como escuridão contorcida"
+      }
+    },
+    "expulsion": {
+      "trigger": {
+        "text": "Violence against hiding place",
+        "description": "Violência contra o local de esconderijo"
+      },
+      "effects": {
+        "blinding": {
+          "text": "+2 difficulty on Perception for all nearby (including vampire)",
+          "description": "+2 de dificuldade em Percepção para todos próximos (incluindo vampiro)"
+        },
+        "initiative": {
+          "text": "-2 Initiative on first turn after expulsion",
+          "description": "-2 de Iniciativa no primeiro turno após expulsão"
+        },
+        "duration": {
+          "text": "Normal actions resume after first turn",
+          "description": "Ações normais retomadas após primeiro turno"
+        }
+      }
+    }
+  }
+}

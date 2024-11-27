@@ -1,0 +1,51 @@
+{
+  "name": "Predator's Communion",
+  "namePtBr": "Comunhão do Predador",
+  "level": 1,
+  "description": {
+    "text": "The Laibon is the greatest predator in his territory and senses whenever a potential ally or rival is nearby.",
+    "description": "O Laibon é o maior predador em seu território e sente quando um potencial aliado ou rival está próximo."
+  },
+  "system": {
+    "text": "Spend a blood point. For the rest of the scene, the Laibon can sense predators in the area, including vampires, shapeshifters, ghosts, predatory animals, mortals, and ghouls with a Road rating of 4 or less. To pinpoint the location or find a hidden creature, the player rolls Perception + Survival (difficulty 6, modified by the strength of the predator as determined by the Storyteller; stronger predators are generally easier to detect).",
+    "description": "Gaste um ponto de sangue. Pelo resto da cena, o Laibon pode sentir predadores na área, incluindo vampiros, metamorfos, fantasmas, animais predadores, mortais e carniçais com classificação de Estrada de 4 ou menos. Para localizar precisamente ou encontrar uma criatura escondida, o jogador rola Percepção + Sobrevivência (dificuldade 6, modificada pela força do predador conforme determinado pelo Narrador; predadores mais fortes são geralmente mais fáceis de detectar)."
+  },
+  "requirements": {
+    "cost": {
+      "blood": {
+        "text": "One blood point",
+        "description": "Um ponto de sangue"
+      }
+    },
+    "duration": {
+      "text": "One scene",
+      "description": "Uma cena"
+    }
+  },
+  "mechanics": {
+    "detection": {
+      "targets": {
+        "text": ["Vampires", "Shapeshifters", "Ghosts", "Predatory animals", "Mortals and ghouls with Road rating ≤4"],
+        "description": ["Vampiros", "Metamorfos", "Fantasmas", "Animais predadores", "Mortais e carniçais com classificação de Estrada ≤4"]
+      }
+    },
+    "location": {
+      "roll": {
+        "dice": {
+          "text": "Perception + Survival",
+          "description": "Percepção + Sobrevivência"
+        },
+        "difficulty": {
+          "base": {
+            "text": "6",
+            "description": "6"
+          },
+          "modifier": {
+            "text": "Modified by predator's strength (stronger = easier)",
+            "description": "Modificado pela força do predador (mais forte = mais fácil)"
+          }
+        }
+      }
+    }
+  }
+}

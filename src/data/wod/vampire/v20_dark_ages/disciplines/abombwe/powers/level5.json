@@ -1,0 +1,101 @@
+{
+  "name": "Predator's Transformation",
+  "namePtBr": "Transformação do Predador",
+  "level": 5,
+  "description": {
+    "text": "The Laibon slays a predator and consumes a part of it, be it heart, liver, flesh, or blood. He then becomes that creature as his vitae fully absorbs its essence.",
+    "description": "O Laibon mata um predador e consome uma parte dele, seja coração, fígado, carne ou sangue. Ele então se torna aquela criatura conforme seu vitae absorve completamente sua essência."
+  },
+  "system": {
+    "text": "The player spends one blood point and rolls Stamina + Survival (difficulty 7). If successful, the Laibon physically transforms into the creature. The creature must be predatory in nature and at least the size of a cat. Humans and supernatural beings may be duplicated, but this does not include powers. Predator's Transformation lasts until sunrise or the Laibon ends the power. A Laibon may duplicate a previous transformation without consuming another creature. This requires a Stamina + Survival roll (difficulty 10) with difficulty reduced by one for each time he has killed and transformed into a creature of that type, to a minimum difficulty of 6. With mortals, vampires, and other humanoids, the Laibon takes on an average appearance for his victim's ethnic group, unless the player succeeds on the roll at difficulty 9, in which case the previous transformation is perfectly duplicated.",
+    "description": "O jogador gasta um ponto de sangue e rola Vigor + Sobrevivência (dificuldade 7). Se bem-sucedido, o Laibon se transforma fisicamente na criatura. A criatura deve ser predatória por natureza e ter pelo menos o tamanho de um gato. Humanos e seres sobrenaturais podem ser duplicados, mas isso não inclui poderes. A Transformação do Predador dura até o nascer do sol ou até o Laibon encerrar o poder. Um Laibon pode duplicar uma transformação anterior sem consumir outra criatura. Isso requer uma rolagem de Vigor + Sobrevivência (dificuldade 10) com dificuldade reduzida em um para cada vez que ele matou e se transformou em uma criatura daquele tipo, até uma dificuldade mínima de 6. Com mortais, vampiros e outros humanoides, o Laibon assume uma aparência média para o grupo étnico de sua vítima, a menos que o jogador tenha sucesso na rolagem com dificuldade 9, caso em que a transformação anterior é perfeitamente duplicada."
+  },
+  "requirements": {
+    "cost": {
+      "blood": {
+        "text": "One blood point",
+        "description": "Um ponto de sangue"
+      }
+    },
+    "target": {
+      "restrictions": {
+        "type": {
+          "text": "Must be predatory in nature",
+          "description": "Deve ser predatório por natureza"
+        },
+        "size": {
+          "text": "At least the size of a cat",
+          "description": "Pelo menos do tamanho de um gato"
+        }
+      }
+    },
+    "duration": {
+      "text": "Until sunrise or voluntarily ended",
+      "description": "Até o nascer do sol ou encerrado voluntariamente"
+    }
+  },
+  "mechanics": {
+    "initialTransformation": {
+      "requirements": {
+        "consumption": {
+          "text": "Must consume part of the predator (heart, liver, flesh, or blood)",
+          "description": "Deve consumir parte do predador (coração, fígado, carne ou sangue)"
+        },
+        "roll": {
+          "dice": {
+            "text": "Stamina + Survival",
+            "description": "Vigor + Sobrevivência"
+          },
+          "difficulty": {
+            "text": "7",
+            "description": "7"
+          }
+        }
+      }
+    },
+    "repeatTransformation": {
+      "roll": {
+        "dice": {
+          "text": "Stamina + Survival",
+          "description": "Vigor + Sobrevivência"
+        },
+        "difficulty": {
+          "base": {
+            "text": "10",
+            "description": "10"
+          },
+          "modifier": {
+            "text": "-1 per previous transformation of same type (minimum 6)",
+            "description": "-1 por transformação anterior do mesmo tipo (mínimo 6)"
+          }
+        }
+      },
+      "requirements": {
+        "text": "No need to consume another creature",
+        "description": "Não precisa consumir outra criatura"
+      }
+    },
+    "humanoidTransformation": {
+      "default": {
+        "text": "Average appearance for victim's ethnic group",
+        "description": "Aparência média para o grupo étnico da vítima"
+      },
+      "perfect": {
+        "requirement": {
+          "text": "Success on difficulty 9 roll",
+          "description": "Sucesso em rolagem de dificuldade 9"
+        },
+        "effect": {
+          "text": "Perfect duplication of previous transformation",
+          "description": "Duplicação perfeita da transformação anterior"
+        }
+      }
+    },
+    "limitations": {
+      "powers": {
+        "text": "Does not duplicate supernatural powers",
+        "description": "Não duplica poderes sobrenaturais"
+      }
+    }
+  }
+}

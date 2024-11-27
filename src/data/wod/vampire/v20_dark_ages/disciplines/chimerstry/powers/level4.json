@@ -1,0 +1,55 @@
+{
+  "name": "Permanency",
+  "namePtBr": "Permanência",
+  "level": 4,
+  "description": {
+    "text": "Like Phantasm, this power is also used in conjunction with either Ignis Fatuus or Chimaera. It extends the duration of the illusion indefinitely, even when the vampire is not around to maintain it. In this way, the Ravnos could create elaborate illusions of stately affairs with guests and dancing in a small run down building, without even having to be there to witness his victim's impressions.",
+    "description": "Como Fantasma, este poder também é usado em conjunto com Ignis Fatuus ou Quimera. Ele estende a duração da ilusão indefinidamente, mesmo quando o vampiro não está por perto para mantê-la. Desta forma, o Ravnos poderia criar elaboradas ilusões de eventos estatais com convidados e danças em um pequeno prédio abandonado, sem nem mesmo precisar estar lá para testemunhar as impressões de sua vítima."
+  },
+  "system": {
+    "text": "The player spends one blood point to make the illusion permanent until dismissed (this includes illusions 'programmed' with Phantasm).",
+    "description": "O jogador gasta um ponto de sangue para tornar a ilusão permanente até ser dispensada (isso inclui ilusões 'programadas' com Fantasma)."
+  },
+  "requirements": {
+    "prerequisites": {
+      "powers": {
+        "text": "Requires an existing illusion created by Ignis Fatuus or Chimaera",
+        "description": "Requer uma ilusão existente criada por Ignis Fatuus ou Quimera"
+      }
+    },
+    "cost": {
+      "blood": {
+        "text": "One blood point",
+        "description": "Um ponto de sangue"
+      }
+    }
+  },
+  "mechanics": {
+    "duration": {
+      "type": {
+        "text": "Permanent until dismissed",
+        "description": "Permanente até ser dispensada"
+      },
+      "maintenance": {
+        "text": "No need for vampire presence or concentration",
+        "description": "Não necessita da presença ou concentração do vampiro"
+      }
+    },
+    "compatibility": {
+      "phantasm": {
+        "text": "Works with Phantasm-programmed illusions",
+        "description": "Funciona com ilusões programadas com Fantasma"
+      }
+    },
+    "applications": {
+      "examples": {
+        "text": "Creating elaborate permanent illusions like stately affairs in abandoned buildings",
+        "description": "Criando elaboradas ilusões permanentes como eventos estatais em prédios abandonados"
+      },
+      "advantages": {
+        "text": "Can affect victims without creator's presence",
+        "description": "Pode afetar vítimas sem a presença do criador"
+      }
+    }
+  }
+}

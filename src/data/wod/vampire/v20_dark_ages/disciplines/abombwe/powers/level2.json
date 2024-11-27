@@ -1,0 +1,71 @@
+{
+  "name": "Invoking the Predator",
+  "namePtBr": "Invocando o Predador",
+  "level": 2,
+  "description": {
+    "text": "Sculpting the malleable darkness inside him and pushing it outward, the Laibon can copy aspects of predatory animals.",
+    "description": "Esculpindo a escuridão maleável dentro dele e empurrando-a para fora, o Laibon pode copiar aspectos de animais predadores."
+  },
+  "system": {
+    "text": "This transformation takes one turn and requires one blood point. The character might grow claws that inflict Strength +1 lethal damage or a tail for balance. Most transformations are automatic, but particularly exotic ones such as poison glands require an Intelligence + Survival roll (difficulty 7). A botch results in a successful transformation, but adds cosmetic changes such as scales or stripes. This power does not suspend the laws of physics; the Laibon cannot create wings or spider webbing strong enough to carry his weight.",
+    "description": "Esta transformação leva um turno e requer um ponto de sangue. O personagem pode desenvolver garras que infligem dano letal de Força +1 ou uma cauda para equilíbrio. A maioria das transformações é automática, mas algumas particularmente exóticas como glândulas de veneno requerem uma rolagem de Inteligência + Sobrevivência (dificuldade 7). Uma falha crítica resulta em uma transformação bem-sucedida, mas adiciona mudanças cosméticas como escamas ou listras. Este poder não suspende as leis da física; o Laibon não pode criar asas ou teias de aranha fortes o suficiente para carregar seu peso."
+  },
+  "requirements": {
+    "cost": {
+      "blood": {
+        "text": "One blood point",
+        "description": "Um ponto de sangue"
+      }
+    },
+    "time": {
+      "text": "One turn",
+      "description": "Um turno"
+    }
+  },
+  "mechanics": {
+    "transformations": {
+      "basic": {
+        "text": "Automatic transformations (claws, tail)",
+        "description": "Transformações automáticas (garras, cauda)",
+        "examples": [
+          {
+            "type": "claws",
+            "effect": {
+              "text": "Strength +1 lethal damage",
+              "description": "Dano letal de Força +1"
+            }
+          },
+          {
+            "type": "tail",
+            "effect": {
+              "text": "Balance enhancement",
+              "description": "Aprimoramento de equilíbrio"
+            }
+          }
+        ]
+      },
+      "exotic": {
+        "text": "Requires Intelligence + Survival roll (difficulty 7)",
+        "description": "Requer rolagem de Inteligência + Sobrevivência (dificuldade 7)",
+        "examples": [
+          {
+            "text": "Poison glands",
+            "description": "Glândulas de veneno"
+          }
+        ]
+      }
+    },
+    "limitations": {
+      "physics": {
+        "text": "Cannot violate laws of physics (no functional wings or strong webbing)",
+        "description": "Não pode violar leis da física (sem asas funcionais ou teias fortes)"
+      }
+    },
+    "botch": {
+      "effect": {
+        "text": "Successful transformation plus cosmetic changes (scales, stripes)",
+        "description": "Transformação bem-sucedida mais mudanças cosméticas (escamas, listras)"
+      }
+    }
+  }
+}
