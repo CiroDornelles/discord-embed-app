@@ -13,12 +13,14 @@
     "@discord/embedded-app-sdk": "^1.7.0",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
-    "@mui/icons-material": "^5.16.7",
+    "@mui/icons-material": "^5.16.8",
     "@mui/material": "^5.15.6",
     "framer-motion": "^10.16.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-responsive": "^9.0.2"
+    "react-material-ui-carousel": "^3.4.2",
+    "react-responsive": "^9.0.2",
+    "swiper": "^11.1.15"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

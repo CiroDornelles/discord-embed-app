@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import { ThemeProvider, CssBaseline, Box, Typography } from '@mui/material';
-import { DiscordSDK } from '@discord/embedded-app-sdk';
-import theme from './theme';
+import React, { useState, useEffect } from 'react';
+import { ThemeProvider, CssBaseline, Box } from '@mui/material';
+import theme from './components/thema';
+import CharacterSheet from './components/characterSheet/CharacterSheet';
 
 function App() {
   const [sdk, setSdk] = useState(null);
@@ -15,11 +15,18 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Box sx={{ p: 2 }}>
-        <Typography variant="h4" component="h1" gutterBottom>
-          Welcome to the App
-        </Typography>
-        {/* Add your content here */}
+      <Box sx={{ 
+        minHeight: '100vh',
+        width: '100%',
+        maxWidth: '100%',
+        margin: 0,
+        padding: 0,
+        overflow: 'hidden',
+        display: 'flex',
+        flexDirection: 'column',
+        backgroundColor: theme.palette.background.default
+      }}>
+        <CharacterSheet />
       </Box>
     </ThemeProvider>
   );
