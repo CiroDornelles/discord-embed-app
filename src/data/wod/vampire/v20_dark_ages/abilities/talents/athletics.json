@@ -1,7 +1,7 @@
 {
   "name": "Esportes",
   "nameOriginal": "Athletics",
-  "flavorText": "\"Eu venci,\" Karl ofegou, virando-se para celebrar sua vitória. \"Eu te venci, Alex!\" Apenas o silêncio respondeu. \"Alex? Onde você está?\"",
+  "flavorText": "*Eu venci,* Karl ofegou, virando-se para celebrar sua vitória. *Eu te venci, Alex!* Apenas o silêncio respondeu. *Alex? Onde você está?*",
   "description": "Esportes é o domínio dos fisicamente talentosos. Abrange atividades do campo esportivo, não do campo de batalha. Correr, saltar, esquivar de ataques e arremessar objetos são todos exemplos de façanhas de Esportes.",
   "levels": {
     "1": {

@@ -1,28 +1,28 @@
 {
-    "name": "Seneschal",
+    "name": "Senescalia",
     "originalName": "Seneschal",
-    "flavorText": "\"It's essential that the grain you buy be quality.\" He took a big handful in his giant ebon hand, letting it run through his fingers. \"Some men will cut the grain to make a few coins. Those men are foolish.\" The fine gold thread in the embroidery on his luxuriant sleeve caught the light. \"Those men will always be poor. When a king trusts you, you can hold that in your pocket better than gold.\"",
-    "description": "You are the oil that allows the gears of a great house to run smoothly. You handle the books and the market accounts. You manage the number of workers for the harvest, maintain the stables, keep the ponds and forests stocked, and so forth. A good servant is worth their weight in gold, it's said, and it's never truer than here. You will never be caught flat-footed with a surprise hunting party. True experts can tell at a glance the quality of other people's households as well, ferreting out the hidden dust and the half-shined silver that falls beneath the notice of others.",
+    "flavorText": "*\"É essencial que o grão que você compra seja de qualidade.\" Ele pegou um punhado grande em sua gigante mão negra, deixando-o escorrer por entre seus dedos. \"Alguns homens cortarão o grão para ganhar algumas moedas. Esses homens são tolos.\" O fino fio de ouro no bordado de sua manga luxuosa captou a luz. \"Esses homens sempre serão pobres. Quando um rei confia em você, você pode guardar isso em seu bolso melhor que ouro.\"*",
+    "description": "Você é o óleo que permite que as engrenagens de uma grande casa funcionem suavemente. Você cuida dos livros e das contas do mercado. Você gerencia o número de trabalhadores para a colheita, mantém os estábulos, mantém os lagos e florestas abastecidos, e assim por diante. Diz-se que um bom servo vale seu peso em ouro, e isso nunca é mais verdadeiro do que aqui. Você nunca será pego desprevenido com uma festa de caça surpresa. Verdadeiros especialistas podem dizer com um olhar a qualidade das casas de outras pessoas, descobrindo a poeira escondida e a prata mal polida que passa despercebida pelos outros.",
     "levels": {
         "1": {
             "name": "Novato",
-            "description": "You can manage a small household of 3-5 people, keeping food available and ensuring the standards are presentable."
+            "description": "Você pode gerenciar uma pequena casa de 3-5 pessoas, mantendo comida disponível e garantindo que os padrões sejam apresentáveis."
         },
         "2": {
             "name": "Estudante",
-            "description": "You can manage a modest manor house or oversee a small business. You have mastered double-entry bookkeeping and other basic skills that will serve you well."
+            "description": "Você pode gerenciar uma casa modesta ou supervisionar um pequeno negócio. Você dominou a contabilidade de dupla entrada e outras habilidades básicas que o servirão bem."
         },
         "3": {
             "name": "Versado",
-            "description": "Multiple properties are under your care, and your excellent planning allows your estates to have bread, even during shortages from famine or war."
+            "description": "Múltiplas propriedades estão sob seus cuidados, e seu planejamento excelente permite que suas propriedades tenham pão, mesmo durante escassez devido a fome ou guerra."
         },
         "4": {
             "name": "Erudito",
-            "description": "You wrote the book on running a household. No minutia is beneath your notice. When you host kings and queens, the details matter."
+            "description": "Você escreveu o livro sobre como gerenciar uma casa. Nenhum detalhe é pequeno demais para você. Quando você hospeda reis e rainhas, os detalhes importam."
         },
         "5": {
             "name": "Mestre",
-            "description": "Not to overstate the case, but you can turn one loaf into two and double the size of a wine cellar with a mere word. Lords and ladies pay a pretty penny for you to handle their great estates."
+            "description": "Não para exagerar, mas você pode transformar um pão em dois e dobrar o tamanho de uma adega de vinho com uma simples palavra. Lordes e damas pagam um bom preço para você gerenciar suas grandes propriedades."
         }
     },
     "possessedBy": [

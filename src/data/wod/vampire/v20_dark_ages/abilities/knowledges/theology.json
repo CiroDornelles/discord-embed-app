@@ -1,78 +1,78 @@
 {
-    "name": "Theology",
+    "name": "Teologia",
     "originalName": "Theology",
-    "flavorText": "After fifty years, his eyesight was not what it once was. Brother Thomas dipped his quill in the pot of watered soot and methodically wrote another verse. Wouldn't the Archbishop be surprised to see the obscene drawings that accompanied this little ditty he began composing last year?",
-    "description": "Theology is the science of God, by whatever name you might call him, and never was it more compelling than at this time in history. God was in the smallest mustard seed and in the largest ocean. Plagues were the wrath of God and a bountiful harvest was the blessings of God made manifest. Two questions plagued the minds of medieval theologians: what is the nature of evil and does our free will allow us to act independent of it? To a religious mind every day was a choice to walk with God or dance with the devil in the pale moonlight.",
+    "flavorText": "*Depois de cinquenta anos, sua visão não era mais a mesma de antes. Irmão Thomas mergulhou sua pena no pote de fuligem diluída e metodicamente escreveu outro verso. Não ficaria o Arcebispo surpreso ao ver os desenhos obscenos que acompanhavam essa pequena cantiga que ele começou a compor no ano passado?*",
+    "description": "Teologia é a ciência de Deus, por qualquer nome que você possa chamá-lo, e nunca foi mais envolvente do que neste momento da história. Deus estava no menor grão de mostarda e no maior oceano. Pragas eram a ira de Deus e uma colheita abundante era as bênçãos de Deus manifestas. Duas questões atormentavam as mentes dos teólogos medievais: qual é a natureza do mal e nosso livre arbítrio nos permite agir independentemente dele? Para uma mente religiosa, cada dia era uma escolha entre caminhar com Deus ou dançar com o diabo sob o luar pálido.",
     "levels": {
         "1": {
             "name": "Novato",
-            "description": "Your understanding of religion is fairly vague. You believe and understand the basic principles: the commandments, the rules, the practices. You can hold a conversation about religion, able to articulate your convictions reasonably well."
+            "description": "Sua compreensão da religião é bastante vaga. Você acredita e entende os princípios básicos: os mandamentos, as regras, as práticas. Você pode manter uma conversa sobre religião, capaz de articular suas convicções de forma razoável."
         },
         "2": {
             "name": "Estudante",
-            "description": "You have read the holy books of your religion. You can debate religion (as much as your milieu allows) and compose a competent religious tract."
+            "description": "Você leu os livros sagrados de sua religião. Você pode debater religião (tanto quanto seu meio permite) e compor um tratado religioso competente."
         },
         "3": {
             "name": "Versado",
-            "description": "Your grasp of other religions is strong, despite any disagreement you may have with them. You are occasionally asked to speak to followers of your religion on an official basis."
+            "description": "Sua compreensão de outras religiões é forte, apesar de qualquer desacordo que você possa ter com elas. Você é ocasionalmente solicitado a falar com seguidores de sua religião em uma base oficial."
         },
         "4": {
             "name": "Erudito",
-            "description": "You have made a number of important contributions to doctrine. Your words are powerful: you could raise funds for a cathedral or mosque, incite violence against heretics, or fill people with a holy spirit of inspiration."
+            "description": "Você fez uma série de contribuições importantes para a doutrina. Suas palavras são poderosas: você poderia arrecadar fundos para uma catedral ou mesquita, incitar violência contra hereges ou encher as pessoas com um espírito santo de inspiração."
         },
         "5": {
             "name": "Mestre",
-            "description": "You have discovered layers to your faith that others can only imagine. You're considered an honored speaker on religion at your forum of choice, no matter where that pulpit stands."
+            "description": "Você descobriu camadas em sua fé que outros apenas podem imaginar. Você é considerado um orador honorável sobre religião em seu fórum de escolha, não importa onde esse púlpito esteja."
         }
     },
     "possessedBy": [
-        "Monks",
-        "Nuns",
-        "Dabblers",
-        "Priests",
-        "Theologians",
+        "Monges",
+        "Freiras",
+        "Diletantes",
+        "Padres",
+        "Teólogos",
         "Rabbanim",
         "A'immah"
     ],
     "specialties": [
-        "Confession",
-        "Orthodoxy",
-        "Heresy",
-        "Proselytization",
-        "Conversion",
-        "Religious Texts",
-        "Religious History",
-        "Comparative Religion"
+        "Confissão",
+        "Ortodoxia",
+        "Heresia",
+        "Proselytismo",
+        "Conversão",
+        "Textos Religiosos",
+        "História Religiosa",
+        "Religião Comparada"
     ],
     "fieldsOfExpertise": [
         {
-            "name": "Religious Doctrine",
+            "name": "Doutrina Religiosa",
             "areas": [
-                "Sacred Texts",
-                "Religious Law",
-                "Theological Debates",
-                "Church Doctrine",
-                "Religious Philosophy"
+                "Textos Sagrados",
+                "Lei Religiosa",
+                "Debates Teológicos",
+                "Doutrina da Igreja",
+                "Filosofia Religiosa"
             ]
         },
         {
-            "name": "Religious Practice",
+            "name": "Prática Religiosa",
             "areas": [
-                "Rituals",
-                "Prayer",
-                "Meditation",
-                "Religious Ceremonies",
-                "Religious Education"
+                "Rituais",
+                "Oração",
+                "Meditação",
+                "Cerimônias Religiosas",
+                "Educação Religiosa"
             ]
         },
         {
-            "name": "Comparative Studies",
+            "name": "Estudos Comparados",
             "areas": [
-                "Christianity",
-                "Judaism",
-                "Islam",
-                "Eastern Religions",
-                "Pagan Faiths"
+                "Cristianismo",
+                "Judaísmo",
+                "Islamismo",
+                "Religiões Orientais",
+                "Fés Pagãs"
             ]
         }
     ]

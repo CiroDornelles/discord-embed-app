@@ -5,99 +5,81 @@ const theme = createTheme({
     mode: 'dark',
     primary: {
       main: '#8b0000',
-      light: '#a31515',
-      dark: '#660000',
+      light: '#b71c1c',
+      dark: '#3d0000',
     },
     secondary: {
-      main: '#3d2929',
-      light: '#4d3535',
-      dark: '#2d1f1f',
+      main: '#4a0404',
+      light: '#6d1b1b',
+      dark: '#2c0000',
     },
     background: {
-      default: '#0a0606',
-      paper: '#1f1616',
+      default: '#1a1a1a',
+      paper: '#2d2d2d',
     },
     text: {
-      primary: '#d4d4d4',
-      secondary: '#a19898',
+      primary: '#ffffff',
+      secondary: '#b0b0b0',
     },
   },
   typography: {
-    fontFamily: '"Crimson Text", serif',
+    fontFamily: '"Roboto", "Arial", sans-serif',
     h1: {
-      fontFamily: '"Crimson Text", serif',
-      letterSpacing: '0.1em',
-      textTransform: 'uppercase',
+      fontFamily: 'MedievalSharp, cursive',
+      color: '#8b0000',
     },
     h2: {
-      fontFamily: '"Crimson Text", serif',
-      letterSpacing: '0.1em',
-      textTransform: 'uppercase',
+      fontFamily: 'MedievalSharp, cursive',
+      color: '#8b0000',
     },
     h3: {
-      fontFamily: '"Crimson Text", serif',
-      letterSpacing: '0.1em',
-      textTransform: 'uppercase',
+      fontFamily: 'MedievalSharp, cursive',
+      color: '#8b0000',
     },
     h4: {
-      fontFamily: '"Crimson Text", serif',
-      letterSpacing: '0.1em',
-      textTransform: 'uppercase',
+      fontFamily: 'MedievalSharp, cursive',
+      color: '#8b0000',
     },
     h5: {
-      fontFamily: '"Crimson Text", serif',
-      letterSpacing: '0.1em',
+      fontFamily: 'MedievalSharp, cursive',
+      color: '#8b0000',
     },
     h6: {
-      fontFamily: '"Crimson Text", serif',
-      letterSpacing: '0.1em',
+      fontFamily: 'MedievalSharp, cursive',
+      color: '#8b0000',
     },
   },
   components: {
-    MuiPaper: {
-      styleOverrides: {
-        root: {
-          backgroundImage: 'none',
-          borderRadius: 8,
-          border: '1px solid #3d2929',
-          '&::before': {
-            content: '""',
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            right: 0,
-            height: 3,
-            background: 'linear-gradient(90deg, transparent, #8b0000, transparent)',
-          },
-        },
-      },
-    },
-    MuiCard: {
-      styleOverrides: {
-        root: {
-          background: 'linear-gradient(135deg, rgba(139, 0, 0, 0.05) 0%, transparent 100%)',
-          transition: 'all 0.3s ease',
-          '&:hover': {
-            transform: 'translateY(-2px)',
-            boxShadow: '0 6px 12px rgba(0, 0, 0, 0.5), 0 0 15px rgba(139, 0, 0, 0.2)',
-          },
-        },
-      },
-    },
     MuiTextField: {
       styleOverrides: {
         root: {
           '& .MuiOutlinedInput-root': {
             '& fieldset': {
-              borderColor: '#3d2929',
+              borderColor: '#3d0000',
             },
             '&:hover fieldset': {
               borderColor: '#8b0000',
             },
             '&.Mui-focused fieldset': {
-              borderColor: '#8b0000',
+              borderColor: '#b71c1c',
             },
           },
+          '& .MuiInputLabel-root': {
+            color: '#8b0000',
+          },
+          '& .MuiInputBase-input': {
+            color: '#ffffff',
+          },
+        },
+      },
+    },
+    MuiPaper: {
+      styleOverrides: {
+        root: {
+          backgroundColor: '#2d2d2d',
+          backgroundImage: 'linear-gradient(rgba(139, 0, 0, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(139, 0, 0, 0.05) 1px, transparent 1px)',
+          backgroundSize: '20px 20px',
+          boxShadow: '0 0 10px rgba(139, 0, 0, 0.3)',
         },
       },
     },

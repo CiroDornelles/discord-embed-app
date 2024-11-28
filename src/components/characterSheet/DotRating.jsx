@@ -1,123 +1,73 @@
-import React, { useState } from 'react';
-import { Box, Tooltip } from '@mui/material';
-import CircleIcon from '@mui/icons-material/Circle';
-import CircleOutlinedIcon from '@mui/icons-material/CircleOutlined';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Virtual } from 'swiper/modules';
-import 'swiper/css';
+import React from 'react';
+import { Tooltip } from '@mui/material';
 
-const DotRating = ({ value = 1, onChange, max = 5, attributeData = {} }) => {
-  const [currentValue, setCurrentValue] = useState(value);
-
-  const handleSlideChange = (swiper) => {
-    // Previne o carrossel principal de deslizar
-    const parentSwiper = swiper.el.closest('.swiper-parent')?.swiper;
-    if (parentSwiper) {
-      parentSwiper.allowTouchMove = false;
+const DotRating = ({ 
+  value = 0, 
+  onChange, 
+  max = 5, 
+  hasSelectedItem = true, 
+  onEmptyClick,
+  tooltips = []
+}) => {
+  const handleClick = (newValue) => {
+    if (!hasSelectedItem && onEmptyClick) {
+      onEmptyClick();
+      return;
     }
-
-    // Calcula o novo valor baseado na direção do slide
-    const direction = swiper.touches.diff > 0 ? 1 : -1;
-    const newValue = Math.max(1, Math.min(max, currentValue + direction));
     
-    if (newValue !== currentValue) {
-      setCurrentValue(newValue);
-      onChange?.(newValue);
-    }
-
-    // Reseta a posição do Swiper para o centro
-    swiper.slideTo(1, 0);
-  };
-
-  const handleTouchEnd = (swiper) => {
-    // Reativa o carrossel principal
-    const parentSwiper = swiper.el.closest('.swiper-parent')?.swiper;
-    if (parentSwiper) {
-      parentSwiper.allowTouchMove = true;
+    if (newValue === value) {
+      onChange(newValue - 1);
+    } else {
+      onChange(newValue);
     }
   };
 
-  const handleClick = (index) => {
-    const newValue = index + 1;
-    setCurrentValue(newValue);
-    onChange?.(newValue);
+  const renderDot = (index) => {
+    const filled = index < value;
+    const dot = (
+      <div
+        onClick={() => handleClick(index + 1)}
+        style={{
+          width: '12px',
+          height: '12px',
+          borderRadius: '50%',
+          backgroundColor: filled ? '#8b0000' : 'transparent',
+          border: '2px solid #8b0000',
+          cursor: 'pointer',
+          transition: 'background-color 0.2s',
+        }}
+      />
+    );
+
+    if (tooltips[index]) {
+      return (
+        <Tooltip
+          key={index}
+          title={tooltips[index]}
+          placement="top"
+          sx={{
+            tooltip: {
+              backgroundColor: '#000000',
+              border: '1px solid #3d0000',
+              color: '#ffffff',
+              fontFamily: 'MedievalSharp, cursive',
+              fontSize: '0.9rem',
+              maxWidth: 300
+            }
+          }}
+        >
+          <span style={{ display: 'inline-flex' }}>{dot}</span>
+        </Tooltip>
+      );
+    }
+
+    return <span key={index} style={{ display: 'inline-flex' }}>{dot}</span>;
   };
 
   return (
-    <Box sx={{ 
-      width: '150px',
-      '.swiper-dots': {
-        overflow: 'visible'
-      }
-    }}>
-      <Swiper
-        modules={[Virtual]}
-        className="swiper-dots"
-        slidesPerView={1}
-        centeredSlides={true}
-        resistanceRatio={0}
-        threshold={5}
-        onSlideChange={handleSlideChange}
-        onTouchEnd={handleTouchEnd}
-        virtual
-      >
-        <SwiperSlide>
-          <Box sx={{ 
-            display: 'flex',
-            justifyContent: 'center',
-            gap: 0.5,
-            padding: '8px 0'
-          }}>
-            {[...Array(max)].map((_, index) => (
-              <Tooltip
-                key={index}
-                title={
-                  attributeData ? (
-                    <Box>
-                      <strong>{attributeData.name}</strong>
-                      <br />
-                      {attributeData.description}
-                      <br />
-                      <em>{attributeData.levels?.[index + 1]}</em>
-                    </Box>
-                  ) : ''
-                }
-                arrow
-              >
-                <Box
-                  onClick={() => handleClick(index)}
-                  sx={{
-                    cursor: 'pointer',
-                    display: 'flex',
-                    alignItems: 'center',
-                    transition: 'transform 0.2s',
-                    '&:hover': {
-                      transform: 'scale(1.2)',
-                    },
-                  }}
-                >
-                  {index < currentValue ? (
-                    <CircleIcon
-                      sx={{
-                        color: 'purple',
-                        fontSize: '1.2rem',
-                      }}
-                    />
-                  ) : (
-                    <CircleOutlinedIcon
-                      sx={{
-                        color: 'purple',
-                        fontSize: '1.2rem',
-                      }}
-                    />
-                  )}
-                </Box>
-              </Tooltip>
-            ))}
-          </Box>
-        </SwiperSlide>
-      </Swiper>
-    </Box>
+    <div style={{ display: 'flex', gap: '4px' }}>
+      {Array.from({ length: max }).map((_, index) => renderDot(index))}
+    </div>
   );
 };
 

@@ -1,251 +1,107 @@
 import React from 'react';
-import { Paper, TextField, Box, Typography } from '@mui/material';
+import { Card, CardContent, TextField, Typography, Box } from '@mui/material';
 
-const BasicInfoCard = ({ data, onDataChange }) => {
+const BasicInfoCard = ({ data, onChange }) => {
   const handleChange = (field) => (event) => {
-    onDataChange(field, event.target.value);
+    onChange(field, event.target.value);
   };
 
   return (
-    <Paper elevation={3} sx={{ 
-      p: 3,
-      backgroundColor: 'background.paper',
-      borderRadius: 2,
-      border: '1px solid #3d0000',
-      height: '100%',
-      minWidth: '250px'
-    }}>
-      <Typography variant="h6" sx={{ 
-        textAlign: 'center', 
-        mb: 3,
-        color: '#8b0000',
-        fontFamily: 'MedievalSharp, cursive',
-        position: 'relative',
-        '&::before, &::after': {
-          content: '""',
-          position: 'absolute',
-          top: '50%',
-          width: '20%',
-          height: '2px',
-          backgroundColor: '#8b0000',
+    <Card 
+      elevation={3} 
+      sx={{ 
+        backgroundColor: '#000000',
+        borderRadius: 2,
+        border: '1px solid #3d0000',
+        height: '100%',
+        minWidth: '250px',
+        display: 'flex',
+        flexDirection: 'column',
+        '& .MuiInputBase-input': {
+          color: '#ffffff',
         },
-        '&::before': {
-          left: 0,
+        '& .MuiInputLabel-root': {
+          color: '#8b0000',
         },
-        '&::after': {
-          right: 0,
+        '& .MuiOutlinedInput-root': {
+          '& fieldset': {
+            borderColor: '#3d0000',
+          },
+          '&:hover fieldset': {
+            borderColor: '#8b0000',
+          },
+          '&.Mui-focused fieldset': {
+            borderColor: '#8b0000',
+          },
         },
-      }}>
-        Informações Básicas
-      </Typography>
-
-      <Box sx={{ 
+        backgroundImage: 'linear-gradient(rgba(139, 0, 0, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(139, 0, 0, 0.05) 1px, transparent 1px)',
+        backgroundSize: '20px 20px',
+      }}
+    >
+      <CardContent sx={{ 
+        flex: 1, 
         display: 'flex', 
-        flexDirection: 'column', 
-        gap: 2 
+        flexDirection: 'column',
+        justifyContent: 'space-between'
       }}>
-        <TextField
-          label="Nome"
-          value={data.name}
-          onChange={handleChange('name')}
-          variant="outlined"
-          size="small"
+        <Typography 
+          variant="h6" 
           sx={{ 
-            '& .MuiOutlinedInput-root': {
-              '& fieldset': {
-                borderColor: '#3d0000',
-              },
-              '&:hover fieldset': {
-                borderColor: '#8b0000',
-              },
+            textAlign: 'center', 
+            mb: 4,
+            color: '#8b0000',
+            fontFamily: 'MedievalSharp, cursive',
+            position: 'relative',
+            '&::before, &::after': {
+              content: '""',
+              position: 'absolute',
+              top: '50%',
+              width: '20%',
+              height: '2px',
+              backgroundColor: '#8b0000',
             },
-            '& .MuiInputLabel-root': {
-              color: '#3d0000',
-            }
-          }}
-        />
-        <TextField
-          label="Jogador"
-          value={data.player}
-          onChange={handleChange('player')}
-          variant="outlined"
-          size="small"
-          sx={{ 
-            '& .MuiOutlinedInput-root': {
-              '& fieldset': {
-                borderColor: '#3d0000',
-              },
-              '&:hover fieldset': {
-                borderColor: '#8b0000',
-              },
+            '&::before': {
+              left: 0,
             },
-            '& .MuiInputLabel-root': {
-              color: '#3d0000',
-            }
-          }}
-        />
-        <TextField
-          label="Crônica"
-          value={data.chronicle}
-          onChange={handleChange('chronicle')}
-          variant="outlined"
-          size="small"
-          sx={{ 
-            '& .MuiOutlinedInput-root': {
-              '& fieldset': {
-                borderColor: '#3d0000',
-              },
-              '&:hover fieldset': {
-                borderColor: '#8b0000',
-              },
+            '&::after': {
+              right: 0,
             },
-            '& .MuiInputLabel-root': {
-              color: '#3d0000',
-            }
           }}
-        />
-        <TextField
-          label="Natureza"
-          value={data.nature}
-          onChange={handleChange('nature')}
-          variant="outlined"
-          size="small"
-          sx={{ 
-            '& .MuiOutlinedInput-root': {
-              '& fieldset': {
-                borderColor: '#3d0000',
-              },
-              '&:hover fieldset': {
-                borderColor: '#8b0000',
-              },
-            },
-            '& .MuiInputLabel-root': {
-              color: '#3d0000',
-            }
-          }}
-        />
-        <TextField
-          label="Comportamento"
-          value={data.demeanor}
-          onChange={handleChange('demeanor')}
-          variant="outlined"
-          size="small"
-          sx={{ 
-            '& .MuiOutlinedInput-root': {
-              '& fieldset': {
-                borderColor: '#3d0000',
-              },
-              '&:hover fieldset': {
-                borderColor: '#8b0000',
-              },
-            },
-            '& .MuiInputLabel-root': {
-              color: '#3d0000',
-            }
-          }}
-        />
-        <TextField
-          label="Conceito"
-          value={data.concept}
-          onChange={handleChange('concept')}
-          variant="outlined"
-          size="small"
-          sx={{ 
-            '& .MuiOutlinedInput-root': {
-              '& fieldset': {
-                borderColor: '#3d0000',
-              },
-              '&:hover fieldset': {
-                borderColor: '#8b0000',
-              },
-            },
-            '& .MuiInputLabel-root': {
-              color: '#3d0000',
-            }
-          }}
-        />
-        <TextField
-          label="Clã"
-          value={data.clan}
-          onChange={handleChange('clan')}
-          variant="outlined"
-          size="small"
-          sx={{ 
-            '& .MuiOutlinedInput-root': {
-              '& fieldset': {
-                borderColor: '#3d0000',
-              },
-              '&:hover fieldset': {
-                borderColor: '#8b0000',
-              },
-            },
-            '& .MuiInputLabel-root': {
-              color: '#3d0000',
-            }
-          }}
-        />
-        <TextField
-          label="Geração"
-          value={data.generation}
-          onChange={handleChange('generation')}
-          variant="outlined"
-          size="small"
-          sx={{ 
-            '& .MuiOutlinedInput-root': {
-              '& fieldset': {
-                borderColor: '#3d0000',
-              },
-              '&:hover fieldset': {
-                borderColor: '#8b0000',
-              },
-            },
-            '& .MuiInputLabel-root': {
-              color: '#3d0000',
-            }
-          }}
-        />
-        <TextField
-          label="Senhor"
-          value={data.sire}
-          onChange={handleChange('sire')}
-          variant="outlined"
-          size="small"
-          sx={{ 
-            '& .MuiOutlinedInput-root': {
-              '& fieldset': {
-                borderColor: '#3d0000',
-              },
-              '&:hover fieldset': {
-                borderColor: '#8b0000',
-              },
-            },
-            '& .MuiInputLabel-root': {
-              color: '#3d0000',
-            }
-          }}
-        />
-        <TextField
-          label="Tipo de Predador"
-          value={data.predator}
-          onChange={handleChange('predator')}
-          variant="outlined"
-          size="small"
-          sx={{ 
-            '& .MuiOutlinedInput-root': {
-              '& fieldset': {
-                borderColor: '#3d0000',
-              },
-              '&:hover fieldset': {
-                borderColor: '#8b0000',
-              },
-            },
-            '& .MuiInputLabel-root': {
-              color: '#3d0000',
-            }
-          }}
-        />
-      </Box>
-    </Paper>
+        >
+          Informações Básicas
+        </Typography>
+        
+        <Box sx={{ 
+          display: 'flex', 
+          flexDirection: 'column', 
+          gap: 4,
+          flex: 1,
+          justifyContent: 'space-evenly'
+        }}>
+          <TextField
+            label="Nome"
+            fullWidth
+            value={data.nome}
+            onChange={handleChange('nome')}
+            variant="outlined"
+          />
+          <TextField
+            label="Jogador"
+            fullWidth
+            value={data.jogador}
+            onChange={handleChange('jogador')}
+            variant="outlined"
+          />
+          <TextField
+            label="Crônica"
+            fullWidth
+            value={data.cronica}
+            onChange={handleChange('cronica')}
+            variant="outlined"
+          />
+        </Box>
+      </CardContent>
+    </Card>
   );
 };
 

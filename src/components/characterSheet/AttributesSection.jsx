@@ -4,9 +4,6 @@ import Grid2 from '@mui/material/Unstable_Grid2';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation, EffectCoverflow } from 'swiper/modules';
 import AttributeGroup from './AttributeGroup';
-import physicalData from '../../data/wod/vampire/v20_dark_ages/attributes/physical.json';
-import socialData from '../../data/wod/vampire/v20_dark_ages/attributes/social.json';
-import mentalData from '../../data/wod/vampire/v20_dark_ages/attributes/mental.json';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -14,43 +11,48 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-coverflow';
 
-const attributes = {
-  physical: {
+const attributeGroups = [
+  {
     title: 'Físicos',
-    items: ['Força', 'Destreza', 'Vigor'],
-    data: physicalData
+    category: 'physical'
   },
-  social: {
+  {
     title: 'Sociais',
-    items: ['Carisma', 'Manipulação', 'Aparência'],
-    data: socialData
+    category: 'social'
   },
-  mental: {
+  {
     title: 'Mentais',
-    items: ['Percepção', 'Inteligência', 'Raciocínio'],
-    data: mentalData
+    category: 'mental'
   }
-};
+];
 
 const AttributesSection = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
-  const attributeGroups = Object.entries(attributes).map(([key, group]) => (
-    <AttributeGroup key={key} title={group.title} attributes={group.items} data={group.data} />
-  ));
-
   return (
     <Box sx={{ mt: 4 }}>
       <Typography 
-        variant="h5" 
-        component="h2" 
+        variant="h4" 
+        align="center" 
         sx={{ 
-          mb: 2, 
-          textAlign: 'center',
+          mb: 4,
           color: '#8b0000',
           fontFamily: 'MedievalSharp, cursive',
-          textShadow: '2px 2px 4px rgba(0,0,0,0.3)'
+          textTransform: 'uppercase',
+          letterSpacing: '0.2em',
+          textShadow: '2px 2px 4px rgba(0,0,0,0.3)',
+          position: 'relative',
+          '&::after': {
+            content: '""',
+            position: 'absolute',
+            bottom: '-10px',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            width: '200px',
+            height: '2px',
+            background: 'linear-gradient(90deg, transparent, #8b0000, transparent)',
+          }
         }}
       >
         Atributos
@@ -100,7 +102,7 @@ const AttributesSection = () => {
           >
             {attributeGroups.map((group, index) => (
               <SwiperSlide key={index}>
-                {group}
+                <AttributeGroup title={group.title} category={group.category} />
               </SwiperSlide>
             ))}
           </Swiper>
@@ -109,7 +111,7 @@ const AttributesSection = () => {
         <Grid2 container spacing={4} justifyContent="center">
           {attributeGroups.map((group, index) => (
             <Grid2 key={index} xs={12} sm={6} md={4}>
-              {group}
+              <AttributeGroup title={group.title} category={group.category} />
             </Grid2>
           ))}
         </Grid2>
