@@ -1,0 +1,63 @@
+{
+  "name": "Fire Voice",
+  "namePtBr": "Voz de Fogo",
+  "level": 4,
+  "description": {
+    "text": "Fire is coming. Deep in their dead hearts, every Malkavian knows this. One must be adept at fleeing when it does. By merely addressing a crowd, the vampire can put the fear of fire into them, forcing the listeners to abandon reason and higher thought. The demons of their mind take on a terrifying fiery mien, and they cannot help but run.",
+    "description": "O fogo está chegando. No fundo de seus corações mortos, todo Malkaviano sabe disso. É preciso ser adepto a fugir quando isso acontece. Apenas ao se dirigir a uma multidão, o vampiro pode incutir neles o medo do fogo, forçando os ouvintes a abandonar a razão e o pensamento superior. Os demônios de suas mentes assumem uma aparência aterradoramente ígnea, e eles não podem evitar correr."
+  },
+  "system": {
+    "activation": {
+      "text": "This power is a focused, more potent Soul Haunting. All potential victims must be listening to the vampire's voice for three turns.",
+      "description": "Este poder é uma Assombração da Alma mais focada e potente. Todas as vítimas potenciais devem estar ouvindo a voz do vampiro por três turnos."
+    },
+    "roll": {
+      "attribute": {
+        "text": "Manipulation",
+        "description": "Manipulação"
+      },
+      "ability": {
+        "text": "Empathy",
+        "description": "Empatia"
+      },
+      "difficulty": {
+        "text": 7,
+        "description": 7
+      }
+    },
+    "effects": {
+      "targets": {
+        "text": "Success on the roll allows the vampire to affect one target per success",
+        "description": "Sucesso na rolagem permite ao vampiro afetar um alvo por sucesso"
+      },
+      "duration": {
+        "text": "The frenzy or fear lasts for a scene, with the Soul Haunting effect lasting for an additional night thereafter (and with especially fiery imagery)",
+        "description": "O frenesi ou medo dura por uma cena, com o efeito de Assombração da Alma durando por uma noite adicional depois disso (e com imagens especialmente ígneas)"
+      }
+    },
+    "targetEffects": {
+      "vampires": {
+        "text": "Vampires (or other creatures capable of frenzy, such as lupines) may make a Rötschreck test at +2 difficulty to resist the power. Vampires and others may test as usual to break their frenzy.",
+        "description": "Vampiros (ou outras criaturas capazes de frenesi, como lupinos) podem fazer um teste de Rötschreck com +2 de dificuldade para resistir ao poder. Vampiros e outros podem testar normalmente para quebrar seu frenesi."
+      },
+      "mortals": {
+        "text": "Mortals are automatically affected and don't remember their actions while frightened",
+        "description": "Mortais são afetados automaticamente e não se lembram de suas ações enquanto amedrontados"
+      }
+    },
+    "userEffects": {
+      "rotschreckTest": {
+        "text": "The vampire using Fire Voice must also test for Rötschreck upon invoking this power, though his difficulty to resist is one lower than normal",
+        "description": "O vampiro usando Voz de Fogo também deve testar Rötschreck ao invocar este poder, embora sua dificuldade para resistir seja um ponto menor que o normal"
+      },
+      "failure": {
+        "text": "If the initial roll to invoke this power is a failure, the difficulty of the roll to resist the frenzy increases by one instead",
+        "description": "Se a rolagem inicial para invocar este poder for uma falha, a dificuldade da rolagem para resistir ao frenesi aumenta em um ponto"
+      },
+      "botch": {
+        "text": "If the roll to invoke this power is a botch, the Rötschreck response is automatic",
+        "description": "Se a rolagem para invocar este poder for uma falha crítica, a resposta de Rötschreck é automática"
+      }
+    }
+  }
+}

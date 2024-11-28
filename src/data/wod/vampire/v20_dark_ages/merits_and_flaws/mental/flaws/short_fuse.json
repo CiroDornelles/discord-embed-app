@@ -1,0 +1,20 @@
+{
+  "name": "Short Fuse",
+  "namePtBr": "Pavio Curto",
+  "category": "Mental",
+  "cost": -2,
+  "description": {
+    "text": "You have a hair-trigger temper, and the slightest provocation can send you into a rage. Your Beast is particularly sensitive to insult or frustration, making it difficult to maintain your composure in tense situations.",
+    "description": "Você tem um temperamento explosivo, e a menor provocação pode te deixar furioso. Sua Besta é particularmente sensível a insultos ou frustrações, tornando difícil manter sua compostura em situações tensas."
+  },
+  "effects": {
+    "frenzy": {
+      "text": "Difficulty to resist frenzy is increased by 2 when insulted, frustrated, or antagonized",
+      "description": "Dificuldade para resistir ao frenesi é aumentada em 2 quando insultado, frustrado ou antagonizado"
+    },
+    "social": {
+      "text": "Must make a Self-Control roll (difficulty 7) to avoid angry outbursts in social situations",
+      "description": "Deve fazer uma rolagem de Autocontrole (dificuldade 7) para evitar explosões de raiva em situações sociais"
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "name": "Psychomachia",
+  "namePtBr": "Psicomaquia",
+  "level": 4,
+  "description": {
+    "text": "Prudentius was a Roman poet who wrote the Psychomachia – 'the Battle of Souls,' describing the struggle of faith against idolatry and vice. Baali know this game, and they play to win. With this power, the vampire combines the ability to read a victim's psyche with the ability to rend spiritual matter. Psychomachia breathes infernal life into the target's vice, forcing the victim to act the hero and literally battle her inner demons.",
+    "description": "Prudêncio foi um poeta romano que escreveu a Psicomaquia – 'a Batalha das Almas,' descrevendo a luta da fé contra a idolatria e o vício. Os Baali conhecem este jogo, e jogam para vencer. Com este poder, o vampiro combina a habilidade de ler a psique de uma vítima com a capacidade de rasgar matéria espiritual. Psicomaquia sopra vida infernal no vício do alvo, forçando a vítima a agir como herói e literalmente batalhar contra seus demônios internos."
+  },
+  "system": {
+    "prerequisites": {
+      "text": "Must first successfully use Sense the Sin on the target.",
+      "description": "Deve primeiro usar Sentir o Pecado com sucesso no alvo."
+    },
+    "activation": {
+      "text": "The target must roll their lowest Virtue (difficulty equals the Baali's Willpower).",
+      "description": "O alvo deve rolar sua Virtude mais baixa (dificuldade igual à Força de Vontade do Baali)."
+    },
+    "effects": {
+      "failure": {
+        "text": "Brings any Derangements to the fore and creates a literal fight between the target and their personified vice. This may take the form of any conflict, such as an abusive argument rather than a physical battle.",
+        "description": "Traz quaisquer Perturbações à tona e cria uma luta literal entre o alvo e seu vício personificado. Isso pode tomar a forma de qualquer conflito, como uma discussão abusiva ao invés de uma batalha física."
+      },
+      "botch": {
+        "text": "The target is overwhelmed and frenzies — or becomes possessed by their dark passenger.",
+        "description": "O alvo é sobrecarregado e entra em frenesi — ou se torna possuído por seu passageiro sombrio."
+      }
+    }
+  },
+  "mechanics": {
+    "phantasm": {
+      "traits": {
+        "text": "The assailant is a Storyteller character with traits equivalent or slightly inferior to the victim's.",
+        "description": "O agressor é um personagem do Narrador com características equivalentes ou levemente inferiores às da vítima."
+      },
+      "roadModifier": {
+        "text": "+1 to all traits for every level of Road less than 5",
+        "description": "+1 em todas as características para cada nível de Estrada menor que 5"
+      }
+    },
+    "damage": {
+      "text": "Wounds inflicted are illusory but can force mortals into catatonia or vampires into torpor upon phantom 'death'.",
+      "description": "Ferimentos infligidos são ilusórios mas podem forçar mortais à catatonia ou vampiros ao torpor após uma 'morte' fantasma."
+    },
+    "duration": {
+      "text": "The phantasm vanishes on their defeat or the Baali's loss of concentration.",
+      "description": "O fantasma desaparece após sua derrota ou perda de concentração do Baali."
+    }
+  },
+  "storytellerNotes": {
+    "manifestation": {
+      "text": "The personified vice should reflect the target's greatest moral failings and deepest fears. Consider the target's background and personal history when designing the apparition.",
+      "description": "O vício personificado deve refletir as maiores falhas morais e medos mais profundos do alvo. Considere o histórico e história pessoal do alvo ao criar a aparição."
+    },
+    "conflictTypes": {
+      "text": [
+        "Physical combat",
+        "Verbal abuse",
+        "Psychological warfare",
+        "Moral debates",
+        "Symbolic confrontations"
+      ],
+      "description": [
+        "Combate físico",
+        "Abuso verbal",
+        "Guerra psicológica",
+        "Debates morais",
+        "Confrontos simbólicos"
+      ]
+    },
+    "environmentalEffects": {
+      "text": "The battle might manifest in ways that affect the surrounding environment - darkening shadows, temperature drops, or unsettling sounds that others can perceive.",
+      "description": "A batalha pode se manifestar de formas que afetam o ambiente ao redor - sombras escurecendo, quedas de temperatura ou sons perturbadores que outros podem perceber."
+    },
+    "aftereffects": {
+      "text": [
+        "Psychological trauma may persist after the encounter",
+        "Victory might strengthen the target's resolve",
+        "Defeat could weaken their resistance to future temptations",
+        "The experience might trigger lasting Derangements"
+      ],
+      "description": [
+        "Trauma psicológico pode persistir após o encontro",
+        "Vitória pode fortalecer a determinação do alvo",
+        "Derrota pode enfraquecer sua resistência a tentações futuras",
+        "A experiência pode desencadear Perturbações duradouras"
+      ]
+    }
+  }
+}

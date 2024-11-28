@@ -1,0 +1,20 @@
+{
+  "name": "Flesh of the Corpse",
+  "namePtBr": "Carne do Cadáver",
+  "category": "Physical",
+  "cost": -5,
+  "description": {
+    "text": "Your flesh does not fully regenerate itself once it is damaged. While you are able to heal wounds, your skin maintains a deathly pallor and bears the cold, waxy texture of a corpse. Additionally, your flesh shows signs of decay that progress over time.",
+    "description": "Sua carne não se regenera completamente uma vez danificada. Embora você seja capaz de curar feridas, sua pele mantém uma palidez mortal e possui a textura fria e cerosa de um cadáver. Além disso, sua carne mostra sinais de decomposição que progridem com o tempo."
+  },
+  "effects": {
+    "appearance": {
+      "text": "Your Appearance rating can never be higher than 1, and you automatically fail any attempts to pass as a living mortal.",
+      "description": "Sua classificação de Aparência nunca pode ser maior que 1, e você automaticamente falha em qualquer tentativa de se passar por um mortal vivo."
+    },
+    "social": {
+      "text": "Social rolls involving mortals are made at +2 difficulty, as they instinctively recoil from your horrific appearance.",
+      "description": "Rolagens sociais envolvendo mortais são feitas com +2 de dificuldade, pois eles instintivamente recuam de sua aparência horrível."
+    }
+  }
+}

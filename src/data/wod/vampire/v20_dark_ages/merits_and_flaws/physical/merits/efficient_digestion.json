@@ -1,0 +1,16 @@
+{
+  "name": "Efficient Digestion",
+  "namePtBr": "Digestão Eficiente",
+  "category": "Physical",
+  "cost": 3,
+  "description": {
+    "text": "Your internal vampiric systems work faster and more effectively than most, granting you more a greater yield from feeding.",
+    "description": "Seus sistemas vampíricos internos funcionam mais rápido e de forma mais eficaz que a maioria, garantindo um maior rendimento ao se alimentar."
+  },
+  "effects": {
+    "bloodPoints": {
+      "text": "Gain an additional blood point for every two you consume",
+      "description": "Ganhe um ponto de sangue adicional para cada dois que você consome"
+    }
+  }
+}

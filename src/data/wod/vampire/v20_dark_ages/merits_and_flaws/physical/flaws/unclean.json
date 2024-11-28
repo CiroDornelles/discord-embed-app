@@ -1,0 +1,42 @@
+{
+  "name": "Unclean",
+  "namePtBr": "Impuro",
+  "category": "Physical",
+  "cost": -2,
+  "description": {
+    "text": "Whether a lingering trait from your mortal life or an unfortunate side effect of your Embrace, your skin is marred in such a way that most casual observers assume you are a leper (or at least carrying some kind of plague).",
+    "description": "Seja uma característica remanescente de sua vida mortal ou um efeito colateral infeliz de seu Abraço, sua pele está marcada de tal forma que a maioria dos observadores casuais assume que você é um leproso (ou pelo menos portador de algum tipo de praga)."
+  },
+  "effects": {
+    "social": {
+      "text": "You may be barred entry to major cities, thrown out of most establishments, or subject to misguided attempts at healing or mercy.",
+      "description": "Você pode ter a entrada barrada em grandes cidades, ser expulso da maioria dos estabelecimentos ou ser sujeito a tentativas equivocadas de cura ou misericórdia."
+    }
+  },
+  "variations": {
+    "text": [
+      {
+        "cost": -2,
+        "description": "Basic version, appearance of disease"
+      },
+      {
+        "cost": -3,
+        "description": "You carry leprosy (or some other contagious and visible disease)"
+      }
+    ],
+    "description": [
+      {
+        "cost": -2,
+        "description": "Versão básica, aparência de doença"
+      },
+      {
+        "cost": -3,
+        "description": "Você carrega lepra (ou alguma outra doença contagiosa e visível)"
+      }
+    ]
+  },
+  "clanRestrictions": {
+    "text": "Nosferatu who take this Flaw receive only 1 point for it and must take its full effects (3 points)",
+    "description": "Nosferatu que escolhem este Defeito recebem apenas 1 ponto por ele e devem assumir seus efeitos completos (3 pontos)"
+  }
+}

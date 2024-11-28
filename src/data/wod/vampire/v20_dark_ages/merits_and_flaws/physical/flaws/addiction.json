@@ -1,0 +1,32 @@
+{
+  "name": "Addiction",
+  "namePtBr": "Vício",
+  "category": "Physical",
+  "cost": -3,
+  "description": {
+    "text": "One of your vices from life has carried over into your unlife. Now, whenever you feed, you must also satiate your addiction. This could be anything from preying on drunkards, those who have become dependent on pain-killing opiates, or even the deeply spiritual who use hallucinogens to commune with the divine. The addiction not need be limited to substance abuse, extending to thrill-seeking or sexual encounters.",
+    "description": "Um de seus vícios da vida se manteve em sua não-vida. Agora, sempre que você se alimenta, você também deve saciar seu vício. Isso pode ser qualquer coisa, desde predar bêbados, aqueles que se tornaram dependentes de opiáceos analgésicos, ou até mesmo os profundamente espirituais que usam alucinógenos para comungar com o divino. O vício não precisa se limitar ao abuso de substâncias, estendendo-se à busca por emoções ou encontros sexuais."
+  },
+  "effects": {
+    "feeding": {
+      "text": "Blood not tainted with your vice only offers half the normal sustenance",
+      "description": "Sangue não contaminado com seu vício oferece apenas metade do sustento normal"
+    }
+  },
+  "examples": {
+    "text": [
+      "Drunkards",
+      "Opiate users",
+      "Hallucinogen users",
+      "Thrill-seekers",
+      "Sexual encounters"
+    ],
+    "description": [
+      "Bêbados",
+      "Usuários de opiáceos",
+      "Usuários de alucinógenos",
+      "Caçadores de emoções",
+      "Encontros sexuais"
+    ]
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "name": "Shedding the Mask",
+  "namePtBr": "Despindo a Máscara",
+  "level": 5,
+  "description": {
+    "text": "Malkavians learn to hide their insanity, lest it make them a target. Others don't have that practice. At the apex of Dementation mastery, the vampire may overwhelm their victim with insanity, shattering their conscious mind and warping their personality to serve the whims of madness.",
+    "description": "Malkavianos aprendem a esconder sua insanidade, para que ela não os torne um alvo. Outros não têm essa prática. No ápice do domínio da Demência, o vampiro pode sobrecarregar sua vítima com insanidade, despedaçando sua mente consciente e distorcendo sua personalidade para servir aos caprichos da loucura."
+  },
+  "system": {
+    "requirements": {
+      "text": "The vampire must gain her target's undivided attention for at least one full turn to enact this power",
+      "description": "O vampiro deve ganhar a atenção total de seu alvo por pelo menos um turno completo para ativar este poder"
+    },
+    "cost": {
+      "text": "One blood point",
+      "description": "Um ponto de sangue"
+    },
+    "roll": {
+      "attribute": {
+        "text": "Manipulation",
+        "description": "Manipulação"
+      },
+      "ability": {
+        "text": "Intimidation",
+        "description": "Intimidação"
+      },
+      "difficulty": {
+        "text": "Target's current Willpower points",
+        "description": "Pontos atuais de Força de Vontade do alvo"
+      }
+    },
+    "effects": {
+      "success": {
+        "text": "The victim is afflicted with five Derangements — a Lunacy Derangement and the Four Humor imbalances",
+        "description": "A vítima é afligida com cinco Desequilíbrios — um Desequilíbrio de Lunacia e os quatro desequilíbrios dos Humores"
+      },
+      "botch": {
+        "text": "On a botch, the vampire suffers all of the Derangements intended for the victim. A minimum of six Derangements may well reduce the vampire to catatonic torpor.",
+        "description": "Em uma falha crítica, o vampiro sofre todos os Desequilíbrios destinados à vítima. Um mínimo de seis Desequilíbrios pode muito bem reduzir o vampiro a um torpor catatônico."
+      }
+    },
+    "duration": {
+      "text": [
+        {
+          "successes": 1,
+          "duration": "One turn"
+        },
+        {
+          "successes": 2,
+          "duration": "One night"
+        },
+        {
+          "successes": 3,
+          "duration": "One week"
+        },
+        {
+          "successes": 4,
+          "duration": "One month"
+        },
+        {
+          "successes": 5,
+          "duration": "One year"
+        }
+      ],
+      "description": [
+        {
+          "successes": 1,
+          "duration": "Um turno"
+        },
+        {
+          "successes": 2,
+          "duration": "Uma noite"
+        },
+        {
+          "successes": 3,
+          "duration": "Uma semana"
+        },
+        {
+          "successes": 4,
+          "duration": "Um mês"
+        },
+        {
+          "successes": 5,
+          "duration": "Um ano"
+        }
+      ]
+    },
+    "resistance": {
+      "text": "The victim (or the target of a botch) can spend a number of Willpower points equal to the successes rolled to end the duration prematurely",
+      "description": "A vítima (ou o alvo de uma falha crítica) pode gastar um número de pontos de Força de Vontade igual aos sucessos obtidos para encerrar a duração prematuramente"
+    }
+  }
+}

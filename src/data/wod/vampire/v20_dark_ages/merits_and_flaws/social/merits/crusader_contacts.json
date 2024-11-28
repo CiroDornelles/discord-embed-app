@@ -1,0 +1,24 @@
+{
+  "name": "Crusader Contacts",
+  "namePtBr": "Contatos Cruzados",
+  "category": "Social",
+  "cost": 2,
+  "description": {
+    "text": "You have established connections with various Crusader armies and their support networks throughout the Holy Land and Europe. These contacts can provide you with information, resources, and occasional assistance in your travels.",
+    "description": "Você estabeleceu conexões com vários exércitos Cruzados e suas redes de apoio por toda a Terra Santa e Europa. Estes contatos podem fornecer informações, recursos e assistência ocasional em suas viagens."
+  },
+  "effects": {
+    "information": {
+      "text": "Can gather information about Crusader movements and activities without requiring rolls",
+      "description": "Pode reunir informações sobre movimentos e atividades dos Cruzados sem necessitar de rolagens"
+    },
+    "resources": {
+      "text": "May call upon Crusader camps for shelter and basic supplies when traveling",
+      "description": "Pode recorrer a acampamentos Cruzados para abrigo e suprimentos básicos durante viagens"
+    },
+    "influence": {
+      "text": "Reduce difficulty by 1 on Social rolls when dealing with Crusader-affiliated individuals",
+      "description": "Reduz a dificuldade em 1 em rolagens Sociais ao lidar com indivíduos afiliados aos Cruzados"
+    }
+  }
+}

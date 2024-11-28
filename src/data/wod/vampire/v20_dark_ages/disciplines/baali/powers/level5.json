@@ -1,0 +1,119 @@
+{
+  "name": "Condemnation",
+  "namePtBr": "Condenação",
+  "level": 5,
+  "description": {
+    "text": "The Children of Baal relish the opportunity to importune dark energies into the waking world. With this power, the Baali levies a curse upon her victim, drawing upon the tormented might of their blood to work their will upon fate.",
+    "description": "Os Filhos de Baal se deleitam com a oportunidade de importunar energias sombrias no mundo desperto. Com este poder, o Baali impõe uma maldição sobre sua vítima, recorrendo ao poder atormentado de seu sangue para exercer sua vontade sobre o destino."
+  },
+  "system": {
+    "activation": {
+      "text": "Roll Intelligence + Occult (difficulty equal to the subject's Willpower). Successes must be split between duration and severity of the curse.",
+      "description": "Role Inteligência + Ocultismo (dificuldade igual à Força de Vontade do sujeito). Sucessos devem ser divididos entre duração e severidade da maldição."
+    },
+    "effects": {
+      "curseTable": {
+        "text": [
+          {
+            "successes": 1,
+            "duration": "Up to one week",
+            "example": "\"Your lightest footfalls are as childish stomps.\"",
+            "effect": "All Stealth rolls are at +3 difficulty."
+          },
+          {
+            "successes": 2,
+            "duration": "One month",
+            "example": "\"Sicken and wither, and feel the weakness of your blood.\"",
+            "effect": "The difficulty of all Stamina rolls increases by two, or vampire loses four soak dice."
+          },
+          {
+            "successes": 3,
+            "duration": "One year",
+            "example": "\"Live forever in fear: those you respect seek your betrayal.\"",
+            "effect": "The vampire suffers increased Social roll difficulties, or the character cannot benefit from Allies or Contacts."
+          },
+          {
+            "successes": 4,
+            "duration": "Ten years",
+            "example": "\"Feel the godling in your veins crushed, and your future progeny vanished.\"",
+            "effect": "The character cannot Embrace childer or create ghouls."
+          },
+          {
+            "successes": 5,
+            "duration": "Permanent",
+            "example": "\"Doom will be upon you, and your missteps become fatal and final.\"",
+            "effect": "Simple failures are considered botches."
+          }
+        ],
+        "description": [
+          {
+            "successes": 1,
+            "duration": "Até uma semana",
+            "example": "\"Seus passos mais leves são como pisadas infantis.\"",
+            "effect": "Todas as rolagens de Furtividade têm +3 de dificuldade."
+          },
+          {
+            "successes": 2,
+            "duration": "Um mês",
+            "example": "\"Adoeça e definhe, e sinta a fraqueza de seu sangue.\"",
+            "effect": "A dificuldade de todas as rolagens de Vigor aumenta em dois, ou o vampiro perde quatro dados de absorção."
+          },
+          {
+            "successes": 3,
+            "duration": "Um ano",
+            "example": "\"Viva para sempre em medo: aqueles que você respeita buscam sua traição.\"",
+            "effect": "O vampiro sofre dificuldades aumentadas em rolagens Sociais, ou o personagem não pode se beneficiar de Aliados ou Contatos."
+          },
+          {
+            "successes": 4,
+            "duration": "Dez anos",
+            "example": "\"Sinta o deus em suas veias esmagado, e sua futura progênie desvanecida.\"",
+            "effect": "O personagem não pode Abraçar rebentos ou criar carniçais."
+          },
+          {
+            "successes": 5,
+            "duration": "Permanente",
+            "example": "\"A ruína cairá sobre você, e seus tropeços se tornarão fatais e finais.\"",
+            "effect": "Falhas simples são consideradas falhas críticas."
+          }
+        ]
+      }
+    },
+    "specialEffects": {
+      "demonBanishment": {
+        "text": "At five successes, a Baali may rip a demon out of a mortal host or relic and fling it back to Hell, but they only do so against the most recalcitrant.",
+        "description": "Com cinco sucessos, um Baali pode arrancar um demônio de um hospedeiro mortal ou relíquia e lançá-lo de volta ao Inferno, mas eles só fazem isso contra os mais recalcitrantes."
+      }
+    }
+  },
+  "mechanics": {
+    "roll": {
+      "attribute": {
+        "text": "Intelligence",
+        "description": "Inteligência"
+      },
+      "ability": {
+        "text": "Occult",
+        "description": "Ocultismo"
+      },
+      "difficulty": {
+        "text": "Target's Willpower",
+        "description": "Força de Vontade do alvo"
+      }
+    },
+    "cancellation": {
+      "text": "The Baali may choose to end the curse at any time, but they rarely do so.",
+      "description": "O Baali pode escolher encerrar a maldição a qualquer momento, mas raramente o faz."
+    }
+  },
+  "storytellerNotes": {
+    "curseDesign": {
+      "text": "Curses should be creative and story-appropriate. The examples provided in the curse table serve as guidelines for the type and severity of curses appropriate for each success level.",
+      "description": "Maldições devem ser criativas e apropriadas à história. Os exemplos fornecidos na tabela de maldições servem como diretrizes para o tipo e severidade de maldições apropriadas para cada nível de sucesso."
+    },
+    "balancing": {
+      "text": "Consider the mechanical impact of each curse level. While creative variations are encouraged, they should maintain roughly equivalent mechanical effects to those listed in the curse table.",
+      "description": "Considere o impacto mecânico de cada nível de maldição. Embora variações criativas sejam encorajadas, elas devem manter efeitos mecânicos aproximadamente equivalentes aos listados na tabela de maldições."
+    }
+  }
+}

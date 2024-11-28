@@ -1,0 +1,20 @@
+{
+  "name": "Nightmares",
+  "namePtBr": "Pesadelos",
+  "category": "Mental",
+  "cost": -1,
+  "description": {
+    "text": "You experience horrific dreams during your daily rest. These nightmares are so vivid and terrifying that they make your sleep fitful and restless, leaving you drained and disturbed when you wake.",
+    "description": "Você experimenta sonhos horríveis durante seu repouso diário. Estes pesadelos são tão vívidos e aterrorizantes que tornam seu sono agitado e inquieto, deixando você exausto e perturbado quando acorda."
+  },
+  "effects": {
+    "waking": {
+      "text": "Must make a Willpower roll (difficulty 7) when awakening or lose one die from all dice pools for the first hour after rising",
+      "description": "Deve fazer uma rolagem de Força de Vontade (dificuldade 7) ao acordar ou perder um dado de todas as paradas de dados durante a primeira hora após despertar"
+    },
+    "frenzy": {
+      "text": "The difficulty to resist frenzy is increased by 1 for the first hour after experiencing a nightmare",
+      "description": "A dificuldade para resistir ao frenesi é aumentada em 1 durante a primeira hora após experimentar um pesadelo"
+    }
+  }
+}

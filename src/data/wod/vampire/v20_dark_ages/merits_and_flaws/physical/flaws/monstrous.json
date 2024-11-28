@@ -1,0 +1,20 @@
+{
+  "name": "Monstrous",
+  "namePtBr": "Monstruoso",
+  "category": "Physical",
+  "cost": -3,
+  "description": {
+    "text": "When you were Embraced, the Beast within tore its way out, permanently manifesting itself in your physical features. You are a terrible, twisted creature, the stuff of nightmares in unliving flesh. Ordinary mortals flee in terror at your approach and even Cainites recoil in disgust.",
+    "description": "Quando você foi Abraçado, a Besta dentro de você se rasgou para fora, manifestando-se permanentemente em suas características físicas. Você é uma criatura terrível e distorcida, o material dos pesadelos em carne não-viva. Mortais comuns fogem em terror à sua aproximação e até mesmo Cainitas recuam com repulsa."
+  },
+  "effects": {
+    "appearance": {
+      "text": "Your Appearance is permanently 0 and cannot be raised",
+      "description": "Sua Aparência é permanentemente 0 e não pode ser aumentada"
+    }
+  },
+  "restrictions": {
+    "text": "If your character is of Clan Nosferatu, you may not take this Flaw",
+    "description": "Se seu personagem é do Clã Nosferatu, você não pode escolher este Defeito"
+  }
+}

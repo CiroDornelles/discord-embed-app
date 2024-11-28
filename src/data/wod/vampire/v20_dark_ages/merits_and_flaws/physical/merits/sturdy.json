@@ -1,0 +1,20 @@
+{
+  "name": "Sturdy",
+  "namePtBr": "Robusto",
+  "category": "Physical",
+  "cost": 4,
+  "description": {
+    "text": "Training, hardships, or natural ability have inured your body to pain and damage. While you are not necessarily a hulking brute, anyone who has seen you in action knows that you can take more damage than the average individual.",
+    "description": "Treinamento, dificuldades ou habilidade natural habituaram seu corpo à dor e ao dano. Embora você não seja necessariamente um brutamontes, qualquer um que o tenha visto em ação sabe que você pode suportar mais dano que o indivíduo médio."
+  },
+  "effects": {
+    "health": {
+      "text": "You gain an additional Bruised health level",
+      "description": "Você ganha um nível de saúde Machucado adicional"
+    },
+    "bonuses": {
+      "text": "The Storyteller may award you with any appropriate bonuses when your innate toughness comes into play",
+      "description": "O Narrador pode conceder bônus apropriados quando sua resistência inata entra em jogo"
+    }
+  }
+}

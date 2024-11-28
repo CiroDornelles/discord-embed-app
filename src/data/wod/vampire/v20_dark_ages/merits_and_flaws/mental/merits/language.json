@@ -1,0 +1,20 @@
+{
+  "name": "Language",
+  "namePtBr": "Idioma",
+  "category": "Mental",
+  "cost": 1,
+  "description": {
+    "text": "You know an additional language beyond your native tongue. You can read, write, and speak this language fluently.",
+    "description": "Você conhece um idioma adicional além de sua língua nativa. Você pode ler, escrever e falar este idioma fluentemente."
+  },
+  "effects": {
+    "language": {
+      "text": "You are fluent in one additional language. This Merit can be taken multiple times, each time representing a different language",
+      "description": "Você é fluente em um idioma adicional. Este Mérito pode ser escolhido várias vezes, cada vez representando um idioma diferente"
+    }
+  },
+  "notes": {
+    "text": "Common languages in Dark Medieval Europe include Latin, Greek, Arabic, Hebrew, and various regional dialects",
+    "description": "Idiomas comuns na Europa Medieval incluem Latim, Grego, Árabe, Hebraico e vários dialetos regionais"
+  }
+}

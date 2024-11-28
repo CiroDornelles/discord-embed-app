@@ -1,0 +1,24 @@
+{
+  "name": "Flashbacks",
+  "namePtBr": "Flashbacks",
+  "category": "Mental",
+  "cost": -3,
+  "description": {
+    "text": "You are haunted by traumatic memories that can overwhelm you at any time. These flashbacks are so vivid that you temporarily lose touch with reality, reliving the traumatic event as if it were happening again.",
+    "description": "Você é assombrado por memórias traumáticas que podem te dominar a qualquer momento. Estes flashbacks são tão vívidos que você temporariamente perde contato com a realidade, revivendo o evento traumático como se estivesse acontecendo novamente."
+  },
+  "effects": {
+    "trigger": {
+      "text": "Specific situations can trigger flashbacks, requiring a Willpower roll (difficulty 8) to avoid being overwhelmed",
+      "description": "Situações específicas podem desencadear flashbacks, exigindo uma rolagem de Força de Vontade (dificuldade 8) para evitar ser dominado"
+    },
+    "duration": {
+      "text": "Flashbacks last for a scene or until you spend a Willpower point to snap out of it",
+      "description": "Flashbacks duram por uma cena ou até que você gaste um ponto de Força de Vontade para sair dele"
+    },
+    "effects": {
+      "text": "During a flashback, you are unable to distinguish between past and present, acting as if in the traumatic situation",
+      "description": "Durante um flashback, você é incapaz de distinguir entre passado e presente, agindo como se estivesse na situação traumática"
+    }
+  }
+}

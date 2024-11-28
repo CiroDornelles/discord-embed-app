@@ -1,0 +1,20 @@
+{
+  "name": "Code of Honor",
+  "namePtBr": "Código de Honra",
+  "category": "Mental",
+  "cost": 1,
+  "description": {
+    "text": "You have a personal code of ethics to which you adhere strictly. While this code may seem archaic or restrictive to others, it provides you with a sense of order and stability in your unlife.",
+    "description": "Você tem um código de ética pessoal ao qual adere estritamente. Embora este código possa parecer arcaico ou restritivo para outros, ele fornece a você um senso de ordem e estabilidade em sua não-vida."
+  },
+  "effects": {
+    "willpower": {
+      "text": "Gain two extra dice on Willpower rolls when acting in accordance with your code",
+      "description": "Ganhe dois dados extras em rolagens de Força de Vontade quando agir de acordo com seu código"
+    },
+    "frenzy": {
+      "text": "Gain +2 to resist frenzy when doing so would violate your code",
+      "description": "Ganhe +2 para resistir ao frenesi quando isso violaria seu código"
+    }
+  }
+}

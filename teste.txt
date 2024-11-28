@@ -1,0 +1,739 @@
+Physical Merits
+Ambidextrous (1 point): Whether by training or a
+gift of birth, you are equally adept with both hands. You
+must still split actions as normal, but you do not incur
+any additional penalties for taking actions with your
+non-dominant hand.
+Deceptive Eating (1 point): By some fortune, you
+are able to consume and enjoy mortal cuisine, thereby
+adding another layer to your guise of mortality. When
+applicable, the Storyteller may rule a lower difficulty or
+reduced penalties to rolls to convince others that you are
+human. You cannot digest or derive nourishment from
+normal food, however, and eventually must find a time
+and a place to heave it back up.
+Blush of Health (2 points): The Embrace that
+claimed you did not entirely leach away the tells of your
+former life. Your skin is cool to the touch rather than
+cold, retaining a healthy fullness as if blood skill coursed
+through your veins. You easily pass as a mortal against all
+but the most thorough examination and the Storyteller
+may choose to lower the difficulty or reduce penalties to
+rolls to convince others of your mortality. Cappadocians
+and Nosferatu may not take this Merit.
+Without a Trace (2 points): When you stray from
+the paths of civilization and wander into the wilderness,
+leaves, grass, and moss grow back where you pass and
+the earth itself moves to fill your footprints. You leave
+no noticeable traces of your passing, not even a scent.
+Normal attempts to track you (such as with Survival or
+ordinary dogs) automatically fail. The difficulty of attempts
+to track you by supernatural means, such as with Auspex,
+increases by two.
+Efficient Digestion (3 points): Your internal vam-
+piric systems work faster and more effectively than most,
+granting you more a greater yield from feeding. Gain an
+additional blood point for every two you consume.
+Sturdy (4 points): Training, hardships, or natural
+ability have inured your body to pain and damage. While
+you are not necessarily a hulking brute, anyone who has
+seen you in action knows that you can take more dam-
+age than the average individual. You gain an additional
+Bruised health level and the Storyteller may award you
+with any appropriate bonuses when your innate toughness
+comes into play.
+Physical Flaws
+Odd Gait (1 point): Moving swiftly does not come
+easily for you; perhaps walking is painful or perhaps you are
+simply never in a hurry. Whatever the reason, you move at
+half your normal movement speed. Storyteller characters
+may also come to recognize you by your uncommon walk.
+Ragged Bite (2 points): Unlike your Cainite peers,
+you lack the ability to neatly seal up the wound caused
+by feeding. Instead, you leave torn, bleeding marks which
+have a chance of becoming infected. Your target must
+make a Stamina roll (difficulty the number of damage
+caused + 5) to resist infection. The impact of such a no-
+table wound in conjunction with a diseased target is left
+to the discretion of the Storyteller. At the very least, this
+poses complications in hiding your identity as anything
+other than a monster.
+Unclean (2 or 3 points): Whether a lingering trait
+from your mortal life or an unfortunate side effect of
+your Embrace, your skin is marred in such a way that
+most casual observers assume you are a leper (or at least
+carrying some kind of plague). You may be barred entry
+to major cities, thrown out of most establishments, or
+subject to misguided attempts at healing or mercy. At 3
+points, you carry leprosy (or some other contagious and
+visible disease). Nosferatu who take this Flaw receive
+only 1 point for it and must take its full effects (3 points).
+Addiction (3 points): One of your vices from life has
+carried over into your unlife. Now, whenever you feed, you
+must also satiate your addiction. This could be anything from
+preying on drunkards, those who have become dependent
+on pain-killing opiates, or even the deeply spiritual who use
+hallucinogens to commune with the divine. The addiction not
+need be limited to substance abuse, extending to thrill-seeking
+or sexual encounters. Blood not tainted with your vice only
+offers half the normal sustenance.
+Monstrous (3 points): When you were Embraced,
+the Beast within tore its way out, permanently manifesting
+itself in your physical features. You are a terrible, twisted
+creature, the stuff of nightmares in unliving flesh. Ordinary
+mortals flee in terror at your approach and even Cainites
+recoil in disgust. Your Appearance is permanently 0 and
+cannot be raised. If your character is of Clan Nosferatu,
+you may not take this Flaw.
+Permanent Wound (3 points): By some misfortune,
+a wound sustained in your mortal life refuses to heal,
+forever open and weeping. When you wake at night, you
+always begin at the Wounded health level. No source of
+healing can cure this damage permanently, but you may
+spend blood points each night to heal it.
+Slow Healing (3 points): While other Cainites re-
+cover swiftly from their injuries, you are not so fortunate.
+Your unliving flesh is slow to mend and reluctant to heal,
+costing two blood points to heal a normal level of damage
+and five days (in addition to the normal expenditures) to
+heal a level of aggravated damage.
+Child (4 points): Most vampires begin their unlife
+in adulthood, but your sire, whether by necessity, cruelty,
+or peculiarity, Embraced you when you were a child. No
+matter how many years have passed, your body remains
+prepubescent. Your Strength and Stamina may not be
+higher than 2 and the difficulty of rolls to lead or command
+mortal adults increases by two.
+Impaired Sense (4 points): Whether by birth or an
+unfortunate circumstance later in life, one of your senses has
+been diminished. Perhaps you are hard of hearing or blind,
+or perhaps one of your other senses has lost its functionality.
+Rolls involving your impaired sense are made at a difficulty
+increased by 3. This may also increase the difficulty of other
+rolls or impose other appropriate penalties. At Storyteller
+discretion, this Flaw may be taken more than once, but
+additional senses are each 1-point Flaws.
+Mute (4 points): You cannot (or choose not to)
+speak. Typically, you communicate through body language
+and gestures, which imposes a +3 difficulty for any rolls
+that require you to communicate with unfamiliar people.
+Taking the Literacy Merit or dedicating a Multi-Lingual
+language to sign language can lessen this issue.
+Flesh of the Corpse (5 points): Although you recover
+from your wounds (mechanically healing any health levels
+lost), your flesh and bone retain the memory of the injury.
+Skin stays torn, bruises remain dark, and broken bones
+still bend at odd angles. You are incapable of passing as
+anything but inhuman, and the Storyteller may assign
+increased difficulty to Social rolls as appropriate. Some
+Cainites with this Flaw continue to age and decay, even-
+tually becoming nothing more than skeletons with rough,
+organ-like chunks hanging off their bones.
+Mental Merits
+Celestial Attunement (1 point): You innately
+know what time of day it is and are able to accurately
+guess the hour of sunrise and sunset within a few min-
+utes. With a moment’s concentration, you may also
+estimate the position of the stars, even without the
+aid of a star chart.
+Common Sense (1 point): You’ve got a good head
+on your shoulders and a natural aversion to foolish risk. In
+tense situations, you may ask the Storyteller for hints about
+the most reasonable course of action. The Storyteller may
+also grant you a warning against poorly considered actions.
+Literacy (1 point): You are a learned scholar, able
+to both read and write. The Merit assumes that you can
+read and write with fluency in your native tongue, as
+well as Latin and any languages you may have gained
+through the Multi-Lingual Merit. In some chronicles,
+literacy can be assumed. In these cases, Illiteracy becomes
+a 1-point Flaw.
+Eidetic Memory (2 points): With but a moment’s
+reflection, you can recall anything you’ve observed or
+experienced in clear detail. In a stressful or dangerous
+situation, this recollection may require a Perception +
+Alertness roll.
+Light Sleeper (2 points): When you rest, you retain
+a level of alertness above and beyond the norm. You wake
+at any unwanted disturbance in your environment, thereby
+making it very hard to surprise you while you sleep. You
+automatically succeed at any rolls to detect mundane
+attempts at surprise attacks while you sleep.
+Multi-Lingual (2 points): Through patience, study,
+and/or immersion, you are able to speak another lan-
+guage or languages with native fluency. This represents
+a full command over the language. For each dot of In-
+telligence your character possesses, you may know one
+other language. You may also use this Merit to reflect
+secret codes, cants, jargon, or sign language as well.
+Additional languages increase the cost of this Merit by
+one point per language.
+Mental Flaws
+Deep Sleeper (1 point): Slumber takes you wholly,
+plunging you completely into the depthless realm of
+dreams. Increase the difficulty of rolls to wake during
+the day by two.
+Nightmares (1 point): When you sleep, nightmares
+invade your dreams. Terrible images assault your mind,
+MERITS AND FLAWS
+422
+leaving you anxious and breathless upon waking. When
+you wake, make a Willpower roll. If you fail, the horror
+of your dreams haunts you, decreasing your dice pools for
+all actions by one until you next sleep.
+Prey Exclusion (1 point): For whatever reason you
+choose, you refuse to feed upon a certain type of person.
+If, by some unfortunate circumstance, you prey upon
+such a person, you frenzy immediately and must make a
+Degeneration check. Ventrue may only take this Flaw for
+a subset of their particular feeding stock. For example, a
+Ventrue might feed from “virgin men,” but will not feed
+from Jewish virgin men.
+Amnesia (2 points): Something has erased a portion
+of your memory. You remember little to nothing about
+your past. How far back this memory loss goes should be
+agreed upon between you and the Storyteller. You should
+also work together to determine what your character
+may have forgotten (unless you prefer to be surprised,
+of course). Storytellers should feel free to use this empty
+space in the character’s memory to provide interesting
+complications for the campaign.
+Vengeful (2 points): Revenge drives you. Its hot,
+constant presence motivates your every move. Work out
+with the Storyteller what wrongdoing has pushed you into
+such a state. Whenever you encounter the source of your
+ire, you are compelled to pursue it, but you may spend a
+Willpower point to ignore this urge.
+Flesh Eater (2 points): You cling to the misguided
+belief that you must also consume the blood-rich flesh of
+your victim (such as the heart or liver). This has obvious
+impact on the size of your herd as well as the mortal pop-
+ulation eventually linking mysterious, gruesome deaths to
+you. To keep down blood consumed without a murderous
+amount of flesh, you must succeed in a Willpower roll
+(difficulty 8) or vomit up the blood.
+Ethical Prohibition (2 or 4 points): The necessity
+of feeding is at odds with your moral compass. You cannot
+reconcile what you have become with what you believe
+in. At 2 points, you refuse to feed on humans, instead
+preying upon the blood of animals. At 4 points, you can-
+not come to terms with yourself at all and refuse to feed
+except when utterly necessary.
+
+Social Merits
+The Company of Saints and Heroes (1 point): Life
+(and possibly unlife) experiences have brought you close
+to august religious figures, political entities, and legendary
+heroes. They do truly know you and think well of you, but
+you are not necessarily close. Use the Allies background
+to represent a tighter relationship. This Merit allows you
+to name-drop your famous connection and reduce the
+difficulty to applicable Social rolls by one.
+Prestigious Sire (1 point): The vampire who
+Embraced you is no ordinary Cainite. Your sire holds
+incredible clout among your clan (and possibly others),
+and this social fortune has been bestowed upon you as
+well. Others generally treat you with more respect when
+they learn who sired you. When acting in your sire’s name
+or on your sire’s behalf, decrease the difficulty of Social
+rolls with other Cainites by one. Note, however, that
+others may also expect more from you, simply for being
+the childe of greatness.
+Debt of Gratitude (1 or 3 points): Though he may
+grudgingly admit it, an elder is in your debt. At 1 point, the
+elder owes you a favor. Work together with the Storyteller
+to determine what type of favor is owed and what you
+did to earn such a thing. At 3 points, the indebted elder
+owes you his unlife. Such an incident is extraordinarily
+unusual, so the elder likely despises being beholden to
+you. Work with the Storyteller to detail how (and why)
+this happened.
+Lingua Franca (1 point): You are able to speak a mixed
+language made of common tongues that most people you
+encounter will understand. You may not be able to hold
+philosophical discussions, but you can navigate your way
+through conversations in most places and will be able to
+communicate sufficiently in dire situations.
+Patron (1 to 5 points): You are fortunate enough to
+have a personage of some wealth and power who is willing
+to sponsor your endeavors. Presumably, your Patron is
+fond of you and is willing to offer you material goods to
+further whatever agreed upon goal you may have, so long
+as you do not abuse their favor. The scale of this Merit
+pertains both to the power of your Patron and how close
+they are to you. A 1-point Patron could be a distant but
+powerful vampire or an enthusiastic, wealthy mortal
+who has infrequent funds. A 3-point Patron might be a
+mortal prince or queen, or a vampire of some standing
+more willing to regularly fund or champion you, while a
+5-point Patron is almost certainly supernatural and has
+vast resources at their disposal. This is not something for
+nothing, however, and every so often (with increasing
+frequency directly proportional to the points invested in
+this Merit) your Patron will ask something of you. It is
+generally unwise to say no.
+Social Flaws
+Dark Secret (1 point): Something from your past
+haunts you. If found out, it could destroy your reputation
+with your clan and coterie. When the truth rears its ugly
+head, you must quash it or suffer the consequences of your
+secret getting out. You live every day knowing that at some
+point, word will get out and you will be unable to stop it.
+Infamous Sire (1 point): Some Cainites are fortu-
+nate enough to be Embraced by great members of their
+clan, sharing in their prestige and fortune. You are not
+one of those vampires. Your sire is a person of ill repute:
+disrespectful, irresponsible, rebellious, and/or callow. You
+are, therefore, guilty by association. He or she may also
+try to foist his or her failings onto you when convenient.
+Mistaken Identity (1 point): Someone among your
+clan or mortal community looks just like you. This same
+person is also a criminal, oath breaker, known cheat, or
+other ne’er-do-well. He or she is just elusive enough to
+often leave you with the blame for his or her wrongdoings.
+Your doppelganger is normally little more than a minor
+inconvenience, frequently leaving you to explain to au-
+thorities where you have been and who you really are.
+Outsider (1 point): This is not your native land; this
+is not your mother tongue. You are not from around here.
+Everything is strange and different, from the customs to
+the food. You struggle with the area’s native language
+(though you can get by with a purchase of the Lingua
+Franca Merit) and the difficulty to applicable Social rolls
+increases by one.
+Sire’s Resentment (1 point): Whether by your own
+failings or your sire’s fickle cruelty, he or she despises you.
+You can expect no favors from your sire, and he or she
+may be maneuvering to have you eliminated, politically
+or literally. The extent to which your sire hates you is
+between you and the Storyteller, but bear in mind that
+this is a 1-point Flaw, which does not have much relative
+weight. The Enemy Flaw represents more actively vitriolic
+relationships.
+Smell of the Grave (1 point): The cloying scent
+of fresh, wet earth and decay clings to you. Your skin
+smells of chrism (or any other oil used in a burial rite)
+and your breath of funerary incense. While this bothers
+your Cainite peers little, it unsettles mortals, thereby
+increasing the difficulty to Social rolls with mortals
+by one. This stacks with the Cappadocian weakness,
+making members of that clan even less adept at Social
+rolls. The upside is that, at Storyteller discretion, this
+Flaw may decrease the difficulty of Social rolls where
+being unsettling might work in one’s favor (such as
+Intimidation attempts) by one.
+Vulgar (1 point): You are famously uncouth, abrasive,
+and unpleasant. Tact is a foreign concept to you, and no
+matter of gentle prodding or harsher discussions can seem
+to teach you how to navigate a social situation. Mechani-
+cally, increase the difficulty to rolls involving social grace,
+manners, or delicate social proceedings by one. You may
+also roleplay yourself into a bind by accidentally offending
+the wrong people.
+Enemy (1 to 5 points): In your travels, you have earned
+the enmity of a person or organization. The severity and
+scope of this hatred is reflected by the rating of the Flaw. At
+1 point, your enemy is an aggrieved peer or the irritation of
+an organization. You may be undercut, inconvenienced, or
+framed for petty crimes, but nothing so severe as attempts
+on your unlife. At 3 points, your enemy is your superior, or
+the anger of an important group. They make regular efforts
+to thwart your plans, threaten your allies, and undermine
+your standing with your clan and Road. At this level, your
+enemy may consider granting you the Final Death. Work
+this out with your Storyteller. At 5 points, your enemy is an
+elder or an entire organization, such as the ruling family of
+your nation or the Catholic Church. Your death is not out of
+the question. None of your associates are safe. Everywhere
+you go, you can expect your enemy to be waiting. What
+have you done to make someone so powerful so angry?
+Rivalry (1 to 5 points): Someone hates you so much
+that they cannot bear to leave you alone. The scale of this
+Flaw is similar to that of the Enemy Flaw (see above), but
+your Rival is not interested in seeing you dead. Rather,
+a Rival desires only to make your unlife as troublesome
+and hellish as possible. At lower point value, the Rival
+may also be a friend who arrives at precisely the worst
+moment to steal your thunder or make you embarrassed.
+At higher levels, your Rival loses sleep planning how to
+make your life miserable.
+Territorial (2 points): You have staked out a claim
+to a certain area of land and a certain group of mortals
+and defend it to the point of irrationality. If you catch
+another vampire hunting on your turf, check for frenzy
+immediately. Even if you do not frenzy, the thought alone
+is enough to make you violent. Note that without the
+necessary backgrounds, your “territory” means nothing
+to anyone other than you.
+Apostate (2 points): There is no sin in changing
+Roads. However, the manner in which you changed Roads
+was spectacular and offensive. You decried your former
+Road in public and spoke out against the faults within their
+tenets. Predictably, this has earned you the ire of those on
+your former Road, but it has also made the members of
+your new Road suspicious. You must work twice as hard
+to earn the respect of your peers. Be wary, also, for those
+who might seek revenge.
+Hunted (4 points): A witch hunter has targeted
+you. She may be overestimating you, but she is prepared
+to eliminate you completely. You find your safe havens
+uncovered, your social networks compromised, and your
+allies endangered. Whether or not you affronted this witch
+hunter personally is between you and the Storyteller. The
+Storyteller should bear in mind that this is a 4-point Flaw
+and not hold back.
+Marked for Death (4 points): The Court of Blood has
+found fault with you and placed a price upon your head.
+You are earmarked for death, and one by one your peers
+will come to bring it to you. While you may be more than
+capable of taking your equals in a fight, you know not when
+or where they will strike. The festering paranoia claws at the
+edges of your thoughts; in addition to attackers of varying
+capabilities appearing at random, at Storyteller’s discretion
+you may also lose one die to Mental rolls due to distraction.
+Oathbreaker (4 points): Once you swore fealty to
+a lord, promised your loyalty to an organization, or made
+a binding business contract with a powerful person (or
+anything similar). You have since broken that promise.
+Your motives may have been pure, but you are now branded
+as an oath-breaker. It is near-impossible to earn the trust
+of others, which, at Storyteller discretion, can increase
+the difficulty of Social rolls to convince someone of your
+trustworthiness by as much as 3. Even the close members
+of your coterie have reservations about you.
+Outspoken Heretic (4 points): You hold a belief con-
+sidered to be heretical by a major religious power, such as the
+Catholic Church. Unlike others who practice their heresies in
+secret, you are open about your beliefs. You must constantly
+face false accusations, harassment from others who fancy
+themselves true believers, and the denial of hospitality from
+steadfastly faithful stranger, or those who fear the religious
+authority. At the Storyteller’s discretion, this can impose a
+difficulty increase of up to 3 to applicable Social rolls.
+Nameless (5 points): You do not exist. Certainly, you
+still walk the earth and your friends and kin can still see
+and touch you, but all records of your existence have been
+destroyed. Not even your vampiric progeny can lay claim to
+your name. As far as anyone can prove, you never were. If you
+take this Flaw, you may not take any Social Merits that grant
+benefits based on reputation. At Storyteller’s discretion, you
+may also be barred from taking Backgrounds that require a
+social presence. Who or what have you made so angry that
+they have erased your existence from the face of this earth?
+Supernatural Merits
+Darksight (2 point): Your character sees in the darkness
+the way others see in light. Even in the complete absence of
+light, she sees perfectly. She suffers no penalties for darkness.
+Additionally, she catches glimpses of the otherworldly. She
+sees ghosts as if they were material, but only while in the
+dark. More than a candle’s light negates this ability.
+Inoffensive to Animals (1 point): Not all of the curses
+of unlife have fallen upon you. Your presence does not disturb
+natural animals; instead, they treat you as they would any
+ordinary mortal. This will not stop a mother bear from de-
+fending her den, but will negate the inconvenience of having
+to explain why the farmer’s dog is so afraid of you. Creatures
+with a connection to the occult (such as crows, owls, or black
+cats) may still react to your presence, but not in a bad way.
+Lucky (1 to 5 points): Fortune smiles upon you. The
+variable point costs reflect just how much you have been
+blessed by luck. At 1 point, the trifles of everyday life
+rarely seem to affect you. At 3 points, you are a gambling
+den’s nightmare. At 5 points, you live a truly charmed life,
+misfortune seemingly passing you by at every turn. For
+each point invested in this Merit, you gain one reroll per
+day. You may reroll any roll except a roll to resist falling
+from your Road, but you must take the second result.
+Clan Apostate (2 points): Having undergone the
+Baali Rite of Apostasy, you now belong to a brood. Re-
+
+place any one in-clan Discipline with Daimoinon but
+also gain the Baali clan weakness in addition to your
+default clan weakness. You still pass for a member of
+your former clan with relative ease, and anyone you
+Embrace will also belong to your original clan. You do
+not lose levels in the Discipline you chose in exchange
+for Daimoinon, but further levels in that Discipline are
+purchased at out-of-clan cost.
+Medium (2 points): Ghosts, spirits, and shades speak
+to you. You may have had this talent in your mortal life,
+or it may be a new ability granted by your Embrace. By
+spending a moment in meditation, you may ask the spirits
+who visit you for their aid. They are ready and willing to
+help you in whatever way they can (most often by pro-
+viding information), but they always ask a favor in return.
+The severity of this favor should be in line with the task
+given to the spirits.
+Oracular Ability (3 points): Signs, omens, and
+portents reveal themselves to you, attuned to the occult
+as you are. You might be trained in a specific school of
+divination, or the workings of fate may reveal themselves
+to you unbidden. When an omen manifests itself, wheth-
+er through applied practice or a casual encounter, you
+immediately recognize it for what it is. The Storyteller
+will give the vague impressions the sign leaves upon you,
+which you may interpret on the fly as you wish. Studying
+the omen further to gain more relevant information
+requires time to think and a Perception or Intelligence
++ Enigmas roll.
+Spirit Mentor (3 points): A ghost has chosen to guide
+and protect you. This ghost could be the soul of a departed
+loved one, a former teacher, or close friend or something
+more sinister, such as a spirit you have bound through
+dark rituals. The mentor offers you tutelage and support
+in the same way a mortal or Cainite mentor might, though
+perhaps less restricted by the conventions of society and
+the inconveniences of (un)living flesh. Your spirit mentor
+may also need to be called upon by a specific rite or an
+incantation. With a suitable explanation and Storyteller
+permission, this Merit may also be used to represent the
+mentorship or another kind of supernatural creature.
+Unbondable (3 points): The stilled blood within
+you refuses to be compelled. You cannot be bound via
+the Blood Oath. This does not render you immune to
+any other source of mental influence, however. If your
+character is of Clan Tremere, you may not take this Merit.
+True Love (4 points): Transcendent love binds you
+to another and vice versa. You have the kind of rela-
+tionship found only in legends and bardsong. There is
+nothing you would not do for each other. This depthless,
+unconditional love grants you tremendous might, making
+you able to overcome impossible obstacles. Once per
+story, you may automatically succeed on any one roll,
+no matter how many successes it would require, so long
+as it is done on your beloved’s behalf. If your lover is a
+Storyteller character, he or she may do the same as if
+he or she possessed this Merit. If your lover is another
+player character, he or she must also take this Merit.
+True Love is not one-sided.
+Nine Lives (6 points): By some wicked fortune, you
+are extremely difficult to permanently kill. When a roll
+would result in your death, immediately reroll it. If the roll
+succeeds, you walk away from the lethal incident alive,
+but down one life. You may reroll such near-fatal rolls up
+to nine times. When your second chances are expended,
+you will face Final Death like anyone else.
+Supernatural Flaws
+Cast No Reflection (1 point): Like a monster out
+of a ghost story, your visage does not appear in a mirror,
+standing water, a sword’s blade, or any other reflective
+surface. Casual observers need only make a Perception
++ Alertness roll at default difficulty to notice this oddity,
+which can lead to any number of interesting complications
+when dealing with mortals.
+Initiate of the Road (1 point): Your life on the road
+to enlightenment has just begun. Though you fully grasp
+the tenets and precepts of your chosen Road, you have not
+yet put them to the test. This may be because you were
+recently Embraced or because you previously abandoned a
+former Road (in which case you may also consider taking
+the Apostate Flaw on page 425). With this comes a +1
+difficulty in resisting frenzy and Rötschreck, and you lack
+an aura tied to your Road. However, you have an easier
+time changing Roads, if you wish to do so.
+Repulsed by Garlic (1 point): True to folktales, the
+scent of garlic is a ward against you. You cannot abide by
+the odor, requiring a Willpower test when it is present.
+Failure results in you fleeing the scene, which can make
+dinner parties quite awkward. The difficulty of this Will-
+power roll may be increased, depending on the intensity
+of the scent.
+Touch of Frost (1 point): A nimbus of cold surrounds
+you. At the slightest touch, plants wither and die. If you
+stand near still water for too long, it begins to freeze. This
+makes you very easy to find, increasing the difficulty of
+rolls to stay hidden or concealed by one.
+Cursed (1 to 5 points): Someone has placed a curse
+upon you. Work with the Storyteller to determine the nature
+of your curse, why you are cursed, and how it manifests. The
+following examples demonstrate the scale of your misfortune:
+1 point - if you betray the trust of another, they will always
+find out; 2 points - words fail you when you try to urgently
+describe something you’ve seen or heard; 3 points - in
+your hands, tools warp and break; 4 points - everyone you
+love will eventually mistrust and despise you; 5 points - all
+your successes and grand schemes are doomed to fold and
+crumble. Curses can be lifted by reconciling with whoever
+(or whatever) levied the curse in the first place.
+Demon-Hounded (1 to 5 points): A demon has
+taken a shine to you. It comes at odd and inconvenient
+hours and offers you bribes of wealth and power. Some
+days, it asks for favors; on others, it offers them. What
+black schemes does hell have in mind for you that one
+of its servants would bother you so? What fell powers
+have you toyed with that you should not? At 1 point,
+the demon is little more than an imp, asking for minor
+favors or stealing small objects. At 3 points, the demon is
+your physical or magical equal, or is a smaller threat that
+is willing to also drag your close friends into this affair.
+At 5 points, the demon is significantly powerful, able to
+threaten your coterie, or a lesser demon willing to torment
+your friends, family, and acquaintances.
+Unlucky (1 to 5 points): You are spectacularly unfor-
+tunate. Disaster follows in your wake. You are magnetically
+attracted to misfortune. At 1 point, it rains whenever you
+forget your coat. At 3 points, it’s rare for you to recover
+from any failure gracefully. At 5 points, nearly everything
+you attempt ends catastrophically. A number of times per
+day equal to the point you have in this Flaw, the Storyteller
+may force you to reroll a successful roll and take the second
+result. Lucky and Unlucky are not mutually exclusive, but
+for simplicity’s sake, the same roll cannot be modified by
+both at once. That is, if a Lucky reroll is used, the Storyteller
+cannot force you to reroll the reroll.
+Thirteenth Generation (2 points): By some strange
+twist of the supernatural, you were Embraced by a member
+of the Twelfth Generation. Your sire may not have even
+expected this to come to pass, and it certainly worries
+the powers-that-be, for you are something that should
+surely not exist. The difficulty of any rolls to activate your
+Disciplines is increased by one. At Storyteller discretion,
+you may also face other increased difficulties when you
+brush up against those who are frightened or suspicious
+of what you are. Strongly consider taking the Cannot
+Embrace or the Weak Blood Flaws as well.
+Cannot Embrace (2 points): Through some curse,
+weakness, or defect in your vampirism, you are unable to
+create progeny. You may not be aware of this until it is too
+late and a victim lays bleeding out in your arms.
+Eerie Presence (2 points): A pervasive miasma of
+unease surrounds you. You exude a sense of wrongness
+that is palpable to mortals. This aura of fear increases the
+difficulty of Social rolls involving interaction with mortals
+by two, with the exception of Intimidation rolls.
+Repulsive to Animals (2 points): When you are near,
+natural animals startle and panic. Unlike the normal dis-
+turbance caused by the presence of Cainites, animals near
+you either bolt in terror or become aggressive and violent,
+depending on their temperament. This makes riding a horse
+(or any other riding beast) nearly impossible, as you are un-
+able to calm any creature down with a normal Animal Ken
+roll. You must use the abilities of the Animalism Discipline
+or feed the animal some of your blood, which transforms it
+into a ghoul.
+Permanent Third Eye (2 or 4 points; Salubri and
+Tremere only): While others descended from the blood
+of Saulot are able to conceal their third eye, yours remains
+permanently open on your forehead. For 2 points, it is
+mechanically treated as any normal third eye, though
+narratively may draw strange looks and unwanted atten-
+tion. For 4 points, the eye is permanently open and may
+only be closed for a scene on a successful Willpower roll.
+Animate Shadow (3 points): Your shadow is not
+merely an absence of light in the shape of your person;
+it is a living, malicious entity with a will of its own. It
+lashes out at friends and enemies alike, tearing at the
+scenery and snarling at passers-by. In addition to being
+a frightening problem, you lose two dice from all Social
+rolls with Lasombra who know of your issue.
+Cloaked in Shadow (3 points): Shadows cling to
+you constantly. These are not the ordinary shadows cast
+simply by existing; the darkness around you is thick and
+heavy, making it impossible for you to pass as anything
+other than something supernatural. In addition to this
+complication, the difficulty for Social rolls with other
+vampires (especially the Lasombra) increases by one.
+Haunted (3 points): A vengeful ghost haunts you,
+for any variety of reasons: perhaps you took the ghost’s
+life, perhaps it is the shade of a departed enemy with
+unfinished business, or perhaps it is a misfortune of your
+Embrace. When it is able to strike out at you, it is your
+physical and magical equal. However, most of the time it
+chooses to make your life miserable by frightening your
+friends, moving your furniture, and making loud noises
+while you are trying to rest. How often your haunt makes
+its displeasure known is up to the whims of the Storyteller.
+The Storyteller may wish to forbid characters with the
+Necromancy Discipline from taking this Flaw, as they have
+an easy means of dealing with the drawbacks.
+Can’t Cross Running Water (4 points): Some su-
+pernatural prohibition encoded within you prevents you
+from crossing any moving body of water more than two
+feet deep. To do so, you must pass a Courage test (which
+the Storyteller may increase the difficulty, if appropriate).
+If you fail, you stand transfixed, unable to cross, while a
+botch sends you into Rötschreck. Mustering the fortitude
+to cross still pains you, and you take one health level of
+unsoakable bashing damage. If you swim or wade into the
+water, the damage is aggravated instead.
+Grip of the Damned (4 points): When you drink
+from a mortal, they do not slip quietly into submission,
+instead retaining full, fearful consciousness. Many scream
+and thrash, doing everything to stop you from feasting on
+their blood. Mechanically, you must grapple with a target
+when you wish to feed on him. Additionally, it may prove
+difficult to conceal your actions from other mortals when
+you are wrestling with a howling victim. At the Storytell-
+er’s discretion, this may be taxing to particularly chaste
+members of certain Roads.
+Dark Fate (5 points): Your damnation extends far
+beyond your unlife. Fate has prepared a great doom for
+you, the likes of which will be whispered in tales long
+after it has come to pass. Work with your Storyteller to
+craft your doom (or let her unpleasantly surprise you, if
+you prefer), bearing in mind that it should be legendarily
+terrible. You cannot avoid your fate. The only way to be
+rid of this Flaw is to let your doom come to pass.
+Harbinger of the Abyss (5 points): You have become
+the void: the endless black of night, an empty pool of
+darkness. Where you pass, shadows leap to join you and
+flames gutter and perish. When you are in the presence
+of mundane fire, you must make a reflexive Obtenebra-
+tion roll against the soak difficulty of any nearby flame.
+A success extinguishes the fire instantly, casting the
+area into darkness. This Flaw also includes the effects of
+Touch of Frost (page 426) and Eerie Presence (page 427)
+and is therefore mutually exclusive with them. However,
+the clinging darkness around you provides one benefit
+(besides being an unusual way to extinguish unwanted
+fires): reduce the difficulty of all Intimidation rolls by
+two, to a minimum of 4. You must have at least one dot
+of Obtenebration to purchase this Flaw.
+Light-Sensitive (5 points): While all Cainites fear
+the daylight, you are especially vulnerable. Beneath the
+hateful gaze of the sun, your unliving flesh chars and
+crumbles at an alarming rate, and even the gentle light
+of the moon causes you pain. You take double the normal
+amount of damage when exposed to sunlight and lethal
+damage from moonlight. Characters who are Followers of
+Set and Lasombra may take this Flaw to further intensify
+their clan’s particular weakness to sunlight, doubling the
+augmented damage instead.
+Weak Blood (5 points): Something has diminished
+your supernatural vigor and lessened your abilities as a
+vampire. Where others effortlessly command the gifts of
+Lilith, you struggle. No Discipline you have knowledge
+of may be higher than 4. It costs you twice the normal
+amount of blood points to control any vampiric abilities.
+You must feed a person six drinks of your feeble blood
+before they can become your thrall, and you do not possess
+the potency to create a ghoul or sire a childe. This effect
+also covers the drawbacks of the Cannot Embrace Flaw
+(page 427), therefore the two are mutually exclusive.
+Weak Aura (2 point Merit or Flaw): The aura of
+your Road clings weakly to you, manifesting only when
+you perform acts of faith or when your fervor is at its most
+intense. This is a Merit if your Road rating is 4 or less,
+and a Flaw if it’s 5 or more. Follow the chart below for
+the mechanical effects on the application of your aura.
+Road RatingAura Modifier
+10-9 +1 difficulty
+8-3 no modifier
+2-1 -1 difficulty
+Potent Aura (3 point Merit of Flaw): Your aura
+is mighty, giving people a powerful impression of you.
+Your presence ripples through a room, giving you away
+instantly. This is a mixed blessing, as you must grow into
+your burgeoning power, finding it difficult to control at
+first. This is a Merit if your Road is 5+ and Flaw if it’s 4
+or less. Follow the chart below for the mechanical effects
+on the application of your aura.
+
+Aura Modifier
+10 -3 difficulty
+9-8 -2 difficulty
+7-6 -1 difficulty
+5 no modifier
+4-3 +1 difficulty
+2 +2 difficulty
+1 +3 difficulty

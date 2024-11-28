@@ -1,0 +1,10 @@
+{
+  "name": "Ambidextrous",
+  "namePtBr": "Ambidestro",
+  "category": "Physical",
+  "cost": 1,
+  "description": {
+    "text": "Whether by training or a gift of birth, you are equally adept with both hands. You must still split actions as normal, but you do not incur any additional penalties for taking actions with your non-dominant hand.",
+    "description": "Seja por treinamento ou um dom de nascença, você é igualmente hábil com ambas as mãos. Você ainda deve dividir ações normalmente, mas não sofre penalidades adicionais por realizar ações com sua mão não dominante."
+  }
+}

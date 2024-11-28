@@ -1,0 +1,24 @@
+{
+  "name": "Obsession",
+  "namePtBr": "Obsessão",
+  "category": "Mental",
+  "cost": -2,
+  "description": {
+    "text": "You are completely fixated on something or someone. This obsession dominates your thoughts and influences your actions, often leading you to make irrational decisions in pursuit of your fixation.",
+    "description": "Você está completamente fixado em algo ou alguém. Esta obsessão domina seus pensamentos e influencia suas ações, frequentemente levando você a tomar decisões irracionais em busca de sua fixação."
+  },
+  "effects": {
+    "focus": {
+      "text": "Must make a Willpower roll (difficulty 7) to ignore your obsession when it becomes relevant",
+      "description": "Deve fazer uma rolagem de Força de Vontade (dificuldade 7) para ignorar sua obsessão quando ela se torna relevante"
+    },
+    "actions": {
+      "text": "Will actively pursue your obsession even at the cost of other goals or personal safety",
+      "description": "Irá ativamente perseguir sua obsessão mesmo ao custo de outros objetivos ou segurança pessoal"
+    }
+  },
+  "notes": {
+    "text": "Common obsessions might include a person, an object, a goal, or even a specific type of knowledge",
+    "description": "Obsessões comuns podem incluir uma pessoa, um objeto, um objetivo ou mesmo um tipo específico de conhecimento"
+  }
+}

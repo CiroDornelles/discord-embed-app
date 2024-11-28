@@ -1,0 +1,87 @@
+{
+  "name": "Soul Haunting",
+  "namePtBr": "Assombração da Alma",
+  "level": 2,
+  "description": {
+    "text": "A brief speech to a target allows the vampire to touch the sacred or profane within her victim, destroying the banal concerns that keep those urges from making themselves known. These urges manifest as visions, scents, and sounds of divinity revealing themselves in the most mundane of places. Victims report that these images tend to follow a general theme: angels or demons (or a culturally appropriate religious figure, including ancestors) dramatically recounting and reenacting the victim's greatest fears and repressed secrets. Even if the victim ignores these visions, more insidious is the subtle altering of their senses — a prince's genuine sympathy can become mocking pity, while the false lust of an Alamut houri ghoul becomes all-consuming passion. Even if visions are ignored, the victim's trust in their senses is utterly compromised.",
+    "description": "Um breve discurso a um alvo permite ao vampiro tocar o sagrado ou profano dentro de sua vítima, destruindo as preocupações banais que impedem esses impulsos de se manifestarem. Esses impulsos se manifestam como visões, aromas e sons de divindade se revelando nos lugares mais mundanos. As vítimas relatam que essas imagens tendem a seguir um tema geral: anjos ou demônios (ou uma figura religiosa culturalmente apropriada, incluindo ancestrais) dramaticamente recontando e recriando os maiores medos e segredos reprimidos da vítima. Mesmo se a vítima ignorar essas visões, mais insidiosa é a sutil alteração de seus sentidos — a simpatia genuína de um príncipe pode se tornar piedade zombeteira, enquanto a falsa luxúria de uma carniçal houri de Alamut se torna uma paixão consumidora. Mesmo se as visões forem ignoradas, a confiança da vítima em seus sentidos é totalmente comprometida."
+  },
+  "system": {
+    "activation": {
+      "text": "The vampire spends three turns speaking to the victim, after which the player spends a blood point",
+      "description": "O vampiro gasta três turnos falando com a vítima, após o que o jogador gasta um ponto de sangue"
+    },
+    "roll": {
+      "attribute": {
+        "text": "Manipulation",
+        "description": "Manipulação"
+      },
+      "ability": {
+        "text": "Empathy",
+        "description": "Empatia"
+      },
+      "difficulty": {
+        "text": "Victim's Perception + Self-Control/Instinct",
+        "description": "Percepção + Autocontrole/Instinto da vítima"
+      }
+    },
+    "effects": {
+      "text": "Precisely when they manifest or what form the visions take is up to the Storyteller, but they inflict a -2 penalty to all dice pools for two turns after manifestation.",
+      "description": "Precisamente quando elas se manifestam ou que forma as visões tomam fica a critério do Narrador, mas elas infligem uma penalidade de -2 em todas as paradas de dados por dois turnos após a manifestação."
+    },
+    "duration": {
+      "text": [
+        {
+          "successes": 1,
+          "duration": "One night"
+        },
+        {
+          "successes": 2,
+          "duration": "Two nights"
+        },
+        {
+          "successes": 3,
+          "duration": "One week"
+        },
+        {
+          "successes": 4,
+          "duration": "One month"
+        },
+        {
+          "successes": 5,
+          "duration": "Three months"
+        },
+        {
+          "successes": 6,
+          "duration": "One year"
+        }
+      ],
+      "description": [
+        {
+          "successes": 1,
+          "duration": "Uma noite"
+        },
+        {
+          "successes": 2,
+          "duration": "Duas noites"
+        },
+        {
+          "successes": 3,
+          "duration": "Uma semana"
+        },
+        {
+          "successes": 4,
+          "duration": "Um mês"
+        },
+        {
+          "successes": 5,
+          "duration": "Três meses"
+        },
+        {
+          "successes": 6,
+          "duration": "Um ano"
+        }
+      ]
+    }
+  }
+}

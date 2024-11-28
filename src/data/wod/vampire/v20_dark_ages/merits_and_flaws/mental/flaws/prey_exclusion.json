@@ -1,0 +1,24 @@
+{
+  "name": "Prey Exclusion",
+  "namePtBr": "Exclusão de Presas",
+  "category": "Mental",
+  "cost": -1,
+  "description": {
+    "text": "You refuse to feed from a certain type of mortal. This may be due to religious beliefs, personal convictions, or a traumatic experience. This restriction makes feeding more difficult and can lead to hunger in situations where only excluded prey is available.",
+    "description": "Você se recusa a se alimentar de certo tipo de mortal. Isso pode ser devido a crenças religiosas, convicções pessoais ou uma experiência traumática. Esta restrição torna a alimentação mais difícil e pode levar à fome em situações onde apenas presas excluídas estão disponíveis."
+  },
+  "effects": {
+    "feeding": {
+      "text": "You cannot feed from your excluded prey type under any circumstances, even if starving",
+      "description": "Você não pode se alimentar do seu tipo de presa excluído sob nenhuma circunstância, mesmo se estiver morrendo de fome"
+    },
+    "hunger": {
+      "text": "In situations where only excluded prey is available, you must make a Self-Control roll (difficulty 8) or fall into frenzy",
+      "description": "Em situações onde apenas presas excluídas estão disponíveis, você deve fazer uma rolagem de Autocontrole (dificuldade 8) ou cair em frenesi"
+    }
+  },
+  "notes": {
+    "text": "Common exclusions might include children, clergy, nobles, or specific ethnic groups",
+    "description": "Exclusões comuns podem incluir crianças, clérigos, nobres ou grupos étnicos específicos"
+  }
+}

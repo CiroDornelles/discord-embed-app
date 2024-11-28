@@ -1,0 +1,24 @@
+{
+  "name": "Scholar's Reputation",
+  "namePtBr": "Reputação de Estudioso",
+  "category": "Social",
+  "cost": 2,
+  "description": {
+    "text": "You have established yourself as a respected scholar or sage within both mortal and Cainite circles. Your knowledge and insights are valued, and others often seek your counsel on matters of learning and lore.",
+    "description": "Você se estabeleceu como um estudioso ou sábio respeitado tanto em círculos mortais quanto Cainitas. Seu conhecimento e percepções são valorizados, e outros frequentemente buscam seu conselho em questões de aprendizado e conhecimento."
+  },
+  "effects": {
+    "respect": {
+      "text": "Gain +2 dice on Social rolls when your scholarly expertise is relevant",
+      "description": "Ganhe +2 dados em rolagens Sociais quando sua experiência acadêmica for relevante"
+    },
+    "access": {
+      "text": "May access libraries, monasteries, and other centers of learning more easily",
+      "description": "Pode acessar bibliotecas, monastérios e outros centros de aprendizado mais facilmente"
+    },
+    "consultation": {
+      "text": "Others may offer resources or favors in exchange for your knowledge",
+      "description": "Outros podem oferecer recursos ou favores em troca do seu conhecimento"
+    }
+  }
+}

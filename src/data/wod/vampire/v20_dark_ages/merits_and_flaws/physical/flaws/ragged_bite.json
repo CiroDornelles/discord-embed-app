@@ -1,0 +1,20 @@
+{
+  "name": "Ragged Bite",
+  "namePtBr": "Mordida Irregular",
+  "category": "Physical",
+  "cost": -2,
+  "description": {
+    "text": "Unlike your Cainite peers, you lack the ability to neatly seal up the wound caused by feeding. Instead, you leave torn, bleeding marks which have a chance of becoming infected.",
+    "description": "Diferente de seus pares Cainitas, você não tem a capacidade de selar ordenadamente a ferida causada pela alimentação. Em vez disso, você deixa marcas rasgadas e sangrando que têm chance de se infectar."
+  },
+  "effects": {
+    "infection": {
+      "text": "Your target must make a Stamina roll (difficulty the number of damage caused + 5) to resist infection. The impact of such a notable wound in conjunction with a diseased target is left to the discretion of the Storyteller.",
+      "description": "Seu alvo deve fazer uma rolagem de Vigor (dificuldade igual ao número de dano causado + 5) para resistir à infecção. O impacto de tal ferida notável em conjunto com um alvo doente fica a critério do Narrador."
+    },
+    "identification": {
+      "text": "At the very least, this poses complications in hiding your identity as anything other than a monster.",
+      "description": "No mínimo, isso causa complicações em esconder sua identidade como algo diferente de um monstro."
+    }
+  }
+}

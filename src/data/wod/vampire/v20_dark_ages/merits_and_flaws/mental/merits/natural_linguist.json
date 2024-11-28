@@ -1,0 +1,20 @@
+{
+  "name": "Natural Linguist",
+  "namePtBr": "Linguista Natural",
+  "category": "Mental",
+  "cost": 2,
+  "description": {
+    "text": "You have an exceptional gift for languages, able to quickly grasp and learn new tongues. You can pick up the basics of a language through minimal exposure and achieve fluency in a fraction of the normal time.",
+    "description": "Você tem um dom excepcional para idiomas, capaz de compreender e aprender novas línguas rapidamente. Você pode aprender o básico de um idioma através de exposição mínima e alcançar fluência em uma fração do tempo normal."
+  },
+  "effects": {
+    "learning": {
+      "text": "Learning new languages takes half the normal time and experience point cost",
+      "description": "Aprender novos idiomas leva metade do tempo normal e custo de pontos de experiência"
+    },
+    "comprehension": {
+      "text": "You can make an Intelligence + Linguistics roll (difficulty 8) to get the gist of an unknown language after hearing it spoken for a few minutes",
+      "description": "Você pode fazer uma rolagem de Inteligência + Linguística (dificuldade 8) para entender a essência de um idioma desconhecido após ouvi-lo por alguns minutos"
+    }
+  }
+}

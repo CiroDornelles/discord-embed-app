@@ -1,0 +1,85 @@
+{
+  "name": "Eyes of Chaos",
+  "namePtBr": "Olhos do Caos",
+  "level": 3,
+  "description": {
+    "text": "Fleeting clarity hides within insanity; a shattered mirror reflects more than one unbroken one. This level of Dementation is responsible for the Malkavians' reputation of gleaning hidden truths, and their tendency to speak those truths to power. She may scrutinize the 'patterns' of personal interaction or even random events in nature itself in order to reveal a hidden truth about the situation she's in. The character need not ask a question — the patterns are obvious at even a moment's glance.",
+    "description": "A clareza fugaz se esconde dentro da insanidade; um espelho estilhaçado reflete mais do que um inteiro. Este nível de Demência é responsável pela reputação dos Malkavianos de colher verdades ocultas e sua tendência de falar essas verdades ao poder. Ela pode examinar os 'padrões' de interação pessoal ou até mesmo eventos aleatórios na própria natureza para revelar uma verdade oculta sobre a situação em que se encontra. O personagem não precisa fazer uma pergunta — os padrões são óbvios mesmo em um olhar momentâneo."
+  },
+  "system": {
+    "requirements": {
+      "text": "This power may only be used when scrutinizing a complex pattern or event, such as the interactions of a vampiric court or the clash of an army. Analyzing the blood spatter flicked from one's fingers or the spill of entrails works just as well, however.",
+      "description": "Este poder só pode ser usado ao examinar um padrão ou evento complexo, como as interações de uma corte vampírica ou o confronto de um exército. Analisar o respingo de sangue dos dedos ou o derramamento de entranhas funciona igualmente bem, no entanto."
+    },
+    "roll": {
+      "attribute": {
+        "text": "Perception",
+        "description": "Percepção"
+      },
+      "ability": {
+        "text": "Enigmas",
+        "description": "Enigmas"
+      },
+      "difficulty": {
+        "text": "Varies based on familiarity with the situation",
+        "description": "Varia com base na familiaridade com a situação"
+      }
+    },
+    "difficultyTable": {
+      "text": [
+        {
+          "situation": "Court in vampire's home culture and domain",
+          "difficulty": 5
+        },
+        {
+          "situation": "Foreign court or clash of foreign armies",
+          "difficulty": 7
+        },
+        {
+          "situation": "Completely alien encounter (Cathayan vampires, meeting an Anda)",
+          "difficulty": 9
+        }
+      ],
+      "description": [
+        {
+          "situation": "Corte na cultura e domínio natal do vampiro",
+          "difficulty": 5
+        },
+        {
+          "situation": "Corte estrangeira ou confronto de exércitos estrangeiros",
+          "difficulty": 7
+        },
+        {
+          "situation": "Encontro completamente alienígena (vampiros Cathayanos, encontro com um Anda)",
+          "difficulty": 9
+        }
+      ]
+    },
+    "effects": {
+      "text": "The player asks the Storyteller a direct question about the situation at hand. This can be virtually anything related to hidden truths. The answers are related to the player directly and to the character via metaphors and imagery, with more successes providing a clearer and more complete answer.",
+      "description": "O jogador faz ao Narrador uma pergunta direta sobre a situação em questão. Isso pode ser virtualmente qualquer coisa relacionada a verdades ocultas. As respostas são relacionadas ao jogador diretamente e ao personagem através de metáforas e imagens, com mais sucessos fornecendo uma resposta mais clara e completa."
+    },
+    "failure": {
+      "text": "Failure produces imagery unrelated to the matter at hand, while a botch on the roll relates a completely untrue but nevertheless believable answer, which may explain some of the more radical Malkavian behavior.",
+      "description": "Falha produz imagens não relacionadas ao assunto em questão, enquanto uma falha crítica na rolagem relata uma resposta completamente falsa, mas ainda assim acreditável, o que pode explicar alguns dos comportamentos mais radicais dos Malkavianos."
+    },
+    "possibleQuestions": {
+      "text": [
+        "What's this person's Nature and Derangements?",
+        "What's the worst choice I could make?",
+        "What's the safest choice?",
+        "Is this person being controlled by another?",
+        "What's the underlying or hidden message here?",
+        "How relevant to our overarching goals is this scene?"
+      ],
+      "description": [
+        "Qual é a Natureza e os Desequilíbrios desta pessoa?",
+        "Qual seria a pior escolha que eu poderia fazer?",
+        "Qual é a escolha mais segura?",
+        "Esta pessoa está sendo controlada por outra?",
+        "Qual é a mensagem subjacente ou oculta aqui?",
+        "Qual a relevância desta cena para nossos objetivos gerais?"
+      ]
+    }
+  }
+}

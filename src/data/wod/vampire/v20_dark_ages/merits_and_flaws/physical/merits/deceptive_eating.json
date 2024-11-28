@@ -1,0 +1,14 @@
+{
+  "name": "Deceptive Eating",
+  "namePtBr": "Alimentação Enganosa",
+  "category": "Physical",
+  "cost": 1,
+  "description": {
+    "text": "By some fortune, you are able to consume and enjoy mortal cuisine, thereby adding another layer to your guise of mortality. When applicable, the Storyteller may rule a lower difficulty or reduced penalties to rolls to convince others that you are human. You cannot digest or derive nourishment from normal food, however, and eventually must find a time and a place to heave it back up.",
+    "description": "Por alguma fortuna, você é capaz de consumir e apreciar a culinária mortal, adicionando assim mais uma camada ao seu disfarce de mortalidade. Quando aplicável, o Narrador pode determinar uma dificuldade menor ou penalidades reduzidas em rolagens para convencer outros de que você é humano. No entanto, você não pode digerir ou obter nutrição de alimentos normais, e eventualmente deve encontrar um momento e um lugar para regurgitá-los."
+  },
+  "effects": {
+    "text": "Lower difficulty or reduced penalties on rolls to appear human when eating is involved",
+    "description": "Dificuldade menor ou penalidades reduzidas em rolagens para parecer humano quando envolve alimentação"
+  }
+}

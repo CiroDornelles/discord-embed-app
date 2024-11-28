@@ -1,0 +1,16 @@
+{
+  "name": "Mute",
+  "namePtBr": "Mudo",
+  "category": "Physical",
+  "cost": -4,
+  "description": {
+    "text": "You are physically incapable of speech. This may be due to a severed tongue, damaged vocal cords, or some other injury that persisted through the Embrace.",
+    "description": "Você é fisicamente incapaz de falar. Isso pode ser devido a uma língua cortada, cordas vocais danificadas ou alguma outra lesão que persistiu através do Abraço."
+  },
+  "effects": {
+    "communication": {
+      "text": "You cannot speak and must communicate through writing or sign language. This imposes significant penalties on social interaction and may prevent the use of certain Disciplines that require verbal components.",
+      "description": "Você não pode falar e deve se comunicar através de escrita ou linguagem de sinais. Isso impõe penalidades significativas na interação social e pode impedir o uso de certas Disciplinas que exigem componentes verbais."
+    }
+  }
+}

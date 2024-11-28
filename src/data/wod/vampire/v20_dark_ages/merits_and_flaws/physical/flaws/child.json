@@ -1,0 +1,20 @@
+{
+  "name": "Child",
+  "namePtBr": "Criança",
+  "category": "Physical",
+  "cost": -4,
+  "description": {
+    "text": "Most vampires begin their unlife in adulthood, but your sire, whether by necessity, cruelty, or peculiarity, Embraced you when you were a child. No matter how many years have passed, your body remains prepubescent.",
+    "description": "A maioria dos vampiros começa sua não-vida na idade adulta, mas seu senhor, seja por necessidade, crueldade ou peculiaridade, o Abraçou quando você era uma criança. Não importa quantos anos se passaram, seu corpo permanece pré-pubescente."
+  },
+  "effects": {
+    "attributes": {
+      "text": "Your Strength and Stamina may not be higher than 2",
+      "description": "Sua Força e Vigor não podem ser maiores que 2"
+    },
+    "social": {
+      "text": "The difficulty of rolls to lead or command mortal adults increases by two",
+      "description": "A dificuldade de rolagens para liderar ou comandar adultos mortais aumenta em dois"
+    }
+  }
+}

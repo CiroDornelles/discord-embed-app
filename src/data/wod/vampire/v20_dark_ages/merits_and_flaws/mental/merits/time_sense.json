@@ -1,0 +1,20 @@
+{
+  "name": "Time Sense",
+  "namePtBr": "Senso de Tempo",
+  "category": "Mental",
+  "cost": 1,
+  "description": {
+    "text": "You have an innate sense of time and its passage. You can track the hours until sunset with uncanny accuracy and always know exactly how much time has passed, even during periods of intense activity or torpor.",
+    "description": "Você tem um senso inato de tempo e sua passagem. Você pode rastrear as horas até o pôr do sol com precisão sobrenatural e sempre sabe exatamente quanto tempo se passou, mesmo durante períodos de intensa atividade ou torpor."
+  },
+  "effects": {
+    "timing": {
+      "text": "You always know the exact time and can accurately gauge how much time has passed in any situation",
+      "description": "Você sempre sabe a hora exata e pode calcular com precisão quanto tempo se passou em qualquer situação"
+    },
+    "sunset": {
+      "text": "You can automatically determine how many hours remain until sunset or sunrise without any roll",
+      "description": "Você pode determinar automaticamente quantas horas restam até o pôr ou nascer do sol sem necessidade de rolagem"
+    }
+  }
+}

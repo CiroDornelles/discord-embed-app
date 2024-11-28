@@ -1,0 +1,22 @@
+{
+  "name": "Slow Healing",
+  "namePtBr": "Cura Lenta",
+  "category": "Physical",
+  "cost": -3,
+  "description": {
+    "text": "While other Cainites recover swiftly from their injuries, you are not so fortunate. Your unliving flesh is slow to mend and reluctant to heal.",
+    "description": "Enquanto outros Cainitas se recuperam rapidamente de seus ferimentos, você não é tão afortunado. Sua carne não-viva é lenta para se remendar e relutante em curar."
+  },
+  "effects": {
+    "healing": {
+      "normal": {
+        "text": "Costs two blood points to heal a normal level of damage",
+        "description": "Custa dois pontos de sangue para curar um nível normal de dano"
+      },
+      "aggravated": {
+        "text": "Takes five days (in addition to the normal expenditures) to heal a level of aggravated damage",
+        "description": "Leva cinco dias (além dos gastos normais) para curar um nível de dano agravado"
+      }
+    }
+  }
+}

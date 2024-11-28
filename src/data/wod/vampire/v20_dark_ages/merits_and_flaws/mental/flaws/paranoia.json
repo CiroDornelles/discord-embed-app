@@ -1,0 +1,24 @@
+{
+  "name": "Paranoia",
+  "namePtBr": "Paranoia",
+  "category": "Mental",
+  "cost": -2,
+  "description": {
+    "text": "You are convinced that someone or something is always out to get you. You see conspiracies everywhere and trust no one completely. While this paranoia might occasionally be justified in the dangerous world of vampires, your level of suspicion goes well beyond reasonable caution.",
+    "description": "Você está convencido que alguém ou algo está sempre tentando te pegar. Você vê conspirações em todo lugar e não confia completamente em ninguém. Embora esta paranoia possa ocasionalmente ser justificada no perigoso mundo dos vampiros, seu nível de suspeita vai muito além da cautela razoável."
+  },
+  "effects": {
+    "trust": {
+      "text": "You must make a Willpower roll (difficulty 8) to trust anyone, even longtime allies",
+      "description": "Você deve fazer uma rolagem de Força de Vontade (dificuldade 8) para confiar em alguém, mesmo aliados de longa data"
+    },
+    "social": {
+      "text": "All Social rolls involving trust or cooperation are at +2 difficulty",
+      "description": "Todas as rolagens Sociais envolvendo confiança ou cooperação têm +2 de dificuldade"
+    },
+    "behavior": {
+      "text": "You must take excessive precautions in all situations, often to your own detriment",
+      "description": "Você deve tomar precauções excessivas em todas as situações, frequentemente em seu próprio detrimento"
+    }
+  }
+}

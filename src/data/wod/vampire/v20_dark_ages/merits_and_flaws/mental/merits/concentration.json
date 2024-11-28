@@ -1,0 +1,16 @@
+{
+  "name": "Concentration",
+  "namePtBr": "Concentração",
+  "category": "Mental",
+  "cost": 1,
+  "description": {
+    "text": "You have the ability to focus your mind and shut out distractions. Even in the midst of chaos, you can maintain your focus on the task at hand.",
+    "description": "Você tem a capacidade de focar sua mente e bloquear distrações. Mesmo em meio ao caos, você consegue manter seu foco na tarefa em questão."
+  },
+  "effects": {
+    "rolls": {
+      "text": "Reduce difficulty penalties from distracting circumstances by 2",
+      "description": "Reduz penalidades de dificuldade de circunstâncias distrativas em 2"
+    }
+  }
+}

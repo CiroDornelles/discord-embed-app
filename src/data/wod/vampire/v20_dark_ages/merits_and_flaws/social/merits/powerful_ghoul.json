@@ -1,0 +1,24 @@
+{
+  "name": "Powerful Ghoul",
+  "namePtBr": "Carniçal Poderoso",
+  "category": "Social",
+  "cost": 3,
+  "description": {
+    "text": "You have a particularly capable and influential ghoul in your service. This ghoul might be a noble, a skilled warrior, or a person of significant influence in mortal society.",
+    "description": "Você tem um carniçal particularmente capaz e influente a seu serviço. Este carniçal pode ser um nobre, um guerreiro habilidoso ou uma pessoa de influência significativa na sociedade mortal."
+  },
+  "effects": {
+    "influence": {
+      "text": "Your ghoul can affect mortal society in ways beneficial to you, providing resources or information",
+      "description": "Seu carniçal pode afetar a sociedade mortal de maneiras benéficas a você, fornecendo recursos ou informações"
+    },
+    "protection": {
+      "text": "The ghoul can act as a capable guardian during daylight hours",
+      "description": "O carniçal pode atuar como um guardião capaz durante as horas do dia"
+    },
+    "abilities": {
+      "text": "Your ghoul has at least one Discipline at level 2 and exceptional mortal skills",
+      "description": "Seu carniçal tem pelo menos uma Disciplina no nível 2 e habilidades mortais excepcionais"
+    }
+  }
+}

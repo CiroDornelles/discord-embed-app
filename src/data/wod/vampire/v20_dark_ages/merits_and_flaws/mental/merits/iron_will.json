@@ -1,0 +1,20 @@
+{
+  "name": "Iron Will",
+  "namePtBr": "Vontade de Ferro",
+  "category": "Mental",
+  "cost": 3,
+  "description": {
+    "text": "Your willpower is indomitable, and your determination is legendary. You can resist supernatural mental influence better than most vampires, and your resolve is difficult to break.",
+    "description": "Sua força de vontade é indomável, e sua determinação é lendária. Você pode resistir à influência mental sobrenatural melhor que a maioria dos vampiros, e sua determinação é difícil de quebrar."
+  },
+  "effects": {
+    "resistance": {
+      "text": "Add +3 dice to all Willpower rolls to resist supernatural mental influence or coercion",
+      "description": "Adicione +3 dados a todas as rolagens de Força de Vontade para resistir à influência ou coerção mental sobrenatural"
+    },
+    "disciplines": {
+      "text": "The difficulty of all mind-affecting Disciplines used against you is increased by 2",
+      "description": "A dificuldade de todas as Disciplinas que afetam a mente usadas contra você é aumentada em 2"
+    }
+  }
+}
