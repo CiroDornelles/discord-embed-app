@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Box, Typography, Paper } from '@mui/material';
+import { Box, Typography, Paper, Tooltip } from '@mui/material';
 import DotRating from './DotRating';
 
 // Ordem específica dos atributos conforme o livro
@@ -174,24 +174,46 @@ const AttributeGroup = ({ title, category }) => {
               }
             }}
           >
-            <Typography
-              sx={{
-                minWidth: '120px',
-                color: 'white',
-                cursor: 'help'
+            <Tooltip 
+              title={attribute.description || ''}
+              placement="left"
+              arrow
+              componentsProps={{
+                tooltip: {
+                  sx: {
+                    bgcolor: 'rgba(0, 0, 0, 0.95)',
+                    color: 'white',
+                    fontSize: '0.875rem',
+                    padding: '8px 12px',
+                    maxWidth: 300,
+                    border: '1px solid #8b0000',
+                    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.3)',
+                    '& .MuiTooltip-arrow': {
+                      color: 'rgba(0, 0, 0, 0.95)',
+                      '&::before': {
+                        border: '1px solid #8b0000'
+                      }
+                    }
+                  }
+                }
               }}
             >
-              {attribute.name}
-            </Typography>
+              <Typography
+                sx={{
+                  minWidth: '120px',
+                  color: 'white',
+                  cursor: 'help'
+                }}
+              >
+                {attribute.name}
+              </Typography>
+            </Tooltip>
             <DotRating
               value={values[attribute.key] || 0}
               onChange={(newValue) => {
                 handleChange(attribute.key, newValue);
               }}
-              attributeData={{
-                ...attribute,
-                levels: attribute.levels || {}
-              }}
+              attributeData={attribute}
             />
           </Box>
         ))}

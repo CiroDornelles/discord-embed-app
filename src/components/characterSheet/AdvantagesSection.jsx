@@ -56,9 +56,9 @@ const AdvantagesSection = ({ data = {}, onChange }) => {
   }, []);
 
   const getLevelDescription = (backgroundName, level) => {
-    const background = backgroundLevels[backgroundName];
-    if (background && background[level - 1]) {
-      return background[level - 1].description;
+    const background = backgrounds.find(bg => bg.name === backgroundName);
+    if (background && background.levels && background.levels[level - 1]) {
+      return background.levels[level - 1].description;
     }
     return '';
   };
@@ -139,32 +139,87 @@ const AdvantagesSection = ({ data = {}, onChange }) => {
           onClick={category === 'antecedentes' && !itemName ? 
             () => openBackgroundOverlay(index) : undefined}
         >
-          <TextField
-            size="small"
-            variant="standard"
-            value={itemName}
-            onChange={handleTextChange(category, `${index}.name`)}
-            InputProps={{
-              readOnly: category === 'antecedentes',
-              style: { color: '#ffffff' }
-            }}
-            sx={{
-              flex: 1,
-              '& .MuiInputBase-input': {
-                color: '#ffffff',
-                fontFamily: 'MedievalSharp, cursive',
-              },
-              '& .MuiInput-underline:before': {
-                borderBottomColor: '#3d0000',
-              },
-              '& .MuiInput-underline:hover:not(.Mui-disabled):before': {
-                borderBottomColor: '#8b0000',
-              },
-              '& .MuiInput-underline:after': {
-                borderBottomColor: '#8b0000',
-              },
-            }}
-          />
+          {category === 'antecedentes' && itemName ? (
+            <Tooltip 
+              title={backgrounds.find(bg => bg.name === itemName)?.description || ''}
+              placement="top"
+              arrow
+              componentsProps={{
+                tooltip: {
+                  sx: {
+                    bgcolor: 'rgba(0, 0, 0, 0.95)',
+                    color: 'white',
+                    fontSize: '0.875rem',
+                    padding: '8px 12px',
+                    maxWidth: 300,
+                    border: '1px solid #8b0000',
+                    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.3)',
+                    '& .MuiTooltip-arrow': {
+                      color: 'rgba(0, 0, 0, 0.95)',
+                      '&::before': {
+                        border: '1px solid #8b0000'
+                      }
+                    }
+                  }
+                }
+              }}
+            >
+              <TextField
+                size="small"
+                variant="standard"
+                value={itemName}
+                onChange={handleTextChange(category, `${index}.name`)}
+                InputProps={{
+                  readOnly: category === 'antecedentes',
+                  style: { color: '#ffffff' }
+                }}
+                sx={{
+                  flex: 1,
+                  '& .MuiInputBase-input': {
+                    color: '#ffffff',
+                    fontFamily: 'MedievalSharp, cursive',
+                    cursor: 'help'
+                  },
+                  '& .MuiInput-underline:before': {
+                    borderBottomColor: '#3d0000',
+                  },
+                  '& .MuiInput-underline:hover:not(.Mui-disabled):before': {
+                    borderBottomColor: '#8b0000',
+                  },
+                  '& .MuiInput-underline:after': {
+                    borderBottomColor: '#8b0000',
+                  },
+                }}
+              />
+            </Tooltip>
+          ) : (
+            <TextField
+              size="small"
+              variant="standard"
+              value={itemName}
+              onChange={handleTextChange(category, `${index}.name`)}
+              InputProps={{
+                readOnly: category === 'antecedentes',
+                style: { color: '#ffffff' }
+              }}
+              sx={{
+                flex: 1,
+                '& .MuiInputBase-input': {
+                  color: '#ffffff',
+                  fontFamily: 'MedievalSharp, cursive',
+                },
+                '& .MuiInput-underline:before': {
+                  borderBottomColor: '#3d0000',
+                },
+                '& .MuiInput-underline:hover:not(.Mui-disabled):before': {
+                  borderBottomColor: '#8b0000',
+                },
+                '& .MuiInput-underline:after': {
+                  borderBottomColor: '#8b0000',
+                },
+              }}
+            />
+          )}
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
             <DotRating
               value={itemValue}
@@ -173,9 +228,12 @@ const AdvantagesSection = ({ data = {}, onChange }) => {
               hasSelectedItem={category !== 'antecedentes' || !!itemName}
               max={maxDots}
               tooltips={category === 'antecedentes' && itemName ? 
-                Array.from({ length: maxDots }).map((_, i) => getLevelDescription(itemName, i + 1))
+                Array.from({ length: maxDots }, (_, i) => getLevelDescription(itemName, i + 1))
                 : []
               }
+              attributeData={category === 'antecedentes' && itemName ? {
+                levels: backgrounds.find(bg => bg.name === itemName)?.levels || []
+              } : null}
             />
           </Box>
           <IconButton
