@@ -1,0 +1,22 @@
+{
+  "name": "Dementation",
+  "namePtBr": "Demência",
+  "description": {
+    "text": "If madness shatters the soul, Dementation is the hammer to the fracture point. If madness frees the mind, Dementation is the key to the cage. The Discipline allows a vampire to focus insanity and channel it to those around them. Malkavian clan elders claim the conscious mind is a pleasing and soothing mask, and that the Discipline never creates a madness that wasn't already there. Instead, it crumbles the barriers of self-control and consciousness to unleash the deep, dark insanity that dwells beneath. Viewed in this light, Dementation does not corrupt the mind of the victim—it unmasks their mind's truth for all to see.",
+    "description": "Se a loucura estilhaça a alma, Demência é o martelo no ponto de fratura. Se a loucura liberta a mente, Demência é a chave da jaula. A Disciplina permite que um vampiro focalize a insanidade e a canalize para aqueles ao seu redor. Os anciões do clã Malkaviano afirmam que a mente consciente é uma máscara agradável e reconfortante, e que a Disciplina nunca cria uma loucura que já não estava lá. Em vez disso, ela desmorona as barreiras do autocontrole e da consciência para libertar a insanidade profunda e sombria que habita abaixo. Vista sob esta luz, Demência não corrompe a mente da vítima—ela desmascara a verdade de sua mente para que todos vejam."
+  },
+  "system": {
+    "restrictions": {
+      "text": "Each level of Dementation may only be used once per night on a victim. While Malkavians are the natural masters of this Discipline, it's usable by any vampire who possesses a Derangement.",
+      "description": "Cada nível de Demência só pode ser usado uma vez por noite em uma vítima. Embora os Malkavianos sejam os mestres naturais desta Disciplina, ela pode ser usada por qualquer vampiro que possua um Desequilíbrio."
+    },
+    "requirements": {
+      "text": "Vampires learning Dementation will gradually develop a Derangement; if this Derangement is cured by means magical or mundane, their knowledge of Dementation becomes unusable academia. Dwelling on this knowledge presages a relapse into madness.",
+      "description": "Vampiros que aprendem Demência desenvolverão gradualmente um Desequilíbrio; se este Desequilíbrio for curado por meios mágicos ou mundanos, seu conhecimento de Demência se torna teoria inutilizável. Habitar neste conhecimento pressagia uma recaída na loucura."
+    }
+  },
+  "source": {
+    "book": "V20 Dark Ages",
+    "page": null
+  }
+}

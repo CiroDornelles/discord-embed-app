@@ -1,55 +1,65 @@
-/**
- * @file App.jsx
- * @description This is the main App component for the React/Vite starter
- * template. It contains the Vite and React logos, a counter that increments
- * when the button is clicked, and a short description of the app.
- *
- * @author 0x1adrian
- */
+import React, { useState, useEffect } from 'react';
+import { ThemeProvider, CssBaseline, Box, Fab } from '@mui/material';
+import theme from './components/thema';
+import CharacterSheet from './components/characterSheet/CharacterSheet';
+import DiceRoller from './components/DiceRoller/DiceRoller';
 
-import { DiscordSDK } from '@discord/embedded-app-sdk'
-import { useState, useEffect } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-// Inicializa o SDK apenas se estivermos dentro do Discord
-let sdk = null
-if (new URLSearchParams(window.location.search).has('frame_id')) {
-  sdk = new DiscordSDK('1310531993469190164')
-}
-
-/**
- * The main App component.
- * @returns {JSX.Element} The App component.
- */
 function App() {
-  const [count, setCount] = useState(0)
+  const [sdk, setSdk] = useState(null);
+  const [showDiceRoller, setShowDiceRoller] = useState(false);
+
+  useEffect(() => {
+    if (new URLSearchParams(window.location.search).has('frame_id')) {
+      setSdk(new DiscordSDK('1310531993469190164'));
+    }
+  }, []);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Box sx={{ 
+        minHeight: '100vh',
+        width: '100%',
+        maxWidth: '100%',
+        margin: 0,
+        padding: 0,
+        overflow: 'hidden',
+        display: 'flex',
+        flexDirection: 'column',
+        backgroundColor: theme.palette.background.default
+      }}>
+        <CharacterSheet />
+        
+        {/* Botão flutuante para abrir o rolador de dados */}
+        <Fab
+          color="primary"
+          aria-label="roll dice"
+          onClick={() => setShowDiceRoller(!showDiceRoller)}
+          sx={{
+            position: 'fixed',
+            bottom: 16,
+            right: 16,
+          }}
+        >
+          🎲
+        </Fab>
+
+        {/* Modal do rolador de dados */}
+        {showDiceRoller && (
+          <Box
+            sx={{
+              position: 'fixed',
+              bottom: 80,
+              right: 16,
+              zIndex: 1000,
+            }}
+          >
+            <DiceRoller />
+          </Box>
+        )}
+      </Box>
+    </ThemeProvider>
+  );
 }
 
-export default App
+export default App;

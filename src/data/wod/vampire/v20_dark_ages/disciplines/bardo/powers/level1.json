@@ -1,0 +1,47 @@
+{
+  "name": "Restore Humanitas",
+  "namePtBr": "Restaurar Humanitas",
+  "level": 1,
+  "description": {
+    "text": "The Child of Osiris believes that what is lost may be regained. Rather than accept the inevitable slide to inhumanity, the Penitent fights hard to regain any lost Humanity.",
+    "description": "O Filho de Osíris acredita que o que foi perdido pode ser recuperado. Em vez de aceitar o deslize inevitável para a desumanidade, o Penitente luta arduamente para recuperar qualquer Humanidade perdida."
+  },
+  "system": {
+    "text": "When the vampire loses a dot of Road of Humanity, he can attempt to regain it without spending experience points. Restore Humanitas must be used within a week of losing the dot and can only restore the last dot lost. The character must take an affirming action appropriate to a character of a superior Road rating, meditate for several hours, and spend all the blood points currently in his body. The player then rolls Conscience (difficulty equal to the level of Road of Humanity being regained). If the roll succeeds, the character regains the dot of Road and (if applicable) the dot of Conscience lost to a botched degeneration roll. If the character also gained a Derangement, this fades within a week.",
+    "description": "Quando o vampiro perde um ponto da Estrada da Humanidade, ele pode tentar recuperá-lo sem gastar pontos de experiência. Restaurar Humanitas deve ser usado dentro de uma semana após perder o ponto e só pode restaurar o último ponto perdido. O personagem deve realizar uma ação afirmativa apropriada para um personagem de classificação superior na Estrada, meditar por várias horas e gastar todos os pontos de sangue atualmente em seu corpo. O jogador então rola Consciência (dificuldade igual ao nível da Estrada da Humanidade sendo recuperado). Se o teste for bem-sucedido, o personagem recupera o ponto da Estrada e (se aplicável) o ponto de Consciência perdido devido a uma falha crítica no teste de degeneração. Se o personagem também ganhou um Derangement, este desaparece dentro de uma semana."
+  },
+  "requirements": {
+    "timing": {
+      "text": "Must be used within a week of losing the Humanity dot",
+      "description": "Deve ser usado dentro de uma semana após perder o ponto de Humanidade"
+    },
+    "actions": {
+      "text": "Must take an affirming action appropriate to a character of a superior Road rating and meditate for several hours",
+      "description": "Deve realizar uma ação afirmativa apropriada para um personagem de classificação superior na Estrada e meditar por várias horas"
+    },
+    "cost": {
+      "text": "Spend all blood points currently in the vampire's body",
+      "description": "Gastar todos os pontos de sangue atualmente no corpo do vampiro"
+    }
+  },
+  "mechanics": {
+    "roll": {
+      "attribute": "Conscience",
+      "difficulty": "Equal to the level of Road of Humanity being regained",
+      "effects": {
+        "success": {
+          "text": "Regains the dot of Road and any Conscience dot lost to a botched degeneration roll",
+          "description": "Recupera o ponto da Estrada e qualquer ponto de Consciência perdido devido a uma falha crítica no teste de degeneração"
+        },
+        "derangement": {
+          "text": "If a Derangement was gained, it fades within a week",
+          "description": "Se um Derangement foi ganho, ele desaparece dentro de uma semana"
+        }
+      }
+    },
+    "limitations": {
+      "text": "Can only restore the last dot lost",
+      "description": "Só pode restaurar o último ponto perdido"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "name": "Ignis Fatuus",
+  "namePtBr": "Ignis Fatuus",
+  "level": 1,
+  "description": {
+    "text": "The vampire can create simple static illusions that can confound a single sense. For instance he can create the sound of horse's hooves, the smell of hay, the appearance of a shining jewel, or even the feel of a hand pushing inside a pocket. While tactile illusions can be felt, they cannot harm anyone nor do any real damage.",
+    "description": "O vampiro pode criar ilusões estáticas simples que podem confundir um único sentido. Por exemplo, ele pode criar o som de cascos de cavalo, o cheiro de feno, a aparência de uma joia brilhante, ou até mesmo a sensação de uma mão empurrando dentro de um bolso. Embora ilusões táteis possam ser sentidas, elas não podem ferir ninguém nem causar dano real."
+  },
+  "system": {
+    "text": "The player spends one Willpower point, and creating the illusions takes the vampire's action. The vampire can create illusions in an area of roughly 7 cubic meters per dot the vampire has in Chimerstry, and the vampire must be able to sense the area in which he creates the illusion. For example, he cannot create the illusion of a coin inside a box unless he can see or feel the inside of the box, but he can create the sound of coins rattling around if the box is shaken. The illusion remains until the vampire chooses to end the illusion or leaves the area.",
+    "description": "O jogador gasta um ponto de Força de Vontade, e criar as ilusões consome a ação do vampiro. O vampiro pode criar ilusões em uma área de aproximadamente 7 metros cúbicos por ponto que o vampiro possui em Quimérismo, e o vampiro deve ser capaz de sentir a área na qual ele cria a ilusão. Por exemplo, ele não pode criar a ilusão de uma moeda dentro de uma caixa a menos que possa ver ou sentir o interior da caixa, mas pode criar o som de moedas chacoalhando se a caixa for sacudida. A ilusão permanece até que o vampiro escolha encerrá-la ou deixe a área."
+  },
+  "requirements": {
+    "cost": {
+      "text": "One Willpower point",
+      "description": "Um ponto de Força de Vontade"
+    },
+    "action": {
+      "text": "Takes the vampire's action",
+      "description": "Consome a ação do vampiro"
+    },
+    "perception": {
+      "text": "Vampire must be able to sense the area of the illusion",
+      "description": "Vampiro deve ser capaz de sentir a área da ilusão"
+    }
+  },
+  "mechanics": {
+    "area": {
+      "calculation": {
+        "text": "7 cubic meters per dot in Chimerstry",
+        "description": "7 metros cúbicos por ponto em Quimérismo"
+      }
+    },
+    "senses": {
+      "affected": {
+        "text": "Can affect a single sense at a time",
+        "description": "Pode afetar um único sentido por vez"
+      },
+      "examples": {
+        "sound": {
+          "text": "Sound of horse's hooves",
+          "description": "Som de cascos de cavalo"
+        },
+        "smell": {
+          "text": "Smell of hay",
+          "description": "Cheiro de feno"
+        },
+        "visual": {
+          "text": "Appearance of a shining jewel",
+          "description": "Aparência de uma joia brilhante"
+        },
+        "tactile": {
+          "text": "Feel of a hand pushing inside a pocket",
+          "description": "Sensação de uma mão empurrando dentro de um bolso"
+        }
+      }
+    },
+    "limitations": {
+      "damage": {
+        "text": "Tactile illusions cannot harm or cause real damage",
+        "description": "Ilusões táteis não podem ferir ou causar dano real"
+      },
+      "location": {
+        "text": "Cannot create illusions in areas the vampire cannot sense",
+        "description": "Não pode criar ilusões em áreas que o vampiro não pode sentir",
+        "example": {
+          "text": "Cannot create visual illusion inside closed box unless vampire can see inside",
+          "description": "Não pode criar ilusão visual dentro de caixa fechada a menos que o vampiro possa ver dentro"
+        }
+      }
+    },
+    "duration": {
+      "text": "Until vampire ends illusion or leaves area",
+      "description": "Até que o vampiro encerre a ilusão ou deixe a área"
+    }
+  }
+}

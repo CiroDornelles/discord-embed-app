@@ -1,0 +1,28 @@
+{
+    "name": "Geração",
+    "originalName": "Generation",
+    "description": "Este Background representa sua Geração: a pureza do seu sangue e sua proximidade com o Primeiro Vampiro. Uma alta classificação de Geração pode representar um senhor poderoso ou um gosto decididamente perigoso por diablerie.",
+    "system": "Se você não escolher nenhum ponto neste Traço, você começa o jogo como um vampiro da Décima Segunda Geração. Veja p. 341 para mais informações.",
+    "levels": [
+        {
+            "level": 1,
+            "description": "Décima Primeira Geração: reserva de sangue 12, pode gastar 1 ponto de sangue por turno"
+        },
+        {
+            "level": 2,
+            "description": "Décima Geração: reserva de sangue 13, pode gastar 1 ponto de sangue por turno"
+        },
+        {
+            "level": 3,
+            "description": "Nona Geração: reserva de sangue 14, pode gastar 2 pontos de sangue por turno"
+        },
+        {
+            "level": 4,
+            "description": "Oitava Geração: reserva de sangue 15, pode gastar 3 pontos de sangue por turno"
+        },
+        {
+            "level": 5,
+            "description": "Sétima Geração: reserva de sangue 20, pode gastar 4 pontos de sangue por turno e possuir Traços com 6 pontos"
+        }
+    ]
+}

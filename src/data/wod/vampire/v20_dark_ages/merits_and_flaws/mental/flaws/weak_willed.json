@@ -1,0 +1,24 @@
+{
+  "name": "Weak-Willed",
+  "namePtBr": "Vontade Fraca",
+  "category": "Mental",
+  "cost": -3,
+  "description": {
+    "text": "Your will is particularly susceptible to supernatural influence and manipulation. You find it difficult to resist the powers of other vampires, and your own resolve is easily shaken.",
+    "description": "Sua vontade é particularmente suscetível a influência e manipulação sobrenatural. Você acha difícil resistir aos poderes de outros vampiros, e sua própria determinação é facilmente abalada."
+  },
+  "effects": {
+    "resistance": {
+      "text": "Add +2 difficulty to all rolls to resist supernatural mental influence or coercion",
+      "description": "Adicione +2 de dificuldade a todas as rolagens para resistir à influência ou coerção mental sobrenatural"
+    },
+    "willpower": {
+      "text": "You may never have more than 4 dots in Willpower, regardless of experience expenditure",
+      "description": "Você nunca pode ter mais que 4 pontos em Força de Vontade, independentemente do gasto de experiência"
+    },
+    "disciplines": {
+      "text": "Mental and social Disciplines used against you are considered one level higher for their effects",
+      "description": "Disciplinas mentais e sociais usadas contra você são consideradas um nível mais alto para seus efeitos"
+    }
+  }
+}

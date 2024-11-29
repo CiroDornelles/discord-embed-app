@@ -1,0 +1,63 @@
+{
+  "name": "Prestidigitação",
+  "nameOriginal": "Legerdemain",
+  "flavorText": "*\"Observe atentamente,\" ela disse, mostrando suas mãos vazias. Um movimento rápido dos dedos e uma moeda de ouro apareceu. Outro movimento e ela desapareceu. \"A questão é,\" ela sorriu, \"ela realmente desapareceu?\"*",
+  "description": "Suas mãos podem se mover mais rápido que os olhos deles? Prestidigitação proporciona um tipo de destreza manual que auxilia em truques de mágica, bater carteiras e até mesmo malabarismo. Por que cantar por seu jantar quando você pode simplesmente pegá-lo, sem que ninguém perceba?",
+  "levels": {
+    "1": {
+      "name": "Novato",
+      "description": "Se algo desaparece enquanto ninguém estava olhando, ninguém sabe quem pegou."
+    },
+    "2": {
+      "name": "Praticante",
+      "description": "Você pode rolar uma moeda sobre seus dedos facilmente. De onde veio a moeda?"
+    },
+    "3": {
+      "name": "Competente",
+      "description": "Você pode manipular objetos em sua pessoa ou fora dela facilmente. Se você consegue pôr as mãos nele, você consegue escapar com ele."
+    },
+    "4": {
+      "name": "Especialista",
+      "description": "Seus movimentos são tão fluidos e rápidos que as pessoas estão mais dispostas a acreditar que é magia genuína do que habilidade física."
+    },
+    "5": {
+      "name": "Mestre",
+      "description": "Sua reputação em trapaças é frequentemente a única pista que o liga aos mais desconcertantes desvios. Ainda bem que não há evidências."
+    }
+  },
+  "possessedBy": [
+    "Mendigos",
+    "Bobos da Corte",
+    "Menestréis",
+    "Ladrões"
+  ],
+  "specialties": {
+    "default": [
+      {
+        "id": "concealment",
+        "name": "Ocultação",
+        "nameOriginal": "Concealment",
+        "description": "Você é especialmente habilidoso em esconder objetos em sua pessoa ou em outros lugares."
+      },
+      {
+        "id": "conjuring-tricks",
+        "name": "Truques de Mágica",
+        "nameOriginal": "Conjuring Tricks",
+        "description": "Você é especialista em iludir o público com truques de mágica aparentemente impossíveis."
+      },
+      {
+        "id": "juggling",
+        "name": "Malabarismo",
+        "nameOriginal": "Juggling",
+        "description": "Você tem talento especial para manter múltiplos objetos em movimento no ar."
+      },
+      {
+        "id": "picking-purses",
+        "name": "Bater Carteiras",
+        "nameOriginal": "Picking Purses",
+        "description": "Você é particularmente habilidoso em remover objetos de valor dos bolsos e bolsas alheios."
+      }
+    ],
+    "custom": []
+  }
+}

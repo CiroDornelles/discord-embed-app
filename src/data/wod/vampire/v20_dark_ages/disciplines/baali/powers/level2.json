@@ -1,0 +1,89 @@
+{
+  "name": "Fear of the Void",
+  "namePtBr": "Medo do Vazio",
+  "level": 2,
+  "description": {
+    "text": "Once you know a subject's vices, manipulating them is easy. Converting vices of pleasure into waves of existential terror is a greater trick. Speaking in soft tones of primeval horror, the Baali inflames her victim's traumas.",
+    "description": "Uma vez que você conhece os vícios de um sujeito, manipulá-los é fácil. Converter vícios de prazer em ondas de terror existencial é um truque ainda maior. Falando em tons suaves de horror primordial, o Baali inflama os traumas de sua vítima."
+  },
+  "system": {
+    "prerequisites": {
+      "text": "The Baali must first successfully use Sense the Sin or another method to learn the target's secrets or fears.",
+      "description": "O Baali deve primeiro usar Sentir o Pecado ou outro método para aprender os segredos ou medos do alvo com sucesso."
+    },
+    "activation": {
+      "text": "The Baali must speak to the target, mocking his insecurities with her tone. Roll Wits + Intimidation (difficulty of the subject's Courage +4).",
+      "description": "O Baali deve falar com o alvo, zombando de suas inseguranças com seu tom. Role Raciocínio + Intimidação (dificuldade da Coragem do sujeito +4)."
+    },
+    "effects": {
+      "successLevels": {
+        "text": [
+          "One Success: Target experiences intense fear",
+          "Two Successes: Causes panicked flight similar to Rötschreck",
+          "Three Successes: Inflames a Derangement (Storyteller's choice)",
+          "Four or More Successes: Causes catatonia"
+        ],
+        "description": [
+          "Um Sucesso: Alvo experimenta medo intenso",
+          "Dois Sucessos: Causa fuga em pânico similar a Rötschreck",
+          "Três Sucessos: Inflama uma Perturbação (escolha do Narrador)",
+          "Quatro ou Mais Sucessos: Causa catatonia"
+        ]
+      }
+    },
+    "resistance": {
+      "text": "Mortals and supernatural creatures bound to strong emotions (such as fae or ghosts) may not contest this roll. Other supernatural creatures may make a contested Courage roll (difficulty of the Baali's Willpower).",
+      "description": "Mortais e criaturas sobrenaturais ligadas a emoções fortes (como fadas ou fantasmas) não podem contestar esta rolagem. Outras criaturas sobrenaturais podem fazer uma rolagem contestada de Coragem (dificuldade da Força de Vontade do Baali)."
+    }
+  },
+  "mechanics": {
+    "roll": {
+      "attribute": {
+        "text": "Wits",
+        "description": "Raciocínio"
+      },
+      "ability": {
+        "text": "Intimidation",
+        "description": "Intimidação"
+      },
+      "difficulty": {
+        "text": "Target's Courage +4",
+        "description": "Coragem do alvo +4"
+      }
+    },
+    "duration": {
+      "text": "Remainder of the scene",
+      "description": "Resto da cena"
+    },
+    "limitations": {
+      "text": [
+        "Requires prior knowledge of target's fears or secrets",
+        "Must be able to speak to the target",
+        "Target must be able to hear and understand the Baali"
+      ],
+      "description": [
+        "Requer conhecimento prévio dos medos ou segredos do alvo",
+        "Deve ser capaz de falar com o alvo",
+        "Alvo deve ser capaz de ouvir e entender o Baali"
+      ]
+    }
+  },
+  "storytellerNotes": {
+    "derangementSelection": {
+      "text": "Choose a Derangement that relates to the target's existing fears and traumas for maximum dramatic effect.",
+      "description": "Escolha uma Perturbação que se relacione com os medos e traumas existentes do alvo para máximo efeito dramático."
+    },
+    "environmentalFactors": {
+      "text": [
+        "Dark or oppressive environments enhance the power's effectiveness",
+        "The target's existing mental state can affect the intensity of the response",
+        "Previous trauma or supernatural manipulation may make the target more susceptible"
+      ],
+      "description": [
+        "Ambientes escuros ou opressivos aumentam a eficácia do poder",
+        "O estado mental existente do alvo pode afetar a intensidade da resposta",
+        "Trauma anterior ou manipulação sobrenatural pode tornar o alvo mais suscetível"
+      ]
+    }
+  }
+}

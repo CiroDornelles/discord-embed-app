@@ -1,0 +1,20 @@
+{
+  "name": "Eidetic Memory",
+  "namePtBr": "Memória Eidética",
+  "category": "Mental",
+  "cost": 2,
+  "description": {
+    "text": "You have a near-perfect memory, able to recall with crystal clarity things you have seen, heard, or otherwise experienced. Your memory is so precise that you can recreate complex diagrams after seeing them only once.",
+    "description": "Você tem uma memória quase perfeita, capaz de recordar com clareza cristalina coisas que você viu, ouviu ou experimentou de outra forma. Sua memória é tão precisa que você pode recriar diagramas complexos depois de vê-los apenas uma vez."
+  },
+  "effects": {
+    "memory": {
+      "text": "You automatically remember everything you experience with perfect clarity. No roll is needed for simple recall",
+      "description": "Você automaticamente se lembra de tudo que experimenta com clareza perfeita. Nenhuma rolagem é necessária para lembrança simples"
+    },
+    "complex_recall": {
+      "text": "For particularly complex memories or those from long ago, you may roll Intelligence + Academics (difficulty 6) to perfectly recall every detail",
+      "description": "Para memórias particularmente complexas ou muito antigas, você pode rolar Inteligência + Acadêmicos (dificuldade 6) para recordar perfeitamente cada detalhe"
+    }
+  }
+}

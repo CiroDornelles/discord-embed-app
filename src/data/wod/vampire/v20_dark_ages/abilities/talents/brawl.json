@@ -1,0 +1,74 @@
+{
+  "name": "Briga",
+  "nameOriginal": "Brawl",
+  "flavorText": "*O homem era duas vezes seu tamanho, mas ela não hesitou. Ele se moveu primeiro, um soco desajeitado que ela facilmente evitou. Seu próprio golpe foi rápido e preciso, direto na garganta. Ele caiu como uma árvore.*",
+  "description": "Nas tavernas ou no campo de batalha, por honra ou desentendimentos, lutar é um fato da vida neste mundo sombrio. O combate desarmado abrange tudo, desde os golpes habilidosos e metódicos do artista marcial até o lutador de rua durão. Aqueles que dominam Briga sabem onde golpear e como (uma cotovelada na garganta ou no nariz) e podem tanto receber quanto desferir golpes. E para os lutadores mais aguerridos, lutar 'limpo' não vale nada se significa perder. Vença. Com suas próprias mãos, punhos e músculos. Vença.",
+  "levels": {
+    "1": {
+      "name": "Novato",
+      "description": "Você consegue aguentar um ou dois socos."
+    },
+    "2": {
+      "name": "Praticante",
+      "description": "Você já enfrentou alguns vizinhos (e talvez alguns estranhos) e sempre saiu vivo."
+    },
+    "3": {
+      "name": "Competente",
+      "description": "Você está confiante em suas habilidades para entrar em uma luta e sair por cima. Se perder, o outro lutador sairá tão mal quanto você."
+    },
+    "4": {
+      "name": "Especialista",
+      "description": "A maioria das pessoas que você encontra não seria capaz de derrotá-lo. Você sabe disso."
+    },
+    "5": {
+      "name": "Mestre",
+      "description": "Quando você briga, ninguém pode ficar em seu caminho. Sistemas de luta são baseados em como você despedaça o mundo."
+    }
+  },
+  "possessedBy": [
+    "Bandidos",
+    "Valentões",
+    "Soldados"
+  ],
+  "specialties": {
+    "default": [
+      {
+        "id": "arm-locks",
+        "name": "Chaves de Braço",
+        "nameOriginal": "Arm-Locks",
+        "description": "Você é especialista em imobilizar e controlar os membros superiores de seus oponentes."
+      },
+      {
+        "id": "boxing",
+        "name": "Boxe",
+        "nameOriginal": "Boxing",
+        "description": "Você domina a arte do pugilismo, sabendo usar seus punhos com precisão e eficiência."
+      },
+      {
+        "id": "drunken-fighting",
+        "name": "Luta Embriagada",
+        "nameOriginal": "Drunken Fighting",
+        "description": "Você aprendeu a usar a imprevisibilidade e o desequilíbrio aparente a seu favor em combate."
+      },
+      {
+        "id": "showing-off",
+        "name": "Exibicionismo",
+        "nameOriginal": "Showing Off",
+        "description": "Você sabe como impressionar os espectadores com movimentos dramáticos e eficazes."
+      },
+      {
+        "id": "throws",
+        "name": "Arremessos",
+        "nameOriginal": "Throws",
+        "description": "Você é especialista em usar o peso e momentum do oponente contra ele mesmo."
+      },
+      {
+        "id": "wrestling",
+        "name": "Luta Livre",
+        "nameOriginal": "Wrestling",
+        "description": "Você domina as técnicas de grappling e combate corpo a corpo."
+      }
+    ],
+    "custom": []
+  }
+}

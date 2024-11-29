@@ -1,0 +1,28 @@
+{
+    "name": "Rebanho",
+    "originalName": "Herd",
+    "description": "Você construiu um grupo de mortais dos quais pode se alimentar sem medo. Além de fornecer nutrição, seu Rebanho pode ser útil para tarefas menores. No entanto, diferentemente de Aliados ou Servidores, eles normalmente não são muito controláveis ou habilidosos.",
+    "system": "Sua classificação de Rebanho adiciona dados às suas rolagens de caça. Jogadores podem comprar Rebanho compartilhado com pontos de Background.",
+    "levels": [
+        {
+            "level": 1,
+            "description": "Três receptáculos"
+        },
+        {
+            "level": 2,
+            "description": "Sete receptáculos"
+        },
+        {
+            "level": 3,
+            "description": "15 receptáculos"
+        },
+        {
+            "level": 4,
+            "description": "30 receptáculos"
+        },
+        {
+            "level": 5,
+            "description": "60 receptáculos"
+        }
+    ]
+}

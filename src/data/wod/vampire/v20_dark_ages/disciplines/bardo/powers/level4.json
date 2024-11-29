@@ -1,0 +1,76 @@
+{
+  "name": "Pillar of Osiris",
+  "namePtBr": "Pilar de Osíris",
+  "level": 4,
+  "description": {
+    "text": "The Pillar of Osiris is a mystical place of peace at the center of each temple where Penitents may meditate to increase their inner calm and magic. The Pillar comes with a hidden drawback though, as the Beast, initially chained by the Pillar, grows in strength while away from it.",
+    "description": "O Pilar de Osíris é um lugar místico de paz no centro de cada templo onde os Penitentes podem meditar para aumentar sua calma interior e magia. O Pilar vem com uma desvantagem oculta, porém, pois a Besta, inicialmente acorrentada pelo Pilar, cresce em força enquanto longe dele."
+  },
+  "system": {
+    "text": "Creating the Pillar of Osiris requires a night-long ritual, with the difficulty determined by the location; the more remote and free from violence the location is, the lower the difficulty. A cave far from human populations that has never seen violence might be difficulty 5, while the site of a grisly murder-suicide in a city would be difficulty 9. The player spends a Willpower point and rolls Willpower. Success creates the Pillar, which is conceptual rather than physical. The Pillar reduces the difficulties of Discipline use or other mystical activities (including blood magic) performed at the Pillar by three. This benefit only applies to vampires with at least one dot of Bardo. Once a Penitent has created a Pillar, he must visit it at least once a month, or it ceases to function. In addition, for every week he is away from a Pillar (not necessarily the one he created), the difficulties of all rolls to avoid frenzy increase by one.",
+    "description": "Criar o Pilar de Osíris requer um ritual que dura toda a noite, com a dificuldade determinada pela localização; quanto mais remoto e livre de violência for o local, menor a dificuldade. Uma caverna longe de populações humanas que nunca viu violência pode ter dificuldade 5, enquanto o local de um terrível assassinato-suicídio em uma cidade teria dificuldade 9. O jogador gasta um ponto de Força de Vontade e rola Força de Vontade. O sucesso cria o Pilar, que é conceitual em vez de físico. O Pilar reduz as dificuldades do uso de Disciplinas ou outras atividades místicas (incluindo magia de sangue) realizadas no Pilar em três. Este benefício só se aplica a vampiros com pelo menos um ponto em Bardo. Uma vez que um Penitente criou um Pilar, ele deve visitá-lo pelo menos uma vez por mês, ou ele deixa de funcionar. Além disso, para cada semana que ele está longe de um Pilar (não necessariamente o que ele criou), as dificuldades de todas as rolagens para evitar frenesi aumentam em um."
+  },
+  "requirements": {
+    "ritual": {
+      "duration": {
+        "text": "Night-long ritual",
+        "description": "Ritual que dura toda a noite"
+      },
+      "cost": {
+        "text": "Spend one Willpower point",
+        "description": "Gasta um ponto de Força de Vontade"
+      }
+    },
+    "maintenance": {
+      "text": "Must visit at least once a month",
+      "description": "Deve visitar pelo menos uma vez por mês"
+    }
+  },
+  "mechanics": {
+    "creation": {
+      "roll": {
+        "attribute": "Willpower",
+        "difficulty": {
+          "calculation": {
+            "text": "Based on location's remoteness and history of violence",
+            "description": "Baseado no isolamento do local e histórico de violência",
+            "examples": {
+              "low": {
+                "text": "Remote cave never touched by violence (difficulty 5)",
+                "description": "Caverna remota nunca tocada pela violência (dificuldade 5)"
+              },
+              "high": {
+                "text": "Site of grisly murder-suicide in city (difficulty 9)",
+                "description": "Local de terrível assassinato-suicídio na cidade (dificuldade 9)"
+              }
+            }
+          }
+        }
+      }
+    },
+    "benefits": {
+      "difficultyReduction": {
+        "text": "Reduces difficulties of Discipline use and mystical activities by three",
+        "description": "Reduz as dificuldades do uso de Disciplinas e atividades místicas em três",
+        "requirements": {
+          "text": "Only applies to vampires with at least one dot of Bardo",
+          "description": "Só se aplica a vampiros com pelo menos um ponto em Bardo"
+        }
+      }
+    },
+    "drawbacks": {
+      "frenzyDifficulty": {
+        "text": "For every week away from any Pillar, difficulties of all rolls to avoid frenzy increase by one",
+        "description": "Para cada semana longe de qualquer Pilar, as dificuldades de todas as rolagens para evitar frenesi aumentam em um"
+      },
+      "maintenance": {
+        "text": "Pillar ceases to function if not visited monthly",
+        "description": "Pilar deixa de funcionar se não for visitado mensalmente"
+      }
+    }
+  },
+  "nature": {
+    "text": "Conceptual rather than physical",
+    "description": "Conceitual em vez de físico"
+  }
+}

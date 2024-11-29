@@ -1,0 +1,20 @@
+{
+  "name": "Calm Heart",
+  "namePtBr": "Coração Calmo",
+  "category": "Mental",
+  "cost": 3,
+  "description": {
+    "text": "You possess an inner peace that others find difficult to attain. Your Beast is quieter than most, and you find it easier to maintain your composure even in situations that would normally trigger frenzy.",
+    "description": "Você possui uma paz interior que outros acham difícil de alcançar. Sua Besta é mais quieta que a maioria, e você acha mais fácil manter sua compostura mesmo em situações que normalmente provocariam frenesi."
+  },
+  "effects": {
+    "frenzy": {
+      "text": "Difficulty to resist frenzy is reduced by 2",
+      "description": "Dificuldade para resistir ao frenesi é reduzida em 2"
+    },
+    "rötschreck": {
+      "text": "Difficulty to resist Rötschreck is reduced by 2",
+      "description": "Dificuldade para resistir ao Rötschreck é reduzida em 2"
+    }
+  }
+}

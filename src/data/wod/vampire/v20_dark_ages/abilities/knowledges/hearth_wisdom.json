@@ -1,0 +1,122 @@
+{
+  "name": "Sabedoria Popular",
+  "nameOriginal": "Hearth Wisdom",
+  "flavorText": "'Você deixou o pires de leite?' perguntou a parteira, girando o espeto com uma mão enrugada. 'É por isso que as fadas deixam esta casa em paz.' 'Não existe tal coisa como fadas.' Ele cuspiu em seu tapete bem quando os grilhões se fecharam em volta de seus tornozelos. Ele olhou para seus tornozelos em descrença, então olhou para a parteira para exigir uma explicação. O que ele viu roubou o protesto de seus lábios. A luz do fogo brilhava em sua pele agora acetinada. 'A descrença pode ser perigosa,' ela ronronou. O grito que se seguiu assustou e dispersou as ovelhas no vale seguinte.",
+  "description": "Que frutas você pode comer? Vai chover amanhã? Qual é o melhor remédio para coqueluche? Esta sabedoria não é encontrada em livros, mas sentando-se aos pés de pessoas mais sábias que você, e falada em círculos de costura e bancas de mercado. Eles conhecem as curas e sabem as razões para ter medo do escuro.",
+  "levels": {
+    "1": {
+      "name": "Novato",
+      "description": "Você ouviu à lareira de seus anciãos, nas docas quando os navios chegavam. Você conhece o folclore local melhor que a maioria."
+    },
+    "2": {
+      "name": "Estudante",
+      "description": "Sua memória para histórias e tradições é extraordinária, e você coleta até mesmo os contos mais esotéricos. Aqueles que sabem sussurram em seu ouvido, enchendo-o com séculos de sabedoria."
+    },
+    "3": {
+      "name": "Instruído",
+      "description": "Você é o coletor de contos. Você impede que as palavras sejam esquecidas. Não importa onde você vá, você coleta pedaços de conhecimento. As pessoas procuram você para respostas para seus problemas."
+    },
+    "4": {
+      "name": "Erudito",
+      "description": "Você é conhecido por sua expertise no conhecimento coletivo de seu campo escolhido. Embora seu conhecimento não seja mantido em livros, você é procurado para treinamento por aqueles que desejam aprender em sua lareira."
+    },
+    "5": {
+      "name": "Mestre",
+      "description": "Embora você seja famoso por tudo que sabe, há rumores de que você sabe demais. Seu vasto corpo de conhecimento influencia as gerações mais jovens; você é seu almanaque."
+    }
+  },
+  "possessedBy": [
+    "Marinheiros experientes",
+    "Curandeiros",
+    "Herbalistas",
+    "Fazendeiros",
+    "Eremitas",
+    "Avós",
+    "Anciãos da vila"
+  ],
+  "specialties": {
+    "default": [
+      {
+        "id": "locale",
+        "name": "Localidade",
+        "nameOriginal": "Locale",
+        "description": "Você é especialista no conhecimento de uma região específica (ex: França central)."
+      },
+      {
+        "id": "culture",
+        "name": "Cultura",
+        "nameOriginal": "Culture",
+        "description": "Você é versado nas tradições de uma cultura específica (ex: Celta)."
+      },
+      {
+        "id": "omens",
+        "name": "Presságios",
+        "nameOriginal": "Omens",
+        "description": "Você é habilidoso em interpretar sinais e augúrios."
+      },
+      {
+        "id": "wards",
+        "name": "Proteções",
+        "nameOriginal": "Wards",
+        "description": "Você conhece métodos tradicionais de proteção contra o mal."
+      },
+      {
+        "id": "home-remedies",
+        "name": "Remédios Caseiros",
+        "nameOriginal": "Home Remedies",
+        "description": "Você conhece uma variedade de curas tradicionais para doenças comuns."
+      },
+      {
+        "id": "poisons",
+        "name": "Venenos",
+        "nameOriginal": "Poisons",
+        "description": "Você tem conhecimento sobre substâncias tóxicas naturais e seus antídotos."
+      },
+      {
+        "id": "charms",
+        "name": "Amuletos",
+        "nameOriginal": "Charms",
+        "description": "Você é versado na criação e uso de amuletos e talismãs."
+      }
+    ],
+    "custom": []
+  },
+  "fieldsOfExpertise": {
+    "default": [
+      {
+        "id": "folk-medicine",
+        "name": "Medicina Popular",
+        "nameOriginal": "Folk Medicine",
+        "description": "Conhecimento de curas tradicionais e remédios naturais",
+        "examples": [
+          "Ervas medicinais",
+          "Cataplasmas",
+          "Unguentos"
+        ]
+      },
+      {
+        "id": "weather-lore",
+        "name": "Conhecimento do Tempo",
+        "nameOriginal": "Weather Lore",
+        "description": "Previsão do tempo através de sinais naturais",
+        "examples": [
+          "Padrões climáticos",
+          "Sinais naturais",
+          "Almanaque"
+        ]
+      },
+      {
+        "id": "folk-traditions",
+        "name": "Tradições Populares",
+        "nameOriginal": "Folk Traditions",
+        "description": "Conhecimento de costumes e práticas tradicionais",
+        "examples": [
+          "Rituais",
+          "Superstições",
+          "Folclore"
+        ]
+      }
+    ],
+    "custom": []
+  }
+}

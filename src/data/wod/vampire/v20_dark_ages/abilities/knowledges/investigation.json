@@ -1,0 +1,114 @@
+{
+  "name": "Investigação",
+  "nameOriginal": "Investigation",
+  "flavorText": "'Parece que você está mentindo para mim.' Nottingham aparou sua unha com a faca de maçã. 'Eu expliquei como me sinto sobre pessoas que mentem.' 'Eu não sei de nada! Pergunte a Mary, ela vai te dizer!' Seu rosto estava avermelhando perto do ferro de marcar, formando bolhas como pele de porco assando. O rosto de Nottingham transformou-se em algo parecido com pena. 'E quem você acha que me contou?'",
+  "description": "Seu olho detecta os menores detalhes, rastreando-os através da teia de informações. Você tem as perguntas e eles têm as respostas, e ai daqueles que permanecerem muito tempo no caminho de sua busca. Você conecta todos os fios, tecendo-os juntos para revelar a tapeçaria da verdade. Ou a verdade da Igreja. Ou a verdade do Rei. Qualquer verdade que você procure, você tem as ferramentas para descobri-la.",
+  "levels": {
+    "1": {
+      "name": "Novato",
+      "description": "Você descobre os pequenos segredos em sua vizinhança: quem está cortejando, quem está traindo, quem está mentindo e roubando."
+    },
+    "2": {
+      "name": "Estudante",
+      "description": "Você fez um estudo da arte do questionamento. Você pode peneirar através da conversa dos outros para encontrar o grão de informação que precisa. Mistérios não duram muito em sua companhia."
+    },
+    "3": {
+      "name": "Instruído",
+      "description": "Investigação poderia ser sua profissão. É um talento aguçado seu e um que deveria fazer seus amigos e parentes tremerem quando você o direciona para eles."
+    },
+    "4": {
+      "name": "Erudito",
+      "description": "Suas descobertas poderiam escrever um livro ou dois. Na verdade, alguns pagariam para você não publicar esse livro. Aqueles que querem um segredo desenterrado – ou gostariam que ele fosse enterrado para sempre – procuram seu conselho."
+    },
+    "5": {
+      "name": "Mestre",
+      "description": "Você é o Mestre dos Espiões. Você tem uma rede de espiões; os olhos e ouvidos dos outros lhe contam tudo. Se sua inclinação é religiosa, hereges que se cuidem. Se política, inimigos do estado sempre olham por cima do ombro procurando por você antes de falar – em vão."
+    }
+  },
+  "possessedBy": [
+    "Chantagistas",
+    "Inquisidores",
+    "Caçadores de recompensas",
+    "Padres ou Madres confessores",
+    "Senescais"
+  ],
+  "specialties": {
+    "default": [
+      {
+        "id": "torture",
+        "name": "Tortura",
+        "nameOriginal": "Torture",
+        "description": "Você é especialista em extrair informações através de métodos dolorosos."
+      },
+      {
+        "id": "peccadilloes",
+        "name": "Pecadilhos",
+        "nameOriginal": "Peccadilloes",
+        "description": "Você é habilidoso em descobrir pequenas transgressões e segredos."
+      },
+      {
+        "id": "confessions",
+        "name": "Confissões",
+        "nameOriginal": "Confessions",
+        "description": "Você é especialista em obter confissões através de vários métodos."
+      },
+      {
+        "id": "tracking",
+        "name": "Rastreamento",
+        "nameOriginal": "Tracking",
+        "description": "Você é habilidoso em seguir pistas e rastros de pessoas."
+      },
+      {
+        "id": "audience",
+        "name": "Audiência",
+        "nameOriginal": "Audience",
+        "description": "Você é especialista em investigar para um grupo específico (ex: Realeza, Igreja, Estado)."
+      },
+      {
+        "id": "questioning",
+        "name": "Interrogatório",
+        "nameOriginal": "Questioning",
+        "description": "Você é mestre na arte de fazer as perguntas certas."
+      }
+    ],
+    "custom": []
+  },
+  "fieldsOfExpertise": {
+    "default": [
+      {
+        "id": "interrogation",
+        "name": "Interrogatório",
+        "nameOriginal": "Interrogation",
+        "description": "Técnicas de extração de informações",
+        "examples": [
+          "Questionamento",
+          "Intimidação",
+          "Manipulação psicológica"
+        ]
+      },
+      {
+        "id": "evidence-gathering",
+        "name": "Coleta de Evidências",
+        "nameOriginal": "Evidence Gathering",
+        "description": "Métodos de coleta e análise de provas",
+        "examples": [
+          "Rastreamento",
+          "Análise de documentos",
+          "Observação"
+        ]
+      },
+      {
+        "id": "information-network",
+        "name": "Rede de Informações",
+        "nameOriginal": "Information Network",
+        "description": "Gerenciamento de fontes e informantes",
+        "examples": [
+          "Espiões",
+          "Informantes",
+          "Redes de contatos"
+        ]
+      }
+    ],
+    "custom": []
+  }
+}

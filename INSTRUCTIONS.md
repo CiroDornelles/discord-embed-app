@@ -86,43 +86,137 @@ if (new URLSearchParams(window.location.search).has('frame_id')) {
 - [x] Atributos Mentais (Percepção, Inteligência, Raciocínio)
 
 ### 2. Sistema de Habilidades 
-#### Talentos (em progresso)
+#### Talentos (Completo)
 - [x] Prontidão (Alertness)
-- [ ] Esportes (Athletics)
-- [ ] Consciência (Awareness)
-- [ ] Briga (Brawl)
-- [ ] Empatia (Empathy)
-- [ ] Expressão (Expression)
-- [ ] Intimidação (Intimidation)
-- [ ] Liderança (Leadership)
-- [ ] Manha (Subterfuge)
-- [ ] Lábia (Streetwise)
+- [x] Esportes (Athletics)
+- [x] Consciência (Awareness)
+- [x] Briga (Brawl)
+- [x] Empatia (Empathy)
+- [x] Expressão (Expression)
+- [x] Intimidação (Intimidation)
+- [x] Liderança (Leadership)
+- [x] Manha (Subterfuge)
+- [x] Lábia (Streetwise)
 
-#### Perícias (pendente)
-- [ ] Arqueirismo (Archery)
-- [ ] Ofícios (Crafts)
-- [ ] Etiqueta (Etiquette)
-- [ ] Herbalismo (Herbalism)
-- [ ] Armas de Lâmina (Melee)
-- [ ] Performance (Performance)
-- [ ] Cavalgar (Ride)
-- [ ] Furtividade (Stealth)
-- [ ] Sobrevivência (Survival)
-- [ ] Comércio (Commerce)
+#### Perícias (Completo)
+- [x] Arqueirismo (Archery)
+- [x] Ofícios (Crafts)
+- [x] Etiqueta (Etiquette)
+- [x] Herbalismo (Herbalism)
+- [x] Armas de Lâmina (Melee)
+- [x] Performance (Performance)
+- [x] Cavalgar (Ride)
+- [x] Furtividade (Stealth)
+- [x] Sobrevivência (Survival)
+- [x] Comércio (Commerce)
 
-#### Conhecimentos (pendente)
-- [ ] Acadêmicos (Academics)
-- [ ] Sabedoria Popular (Hearth Wisdom)
-- [ ] Investigação (Investigation)
-- [ ] Direito (Law)
-- [ ] Linguística (Linguistics)
-- [ ] Medicina (Medicine)
-- [ ] Ocultismo (Occult)
-- [ ] Política (Politics)
-- [ ] Senescalia (Seneschal)
-- [ ] Teologia (Theology)
+#### Conhecimentos (Completo)
+- [x] Acadêmicos (Academics)
+- [x] Sabedoria Popular (Hearth Wisdom)
+- [x] Investigação (Investigation)
+- [x] Direito (Law)
+- [x] Linguística (Linguistics)
+- [x] Medicina (Medicine)
+- [x] Ocultismo (Occult)
+- [x] Política (Politics)
+- [x] Senescalia (Seneschal)
+- [x] Teologia (Theology)
 
-### 3. Estrutura de Dados 
+### 3. Sistema de Backgrounds (Completo)
+- [x] Aliados (Allies)
+- [x] Identidade Alternativa (Alternate Identity)
+- [x] Contatos (Contacts)
+- [x] Domínio (Domain)
+- [x] Fama (Fame)
+- [x] Geração (Generation)
+- [x] Rebanho (Herd)
+- [x] Influência (Influence)
+- [x] Mentor (Mentor)
+- [x] Recursos (Resources)
+- [x] Servidores (Retainers)
+- [x] Status (Status)
+
+### 4. Sistema de Disciplinas (Pendente)
+#### Disciplinas Básicas
+- [ ] Animalism (Animalismo)
+- [ ] Auspex (Auspício)
+- [ ] Celerity (Celeridade)
+- [ ] Chimerstry (Quimerismo)
+- [ ] Dementation (Dementação)
+- [ ] Dominate (Dominação)
+- [ ] Fortitude (Fortitude)
+- [ ] Necromancy (Necromancia)
+- [ ] Obfuscate (Ofuscação)
+- [ ] Obtenebration (Obteneração)
+- [ ] Potence (Potência)
+- [ ] Presence (Presença)
+- [ ] Protean (Proteísmo)
+- [ ] Quietus (Quietus)
+- [ ] Serpentis (Serpentis)
+- [ ] Thaumaturgy (Taumaturgia)
+- [ ] Valeren (Valeren)
+- [ ] Vicissitude (Vicissitude)
+
+#### Trilhas de Taumaturgia
+- [ ] Path of Blood (Trilha do Sangue)
+- [ ] Outras trilhas principais
+
+#### Trilhas de Necromancia
+- [ ] Sepulchre Path (Trilha do Sepulcro)
+- [ ] Outras trilhas principais
+
+### 5. Sistema de Qualidades e Defeitos (Pendente)
+#### Qualidades (Merits)
+##### Físicas
+- [ ] Acute Sense (Sentido Aguçado)
+- [ ] Ambidextrous (Ambidestro)
+- [ ] Catlike Balance (Equilíbrio Felino)
+- [ ] E outras qualidades físicas
+
+##### Sociais
+- [ ] Allies (Aliados)
+- [ ] Elysium Regular (Frequentador do Elísio)
+- [ ] Prestigious Sire (Senhor Prestigioso)
+- [ ] E outras qualidades sociais
+
+##### Mentais
+- [ ] Common Sense (Bom Senso)
+- [ ] Concentration (Concentração)
+- [ ] Language (Idioma)
+- [ ] E outras qualidades mentais
+
+##### Sobrenaturais
+- [ ] Additional Discipline (Disciplina Adicional)
+- [ ] Light Sleeper (Sono Leve)
+- [ ] Medium (Médium)
+- [ ] E outras qualidades sobrenaturais
+
+#### Defeitos (Flaws)
+##### Físicos
+- [ ] Bad Sight (Má Visão)
+- [ ] Deformity (Deformidade)
+- [ ] Lame (Manco)
+- [ ] E outros defeitos físicos
+
+##### Sociais
+- [ ] Dark Secret (Segredo Sombrio)
+- [ ] Enemy (Inimigo)
+- [ ] Infamous Sire (Senhor Infame)
+- [ ] E outros defeitos sociais
+
+##### Mentais
+- [ ] Amnesia (Amnésia)
+- [ ] Nightmares (Pesadelos)
+- [ ] Short Fuse (Pavio Curto)
+- [ ] E outros defeitos mentais
+
+##### Sobrenaturais
+- [ ] Blood Madness (Loucura Sanguínea)
+- [ ] Cursed (Amaldiçoado)
+- [ ] Weak-Willed (Fraco de Vontade)
+- [ ] E outros defeitos sobrenaturais
+
+### 6. Estrutura de Dados 
 - [x] Formato JSON para atributos
 - [x] Formato JSON para habilidades incluindo:
   - História de exemplo (flavor text)
@@ -132,14 +226,14 @@ if (new URLSearchParams(window.location.search).has('frame_id')) {
   - Especialidades padrão
 - [ ] Sistema para especialidades personalizadas
 
-### 4. Funcionalidades Planejadas 
+### 7. Funcionalidades Planejadas 
 - [ ] Exportação para diferentes VTTs (Foundry, Roll20)
 - [ ] Exportação para PDF
 - [ ] Sistema de tooltips para descrições
 - [ ] Interface para adicionar especialidades personalizadas
 - [ ] Validação de dados usando Zod
 
-### 5. Organização do Projeto 
+### 8. Organização do Projeto 
 - [x] Estrutura de diretórios para diferentes jogos do World of Darkness
 - [x] Separação por versões (V20, Dark Ages)
 - [x] Organização modular dos componentes

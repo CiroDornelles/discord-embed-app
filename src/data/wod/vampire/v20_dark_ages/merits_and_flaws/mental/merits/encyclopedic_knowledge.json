@@ -1,0 +1,20 @@
+{
+  "name": "Encyclopedic Knowledge",
+  "namePtBr": "Conhecimento Enciclopédico",
+  "category": "Mental",
+  "cost": 2,
+  "description": {
+    "text": "You have a broad knowledge of a vast number of subjects. While you may not be an expert in any particular field, you know at least a little bit about nearly everything.",
+    "description": "Você tem um amplo conhecimento sobre um vasto número de assuntos. Embora você possa não ser um especialista em nenhum campo específico, você sabe pelo menos um pouco sobre quase tudo."
+  },
+  "effects": {
+    "knowledge": {
+      "text": "You can make an Intelligence + Academics roll (difficulty 8) on any general knowledge question. Success indicates you know something about the subject",
+      "description": "Você pode fazer uma rolagem de Inteligência + Acadêmicos (dificuldade 8) em qualquer questão de conhecimento geral. Sucesso indica que você sabe algo sobre o assunto"
+    },
+    "specialties": {
+      "text": "You may take specialties in Academics without having any dots in the Ability",
+      "description": "Você pode escolher especialidades em Acadêmicos sem ter pontos na Habilidade"
+    }
+  }
+}

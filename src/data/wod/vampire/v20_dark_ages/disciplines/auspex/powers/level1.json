@@ -1,0 +1,55 @@
+{
+  "name": "Heightened Senses",
+  "namePtBr": "Sentidos Aguçados",
+  "level": 1,
+  "description": {
+    "text": "This power sharpens all of the vampire's senses, effectively doubling the clarity and range of sight, hearing, and smell. Even tactile sensations and taste become heightened to the point where a vampire could read a newspaper by running fingers over the ink. Heightened hearing allows the vampire to hear whispers from several yards away, while enhanced vision allows him to see clearly in pitch darkness.",
+    "description": "Este poder aguça todos os sentidos do vampiro, efetivamente dobrando a clareza e alcance da visão, audição e olfato. Até mesmo sensações táteis e paladar se tornam tão aguçados que um vampiro poderia ler um jornal passando os dedos sobre a tinta. A audição aprimorada permite ao vampiro ouvir sussurros a vários metros de distância, enquanto a visão aprimorada permite que ele veja claramente na escuridão total."
+  },
+  "system": {
+    "activation": {
+      "text": "This power is automatic, but a vampire can temporarily suspend it if desired.",
+      "description": "Este poder é automático, mas um vampiro pode suspendê-lo temporariamente se desejar."
+    },
+    "effects": {
+      "text": "Adds +2 dice to all Perception-based rolls. In addition, the difficulty of any task involving the senses is reduced by 2.",
+      "description": "Adiciona +2 dados a todas as rolagens baseadas em Percepção. Além disso, a dificuldade de qualquer tarefa envolvendo os sentidos é reduzida em 2."
+    },
+    "limitations": {
+      "text": "Sudden loud noises, bright lights, or overwhelming smells can be disorienting or even painful. The Storyteller may require a Willpower roll (difficulty 4 + stimulus intensity) to avoid being temporarily stunned.",
+      "description": "Sons altos repentinos, luzes brilhantes ou cheiros avassaladores podem ser desorientadores ou até dolorosos. O Narrador pode exigir uma rolagem de Força de Vontade (dificuldade 4 + intensidade do estímulo) para evitar ficar temporariamente atordoado."
+    }
+  },
+  "mechanics": {
+    "bonuses": {
+      "dicePool": {
+        "text": "+2 dice to Perception rolls",
+        "description": "+2 dados em rolagens de Percepção"
+      },
+      "difficulty": {
+        "text": "-2 to sensory task difficulties",
+        "description": "-2 na dificuldade de tarefas sensoriais"
+      }
+    },
+    "overstimulation": {
+      "roll": {
+        "text": "Willpower (difficulty 4 + stimulus intensity)",
+        "description": "Força de Vontade (dificuldade 4 + intensidade do estímulo)"
+      },
+      "failure": {
+        "text": "Character is stunned for one turn",
+        "description": "Personagem fica atordoado por um turno"
+      }
+    }
+  },
+  "storytellerNotes": {
+    "sensoryDetails": {
+      "text": "Provide rich sensory information to players using this power. Include subtle details that would normally be imperceptible to humans.",
+      "description": "Forneça informações sensoriais ricas aos jogadores usando este poder. Inclua detalhes sutis que normalmente seriam imperceptíveis para humanos."
+    },
+    "environmentalFactors": {
+      "text": "Consider how environmental conditions might affect or enhance the vampire's heightened senses.",
+      "description": "Considere como condições ambientais podem afetar ou aprimorar os sentidos aguçados do vampiro."
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "Gift of Apis",
+  "namePtBr": "Dádiva de Apis",
+  "level": 3,
+  "description": {
+    "text": "All vampires must consume blood. Even the Penitents cannot avoid this truth, but they have at least learned to feed off animals instead of humans.",
+    "description": "Todos os vampiros devem consumir sangue. Mesmo os Penitentes não podem evitar esta verdade, mas eles ao menos aprenderam a se alimentar de animais em vez de humanos."
+  },
+  "system": {
+    "text": "Animal blood is just as nourishing to the character as human blood. An animal is considered to have a blood pool equal to the number of health levels it has, rather than the lesser value usually assigned to represent the creature's blood (see p. 396 for drinking from animals). This ability is always active once learned.",
+    "description": "O sangue animal é tão nutritivo para o personagem quanto o sangue humano. Um animal é considerado como tendo uma reserva de sangue igual ao número de níveis de saúde que possui, em vez do valor menor geralmente atribuído para representar o sangue da criatura (veja p. 396 para beber de animais). Esta habilidade está sempre ativa uma vez aprendida."
+  },
+  "mechanics": {
+    "bloodPool": {
+      "calculation": {
+        "text": "Animal blood pool equals the number of health levels the animal has",
+        "description": "Reserva de sangue do animal é igual ao número de níveis de saúde que o animal possui"
+      },
+      "effect": {
+        "text": "Animal blood provides the same nourishment as human blood",
+        "description": "Sangue animal fornece o mesmo sustento que o sangue humano"
+      }
+    },
+    "activation": {
+      "text": "Always active once learned",
+      "description": "Sempre ativa uma vez aprendida"
+    }
+  },
+  "benefits": {
+    "feeding": {
+      "text": "Allows vampires to sustain themselves fully on animal blood",
+      "description": "Permite que vampiros se sustentem completamente com sangue animal"
+    },
+    "moral": {
+      "text": "Provides an alternative to feeding on humans",
+      "description": "Fornece uma alternativa à alimentação em humanos"
+    }
+  },
+  "reference": {
+    "text": "See p. 396 for drinking from animals",
+    "description": "Veja p. 396 para beber de animais"
+  }
+}

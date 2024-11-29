@@ -1,0 +1,82 @@
+{
+  "name": "Liderança",
+  "nameOriginal": "Leadership",
+  "flavorText": "*\"Sigam-me!\" sua voz trovejou sobre o campo de batalha. \"Por nossa terra! Por nossa honra!\" E eles seguiram, não porque tinham que seguir, mas porque queriam seguir.*",
+  "description": "\"Onde não há visão, o povo perece.\" Todo corpo precisa de uma cabeça. Liderança permite que uma pessoa assuma esse papel e dirija aqueles que têm respeito e estão dispostos a seguir. Os melhores líderes inspiram em vez de explorar seus discípulos; Liderança é mais frequentemente usada com Carisma do que com Manipulação.",
+  "levels": {
+    "1": {
+      "name": "Novato",
+      "description": "Você é capaz de reunir um punhado de seguidores de tempos em tempos, se a necessidade for urgente."
+    },
+    "2": {
+      "name": "Praticante",
+      "description": "As pessoas naturalmente se colocam sob seu comando de tempos em tempos."
+    },
+    "3": {
+      "name": "Competente",
+      "description": "Sua capacidade de liderar foi notada por aqueles acima de você; eles lhe concederam um título e posição sobre outros."
+    },
+    "4": {
+      "name": "Especialista",
+      "description": "Mais pessoas operam abaixo de você do que acima."
+    },
+    "5": {
+      "name": "Mestre",
+      "description": "Se nações, facções ou exércitos precisam ser liderados, você está lá, pronto para guiá-los. Eles seguem voluntariamente, e você pode conduzir todos diante de você a uma nova era."
+    }
+  },
+  "possessedBy": [
+    "Comandantes",
+    "Condestáveis",
+    "Autoridades Eclesiásticas",
+    "Patriarcas Familiares",
+    "Nobres"
+  ],
+  "specialties": {
+    "default": [
+      {
+        "id": "commands",
+        "name": "Comandos",
+        "nameOriginal": "Commands",
+        "description": "Você é especialmente eficaz em dar ordens diretas e claras que são prontamente obedecidas."
+      },
+      {
+        "id": "compelling",
+        "name": "Persuasão",
+        "nameOriginal": "Compelling",
+        "description": "Você tem um dom para motivar e inspirar outros a seguirem sua liderança."
+      },
+      {
+        "id": "friendly",
+        "name": "Amigável",
+        "nameOriginal": "Friendly",
+        "description": "Sua abordagem calorosa e acessível faz com que as pessoas queiram seguir sua liderança."
+      },
+      {
+        "id": "noble",
+        "name": "Nobre",
+        "nameOriginal": "Noble",
+        "description": "Sua presença aristocrática e dignidade natural inspiram respeito e obediência."
+      },
+      {
+        "id": "oratory",
+        "name": "Oratória",
+        "nameOriginal": "Oratory",
+        "description": "Você é mestre em usar discursos e proclamações para motivar e dirigir grandes grupos."
+      },
+      {
+        "id": "pious",
+        "name": "Piedoso",
+        "nameOriginal": "Pious",
+        "description": "Sua devoção espiritual e retidão moral inspiram outros a seguirem sua orientação."
+      },
+      {
+        "id": "stern",
+        "name": "Severo",
+        "nameOriginal": "Stern",
+        "description": "Sua firmeza e seriedade comandam respeito e obediência imediata."
+      }
+    ],
+    "custom": []
+  }
+}

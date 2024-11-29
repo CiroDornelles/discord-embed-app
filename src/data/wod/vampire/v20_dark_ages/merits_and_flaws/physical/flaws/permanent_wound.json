@@ -1,0 +1,20 @@
+{
+  "name": "Permanent Wound",
+  "namePtBr": "Ferida Permanente",
+  "category": "Physical",
+  "cost": -3,
+  "description": {
+    "text": "By some misfortune, a wound sustained in your mortal life refuses to heal, forever open and weeping. When you wake at night, you always begin at the Wounded health level.",
+    "description": "Por algum infortúnio, uma ferida sofrida em sua vida mortal se recusa a curar, permanentemente aberta e sangrando. Quando você acorda à noite, você sempre começa no nível de saúde Ferido."
+  },
+  "effects": {
+    "health": {
+      "text": "Always begin at the Wounded health level when waking",
+      "description": "Sempre começa no nível de saúde Ferido ao acordar"
+    },
+    "healing": {
+      "text": "No source of healing can cure this damage permanently, but you may spend blood points each night to heal it",
+      "description": "Nenhuma fonte de cura pode curar este dano permanentemente, mas você pode gastar pontos de sangue cada noite para curá-lo"
+    }
+  }
+}

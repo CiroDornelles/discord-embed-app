@@ -1,0 +1,28 @@
+{
+    "name": "Fama",
+    "originalName": "Fame",
+    "description": "Você desfruta de amplo reconhecimento na sociedade mortal como artista, estudioso, guerreiro ou até mesmo criminoso. Isso lhe dá privilégios ao circular na sociedade mortal, mas também pode atrair atenção indesejada agora que você não está mais vivo. É uma bênção mista com prestígio de um lado e ser reconhecido em momentos inconvenientes de outro. No entanto, inimigos não podem fazê-lo desaparecer sem causar alvoroço.",
+    "system": "Sua Fama facilita a caça em áreas populosas – reduza a dificuldade das rolagens de caça em um para cada ponto em Fama. Seu narrador pode permitir que você reduza as dificuldades de certas rolagens Sociais também.",
+    "levels": [
+        {
+            "level": 1,
+            "description": "Você é conhecido em uma subcultura específica — artistas locais, estudiosos ou a nobreza"
+        },
+        {
+            "level": 2,
+            "description": "Pessoas aleatórias começam a reconhecer seu rosto; você é uma pequena celebridade, como um criminoso de pequeno porte ou um músico local"
+        },
+        {
+            "level": 3,
+            "description": "Você tem maior renome; talvez você seja um diplomata bem-sucedido ou um artista que se apresenta regularmente para a nobreza"
+        },
+        {
+            "level": 4,
+            "description": "Uma celebridade completa; seu nome é frequentemente reconhecido pela pessoa média na estrada"
+        },
+        {
+            "level": 5,
+            "description": "Você é uma palavra comum. As pessoas dão seu nome a seus filhos"
+        }
+    ]
+}

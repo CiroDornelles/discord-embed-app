@@ -1,0 +1,24 @@
+{
+  "name": "Phobia",
+  "namePtBr": "Fobia",
+  "category": "Mental",
+  "cost": -2,
+  "description": {
+    "text": "You have an irrational fear of something. This fear is so strong that its mere presence can send you into a panic. Common medieval phobias might include heights, open water, fire, crowds, or specific animals.",
+    "description": "Você tem um medo irracional de algo. Este medo é tão forte que sua mera presença pode te deixar em pânico. Fobias medievais comuns podem incluir alturas, água aberta, fogo, multidões ou animais específicos."
+  },
+  "effects": {
+    "presence": {
+      "text": "When confronted with the object of your fear, you must make a Courage roll (difficulty 7) or flee in terror",
+      "description": "Quando confrontado com o objeto do seu medo, você deve fazer uma rolagem de Coragem (dificuldade 7) ou fugir em terror"
+    },
+    "proximity": {
+      "text": "Even if you succeed on the Courage roll, all dice pools are reduced by 2 while in the presence of the feared object",
+      "description": "Mesmo que você tenha sucesso na rolagem de Coragem, todas as paradas de dados são reduzidas em 2 enquanto na presença do objeto temido"
+    }
+  },
+  "variations": {
+    "text": "The Storyteller may adjust the difficulty of Courage rolls based on the severity of the encounter with the phobic trigger",
+    "description": "O Narrador pode ajustar a dificuldade das rolagens de Coragem com base na severidade do encontro com o gatilho fóbico"
+  }
+}

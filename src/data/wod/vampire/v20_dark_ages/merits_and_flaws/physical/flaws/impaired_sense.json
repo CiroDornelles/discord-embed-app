@@ -1,0 +1,20 @@
+{
+  "name": "Impaired Sense",
+  "namePtBr": "Sentido Prejudicado",
+  "category": "Physical",
+  "cost": -4,
+  "description": {
+    "text": "Whether by birth or an unfortunate circumstance later in life, one of your senses has been diminished. Perhaps you are hard of hearing or blind, or perhaps one of your other senses has lost its functionality.",
+    "description": "Seja por nascimento ou uma circunstância infeliz mais tarde na vida, um de seus sentidos foi diminuído. Talvez você tenha dificuldade de audição ou seja cego, ou talvez um de seus outros sentidos tenha perdido sua funcionalidade."
+  },
+  "effects": {
+    "rolls": {
+      "text": "Rolls involving your impaired sense are made at a difficulty increased by 3. This may also increase the difficulty of other rolls or impose other appropriate penalties.",
+      "description": "Rolagens envolvendo seu sentido prejudicado são feitas com dificuldade aumentada em 3. Isso também pode aumentar a dificuldade de outras rolagens ou impor outras penalidades apropriadas."
+    }
+  },
+  "variations": {
+    "text": "At Storyteller discretion, this Flaw may be taken more than once, but additional senses are each 1-point Flaws",
+    "description": "A critério do Narrador, este Defeito pode ser escolhido mais de uma vez, mas sentidos adicionais são Defeitos de 1 ponto cada"
+  }
+}

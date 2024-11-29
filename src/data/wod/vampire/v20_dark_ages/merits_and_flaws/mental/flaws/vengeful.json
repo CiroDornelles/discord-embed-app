@@ -1,0 +1,24 @@
+{
+  "name": "Vengeful",
+  "namePtBr": "Vingativo",
+  "category": "Mental",
+  "cost": -2,
+  "description": {
+    "text": "You cannot let any slight or insult go unpunished. When someone wrongs you, you must have your revenge, no matter how slight the offense or how dangerous the target of your vengeance might be.",
+    "description": "Você não pode deixar nenhuma ofensa ou insulto passar sem punição. Quando alguém te prejudica, você precisa ter sua vingança, não importa quão pequena seja a ofensa ou quão perigoso seja o alvo de sua vingança."
+  },
+  "effects": {
+    "control": {
+      "text": "Must make a Self-Control roll (difficulty 8) to avoid taking immediate action against someone who has wronged you",
+      "description": "Deve fazer uma rolagem de Autocontrole (dificuldade 8) para evitar tomar ação imediata contra alguém que te prejudicou"
+    },
+    "priority": {
+      "text": "Will prioritize revenge over other concerns, including personal safety or political consequences",
+      "description": "Irá priorizar a vingança sobre outras preocupações, incluindo segurança pessoal ou consequências políticas"
+    }
+  },
+  "notes": {
+    "text": "The severity of the revenge should be proportional to the perceived slight, but must always exceed the original offense",
+    "description": "A severidade da vingança deve ser proporcional à ofensa percebida, mas deve sempre exceder a ofensa original"
+  }
+}

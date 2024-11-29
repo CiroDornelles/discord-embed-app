@@ -1,0 +1,80 @@
+{
+  "name": "Auspex",
+  "namePtBr": "Auspex",
+  "description": {
+    "text": "The most discerning vampires see in the dark, hear whispers on the wind and the crash of rats' feet stomping a hundred yards away. They feel the tendrils of fog and know how close warm bodies are. Supernatural levels of sensitivity and awareness blossom further as the vampire develops his gifts. Eventually, he can see the colors of the souls around him, read minds, and pierce the illusions made by other monsters.",
+    "description": "Os vampiros mais perspicazes veem no escuro, ouvem sussurros ao vento e o bater de pés de ratos a centenas de metros de distância. Eles sentem os tentáculos da névoa e sabem quão próximos estão os corpos quentes. Níveis sobrenaturais de sensibilidade e consciência florescem ainda mais conforme o vampiro desenvolve seus dons. Eventualmente, ele pode ver as cores das almas ao seu redor, ler mentes e penetrar as ilusões feitas por outros monstros."
+  },
+  "system": {
+    "seeTheUnseen": {
+      "text": "Anyone gifted with Auspex can see things that are hidden from normal sight supernaturally and pierce supernatural illusions. This might mean Obfuscate, Chimerstry, ghosts, and even the magical tricks of the fae.",
+      "description": "Qualquer um dotado de Auspex pode ver coisas que estão ocultas da visão normal sobrenaturalmente e penetrar ilusões sobrenaturais. Isso pode incluir Ofuscação, Quimerismo, fantasmas e até mesmo os truques mágicos das fadas.",
+      "mechanics": {
+        "obfuscate": {
+          "text": "Compare total levels of Auspex vs Obfuscate. If Auspex is higher or equal, roll Perception + Awareness (difficulty 8, reduced by 1 for each dot of Auspex exceeding Obfuscate).",
+          "description": "Compare níveis totais de Auspex vs Ofuscação. Se Auspex for maior ou igual, role Percepção + Prontidão (dificuldade 8, reduzida em 1 para cada ponto de Auspex excedendo Ofuscação)."
+        },
+        "chimerstry": {
+          "text": "Character must first sense wrongness, then actively try to pierce illusion. Compare levels as with Obfuscate.",
+          "description": "Personagem deve primeiro sentir algo errado, então ativamente tentar penetrar a ilusão. Compare níveis como com Ofuscação."
+        },
+        "otherPowers": {
+          "text": "Contested roll of Perception + Awareness vs Manipulation + Subterfuge (or as Storyteller determines).",
+          "description": "Rolagem contestada de Percepção + Prontidão vs Manipulação + Subterfúgio (ou como o Narrador determinar)."
+        }
+      }
+    },
+    "suddenRevelations": {
+      "text": "Characters with Auspex may get precognitive glimpses of threats. Storyteller secretly rolls Auspex rating (difficulty varies by threat level and story importance).",
+      "description": "Personagens com Auspex podem ter vislumbres precognitivos de ameaças. Narrador secretamente rola classificação de Auspex (dificuldade varia por nível de ameaça e importância para história).",
+      "examples": {
+        "text": ["Robber behind door (difficulty 4)", "Long-term plot by Prince's childe (difficulty 9)"],
+        "description": ["Ladrão atrás da porta (dificuldade 4)", "Plano de longo prazo do rebento do Príncipe (dificuldade 9)"]
+      }
+    },
+    "overstimulation": {
+      "text": "Characters may become overwhelmed by sensory input. Roll Willpower (difficulty 4 + stimulus intensity) to resist. Failure causes -2 dice penalty for (10 - Willpower) turns minimum 1.",
+      "description": "Personagens podem ficar sobrecarregados por input sensorial. Role Força de Vontade (dificuldade 4 + intensidade do estímulo) para resistir. Falha causa penalidade de -2 dados por (10 - Força de Vontade) turnos mínimo 1.",
+      "triggers": {
+        "text": ["Evocative images", "Great beauty", "Macabre scenes", "Visceral crime scenes", "Reading innocent minds"],
+        "description": ["Imagens evocativas", "Grande beleza", "Cenas macabras", "Cenas de crime viscerais", "Lendo mentes inocentes"]
+      }
+    }
+  },
+  "storytellerGuidance": {
+    "sensoryDetails": {
+      "text": "Sensory details are of utmost importance. Add additional and useful sensory details with increasingly successful rolls.",
+      "description": "Detalhes sensoriais são de suma importância. Adicione detalhes sensoriais adicionais e úteis com rolagens cada vez mais bem-sucedidas."
+    },
+    "revelations": {
+      "text": "Express revelations in small sensory details or simple gut feelings, not detailed predictions.",
+      "description": "Expresse revelações em pequenos detalhes sensoriais ou simples intuições, não previsões detalhadas."
+    }
+  },
+  "mechanics": {
+    "seeingThroughPowers": {
+      "primaryRoll": {
+        "text": "Perception + Awareness",
+        "description": "Percepção + Prontidão"
+      },
+      "baseDifficulty": {
+        "text": "8 (modified by power level differences)",
+        "description": "8 (modificado por diferenças de nível de poder)"
+      }
+    },
+    "overstimulationEffects": {
+      "roll": {
+        "text": "Willpower (difficulty 4 + stimulus intensity)",
+        "description": "Força de Vontade (dificuldade 4 + intensidade do estímulo)"
+      },
+      "penalty": {
+        "text": "-2 dice to non-stimulus actions",
+        "description": "-2 dados para ações não relacionadas ao estímulo"
+      },
+      "duration": {
+        "text": "(10 - Willpower) turns, minimum 1",
+        "description": "(10 - Força de Vontade) turnos, mínimo 1"
+      }
+    }
+  }
+}

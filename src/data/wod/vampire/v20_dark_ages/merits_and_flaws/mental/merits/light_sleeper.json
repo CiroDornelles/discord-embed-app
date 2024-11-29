@@ -1,0 +1,20 @@
+{
+  "name": "Light Sleeper",
+  "namePtBr": "Sono Leve",
+  "category": "Mental",
+  "cost": 2,
+  "description": {
+    "text": "You are easily awakened by unusual sounds or movements, making it difficult for others to catch you unaware during your daily rest. Your vampire instincts remain partially active even during daysleep.",
+    "description": "Você é facilmente acordado por sons ou movimentos incomuns, tornando difícil para outros te pegarem desprevenido durante seu repouso diário. Seus instintos vampíricos permanecem parcialmente ativos mesmo durante o sono diurno."
+  },
+  "effects": {
+    "awareness": {
+      "text": "You may make a Perception + Alertness roll (difficulty 7) to notice any disturbance during your sleep",
+      "description": "Você pode fazer uma rolagem de Percepção + Prontidão (dificuldade 7) para notar qualquer perturbação durante seu sono"
+    },
+    "awakening": {
+      "text": "If successful, you can spend a blood point to awaken instantly, ready to act",
+      "description": "Se bem-sucedido, você pode gastar um ponto de sangue para acordar instantaneamente, pronto para agir"
+    }
+  }
+}

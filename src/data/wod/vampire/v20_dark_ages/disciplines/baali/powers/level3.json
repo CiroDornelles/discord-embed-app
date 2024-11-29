@@ -1,0 +1,96 @@
+{
+  "name": "Tormented Essence",
+  "namePtBr": "Essência Atormentada",
+  "level": 3,
+  "description": {
+    "text": "The Baali know their place in the universe and within the hierarchy of their masters. Suffering trickles downward, and the Baali stand within that torrent. Calling on the torment in their blood, the Baali may hurl a blazing bolt of infernal pain at their enemies. Nerves cry out, wood turns to ash, stone melts, and flesh disintegrates utterly.",
+    "description": "Os Baali conhecem seu lugar no universo e dentro da hierarquia de seus mestres. O sofrimento escorre para baixo, e os Baali permanecem dentro dessa torrente. Invocando o tormento em seu sangue, o Baali pode arremessar um raio flamejante de dor infernal contra seus inimigos. Nervos gritam, madeira vira cinzas, pedra derrete e carne se desintegra completamente."
+  },
+  "system": {
+    "activation": {
+      "text": "Spend a blood point. The character gathers infernal pain into their hands; most commonly this manifests as a bolt of black flame, but sickening-hued lightning or slick black tentacles are just as common.",
+      "description": "Gaste um ponto de sangue. O personagem reúne dor infernal em suas mãos; mais comumente isso se manifesta como um raio de chama negra, mas relâmpagos de tonalidade doentia ou tentáculos negros viscosos são igualmente comuns."
+    },
+    "effects": {
+      "damage": {
+        "text": "The power creates a missile that inflicts one die of aggravated damage per blood point spent. More blood points may be spent to increase the size and damage of the missile.",
+        "description": "O poder cria um míssil que inflige um dado de dano agravado por ponto de sangue gasto. Mais pontos de sangue podem ser gastos para aumentar o tamanho e dano do míssil."
+      },
+      "attack": {
+        "text": "Roll Dexterity + Occult (difficulty 6) to hit the target, who may dodge as normal. As with any normal attack, successes add to the damage dice pool.",
+        "description": "Role Destreza + Ocultismo (dificuldade 6) para acertar o alvo, que pode esquivar normalmente. Como com qualquer ataque normal, sucessos são adicionados ao conjunto de dados de dano."
+      },
+      "specialEffects": {
+        "vampires": {
+          "text": "Vampires confronted with this power make Rötschreck checks (at difficulty 8), regardless of the power's form.",
+          "description": "Vampiros confrontados com este poder fazem testes de Rötschreck (com dificuldade 8), independentemente da forma do poder."
+        },
+        "spirits": {
+          "text": "This power is doubly effective against demons and other spirits, whose corporeal forms react poorly to the stuff of torment. Against such creatures, each blood point becomes two dice of damage instead of one.",
+          "description": "Este poder é duplamente efetivo contra demônios e outros espíritos, cujas formas corpóreas reagem mal à substância do tormento. Contra tais criaturas, cada ponto de sangue se torna dois dados de dano ao invés de um."
+        }
+      }
+    }
+  },
+  "mechanics": {
+    "roll": {
+      "attribute": {
+        "text": "Dexterity",
+        "description": "Destreza"
+      },
+      "ability": {
+        "text": "Occult",
+        "description": "Ocultismo"
+      },
+      "difficulty": 6
+    },
+    "cost": {
+      "text": "One blood point minimum, additional points increase damage",
+      "description": "Um ponto de sangue mínimo, pontos adicionais aumentam o dano"
+    },
+    "damage": {
+      "standard": {
+        "text": "One aggravated damage die per blood point",
+        "description": "Um dado de dano agravado por ponto de sangue"
+      },
+      "spirits": {
+        "text": "Two aggravated damage dice per blood point",
+        "description": "Dois dados de dano agravado por ponto de sangue"
+      }
+    },
+    "manifestations": {
+      "text": [
+        "Black flame (most common)",
+        "Sickening-hued lightning",
+        "Slick black tentacles"
+      ],
+      "description": [
+        "Chama negra (mais comum)",
+        "Relâmpago de tonalidade doentia",
+        "Tentáculos negros viscosos"
+      ]
+    }
+  },
+  "storytellerNotes": {
+    "environmentalEffects": {
+      "text": "The power's manifestation can leave lasting marks on the environment - scorched walls, melted stone, or corrupted vegetation.",
+      "description": "A manifestação do poder pode deixar marcas duradouras no ambiente - paredes chamuscadas, pedra derretida ou vegetação corrompida."
+    },
+    "spiritInteractions": {
+      "text": "Consider the specific nature of spiritual entities when determining their reaction to the power. Some might be more vulnerable than others based on their connection to suffering and torment.",
+      "description": "Considere a natureza específica das entidades espirituais ao determinar sua reação ao poder. Algumas podem ser mais vulneráveis que outras baseado em sua conexão com sofrimento e tormento."
+    },
+    "combatTactics": {
+      "text": [
+        "The power can be used strategically to force Rötschreck in vampire opponents",
+        "Environmental damage can create tactical advantages",
+        "Multiple manifestations can be used to confuse or intimidate opponents"
+      ],
+      "description": [
+        "O poder pode ser usado estrategicamente para forçar Rötschreck em oponentes vampiros",
+        "Dano ambiental pode criar vantagens táticas",
+        "Múltiplas manifestações podem ser usadas para confundir ou intimidar oponentes"
+      ]
+    }
+  }
+}

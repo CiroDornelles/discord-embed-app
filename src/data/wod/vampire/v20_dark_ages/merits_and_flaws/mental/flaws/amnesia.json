@@ -1,0 +1,24 @@
+{
+  "name": "Amnesia",
+  "namePtBr": "Amnésia",
+  "category": "Mental",
+  "cost": -2,
+  "description": {
+    "text": "You have no memory of your past before a certain point, possibly including your Embrace. Large portions of your existence are a complete blank, and you have no idea what secrets or enemies might be lurking in your forgotten history.",
+    "description": "Você não tem memória do seu passado antes de certo ponto, possivelmente incluindo seu Abraço. Grandes porções de sua existência são um completo vazio, e você não tem ideia de quais segredos ou inimigos podem estar escondidos em sua história esquecida."
+  },
+  "effects": {
+    "memory": {
+      "text": "You have no memory of your past before a certain point. The Storyteller may reveal pieces of your history at dramatic moments",
+      "description": "Você não tem memória do seu passado antes de certo ponto. O Narrador pode revelar pedaços de sua história em momentos dramáticos"
+    },
+    "background": {
+      "text": "You may not take certain Backgrounds that would logically be connected to your past",
+      "description": "Você não pode escolher certos Antecedentes que estariam logicamente conectados ao seu passado"
+    }
+  },
+  "storyteller_notes": {
+    "text": "The Storyteller should work with the player to determine the extent of memory loss and gradually reveal the character's past throughout the chronicle",
+    "description": "O Narrador deve trabalhar com o jogador para determinar a extensão da perda de memória e gradualmente revelar o passado do personagem ao longo da crônica"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Noble Bearing",
+  "namePtBr": "Porte Nobre",
+  "category": "Social",
+  "cost": 2,
+  "description": {
+    "text": "Whether through birth, training, or natural grace, you carry yourself with the dignity and bearing of nobility. Even without formal title or position, others tend to treat you as if you were of noble blood.",
+    "description": "Seja por nascimento, treinamento ou graça natural, você se porta com a dignidade e postura da nobreza. Mesmo sem título ou posição formal, outros tendem a tratá-lo como se fosse de sangue nobre."
+  },
+  "effects": {
+    "presence": {
+      "text": "Add 2 dice to Social rolls when dealing with those who respect nobility and authority",
+      "description": "Adicione 2 dados a rolagens Sociais ao lidar com aqueles que respeitam nobreza e autoridade"
+    },
+    "authority": {
+      "text": "May command servants and lesser nobles as if you held actual rank",
+      "description": "Pode comandar servos e nobres menores como se tivesse posição real"
+    },
+    "recognition": {
+      "text": "Others naturally assume you are of noble birth unless proven otherwise",
+      "description": "Outros naturalmente assumem que você é de nascimento nobre a menos que provado o contrário"
+    }
+  }
+}

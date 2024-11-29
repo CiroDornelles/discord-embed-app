@@ -1,0 +1,24 @@
+{
+  "name": "The Company of Saints and Heroes",
+  "namePtBr": "A Companhia dos Santos e Heróis",
+  "category": "Social",
+  "cost": 1,
+  "description": {
+    "text": "You have a deep connection to the mortal faith and its champions. You maintain contacts among the clergy, crusaders, or other holy warriors, who respect you despite your vampiric nature. This unusual relationship allows you to move in religious circles that would normally be hostile to your kind.",
+    "description": "Você tem uma profunda conexão com a fé mortal e seus campeões. Você mantém contatos entre o clero, cruzados ou outros guerreiros sagrados, que o respeitam apesar de sua natureza vampírica. Este relacionamento incomum permite que você circule em círculos religiosos que normalmente seriam hostis à sua espécie."
+  },
+  "effects": {
+    "interaction": {
+      "text": "Reduce difficulty by 2 on Social rolls when dealing with religious figures who know and accept your nature",
+      "description": "Reduz a dificuldade em 2 em rolagens Sociais ao lidar com figuras religiosas que conhecem e aceitam sua natureza"
+    },
+    "protection": {
+      "text": "Your religious allies may offer sanctuary or protection in times of need",
+      "description": "Seus aliados religiosos podem oferecer santuário ou proteção em momentos de necessidade"
+    }
+  },
+  "requirements": {
+    "text": "Must maintain a high Path rating or follow a Road that emphasizes religious virtues",
+    "description": "Deve manter uma alta classificação de Trilha ou seguir uma Estrada que enfatize virtudes religiosas"
+  }
+}

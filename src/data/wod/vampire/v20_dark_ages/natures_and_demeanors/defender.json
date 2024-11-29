@@ -1,0 +1,6 @@
+{
+    "name": "Defensor",
+    "originalName": "Defender",
+    "description": "O Defensor luta para defender sua causa escolhida diante de seus inimigos. Pode ser alguma inovação frágil ou esperança de progresso futuro.",
+    "regainWillpower": "Recupere um ponto de Força de Vontade sempre que defender sua causa com sucesso."
+}

@@ -1,0 +1,67 @@
+{
+  "name": "Revelation",
+  "namePtBr": "Revelação",
+  "level": 5,
+  "description": {
+    "text": "The Penitent shares some of his wisdom, revealing the vastness of the universe and the relative smallness of the target therein. This leaves the target unable to act as she ponders this revelation. Targets retain a healthy respect for the Penitent afterwards, either out of respect for his wisdom or fear of being shown this revelation again.",
+    "description": "O Penitente compartilha parte de sua sabedoria, revelando a vastidão do universo e a relativa pequenez do alvo dentro dele. Isso deixa o alvo incapaz de agir enquanto pondera sobre esta revelação. Os alvos mantêm um respeito saudável pelo Penitente depois, seja por respeito à sua sabedoria ou medo de receber esta revelação novamente."
+  },
+  "system": {
+    "text": "The vampire speaks and his player spends a point of Willpower and rolls Manipulation + Occult (difficulty of the listener's current Willpower). If multiple listeners are present, the player rolls against the highest difficulty. If the roll is successful, the listener is immobilized for the scene as she contemplates what she has heard. Violence towards the victim ends the effect. At the end of the scene, the revelation is gone, though the target suffers a permanent +1 difficulty to harm or act against the Child of Osiris or a specific subject or group disclosed during the Revelation.",
+    "description": "O vampiro fala e seu jogador gasta um ponto de Força de Vontade e rola Manipulação + Ocultismo (dificuldade igual à Força de Vontade atual do ouvinte). Se houver múltiplos ouvintes presentes, o jogador rola contra a dificuldade mais alta. Se a rolagem for bem-sucedida, o ouvinte fica imobilizado pela cena enquanto contempla o que ouviu. Violência contra a vítima encerra o efeito. Ao final da cena, a revelação desaparece, embora o alvo sofra uma dificuldade permanente +1 para ferir ou agir contra o Filho de Osíris ou um assunto ou grupo específico revelado durante a Revelação."
+  },
+  "requirements": {
+    "cost": {
+      "text": "Spend one Willpower point",
+      "description": "Gasta um ponto de Força de Vontade"
+    },
+    "activation": {
+      "text": "The vampire must speak to the target",
+      "description": "O vampiro deve falar com o alvo"
+    }
+  },
+  "mechanics": {
+    "roll": {
+      "attribute": "Manipulation",
+      "ability": "Occult",
+      "difficulty": {
+        "text": "Equal to listener's current Willpower",
+        "description": "Igual à Força de Vontade atual do ouvinte",
+        "multipleTargets": {
+          "text": "Use highest Willpower among listeners",
+          "description": "Usar a maior Força de Vontade entre os ouvintes"
+        }
+      }
+    },
+    "effects": {
+      "immediate": {
+        "text": "Target is immobilized for the scene",
+        "description": "Alvo fica imobilizado pela cena"
+      },
+      "permanent": {
+        "text": "Target suffers permanent +1 difficulty to harm or act against the Child of Osiris or specific subjects revealed",
+        "description": "Alvo sofre dificuldade permanente +1 para ferir ou agir contra o Filho de Osíris ou assuntos específicos revelados"
+      }
+    },
+    "endConditions": {
+      "text": "Violence towards the victim ends the effect",
+      "description": "Violência contra a vítima encerra o efeito"
+    },
+    "duration": {
+      "immobilization": {
+        "text": "Lasts for the scene",
+        "description": "Dura pela cena"
+      },
+      "difficulty": {
+        "text": "Permanent +1 difficulty",
+        "description": "Dificuldade +1 permanente"
+      }
+    }
+  },
+  "afterEffects": {
+    "respect": {
+      "text": "Targets retain respect for the Penitent out of wisdom or fear",
+      "description": "Alvos mantêm respeito pelo Penitente por sabedoria ou medo"
+    }
+  }
+}

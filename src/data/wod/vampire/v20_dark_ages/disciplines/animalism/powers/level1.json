@@ -1,0 +1,48 @@
+{
+    "level": 1,
+    "name": "Sussurros Amigáveis",
+    "originalName": "Feral Whispers",
+    "description": "Descrição do poder...",
+    "system": {
+        "description": "Como o poder funciona...",
+        "mechanics": {
+            "cost": {
+                "bloodPoints": 0,
+                "willpower": 0
+            },
+            "roll": {
+                "type": "standard",
+                "difficulty": 6,
+                "traits": {
+                    "attribute": "Carisma",
+                    "ability": "Empatia com Animais"
+                },
+                "modifiers": [
+                    {
+                        "condition": "Animal em pânico",
+                        "value": +1,
+                        "description": "Animal está assustado ou em pânico"
+                    }
+                ]
+            },
+            "duration": {
+                "type": "scene",
+                "value": 1
+            },
+            "range": {
+                "type": "touch",
+                "value": 0
+            }
+        },
+        "effects": [
+            {
+                "type": "communication",
+                "description": "Permite comunicação básica com animais"
+            }
+        ],
+        "limitations": [
+            "Não funciona com insetos",
+            "Comunicação limitada pela inteligência do animal"
+        ]
+    }
+}

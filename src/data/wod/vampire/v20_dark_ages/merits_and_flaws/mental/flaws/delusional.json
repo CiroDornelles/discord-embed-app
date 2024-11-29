@@ -1,0 +1,24 @@
+{
+  "name": "Delusional",
+  "namePtBr": "Delirante",
+  "category": "Mental",
+  "cost": -2,
+  "description": {
+    "text": "You believe something that is completely untrue. This false belief is so deeply ingrained that no amount of evidence or logic can shake it. Your delusion might be relatively harmless or potentially dangerous, but it always influences your behavior.",
+    "description": "Você acredita em algo que é completamente falso. Esta crença falsa está tão profundamente enraizada que nenhuma quantidade de evidência ou lógica pode abalá-la. Sua delusão pode ser relativamente inofensiva ou potencialmente perigosa, mas sempre influencia seu comportamento."
+  },
+  "effects": {
+    "behavior": {
+      "text": "Your actions must be consistent with your delusion, even when doing so is clearly disadvantageous",
+      "description": "Suas ações devem ser consistentes com sua delusão, mesmo quando isso é claramente desvantajoso"
+    },
+    "reality": {
+      "text": "You interpret events and information to support your delusion, regardless of their actual nature",
+      "description": "Você interpreta eventos e informações para apoiar sua delusão, independentemente de sua natureza real"
+    }
+  },
+  "examples": {
+    "text": "Believing you are actually mortal, thinking you are immune to sunlight, or being convinced that a specific person or group is plotting against you",
+    "description": "Acreditar que você é realmente mortal, pensar que é imune à luz solar, ou estar convencido que uma pessoa ou grupo específico está conspirando contra você"
+  }
+}

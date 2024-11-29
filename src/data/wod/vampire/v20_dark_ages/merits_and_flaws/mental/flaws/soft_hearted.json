@@ -1,0 +1,24 @@
+{
+  "name": "Soft-Hearted",
+  "namePtBr": "Coração Mole",
+  "category": "Mental",
+  "cost": -1,
+  "description": {
+    "text": "You cannot bear to witness suffering, even in your enemies. The pain and anguish of others affects you deeply, making it difficult to participate in acts of violence or cruelty, even when necessary.",
+    "description": "Você não suporta testemunhar sofrimento, mesmo em seus inimigos. A dor e angústia dos outros te afeta profundamente, tornando difícil participar de atos de violência ou crueldade, mesmo quando necessário."
+  },
+  "effects": {
+    "violence": {
+      "text": "Must make a Conscience roll (difficulty 8) to commit or witness acts of violence or cruelty",
+      "description": "Deve fazer uma rolagem de Consciência (dificuldade 8) para cometer ou testemunhar atos de violência ou crueldade"
+    },
+    "feeding": {
+      "text": "Must make a Conscience roll (difficulty 6) to feed violently or cause obvious pain to victims",
+      "description": "Deve fazer uma rolagem de Consciência (dificuldade 6) para se alimentar violentamente ou causar dor óbvia às vítimas"
+    }
+  },
+  "notes": {
+    "text": "Failure on these rolls means you must act to stop the suffering or leave the scene",
+    "description": "Falha nestas rolagens significa que você deve agir para parar o sofrimento ou deixar a cena"
+  }
+}

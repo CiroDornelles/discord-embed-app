@@ -1,0 +1,92 @@
+{
+    "name": "Reserva de Sangue",
+    "originalName": "Blood Pool",
+    "description": "Representa a quantidade de sangue que um vampiro possui em seu corpo, usado para alimentar suas capacidades sobrenaturais e manter-se ativo.",
+    "system": {
+        "mechanics": {
+            "range": {
+                "min": 1,
+                "max": 20,
+                "default": 10
+            },
+            "generationDependency": {
+                "description": "A capacidade máxima de sangue e quantidade que pode ser gasta por turno é determinada pela geração do vampiro",
+                "reference": "../generation/generation.json"
+            },
+            "usage": [
+                {
+                    "type": "healing",
+                    "description": "Cura de dano",
+                    "cost": 1,
+                    "effect": "Cura um nível de dano letal",
+                    "limitations": [
+                        "Não pode curar dano agravado",
+                        "Deve estar acordado"
+                    ]
+                },
+                {
+                    "type": "awakening",
+                    "description": "Acordar durante o dia",
+                    "cost": 1,
+                    "effect": "Permite acordar durante o dia por uma cena"
+                },
+                {
+                    "type": "physical",
+                    "description": "Aumentar atributos físicos",
+                    "cost": 1,
+                    "effect": "Adiciona 1 dado em teste de atributo físico por turno"
+                },
+                {
+                    "type": "disciplines",
+                    "description": "Ativar disciplinas",
+                    "cost": "Variável",
+                    "effect": "Permite o uso de poderes vampíricos"
+                }
+            ],
+            "feeding": {
+                "human": {
+                    "description": "Alimentação em humanos",
+                    "amount": {
+                        "sip": 1,
+                        "drink": 2,
+                        "drain": "Todo o sangue (cerca de 10 pontos)",
+                        "lethal": "Causa dano letal ao alvo"
+                    }
+                },
+                "animal": {
+                    "description": "Alimentação em animais",
+                    "amount": {
+                        "small": 1,
+                        "medium": 2,
+                        "large": 4
+                    },
+                    "limitation": "Menos satisfatório que sangue humano"
+                }
+            },
+            "starvation": {
+                "stages": [
+                    {
+                        "level": 0,
+                        "description": "Fome extrema",
+                        "effect": "Deve fazer teste de frenesi ao ver sangue"
+                    },
+                    {
+                        "level": 1,
+                        "description": "Faminto",
+                        "effect": "Penalidade em testes sociais"
+                    },
+                    {
+                        "level": 2,
+                        "description": "Com fome",
+                        "effect": "Desejo constante por sangue"
+                    },
+                    {
+                        "level": "3+",
+                        "description": "Satisfeito",
+                        "effect": "Funcionamento normal"
+                    }
+                ]
+            }
+        }
+    }
+}

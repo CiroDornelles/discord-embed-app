@@ -1,0 +1,78 @@
+{
+  "name": "Empatia",
+  "nameOriginal": "Empathy",
+  "flavorText": "*\"Você está com medo,\" ela disse suavemente. \"Não do que eu sou, mas do que você poderia se tornar.\" Suas palavras o atingiram como um soco no estômago, e ele percebeu que ela estava certa.*",
+  "description": "Enquanto Prontidão capta as características físicas de um local ou situação, Empatia permite que uma pessoa discerna os estados emocionais daqueles que encontra. Empatia pode ser usada para o bem ou para o mal, para detectar enganos ou determinar os verdadeiros sentimentos de uma pessoa. Os fatos não contam toda a história. Emoções adicionam outra camada de complexidade a cada situação. Decifrá-las pode revelar o que está realmente em jogo.",
+  "levels": {
+    "1": {
+      "name": "Novato",
+      "description": "Você consegue captar os sentimentos das pessoas através de seus gestos e expressões faciais."
+    },
+    "2": {
+      "name": "Praticante",
+      "description": "A maneira como as pessoas falam às vezes pode dizer mais do que as próprias palavras."
+    },
+    "3": {
+      "name": "Competente",
+      "description": "Emoções frequentemente estão emaranhadas. Você entende isso e é astuto em desvendá-las."
+    },
+    "4": {
+      "name": "Especialista",
+      "description": "Sua habilidade de perscrutar a psique daqueles que você encontra é extraordinária."
+    },
+    "5": {
+      "name": "Mestre",
+      "description": "Você sabe o que jaz dentro dos corações daqueles ao seu redor. Emoções são tão reais e tangíveis para você quanto a terra sob seus pés."
+    }
+  },
+  "possessedBy": [
+    "Comandantes",
+    "Adivinhos",
+    "Fofoqueiros",
+    "Mercadores",
+    "Pais",
+    "Sacerdotes",
+    "Trapaceiros"
+  ],
+  "specialties": {
+    "default": [
+      {
+        "id": "background-emotions",
+        "name": "Emoções Subjacentes",
+        "nameOriginal": "Background Emotions",
+        "description": "Você é especialmente hábil em detectar as emoções mais profundas e duradouras que motivam as pessoas."
+      },
+      {
+        "id": "emotions",
+        "name": "Emoções",
+        "nameOriginal": "Emotions",
+        "description": "Você tem um talento natural para identificar e compreender emoções específicas."
+      },
+      {
+        "id": "family-problems",
+        "name": "Problemas Familiares",
+        "nameOriginal": "Family Problems",
+        "description": "Você é particularmente perspicaz em entender e navegar dinâmicas e conflitos familiares."
+      },
+      {
+        "id": "long-term-concerns",
+        "name": "Preocupações de Longo Prazo",
+        "nameOriginal": "Long-Term Concerns",
+        "description": "Você é hábil em identificar as ansiedades e preocupações duradouras que afligem as pessoas."
+      },
+      {
+        "id": "personalities",
+        "name": "Personalidades",
+        "nameOriginal": "Personalities",
+        "description": "Você tem um dom para compreender os traços fundamentais da personalidade das pessoas."
+      },
+      {
+        "id": "truths",
+        "name": "Verdades",
+        "nameOriginal": "Truths",
+        "description": "Você é especialmente talentoso em discernir a verdade emocional por trás das palavras e ações das pessoas."
+      }
+    ],
+    "custom": []
+  }
+}

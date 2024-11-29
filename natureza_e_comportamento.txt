@@ -1,0 +1,300 @@
+Architect
+The Architect holds to a purpose greater than herself
+and is fulfilled when creating something of lasting value
+for others. She works to provide necessities to those
+around her.
+Regain a point of Willpower whenever you establish
+something of importance or lasting value.
+
+Autocrat
+The Autocrat pursues power and control for its own
+sake.
+Regain a point of Willpower when you exercise control
+over a group or organization.
+Beast
+The Beast only respects actual deeds and
+believes civilization is a trap set for the weak.
+What counts is personal achievement.
+Regain a point of Willpower when
+you beat civilized competition through
+personal action.
+Bon Vivant
+The Bon Vivant lives life to
+the fullest, making use of every
+second.
+Regain a point of Willpower
+when you truly enjoy yourself.
+At the Storyteller’s discretion, a
+particularly fabulous revel may yield
+multiple Willpower points.
+Bravo
+The Bravo believes that
+might makes right. Power
+matters, and while physical
+power is the best kind, any will do.
+Regain a point of Willpower
+any time you achieve your agenda
+through physical or social brutishness
+or intimidation.
+Caregiver
+The Caregiver takes comfort in
+consoling others, and people often
+come to her with their problems.
+Regain a point of Willpower
+whenever you successfully protect
+or nurture someone.
+
+Celebrant
+The Celebrant takes joy
+in her cause and indulges in
+her chosen passion as deeply
+as possible. She pursues it out
+of enthusiasm, not duty.
+Regain a point of Willpower whenever you pursue your
+cause or convert another character to the same passion.
+Chameleon
+The Chameleon is independent and careful. He
+studies behavior and mannerisms to pass himself off as
+someone else later.
+Regain a point of Willpower whenever you
+fool someone into thinking you’re someone else
+for your own benefit.
+Child
+The Child is immature in personality
+and temperament. She can care for herself
+if need be, but would rather have someone
+cater to her desires.
+Regain a point of Willpower when-
+ever you convince someone to help
+you with no gain to himself.
+Competitor
+The Competitor approaches
+every task and social interaction as
+a new challenge to meet and contest
+to win.
+Regain a point of Willpower whenever
+you succeed in a dramatic situation. Espe-
+cially difficult victories may allow you to
+regain multiple Willpower points at the
+Storyteller’s discretion.
+Conformist
+The Conformist is a follower,
+throwing in with the rest of the group
+and lending aid to the cause.
+Regain a point of Willpower when-
+ever the group or your supported leader
+achieves a goal due to your support.
+Conniver
+The Conniver finds the fast
+track to success and wealth
+through trickery and manipu-
+lation.
+Regain a point of Willpower
+whenever you trick someone into
+doing something or convince
+them to help you against their
+best interests.
+Creep Show
+The Creep Show revels in shocking and disgusting those
+around her. It’s a facade to intimidate and control others,
+but others buy into it and think she’s the Devil incarnate.
+Regain a point of Willpower whenever someone recoils
+from you in horror or reacts in fear.
+Curmudgeon
+The Curmudgeon is bitter and cynical, finding flaws in
+everything and seeing little humor in life or unlife. Fatal-
+istic and pessimistic, he has very little esteem for others.
+Regain a point of Willpower whenever someone takes
+a specific negative action, just like you said they would.
+You must predict this failure aloud.
+Dabbler
+The Dabber is interested in everything but focuses
+on nothing. He flits from idea to idea without actually
+finishing anything.
+Regain a point of Willpower whenever you find a new
+enthusiasm and drop your old one completely.
+Defender
+The Defender struggles to defend her chosen cause in
+the face of its enemies. It may be some fragile innovation
+or hope of future progress.
+Regain a point of Willpower whenever you successfully
+defend your cause.
+Deviant
+The Deviant is a freak, ostracized from society by
+non-mainstream tastes or beliefs and feel the world stands
+against them.
+Regain a point of Willpower any time you are able to
+flout social mores without retribution.
+Enigma
+The Enigma’s actions are bizarre, puzzling, and in-
+explicable. Her erratic actions suggest she’s eccentric, if
+not completely crazy.
+Regain a point of Willpower whenever someone is
+perplexed by actions you take that later turn out to be a
+fruitful endeavor.
+Eye of the Storm
+The Eye of the Storm retains a calm appearance but
+chaos seems to follow him.
+Regain a point of Willpower whenever a ruckus, riot,
+or less violent but chaotic phenomenon occurs around you.
+Fanatic
+The Fanatic has a purpose that consumes her exis-
+tence. She may even feel guilty undertaking an object
+that deviates from the higher goal.
+Regain a point of Willpower whenever you accomplish
+something directly relating to your cause.
+Gallant
+The Gallant is a flamboyant soul, always seeking atten-
+tion in the company of others, if only to earn their adoration.
+Regain a point of Willpower whenever you successfully
+impress another person.
+Guru
+The Guru’s enlightenment draws others to her. Her
+presence motivates others to engage in spiritual or ideo-
+logical pursuits.
+Regain a point of Willpower whenever your guidance
+moves a person to an enlightened action he normally
+would not have taken.
+Idealist
+The Idealist believes in some higher goal or morality
+and tries to reconcile his beliefs with the demands of
+vampiric existence, often acting contrary to his self-in-
+terest in doing so.
+Regain a point of Willpower any time an action fur-
+thers your goals and brings your ideal closer to fruition.
+Jester
+The Jester sees the world as a veil of folly and deceit,
+and enlightens others through the subtle ways of humor.
+Regain a point of Willpower whenever you raise the
+spirits of those in great misery, or when you undermine
+a bully or tyrant by making him the object of ridicule.
+Judge
+The Judge seeks to improve the system and sees justice
+as the most efficient model for resolving issues.
+Regain a point of Willpower whenever you correctly
+solve a problem by considering the evidence presented,
+or when one of your arguments unites dissenting parties.
+Loner
+The Loner prefers her own company to that of others,
+and the feeling is often reciprocated.
+Regain a point of Willpower when you accomplish
+something by yourself that still benefits the coterie as a
+whole in some way.
+Martyr
+The Martyr suffers for his cause, enduring her trials
+out of the belief that her discomfort will ultimately im-
+prove the world.
+Regain a point of Willpower when you suffer some
+damage or loss of a definable resource for your ideals or
+another’s immediate gain.
+Masochist
+The Masochist exists to test her limits and gains satis-
+faction in humiliation, suffering, denial, and physical pain.
+Regain a point of Willpower when your own suffer-
+ing leads to some tangible gain for you, or whenever you
+experience pain in a unique way.
+Mercenary
+The Mercenary believes anything can be a commodity.
+Appearance and influence are everything when it comes
+to a sale, and no advantage is wasted.
+Regain a point of Willpower whenever you make a
+successful sale of any commodity or service.
+Monster
+The Monster knows she is a creature of darkness and
+acts like it. Evil and suffering are tools. She doesn’t commit
+evil for evil’s sake but rather as a means to understand
+what she’s become.
+Regain a point of Willpower whenever you commit
+a specific atrocity. Storytellers should be careful when
+rewarding this Archetype. A player who chooses violence
+as an atrocity shouldn’t regain Willpower every combat,
+but perhaps only when she needs to roll a degeneration
+check. Rewards should come as a result of the character
+challenging his own descent into the Beast.
+Pedagogue
+The Pedagogue knows it all and make sure his message
+is heard – at length, if necessary.
+Regain a point of Willpower whenever you see or
+learn of someone who has benefited from the wisdom
+you share with them.
+Penitent
+The Penitent atones for the grave sin she commits
+simply by being who she is and feels compelled to “make
+up” for inflicting herself on the world.
+Regain a point of Willpower whenever you feel that
+you have achieved absolution for a given sin.
+Perfectionist
+The Perfectionist demands flawless execution from
+herself as well as others.
+Regain a point of Willpower whenever you motivate
+another character to succeed as a result of your own
+shining example.
+Philosopher
+The Philosopher critically examines every situation
+looking for logical outcomes and patterns.
+Regain a point of Willpower any time a logical, system-
+atic approach to a problem helps you solve it, or information
+gathered logically is of use in another similar situation.
+Rebel
+The Rebel is a malcontent, never satisfied with the
+status quo or the system as it is. He does everything in
+his power to undermine authority.
+Regain a point of Willpower whenever your actions
+adversely affect your chosen opposition.
+Rogue
+The Rogue only cares about one thing: herself. She
+is not necessarily a thug or bully; she simply has her own
+best interests in mind at all times.
+Regain a point of Willpower whenever your self-cen-
+tered disposition leads you to profit.
+Sadist
+The Sadist exists to inflict pain and suffering on oth-
+ers. Killing is too easy. She seeks the slowest, most painful
+means to push others to the ultimate limits.
+Regain a point of Willpower whenever you inflict pain
+upon someone for no reason other than your own pleasure.
+Soldier
+The Soldier is not a blindly loyal follower. While she
+exists for orders, she does not adhere to them unques-
+tioningly. More independent than a Conformist but too
+tied to the idea of command to be a Loner, the Soldier
+applies her own techniques to others’ goals and ambition
+lies within the established hierarchy and structure.
+Regain a point of Willpower when you achieve your
+orders’ objectives.
+Survivor
+The Survivor always manages to pull through, no
+matter the odds or opposition. The Survivor’s utter re-
+fusal to accept defeat often makes the difference between
+success and failure.
+Regain a point of Willpower whenever you survive a
+threatening situation through sheer tenacity, or when your
+counsel causes someone else to persist in spite of opposition.
+Thrill-Seeker
+The Thrill-Seeker lives for the rush of danger and
+actively pursues hazardous and possibly deadly situations.
+He is not actively suicidal or self-destructive; he simply
+seeks the stimulation of risk.
+Regain a point of Willpower any time you succeed
+at a dangerous task you have deliberately undertaken.
+Traditionalist
+The Traditionalist prefers to accomplish her goals
+with time-tested methods. The status quo is acceptable,
+even preferable to change.
+Regain a point of Willpower any time the proven way
+turns out to be the best. Also, regain a point of Willpower
+any time you adhere to one of your previously espoused
+positions and it proves a wise course of action
+Tyrant
+The Tyrant seeks to be in charge or guide a group,
+bringing order out of strife.
+Regain a point of Willpower when you influence or
+aid a group in the completion of a difficult task.
+Visionary
+The Visionary tests accepted societal limits and
+seeks what few others have the courage to imagine. She
+encourages society to offer what it is capable of offering
+instead of what it actually does offer. She is responsible
+for bringing about progress and change.
+Regain a point of Willpower each time you are able to
+convince others to have faith in your vision of the future

@@ -1,0 +1,28 @@
+{
+    "name": "Influência",
+    "originalName": "Influence",
+    "description": "Você tem influência na comunidade mortal através de riqueza, linhagem familiar, prestígio, política, chantagem ou domínio sobrenatural. Influência representa a soma do seu poder de opinião ou política em sua comunidade, particularmente entre a aplicação da lei e a burocracia.",
+    "system": "Influência pode ser usada com pontos de Background compartilhados.",
+    "levels": [
+        {
+            "level": 1,
+            "description": "Moderadamente influente; um fator na política local"
+        },
+        {
+            "level": 2,
+            "description": "Bem conectado; uma força na política das proximidades"
+        },
+        {
+            "level": 3,
+            "description": "Posição de influência; um fator na política regional"
+        },
+        {
+            "level": 4,
+            "description": "Amplo poder pessoal; uma força na política em larga escala"
+        },
+        {
+            "level": 5,
+            "description": "Vastamente influente; um fator na política do mundo conhecido"
+        }
+    ]
+}

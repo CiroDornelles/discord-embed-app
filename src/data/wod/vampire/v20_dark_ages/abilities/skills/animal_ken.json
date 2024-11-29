@@ -1,0 +1,84 @@
+{
+  "name": "Empatia com Animais",
+  "nameOriginal": "Animal Ken",
+  "flavorText": "\"Vocês acharam que era quatro contra um?\" ela perguntou aos pretensos ladrões. \"Suponho que não estavam cientes da toca de lobos aqui perto. Eles me consideram parte da matilha. Que pena para vocês; não gostamos de intrusos.\"",
+  "description": "Animais nesta era não são apenas companheiros domésticos, mas também trabalham em fazendas, rastreiam no campo e são companheiros em batalha. Empatia com Animais reflete a afinidade de alguém com bestas tanto domésticas quanto selvagens, incluindo a capacidade de domá-las e treiná-las, entender seus instintos e usar esse conhecimento em seu manejo, além de prever e controlar seu comportamento.",
+  "levels": {
+    "1": {
+      "name": "Novato",
+      "description": "Você pode acalmar um cão desconfiado ou um cavalo assustado. Você se sente confortável trabalhando com animais comumente usados para trabalho, como camelos e bois."
+    },
+    "2": {
+      "name": "Praticante",
+      "description": "Você pode treinar animais domesticados como cães e cavalos. Aves de rapina retornarão à sua luva ao seu chamado."
+    },
+    "3": {
+      "name": "Competente",
+      "description": "Você serve como mestre dos cães de uma casa, ou aluga suas habilidades como rastreador. Você conhece os hábitos dos animais selvagens nativos de sua área e sabe o que fazer quando um deles age de forma anormal ou se torna violento."
+    },
+    "4": {
+      "name": "Especialista",
+      "description": "Você domou cavalos que outros consideravam indomáveis. Bestas selvagens podem não fazer sua vontade, mas você pode se aproximar delas sem medo de ataque. Se você está em território desconhecido, aprende rapidamente os hábitos da vida selvagem local."
+    },
+    "5": {
+      "name": "Mestre",
+      "description": "Bestas obedecem ao seu comando com um simples gesto. Você poderia fazer um cão leal se voltar contra seu amado mestre em questão de momentos. Você poderia até pastorear gatos, se assim desejasse."
+    }
+  },
+  "possessedBy": [
+    "Caçadores",
+    "Rastreadores",
+    "Cavalaria",
+    "Escudeiros",
+    "Fazendeiros",
+    "Mestres de Estábulo",
+    "Artistas"
+  ],
+  "specialties": {
+    "default": [
+      {
+        "id": "taming",
+        "name": "Domar",
+        "nameOriginal": "Taming",
+        "description": "Você tem um dom especial para acalmar e domesticar animais selvagens."
+      },
+      {
+        "id": "training",
+        "name": "Treinamento",
+        "nameOriginal": "Training",
+        "description": "Você é excepcionalmente habilidoso em ensinar animais a realizar tarefas específicas."
+      },
+      {
+        "id": "dogs",
+        "name": "Cães",
+        "nameOriginal": "Dogs",
+        "description": "Você tem uma afinidade particular com cães e entende profundamente seu comportamento."
+      },
+      {
+        "id": "horses",
+        "name": "Cavalos",
+        "nameOriginal": "Horses",
+        "description": "Você tem um talento especial para lidar com cavalos e compreender suas necessidades."
+      },
+      {
+        "id": "birds-of-prey",
+        "name": "Aves de Rapina",
+        "nameOriginal": "Birds of Prey",
+        "description": "Você é especialista em treinar e manejar aves de rapina como falcões e águias."
+      },
+      {
+        "id": "big-cats",
+        "name": "Grandes Felinos",
+        "nameOriginal": "Big Cats",
+        "description": "Você tem uma compreensão única dos comportamentos e necessidades de grandes felinos."
+      },
+      {
+        "id": "bears",
+        "name": "Ursos",
+        "nameOriginal": "Bears",
+        "description": "Você desenvolveu uma habilidade especial para lidar com ursos e entender seus padrões de comportamento."
+      }
+    ],
+    "custom": []
+  }
+}

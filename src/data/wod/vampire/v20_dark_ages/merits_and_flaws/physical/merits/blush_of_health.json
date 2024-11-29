@@ -1,0 +1,18 @@
+{
+  "name": "Blush of Health",
+  "namePtBr": "Rubor da Saúde",
+  "category": "Physical",
+  "cost": 2,
+  "description": {
+    "text": "The Embrace that claimed you did not entirely leach away the tells of your former life. Your skin is cool to the touch rather than cold, retaining a healthy fullness as if blood still coursed through your veins. You easily pass as a mortal against all but the most thorough examination and the Storyteller may choose to lower the difficulty or reduce penalties to rolls to convince others of your mortality.",
+    "description": "O Abraço que o reclamou não drenou completamente os sinais de sua vida anterior. Sua pele é fresca ao toque em vez de fria, mantendo uma plenitude saudável como se o sangue ainda corresse em suas veias. Você facilmente passa por mortal contra todos, exceto o exame mais minucioso, e o Narrador pode optar por reduzir a dificuldade ou penalidades em rolagens para convencer outros de sua mortalidade."
+  },
+  "restrictions": {
+    "text": "Cappadocians and Nosferatu may not take this Merit",
+    "description": "Capadócios e Nosferatu não podem ter este Mérito"
+  },
+  "effects": {
+    "text": "Lower difficulty or reduced penalties on rolls to appear human",
+    "description": "Dificuldade menor ou penalidades reduzidas em rolagens para parecer humano"
+  }
+}

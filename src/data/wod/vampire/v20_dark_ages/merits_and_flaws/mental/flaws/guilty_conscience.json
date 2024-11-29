@@ -1,0 +1,24 @@
+{
+  "name": "Guilty Conscience",
+  "namePtBr": "Consciência Culpada",
+  "category": "Mental",
+  "cost": -1,
+  "description": {
+    "text": "You feel deep remorse for your actions as a vampire. The weight of your sins and the moral implications of your existence torment you constantly, making it difficult to perform even necessary acts of vampiric survival without feeling guilty.",
+    "description": "Você sente profundo remorso por suas ações como vampiro. O peso de seus pecados e as implicações morais de sua existência o atormentam constantemente, tornando difícil realizar até mesmo atos necessários de sobrevivência vampírica sem se sentir culpado."
+  },
+  "effects": {
+    "conscience": {
+      "text": "All Conscience rolls are made at +2 difficulty",
+      "description": "Todas as rolagens de Consciência são feitas com +2 de dificuldade"
+    },
+    "degeneration": {
+      "text": "Must make a Conscience roll after any morally questionable act, even if not normally required",
+      "description": "Deve fazer uma rolagem de Consciência após qualquer ato moralmente questionável, mesmo que normalmente não seja necessário"
+    }
+  },
+  "notes": {
+    "text": "This Flaw works best with characters who have high Humanity or follow a Road based on moral principles",
+    "description": "Este Defeito funciona melhor com personagens que têm alta Humanidade ou seguem uma Estrada baseada em princípios morais"
+  }
+}

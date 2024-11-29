@@ -1,0 +1,68 @@
+{
+  "name": "Celerity",
+  "namePtBr": "Celeridade",
+  "description": {
+    "text": "Celerity moves a vampire with unholy rapidity and grace. Characters with Celerity move nigh-unseen in bursts of inhuman speed. This allows for remarkable performances, frightening quick assassinations, and travel unlike any in the Dark Medieval World.",
+    "description": "Celeridade move um vampiro com rapidez e graça profanas. Personagens com Celeridade se movem quase invisíveis em explosões de velocidade inumana. Isso permite performances notáveis, assassinatos assustadoramente rápidos e viagens sem igual no Mundo Medieval das Trevas."
+  },
+  "system": {
+    "text": "Characters add their Celerity rating to their Dexterity-based dice pools, including their Initiative ratings. Add her Celerity rating to the number of yards or meters she moves in a turn.\n\nAdditionally, they may reflexively spend one point of blood to ignore difficulty penalties for multiple actions up to their Celerity dots for the turn. For example, a character with Celerity 3 makes three actions before suffering +1 difficulty for multiple actions. This does not mitigate the dice pool reduction, however. A number of these additional actions equal to half their Celerity (round up) may be attack actions.\n\nLastly, by spending one blood point, she may multiply her movement speed by 1 plus her Celerity dots. In combat, this lasts one turn. Otherwise, it lasts the scene.",
+    "description": "Personagens adicionam sua classificação em Celeridade às suas paradas de dados baseadas em Destreza, incluindo suas classificações de Iniciativa. Adicione sua classificação em Celeridade ao número de jardas ou metros que ela se move em um turno.\n\nAlém disso, eles podem gastar reflexivamente um ponto de sangue para ignorar penalidades de dificuldade para múltiplas ações até seus pontos de Celeridade no turno. Por exemplo, um personagem com Celeridade 3 faz três ações antes de sofrer +1 de dificuldade para ações múltiplas. Isso não mitiga a redução da parada de dados, no entanto. Um número dessas ações adicionais igual à metade de sua Celeridade (arredondado para cima) pode ser ações de ataque.\n\nPor fim, ao gastar um ponto de sangue, ela pode multiplicar sua velocidade de movimento por 1 mais seus pontos de Celeridade. Em combate, isso dura um turno. Caso contrário, dura a cena."
+  },
+  "mechanics": {
+    "passiveEffects": {
+      "dexterityBonus": {
+        "text": "Add Celerity rating to Dexterity-based dice pools and Initiative",
+        "description": "Adiciona classificação em Celeridade às paradas de dados baseadas em Destreza e Iniciativa"
+      },
+      "movementBonus": {
+        "text": "Add Celerity rating to yards/meters moved per turn",
+        "description": "Adiciona classificação em Celeridade às jardas/metros movidos por turno"
+      }
+    },
+    "activeEffects": {
+      "multipleActions": {
+        "cost": {
+          "text": "One blood point",
+          "description": "Um ponto de sangue"
+        },
+        "effect": {
+          "text": "Ignore difficulty penalties for multiple actions up to Celerity rating",
+          "description": "Ignora penalidades de dificuldade para múltiplas ações até a classificação em Celeridade"
+        },
+        "attackLimit": {
+          "text": "Half of Celerity rating (rounded up) can be attack actions",
+          "description": "Metade da classificação em Celeridade (arredondado para cima) pode ser ações de ataque"
+        },
+        "limitation": {
+          "text": "Does not mitigate dice pool reduction",
+          "description": "Não mitiga a redução da parada de dados"
+        }
+      },
+      "enhancedMovement": {
+        "cost": {
+          "text": "One blood point",
+          "description": "Um ponto de sangue"
+        },
+        "effect": {
+          "text": "Multiply movement speed by (1 + Celerity rating)",
+          "description": "Multiplica velocidade de movimento por (1 + classificação em Celeridade)"
+        },
+        "duration": {
+          "combat": {
+            "text": "One turn in combat",
+            "description": "Um turno em combate"
+          },
+          "noncombat": {
+            "text": "One scene outside combat",
+            "description": "Uma cena fora de combate"
+          }
+        }
+      }
+    }
+  },
+  "reference": {
+    "text": "See p. 322 for rules on multiple actions",
+    "description": "Veja p. 322 para regras sobre ações múltiplas"
+  }
+}

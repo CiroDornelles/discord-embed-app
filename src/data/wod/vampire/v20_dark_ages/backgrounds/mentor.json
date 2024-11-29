@@ -1,0 +1,28 @@
+{
+    "name": "Mentor",
+    "originalName": "Mentor",
+    "description": "Você tem um Cainita ou grupo de Cainitas que zelam por você, oferecendo orientação e ajuda de vez em quando. Um mentor tipicamente permanece distante, fornecendo informações úteis ou conselhos, mas raramente ajuda direta. Se ele aparecer para tirá-lo de uma situação perigosa, você provavelmente perderá um ou mais pontos neste Background, ou será abandonado como um protegido indigno.",
+    "system": "",
+    "levels": [
+        {
+            "level": 1,
+            "description": "Mentor é um ancilla de pouca influência"
+        },
+        {
+            "level": 2,
+            "description": "Mentor é respeitado: um ancião ou veterano altamente condecorado"
+        },
+        {
+            "level": 3,
+            "description": "Mentor é muito influente, como um conselheiro do Príncipe"
+        },
+        {
+            "level": 4,
+            "description": "Mentor tem um grande poder sobre a cidade, como um Senescal ou Xerife"
+        },
+        {
+            "level": 5,
+            "description": "Mentor é extraordinariamente poderoso, talvez até mesmo um Príncipe"
+        }
+    ]
+}

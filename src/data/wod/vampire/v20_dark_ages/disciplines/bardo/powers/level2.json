@@ -1,0 +1,58 @@
+{
+  "name": "Banishing Sign of Thoth",
+  "namePtBr": "Sinal de Banimento de Thoth",
+  "level": 2,
+  "description": {
+    "text": "Thoth, the Egyptian god of wisdom and magic, taught this power to Osiris, who then passed it on to his followers. Making a mystical sign with his hand, the Penitent may turn aside a mystical effect aimed at him coming from either a vampire or other supernatural being.",
+    "description": "Thoth, o deus egípcio da sabedoria e da magia, ensinou este poder a Osíris, que então o transmitiu a seus seguidores. Fazendo um sinal místico com sua mão, o Penitente pode desviar um efeito místico direcionado a ele vindo de um vampiro ou outro ser sobrenatural."
+  },
+  "system": {
+    "text": "The player spends a blood point and rolls Dexterity + Occult (difficulty 7). This power can be used to \"dodge\" any incoming attack of a mystical nature, including any Disciplines that target the character, whether or not they actually inflict damage. Successes the player rolls are subtracted from the successes on the attacker's roll. The Sign does not serve to turn aside magically enhanced physical attacks; a punch from a vampire using Potence still has the full effect. While this can be used reflexively like a dodge, using it and another action in a turn requires multiple actions (see p. 322).",
+    "description": "O jogador gasta um ponto de sangue e rola Destreza + Ocultismo (dificuldade 7). Este poder pode ser usado para \"esquivar\" de qualquer ataque de natureza mística, incluindo quaisquer Disciplinas que visem o personagem, independentemente de causarem dano ou não. Os sucessos que o jogador rola são subtraídos dos sucessos na rolagem do atacante. O Sinal não serve para desviar ataques físicos magicamente aprimorados; um soco de um vampiro usando Potência ainda tem o efeito completo. Embora possa ser usado reflexivamente como uma esquiva, usá-lo e outra ação em um turno requer ações múltiplas (veja p. 322)."
+  },
+  "requirements": {
+    "cost": {
+      "text": "Spend one blood point",
+      "description": "Gasta um ponto de sangue"
+    }
+  },
+  "mechanics": {
+    "roll": {
+      "attribute": "Dexterity",
+      "ability": "Occult",
+      "difficulty": 7,
+      "effects": {
+        "success": {
+          "text": "Successes are subtracted from the attacker's roll",
+          "description": "Sucessos são subtraídos da rolagem do atacante"
+        }
+      }
+    },
+    "usage": {
+      "reflexive": {
+        "text": "Can be used reflexively like a dodge",
+        "description": "Pode ser usado reflexivamente como uma esquiva"
+      },
+      "multipleActions": {
+        "text": "Using it and another action in a turn requires multiple actions",
+        "description": "Usá-lo e outra ação em um turno requer ações múltiplas"
+      }
+    },
+    "limitations": {
+      "ineffectiveAgainst": {
+        "text": "Does not affect magically enhanced physical attacks (e.g. Potence)",
+        "description": "Não afeta ataques físicos magicamente aprimorados (ex: Potência)"
+      }
+    }
+  },
+  "validTargets": {
+    "text": "Any incoming mystical attack or Discipline effect, whether damaging or not",
+    "description": "Qualquer ataque místico ou efeito de Disciplina, seja causador de dano ou não"
+  },
+  "source": {
+    "origin": {
+      "text": "Taught by Thoth to Osiris",
+      "description": "Ensinado por Thoth a Osíris"
+    }
+  }
+}

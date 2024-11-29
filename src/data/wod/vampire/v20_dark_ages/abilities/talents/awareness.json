@@ -1,0 +1,54 @@
+{
+  "name": "Consciência",
+  "nameOriginal": "Awareness",
+  "flavorText": "*\"Há algo errado aqui.\" Ela parou no meio da rua. \"O quê?\" seu companheiro perguntou. \"Não sei. Apenas... errado.\" Ela se virou e começou a correr, e ele a seguiu sem questionar.*",
+  "description": "Com crenças e superstições tendo o mesmo peso que conhecimento e ciência, a distinção entre o mundo natural e o sobrenatural não é tão sólida. Muitos esperam ver aquelas coisas que habitam os lugares escuros de nosso mundo. Às vezes, essas coisas são de fato vistas. Consciência torna o arrepio na nuca e aquela coisa no canto do olho mais sólida, mais perceptível tanto para humanos quanto para sobrenaturais. Melhor saber que está lá para lidar com isso adequadamente do que viver a vida na ignorância e talvez irritar algo no caminho.",
+  "levels": {
+    "1": {
+      "name": "Novato",
+      "description": "Você se pega olhando por cima do ombro mais que os outros. Não há nada físico lá. Ainda assim, você não consegue evitar se perguntar se não é tudo apenas coisa da sua cabeça."
+    },
+    "2": {
+      "name": "Praticante",
+      "description": "Você evita certas partes da floresta ou indivíduos. Algo sobre eles o perturba e, na maioria das vezes, você tem provas para sustentar seus sentimentos."
+    },
+    "3": {
+      "name": "Competente",
+      "description": "O sentimento geral de desconforto é mais específico. Você consegue perceber quando algo sobrenatural está errado."
+    },
+    "4": {
+      "name": "Especialista",
+      "description": "Seus sentidos conseguem identificar o que ou quem é sobrenatural."
+    },
+    "5": {
+      "name": "Mestre",
+      "description": "Seu mundo é um onde fantasmas, demônios e coisas para as quais você não tem nome caminham pelas ruas junto com pessoas e animais."
+    }
+  },
+  "possessedBy": [
+    "Místicos"
+  ],
+  "specialties": {
+    "default": [
+      {
+        "id": "angelic-demonic",
+        "name": "Manifestações Angelicais/Demoníacas",
+        "nameOriginal": "Angelic/Demonic Manifestations",
+        "description": "Você tem uma sensibilidade especial para detectar a presença e influência de seres angelicais e demoníacos."
+      },
+      {
+        "id": "magic",
+        "name": "Magia",
+        "nameOriginal": "Magic",
+        "description": "Você é particularmente sensível à presença de energias mágicas e seus efeitos."
+      },
+      {
+        "id": "ghosts",
+        "name": "Fantasmas",
+        "nameOriginal": "Ghosts",
+        "description": "Você tem uma afinidade natural para perceber a presença de espíritos e manifestações espectrais."
+      }
+    ],
+    "custom": []
+  }
+}

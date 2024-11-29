@@ -1,0 +1,80 @@
+{
+    "name": "Política",
+    "originalName": "Politics",
+    "flavorText": "*Ela o guiou por uma passagem atrás da tapeçaria no salão de jantar. \"O verdadeiro poder não reside em um trono.\" Suas saias de lã deixavam um rastro na terra, seu ritmo notavelmente rápido. Sua vela tremia a cada respiração ofegante. \"Então onde ele reside?\" ele perguntou quando pararam. Ela abriu uma porta com dobradiças e empurrou uma adaga embainhada em suas mãos. \"Em saber onde um rei dorme.\"*",
+    "description": "Política é o grande jogo; alguns dizem o maior dos jogos. Pode trazer poder inimaginável, mas a roda da fortuna pode girar rapidamente, transformando os ambiciosos no mais fino pó. A história está repleta de nomes daqueles que se excederam. A política de alto nível é uma mistura de diplomacia e influência cuidadosamente exercida. Quanto mais você entende, mais pode dobrar os outros para alcançar seus objetivos.",
+    "levels": {
+        "1": {
+            "name": "Novato",
+            "description": "Você entende as manipulações básicas do governo. Você pode agitar as pessoas ou acalmá-las conforme necessário para alcançar o que deseja."
+        },
+        "2": {
+            "name": "Estudante",
+            "description": "Você ocupa um cargo de menor importância em um nível local. Pessoas de influência conhecem seu nome e tomam nota. Sua autoridade é boa, mas você é cuidadoso para não se exceder."
+        },
+        "3": {
+            "name": "Versado",
+            "description": "Independentemente do nível em que você opere, você é um jogador político astuto, um escalador habilidoso que está lentamente acumulando mais influência e poder. Você se comunica com igual fluência com o povo e os lordes."
+        },
+        "4": {
+            "name": "Erudito",
+            "description": "Você é um líder e seu nome é honrado. Seu lugar nos anais da história pode ser poderoso. Mesmo assim, às vezes você precisa estar atento para garantir que não há ninguém ascendendo para derrubá-lo de seu lugar de poder."
+        },
+        "5": {
+            "name": "Mestre",
+            "description": "Você é uma lenda e seu domínio sobre suas terras e pessoas é incontestável. Sua habilidade em política é tão impecável que as pessoas raramente percebem que estão sendo manipuladas para fazer o que você deseja."
+        }
+    },
+    "possessedBy": [
+        "Assessores",
+        "Cortesãos",
+        "Governadores",
+        "Lordes",
+        "Senhoras",
+        "Cardeais",
+        "Papas",
+        "Reis",
+        "Rainhas"
+    ],
+    "specialties": [
+        "Política Feudal",
+        "Política da Corte",
+        "Política da Cidade",
+        "Política da Igreja",
+        "Suborno",
+        "Legislação",
+        "Diplomacia"
+    ],
+    "fieldsOfExpertise": [
+        {
+            "name": "Sistemas Políticos",
+            "areas": [
+                "Hierarquia Feudal",
+                "Política da Igreja",
+                "Governança da Cidade",
+                "Intriga da Corte",
+                "Casas Nobres"
+            ]
+        },
+        {
+            "name": "Relações Diplomáticas",
+            "areas": [
+                "Negociações",
+                "Construção de Alianças",
+                "Resolução de Conflitos",
+                "Elaboração de Tratados",
+                "Relações Internacionais"
+            ]
+        },
+        {
+            "name": "Dinâmica de Poder",
+            "areas": [
+                "Redes de Influência",
+                "Influência Política",
+                "Gestão de Recursos",
+                "Alianças Estratégicas",
+                "Estruturas de Autoridade"
+            ]
+        }
+    ]
+}

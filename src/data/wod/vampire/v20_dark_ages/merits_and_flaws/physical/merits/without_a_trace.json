@@ -1,0 +1,16 @@
+{
+  "name": "Without a Trace",
+  "namePtBr": "Sem Deixar Rastros",
+  "category": "Physical",
+  "cost": 2,
+  "description": {
+    "text": "When you stray from the paths of civilization and wander into the wilderness, leaves, grass, and moss grow back where you pass and the earth itself moves to fill your footprints. You leave no noticeable traces of your passing, not even a scent.",
+    "description": "Quando você se afasta dos caminhos da civilização e vaga pela natureza, folhas, grama e musgo crescem novamente onde você passa e a própria terra se move para preencher suas pegadas. Você não deixa vestígios perceptíveis de sua passagem, nem mesmo um cheiro."
+  },
+  "effects": {
+    "tracking": {
+      "text": "Normal attempts to track you (such as with Survival or ordinary dogs) automatically fail. The difficulty of attempts to track you by supernatural means, such as with Auspex, increases by two.",
+      "description": "Tentativas normais de rastreá-lo (como com Sobrevivência ou cães comuns) falham automaticamente. A dificuldade de tentativas de rastreá-lo por meios sobrenaturais, como com Auspex, aumenta em dois."
+    }
+  }
+}

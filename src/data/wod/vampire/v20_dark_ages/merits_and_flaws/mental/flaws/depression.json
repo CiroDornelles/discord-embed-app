@@ -1,0 +1,24 @@
+{
+  "name": "Depression",
+  "namePtBr": "Depressão",
+  "category": "Mental",
+  "cost": -2,
+  "description": {
+    "text": "You suffer from severe melancholy that goes beyond the usual ennui of the undead. You find it difficult to take action or feel enthusiasm for anything, and periods of intense despair can leave you virtually paralyzed.",
+    "description": "Você sofre de uma melancolia severa que vai além do tédio usual dos mortos-vivos. Você acha difícil tomar ação ou sentir entusiasmo por qualquer coisa, e períodos de intenso desespero podem deixá-lo virtualmente paralisado."
+  },
+  "effects": {
+    "motivation": {
+      "text": "Must make a Willpower roll (difficulty 7) to take any significant action when in a depressive state",
+      "description": "Deve fazer uma rolagem de Força de Vontade (dificuldade 7) para tomar qualquer ação significativa quando em estado depressivo"
+    },
+    "willpower": {
+      "text": "Willpower points cost twice as much to spend during depressive episodes",
+      "description": "Pontos de Força de Vontade custam o dobro para gastar durante episódios depressivos"
+    },
+    "triggers": {
+      "text": "Certain events or situations can trigger depressive episodes, lasting for at least one night",
+      "description": "Certos eventos ou situações podem desencadear episódios depressivos, durando pelo menos uma noite"
+    }
+  }
+}

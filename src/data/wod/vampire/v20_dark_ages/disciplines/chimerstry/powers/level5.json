@@ -1,0 +1,79 @@
+{
+  "name": "Horrid Reality",
+  "namePtBr": "Realidade Horrível",
+  "level": 5,
+  "description": {
+    "text": "The vampire now has the ability to refine her tricks into very realistic pervasive illusions that affect only one person. The illusion is so real that the victim believes completely in its reality, even to the point of taking damage from it. As such, an illusionary wall would prevent a victim's escape and an illusionary fire would burn a victim. This power only affects one person, but everyone can see the illusion he suffers from. Other people may attempt to convince the victim that the illusion is not real, though he has a hard time believing them. A victim with Auspex can still attempt to see through the illusion.",
+    "description": "O vampiro agora tem a habilidade de refinar seus truques em ilusões muito realistas e invasivas que afetam apenas uma pessoa. A ilusão é tão real que a vítima acredita completamente em sua realidade, até o ponto de sofrer dano dela. Assim, uma parede ilusória impediria a fuga de uma vítima e um fogo ilusório queimaria uma vítima. Este poder afeta apenas uma pessoa, mas todos podem ver a ilusão da qual ela sofre. Outras pessoas podem tentar convencer a vítima de que a ilusão não é real, embora ela tenha dificuldade em acreditar nelas. Uma vítima com Auspex ainda pode tentar ver através da ilusão."
+  },
+  "system": {
+    "text": "A Horrid Reality illusion costs two Willpower points to create and lasts for an entire scene. The player must declare a victim when the illusion is created. If the user is attempting to injure her victim, her player rolls Manipulation + Subterfuge (difficulty the victim's Perception + Self-Control/Instinct). Each success inflicts one health level of lethal damage on the victim that cannot be soaked. If the user wishes to do less damage or bashing damage, she can declare a maximum amount of damage or the type of damage before rolling dice. Secondary effects (such as frenzy rolls for illusory fire) may also occur. The victim can escape the terror of the Horrid Reality if he can be convinced the illusion is not real. This requires at least two successes on a Charisma + Empathy roll (difficulty equal to the Manipulation + Subterfuge of the vampire using Horrid Reality). If the target is convinced the illusion is not real, the terror of the illusion no longer affects him. Illusory walls no longer stop him, and all damage is healed. If the target took damage from an attack due to Horrid Reality, he must be convinced of its illusory nature within 24 hours of the attack. Otherwise, it becomes too well established in his mind and he must heal it with blood (if a vampire), or over time (if mortal). This power cannot actually kill its victim. A victim 'killed' by an illusory attack loses consciousness or enters torpor.",
+    "description": "Uma ilusão de Realidade Horrível custa dois pontos de Força de Vontade para criar e dura uma cena inteira. O jogador deve declarar uma vítima quando a ilusão é criada. Se o usuário está tentando ferir sua vítima, seu jogador rola Manipulação + Subterfúgio (dificuldade Percepção + Autocontrole/Instinto da vítima). Cada sucesso inflige um nível de saúde de dano letal na vítima que não pode ser absorvido. Se o usuário deseja causar menos dano ou dano contundente, ela pode declarar uma quantidade máxima de dano ou o tipo de dano antes de rolar os dados. Efeitos secundários (como testes de frenesi para fogo ilusório) também podem ocorrer. A vítima pode escapar do terror da Realidade Horrível se puder ser convencida de que a ilusão não é real. Isso requer pelo menos dois sucessos em um teste de Carisma + Empatia (dificuldade igual à Manipulação + Subterfúgio do vampiro usando Realidade Horrível). Se o alvo for convencido de que a ilusão não é real, o terror da ilusão não o afeta mais. Paredes ilusórias não o param mais, e todo o dano é curado. Se o alvo sofreu dano de um ataque devido à Realidade Horrível, ele deve ser convencido de sua natureza ilusória dentro de 24 horas do ataque. Caso contrário, torna-se muito bem estabelecido em sua mente e ele deve curá-lo com sangue (se vampiro), ou ao longo do tempo (se mortal). Este poder não pode realmente matar sua vítima. Uma vítima 'morta' por um ataque ilusório perde a consciência ou entra em torpor."
+  },
+  "requirements": {
+    "cost": {
+      "willpower": {
+        "text": "Two Willpower points",
+        "description": "Dois pontos de Força de Vontade"
+      }
+    },
+    "target": {
+      "text": "Must declare single victim when created",
+      "description": "Deve declarar uma única vítima quando criada"
+    },
+    "duration": {
+      "text": "Lasts for an entire scene",
+      "description": "Dura uma cena inteira"
+    }
+  },
+  "mechanics": {
+    "damage": {
+      "roll": {
+        "text": "Manipulation + Subterfuge vs. victim's Perception + Self-Control/Instinct",
+        "description": "Manipulação + Subterfúgio vs. Percepção + Autocontrole/Instinto da vítima"
+      },
+      "effect": {
+        "text": "Each success = one health level of lethal damage (cannot be soaked)",
+        "description": "Cada sucesso = um nível de saúde de dano letal (não pode ser absorvido)"
+      },
+      "options": {
+        "text": "Can declare maximum damage or change to bashing damage before rolling",
+        "description": "Pode declarar dano máximo ou mudar para dano contundente antes de rolar"
+      },
+      "limitations": {
+        "text": "Cannot kill victim; unconsciousness or torpor instead",
+        "description": "Não pode matar a vítima; inconsciência ou torpor em vez disso"
+      }
+    },
+    "resistance": {
+      "auspex": {
+        "text": "Victims with Auspex can attempt to see through illusion",
+        "description": "Vítimas com Auspex podem tentar ver através da ilusão"
+      },
+      "convincing": {
+        "roll": {
+          "text": "Charisma + Empathy (difficulty = vampire's Manipulation + Subterfuge)",
+          "description": "Carisma + Empatia (dificuldade = Manipulação + Subterfúgio do vampiro)"
+        },
+        "requirement": {
+          "text": "Needs at least two successes",
+          "description": "Necessita de pelo menos dois sucessos"
+        },
+        "timeLimit": {
+          "text": "Must be convinced within 24 hours of damage or must heal normally",
+          "description": "Deve ser convencido dentro de 24 horas do dano ou deve curar normalmente"
+        }
+      }
+    },
+    "effects": {
+      "visibility": {
+        "text": "Everyone can see the illusion, but only target is affected",
+        "description": "Todos podem ver a ilusão, mas apenas o alvo é afetado"
+      },
+      "secondary": {
+        "text": "May trigger additional effects (e.g., frenzy rolls for illusory fire)",
+        "description": "Pode desencadear efeitos adicionais (ex: testes de frenesi para fogo ilusório)"
+      }
+    }
+  }
+}

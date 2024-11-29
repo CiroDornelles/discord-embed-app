@@ -1,0 +1,87 @@
+{
+  "name": "Acadêmicos",
+  "nameOriginal": "Academics",
+  "flavorText": "'O imortal Sêneca uma vez disse, 'Dum inter homines sumus, colamus humanitatem'', ela disse, deslizando sua adaga através de sua garganta com delicada precisão. 'Ou, 'Enquanto estivermos entre humanos, sejamos humanos.'' Ele ofegou por ar, agarrando seu manto até sua mão ficar imóvel. 'Se você pudesse falar, sei que me agradeceria depois.'",
+  "description": "Nesta época, há mais desconhecido do que conhecido no mundo, e descobertas infinitas aguardam. Química, física, astronomia e matemática são apenas ciências nascentes; literatura e retórica florescem. Os estudiosos estão apenas começando a desenvolver universidades. Com Acadêmicos, você tem a capacidade de ser a luz que queima contra a escuridão da ignorância e da superstição.",
+  "levels": {
+    "1": {
+      "name": "Novato",
+      "description": "Seu latim poderia melhorar, mas você consegue se fazer entender. Você arranhou a superfície do seu campo de estudo, acumulando conhecimento básico suficiente para falar sem parecer tolo."
+    },
+    "2": {
+      "name": "Estudante",
+      "description": "Você leu os livros certos e tem um entendimento firme do seu assunto. Você pode argumentar sua opinião em seu campo de forma competente."
+    },
+    "3": {
+      "name": "Instruído",
+      "description": "Você passou de estudante para professor. Você poderia instruir qualquer parte interessada em seu assunto escolhido. Você ganhou uma reputação por ser um acadêmico."
+    },
+    "4": {
+      "name": "Erudito",
+      "description": "Você dedicou sua vida acadêmica ao seu assunto, excluindo outros interesses terciários. Nenhum fato é obscuro demais para você adicionar ao seu substancial corpo de conhecimento."
+    },
+    "5": {
+      "name": "Mestre",
+      "description": "Você escreveu vários livros sobre seu assunto, que são usados como citações por estudiosos em seu campo. Sua eloquência sobre seu tópico é lendária e você é requisitado como palestrante para os literatos."
+    }
+  },
+  "possessedBy": [
+    "Clérigos",
+    "Cientistas",
+    "Tutores",
+    "Oficiais da corte",
+    "Conselheiros",
+    "Estudiosos universitários"
+  ],
+  "specialties": {
+    "default": [
+      {
+        "id": "instruction",
+        "name": "Instrução",
+        "nameOriginal": "Instruction",
+        "description": "Você é especialmente habilidoso em transmitir conhecimento aos outros."
+      },
+      {
+        "id": "research",
+        "name": "Pesquisa",
+        "nameOriginal": "Research",
+        "description": "Você tem talento particular para descobrir e organizar novas informações."
+      },
+      {
+        "id": "esoterica",
+        "name": "Conhecimento Esotérico",
+        "nameOriginal": "Esoterica",
+        "description": "Você é versado em conhecimentos obscuros e raros."
+      }
+    ],
+    "custom": []
+  },
+  "fieldsOfExpertise": {
+    "default": [
+      {
+        "id": "arts",
+        "name": "Artes",
+        "nameOriginal": "Arts",
+        "description": "Literatura, música, filosofia",
+        "examples": [
+          "Literatura",
+          "Música",
+          "Filosofia"
+        ]
+      },
+      {
+        "id": "sciences",
+        "name": "Ciências",
+        "nameOriginal": "Sciences",
+        "description": "Física, química, astronomia, matemática",
+        "examples": [
+          "Física",
+          "Química",
+          "Astronomia",
+          "Matemática"
+        ]
+      }
+    ],
+    "custom": []
+  }
+}

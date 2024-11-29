@@ -1,0 +1,114 @@
+{
+  "name": "Enigmas",
+  "nameOriginal": "Enigmas",
+  "flavorText": "'Hey Nonny, Nonny!' Elba remava o barco sombriamente, tentando ignorar o pastor que se considerava espirituoso. 'Qual água é menos perigosa de atravessar?' Ele pronunciava 'es' extras como se estivesse tentando ser Chaucer. 'O orvalho!' ele vangloriou-se. 'Já ouviu aquela da raposa e das ovelhas?' ela perguntou, enxugando a testa com um trapo sujo; o Tâmisa cheirava particularmente forte hoje. 'Um pastor encontra um pequeno barco na margem do rio, mas há uma raposa. O barco carrega o pastor e uma ovelha. Se o pastor deixar a raposa com elas, a raposa come as ovelhas.' 'Um problema complicado, minha boa senhora!' Ele desembarcou quando ela atracou. 'E qual é a resposta?' ele perguntou, suor manchando a túnica sob seus braços. 'Nunca confie em uma raposa.' Com isso, Elba partiu e remou calmamente com suas seis ovelhas, deixando-o praguejando na margem.",
+  "description": "Os enigmas medievais abrangem simbolismo, história, tradição e criptografia. As menores peças se encaixam em um todo coeso quando você tem conhecimento suficiente de enigmas. Cada fio se entrelaça em uma tapeçaria de uma resposta. Sua experiência com enigmas permite que você estabeleça conexões lógicas para deduzir a solução quando ela é menos evidente para os outros.",
+  "levels": {
+    "1": {
+      "name": "Novato",
+      "description": "Aqueles pequenos quebra-cabeças de madeira e corda não são páreo para você. Você gosta de confundir as pessoas e pode criar criptogramas e substituições de palavras simples."
+    },
+    "2": {
+      "name": "Estudante",
+      "description": "Com algumas horas, não há quase nenhuma cifra que você não possa penetrar."
+    },
+    "3": {
+      "name": "Instruído",
+      "description": "As pessoas procuram você para desvendar seus sonhos ou decodificar bilhetes de amor ilícitos. Você escreveu uma referência chave para o simbolismo em seu campo."
+    },
+    "4": {
+      "name": "Erudito",
+      "description": "Seus diários são escritos em códigos espontâneos e irão perplexar estudiosos mesmo séculos depois."
+    },
+    "5": {
+      "name": "Mestre",
+      "description": "Seus quebra-cabeças requerem uma chave ou uma mente equivalente à sua para desvendar. Se você estivesse trancado em uma caixa, sua mente poderia fornecer diversão indefinidamente."
+    }
+  },
+  "possessedBy": [
+    "Sábios",
+    "Xamãs",
+    "Místicos",
+    "Profetas",
+    "Astrólogos"
+  ],
+  "specialties": {
+    "default": [
+      {
+        "id": "arthurian-mysteries",
+        "name": "Mistérios Arturianos",
+        "nameOriginal": "Arthurian Mysteries",
+        "description": "Você é especialista nos enigmas e simbolismos das lendas do Rei Arthur."
+      },
+      {
+        "id": "sacred-mysteries",
+        "name": "Mistérios Sagrados",
+        "nameOriginal": "Sacred Mysteries",
+        "description": "Você compreende os enigmas e simbolismos religiosos e sagrados."
+      },
+      {
+        "id": "relics",
+        "name": "Relíquias",
+        "nameOriginal": "Relics",
+        "description": "Você é especialista em decifrar os mistérios por trás de objetos sagrados e históricos."
+      },
+      {
+        "id": "cryptography",
+        "name": "Criptografia",
+        "nameOriginal": "Cryptography",
+        "description": "Você é habilidoso em criar e decifrar códigos e mensagens secretas."
+      },
+      {
+        "id": "prophecies",
+        "name": "Profecias",
+        "nameOriginal": "Prophecies",
+        "description": "Você é especialista em interpretar e compreender profecias e presságios."
+      },
+      {
+        "id": "riddles",
+        "name": "Charadas",
+        "nameOriginal": "Riddles",
+        "description": "Você é mestre na arte de criar e resolver charadas e quebra-cabeças verbais."
+      }
+    ],
+    "custom": []
+  },
+  "fieldsOfExpertise": {
+    "default": [
+      {
+        "id": "symbolism",
+        "name": "Simbolismo",
+        "nameOriginal": "Symbolism",
+        "description": "Interpretação de símbolos e seus significados ocultos",
+        "examples": [
+          "Símbolos religiosos",
+          "Heráldica",
+          "Símbolos místicos"
+        ]
+      },
+      {
+        "id": "codes",
+        "name": "Códigos",
+        "nameOriginal": "Codes",
+        "description": "Criação e decodificação de mensagens secretas",
+        "examples": [
+          "Cifras",
+          "Códigos secretos",
+          "Linguagens ocultas"
+        ]
+      },
+      {
+        "id": "puzzles",
+        "name": "Quebra-cabeças",
+        "nameOriginal": "Puzzles",
+        "description": "Resolução de problemas lógicos e físicos",
+        "examples": [
+          "Quebra-cabeças mecânicos",
+          "Problemas lógicos",
+          "Charadas"
+        ]
+      }
+    ],
+    "custom": []
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "name": "Medicina",
+  "nameOriginal": "Medicine",
+  "flavorText": "'Uma vez tratei de um homem mordido por quatro vintenas de cobras. Passei dezesseis horas aplicando ventosas quentes nos membros de seu corpo.' Lilia batia seu cajado em ritmo nas pedras irregulares enquanto caminhava à frente de seu companheiro, arrastando seu manto cinzento pela lama. 'O que aconteceu com ele?' 'Ah, ele morreu.'",
+  "description": "Esta é a era dos humores. Sentindo-se mal? Você está melancólico, com excesso de bile negra. Fleumático? Muitos alimentos frios. Manter os humores em equilíbrio poderia ser uma ocupação em tempo integral, envolvendo gráficos, diagramas e sanguessugas. É uma estranha mistura de superstição e antiga pesquisa greco-romana. A anatomia e fisiologia ainda estão sendo desenvolvidas e, infelizmente, dissecar o corpo humano para pesquisa ainda está a séculos de ser aceitável. Enquanto isso, tome um tônico e certifique-se de usar aquele amuleto para essa tosse.",
+  "levels": {
+    "1": {
+      "name": "Novato",
+      "description": "Você é o reparador de ferimentos menores: cortes, arranhões, imobilização de extremidades quebradas. Você conhece o vocabulário básico para descrever enfermidades."
+    },
+    "2": {
+      "name": "Estudante",
+      "description": "Em uma emergência, é útil ter você por perto. Seu tratamento às vezes pode afastar a foice da Morte tempo suficiente para um verdadeiro profissional chegar."
+    },
+    "3": {
+      "name": "Instruído",
+      "description": "Seu trabalho é curar, seja como médico, enfermeiro ou cirurgião. É um de seus principais talentos e você passa um bom tempo lendo sobre o assunto e tentando novos tratamentos."
+    },
+    "4": {
+      "name": "Erudito",
+      "description": "Seu trabalho levou a várias descobertas médicas importantes e todos próximos a você se beneficiam de maior vitalidade e longevidade."
+    },
+    "5": {
+      "name": "Mestre",
+      "description": "Tenha cuidado, Ó Morte, pois sua competição chegou. Colocar suas mãos sobre os doentes traz alívio quase instantâneo. Seus diagnósticos infalíveis podem acalmar a mente daqueles que trazem seus entes queridos doentes até você."
+    }
+  },
+  "possessedBy": [
+    "Curandeiros",
+    "Médicos",
+    "Charlatães",
+    "Herbalistas",
+    "Parteiras",
+    "Boticários",
+    "Barbeiros",
+    "Cirurgiões"
+  ],
+  "specialties": {
+    "default": [
+      {
+        "id": "childbirth",
+        "name": "Parto",
+        "nameOriginal": "Childbirth",
+        "description": "Você é especialista em auxiliar partos e cuidar de gestantes."
+      },
+      {
+        "id": "first-aid",
+        "name": "Primeiros Socorros",
+        "nameOriginal": "First Aid",
+        "description": "Você é habilidoso em fornecer cuidados médicos imediatos em emergências."
+      },
+      {
+        "id": "pain-relief",
+        "name": "Alívio da Dor",
+        "nameOriginal": "Pain Relief",
+        "description": "Você é especialista em técnicas e remédios para aliviar a dor."
+      },
+      {
+        "id": "preventative-medicine",
+        "name": "Medicina Preventiva",
+        "nameOriginal": "Preventative Medicine",
+        "description": "Você é habilidoso em prevenir doenças antes que elas ocorram."
+      },
+      {
+        "id": "surgery",
+        "name": "Cirurgia",
+        "nameOriginal": "Surgery",
+        "description": "Você é especialista em procedimentos cirúrgicos medievais."
+      }
+    ],
+    "custom": []
+  },
+  "fieldsOfExpertise": {
+    "default": [
+      {
+        "id": "humoral-medicine",
+        "name": "Medicina Humoral",
+        "nameOriginal": "Humoral Medicine",
+        "description": "Teoria e prática dos quatro humores",
+        "examples": [
+          "Equilíbrio dos humores",
+          "Sangrias",
+          "Tratamentos humorais"
+        ]
+      },
+      {
+        "id": "herbal-remedies",
+        "name": "Remédios Herbais",
+        "nameOriginal": "Herbal Remedies",
+        "description": "Uso de plantas e ervas medicinais",
+        "examples": [
+          "Ervas curativas",
+          "Tônicos",
+          "Cataplasmas"
+        ]
+      },
+      {
+        "id": "medieval-surgery",
+        "name": "Cirurgia Medieval",
+        "nameOriginal": "Medieval Surgery",
+        "description": "Técnicas cirúrgicas da época",
+        "examples": [
+          "Amputações",
+          "Trepanação",
+          "Cauterização"
+        ]
+      }
+    ],
+    "custom": []
+  }
+}

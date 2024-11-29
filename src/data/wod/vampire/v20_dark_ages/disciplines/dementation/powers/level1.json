@@ -1,0 +1,125 @@
+{
+  "name": "Incubus Humor",
+  "namePtBr": "Humor Íncubo",
+  "level": 1,
+  "description": {
+    "text": "The vampire can inflame the humors of a victim within line of sight, eroding the victim's self-control and amplifying his temperament to a fevered pitch. The vampire may select one of the four humors that govern the body and induce the emotion associated with it. Thus, the flames of mild irritation may be fanned into a rage with an inflammation of yellow bile, or brief melancholia into crippling depression with an inflammation of black bile. Inflaming phlegm, on the other hand, completely deadens the victim's emotions. These inflammations can last for days or even weeks.",
+    "description": "O vampiro pode inflamar os humores de uma vítima em sua linha de visão, erodindo o autocontrole da vítima e amplificando seu temperamento a um nível febril. O vampiro pode selecionar um dos quatro humores que governam o corpo e induzir a emoção associada a ele. Assim, as chamas de uma leve irritação podem ser atiçadas até a fúria com uma inflamação da bile amarela, ou uma breve melancolia pode se tornar uma depressão incapacitante com uma inflamação da bile negra. Inflamar a fleuma, por outro lado, amortece completamente as emoções da vítima. Essas inflamações podem durar dias ou até semanas."
+  },
+  "system": {
+    "roll": {
+      "attribute": {
+        "text": "Manipulation",
+        "description": "Manipulação"
+      },
+      "ability": {
+        "text": "Empathy",
+        "description": "Empatia"
+      },
+      "difficulty": {
+        "text": "Target's Road score (for vampires) or Willpower (for mortals)",
+        "description": "Pontuação da Trilha do alvo (para vampiros) ou Força de Vontade (para mortais)"
+      }
+    },
+    "effects": {
+      "text": "Each success extends the duration of the inflamed humor. Effects might include one- or two-point changes to difficulties of frenzy or Virtue rolls, rolls to resist Presence powers, etc.",
+      "description": "Cada sucesso estende a duração do humor inflamado. Os efeitos podem incluir mudanças de um ou dois pontos nas dificuldades de frenesi ou rolagens de Virtude, rolagens para resistir a poderes de Presença, etc."
+    },
+    "treatment": {
+      "text": "Respite comes only if the humor imbalance is properly diagnosed and treated (Intelligence + Medicine, difficulty 8) — every success on the treatment roll cancels one of the Malkavian's duration successes.",
+      "description": "O alívio só vem se o desequilíbrio do humor for adequadamente diagnosticado e tratado (Inteligência + Medicina, dificuldade 8) — cada sucesso na rolagem de tratamento cancela um dos sucessos de duração do Malkaviano."
+    },
+    "humors": {
+      "text": [
+        {
+          "humor": "Sanguine",
+          "effects": "Courage, Hope, Lust"
+        },
+        {
+          "humor": "Yellow bile",
+          "effects": "Anger, Hate"
+        },
+        {
+          "humor": "Black bile",
+          "effects": "Melancholia"
+        },
+        {
+          "humor": "Phlegm",
+          "effects": "Unemotional"
+        }
+      ],
+      "description": [
+        {
+          "humor": "Sanguíneo",
+          "effects": "Coragem, Esperança, Luxúria"
+        },
+        {
+          "humor": "Bile Amarela",
+          "effects": "Raiva, Ódio"
+        },
+        {
+          "humor": "Bile Negra",
+          "effects": "Melancolia"
+        },
+        {
+          "humor": "Fleuma",
+          "effects": "Sem Emoção"
+        }
+      ]
+    },
+    "duration": {
+      "text": [
+        {
+          "successes": 1,
+          "duration": "One turn"
+        },
+        {
+          "successes": 2,
+          "duration": "One hour"
+        },
+        {
+          "successes": 3,
+          "duration": "One night"
+        },
+        {
+          "successes": 4,
+          "duration": "One week"
+        },
+        {
+          "successes": 5,
+          "duration": "One month"
+        },
+        {
+          "successes": 6,
+          "duration": "Three months"
+        }
+      ],
+      "description": [
+        {
+          "successes": 1,
+          "duration": "Um turno"
+        },
+        {
+          "successes": 2,
+          "duration": "Uma hora"
+        },
+        {
+          "successes": 3,
+          "duration": "Uma noite"
+        },
+        {
+          "successes": 4,
+          "duration": "Uma semana"
+        },
+        {
+          "successes": 5,
+          "duration": "Um mês"
+        },
+        {
+          "successes": 6,
+          "duration": "Três meses"
+        }
+      ]
+    }
+  }
+}

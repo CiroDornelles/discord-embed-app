@@ -1,0 +1,117 @@
+{
+  "name": "Comércio",
+  "nameOriginal": "Commerce",
+  "flavorText": "Alguns dos Mestres de Guerra e Senescais ao seu redor na mesa tinham viajado por semanas para atender sua convocação, enviados por seus Príncipes para ouvir sua proposta. \"Amigos\", ela disse, \"tenho algo que vocês querem muito. Vamos falar sobre preços.\" Ela não tinha a influência de um Príncipe, mas não precisava, não esta noite. Porque no final, sangue também era uma mercadoria, e todos iriam querer comprar.",
+  "description": "Em sua forma mais básica, Comércio é a prática de comprar e vender. No entanto, todos os detalhes intrincados que envolvem levar mercadorias ao mercado também fazem parte desta habilidade: conhecer rotas comerciais, avaliar a qualidade das mercadorias, negociar seus preços, manter o controle de quem pode querer o quê e quanto estariam dispostos a pagar por isso. Escolha um campo de especialização ao adquirir Comércio. Fora desse campo, trate a Habilidade como se não tivesse pontos. Campos adicionais podem ser comprados com um ponto de experiência. Nem todo Comércio é legal; na verdade, alguns se aprofundam no verdadeiramente desumano. Existem rotas comerciais para mercadorias roubadas, drogas e tráfico de escravos, assim como para especiarias e seda.",
+  "levels": {
+    "1": {
+      "name": "Novato",
+      "description": "Você pode fazer negócios com comerciantes locais e obter um lucro sustentável."
+    },
+    "2": {
+      "name": "Praticante",
+      "description": "Você administra um negócio modesto e sabe quem contatar se precisar adquirir itens difíceis de conseguir."
+    },
+    "3": {
+      "name": "Competente",
+      "description": "Você obtém um lucro constante em seu comércio. Ao negociar, você é capaz de alcançar resultados favoráveis."
+    },
+    "4": {
+      "name": "Especialista",
+      "description": "Seus serviços são procurados por outros que precisam importar ou exportar mercadorias. Você administra um negócio próspero e conhece as complexidades das rotas comerciais de seus produtos."
+    },
+    "5": {
+      "name": "Mestre",
+      "description": "Todas as rotas comerciais levam a você. Você controla um vasto império comercial, e suas ações enviam ondulações pelo mundo."
+    }
+  },
+  "possessedBy": [
+    "Mercadores",
+    "Comerciantes",
+    "Nobres",
+    "Clérigos",
+    "Mercenários"
+  ],
+  "specialties": {
+    "default": [
+      {
+        "id": "trade-routes",
+        "name": "Rotas Comerciais",
+        "nameOriginal": "Trade Routes",
+        "description": "Você tem conhecimento excepcional sobre as melhores rotas para transportar mercadorias."
+      },
+      {
+        "id": "negotiation",
+        "name": "Negociação",
+        "nameOriginal": "Negotiation",
+        "description": "Você é particularmente habilidoso em barganhar e negociar preços."
+      },
+      {
+        "id": "spotting-trends",
+        "name": "Identificar Tendências",
+        "nameOriginal": "Spotting Trends",
+        "description": "Você tem um dom para prever mudanças no mercado e identificar oportunidades comerciais."
+      },
+      {
+        "id": "evaluating-goods",
+        "name": "Avaliar Mercadorias",
+        "nameOriginal": "Evaluating Goods",
+        "description": "Você é especialista em determinar o valor real e a qualidade das mercadorias."
+      }
+    ],
+    "custom": []
+  },
+  "fields": {
+    "default": [
+      {
+        "id": "livestock",
+        "name": "Gado",
+        "nameOriginal": "Livestock",
+        "description": "Comércio de animais de criação e seus produtos derivados."
+      },
+      {
+        "id": "fabric",
+        "name": "Tecidos",
+        "nameOriginal": "Fabric",
+        "description": "Comércio de tecidos, roupas e materiais têxteis."
+      },
+      {
+        "id": "foodstuffs",
+        "name": "Alimentos",
+        "nameOriginal": "Foodstuffs",
+        "description": "Comércio de produtos alimentícios e provisões."
+      },
+      {
+        "id": "books",
+        "name": "Livros",
+        "nameOriginal": "Books",
+        "description": "Comércio de livros, manuscritos e materiais escritos."
+      },
+      {
+        "id": "spices",
+        "name": "Especiarias",
+        "nameOriginal": "Spices",
+        "description": "Comércio de especiarias e temperos exóticos."
+      },
+      {
+        "id": "stolen-goods",
+        "name": "Mercadorias Roubadas",
+        "nameOriginal": "Stolen Goods",
+        "description": "Comércio ilegal de itens roubados ou contrabandeados."
+      },
+      {
+        "id": "art",
+        "name": "Arte",
+        "nameOriginal": "Art",
+        "description": "Comércio de obras de arte e objetos decorativos."
+      },
+      {
+        "id": "alcohol",
+        "name": "Álcool",
+        "nameOriginal": "Alcohol",
+        "description": "Comércio de bebidas alcoólicas e destilados."
+      }
+    ],
+    "custom": []
+  }
+}

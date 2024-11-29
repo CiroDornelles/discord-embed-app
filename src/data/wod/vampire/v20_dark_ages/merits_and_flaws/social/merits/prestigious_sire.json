@@ -1,0 +1,24 @@
+{
+  "name": "Prestigious Sire",
+  "namePtBr": "Senhor Prestigioso",
+  "category": "Social",
+  "cost": 3,
+  "description": {
+    "text": "Your sire was a vampire of great renown and respect within Cainite society. This reputation extends some protection and status to you, even though you must still prove your own worth.",
+    "description": "Seu senhor era um vampiro de grande renome e respeito dentro da sociedade Cainita. Esta reputação estende alguma proteção e status a você, mesmo que você ainda precise provar seu próprio valor."
+  },
+  "effects": {
+    "status": {
+      "text": "Gain 1 automatic point of Status in your Clan and +1 die on Social rolls with members of your Clan",
+      "description": "Ganhe 1 ponto automático de Status em seu Clã e +1 dado em rolagens Sociais com membros do seu Clã"
+    },
+    "protection": {
+      "text": "Other vampires may think twice before acting against you, fearing your sire's retribution",
+      "description": "Outros vampiros podem pensar duas vezes antes de agir contra você, temendo a retribuição do seu senhor"
+    },
+    "connections": {
+      "text": "Access to your sire's allies and contacts, though they may expect favors in return",
+      "description": "Acesso aos aliados e contatos do seu senhor, embora eles possam esperar favores em troca"
+    }
+  }
+}

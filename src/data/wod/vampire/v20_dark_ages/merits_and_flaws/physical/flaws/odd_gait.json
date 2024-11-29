@@ -1,0 +1,20 @@
+{
+  "name": "Odd Gait",
+  "namePtBr": "Andar Estranho",
+  "category": "Physical",
+  "cost": -1,
+  "description": {
+    "text": "Moving swiftly does not come easily for you; perhaps walking is painful or perhaps you are simply never in a hurry. Whatever the reason, you move at half your normal movement speed. Storyteller characters may also come to recognize you by your uncommon walk.",
+    "description": "Mover-se rapidamente não é fácil para você; talvez caminhar seja doloroso ou talvez você simplesmente nunca tenha pressa. Qualquer que seja o motivo, você se move na metade da sua velocidade normal de movimento. Os personagens do Narrador também podem vir a reconhecê-lo por seu andar incomum."
+  },
+  "effects": {
+    "movement": {
+      "text": "Move at half normal movement speed",
+      "description": "Move-se na metade da velocidade normal de movimento"
+    },
+    "recognition": {
+      "text": "May be recognized by distinctive walk",
+      "description": "Pode ser reconhecido pelo andar distintivo"
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "name": "Chimaera",
+  "namePtBr": "Quimera",
+  "level": 2,
+  "description": {
+    "text": "Chimaera allows the vampire to create static illusions that affect any or all of the senses. The vampire could create the illusion of a bladed weapon that feels hard to the touch, or a soft flower that gives off a sweet perfume. These are just illusions, and a sword will pass right through someone if thrust. An image created in this way can be completely stationary, as with Ignis Fatuus, or it can move naturally as an item can be carried by a person or a sword will look to be hitched to the sword belt.",
+    "description": "Quimera permite ao vampiro criar ilusões estáticas que afetam qualquer ou todos os sentidos. O vampiro pode criar a ilusão de uma arma com lâmina que parece dura ao toque, ou uma flor macia que exala um perfume doce. Estas são apenas ilusões, e uma espada passará direto através de alguém se empurrada. Uma imagem criada desta forma pode ser completamente estacionária, como com Ignis Fatuus, ou pode se mover naturalmente como um item pode ser carregado por uma pessoa ou uma espada parecerá estar presa ao cinto de espada."
+  },
+  "system": {
+    "text": "The player spends one Willpower and one blood point to create the illusion. She must choose at the time of creation if the illusion is completely stationary or if it is tied to a person, place, or animal and will remain that way for its duration. These illusions follow the same rules for area creation and duration as Ignis Fatuus illusions.",
+    "description": "O jogador gasta um ponto de Força de Vontade e um ponto de sangue para criar a ilusão. Ela deve escolher no momento da criação se a ilusão é completamente estacionária ou se está vinculada a uma pessoa, lugar ou animal e permanecerá assim durante sua duração. Estas ilusões seguem as mesmas regras para criação de área e duração que as ilusões de Ignis Fatuus."
+  },
+  "requirements": {
+    "cost": {
+      "willpower": {
+        "text": "One Willpower point",
+        "description": "Um ponto de Força de Vontade"
+      },
+      "blood": {
+        "text": "One blood point",
+        "description": "Um ponto de sangue"
+      }
+    },
+    "choices": {
+      "text": "Must choose at creation if illusion is stationary or tied to something",
+      "description": "Deve escolher na criação se a ilusão é estacionária ou vinculada a algo"
+    }
+  },
+  "mechanics": {
+    "senses": {
+      "affected": {
+        "text": "Can affect any or all senses simultaneously",
+        "description": "Pode afetar qualquer ou todos os sentidos simultaneamente"
+      },
+      "examples": {
+        "weapon": {
+          "visual": {
+            "text": "Appearance of a bladed weapon",
+            "description": "Aparência de uma arma com lâmina"
+          },
+          "tactile": {
+            "text": "Feels hard to the touch",
+            "description": "Parece dura ao toque"
+          }
+        },
+        "flower": {
+          "visual": {
+            "text": "Appearance of a soft flower",
+            "description": "Aparência de uma flor macia"
+          },
+          "smell": {
+            "text": "Sweet perfume",
+            "description": "Perfume doce"
+          },
+          "tactile": {
+            "text": "Soft to the touch",
+            "description": "Macia ao toque"
+          }
+        }
+      }
+    },
+    "movement": {
+      "options": {
+        "stationary": {
+          "text": "Completely stationary like Ignis Fatuus",
+          "description": "Completamente estacionária como Ignis Fatuus"
+        },
+        "tied": {
+          "text": "Can be tied to a person, place, or animal",
+          "description": "Pode ser vinculada a uma pessoa, lugar ou animal",
+          "examples": {
+            "text": "Item carried by person, sword hitched to belt",
+            "description": "Item carregado por pessoa, espada presa ao cinto"
+          }
+        }
+      }
+    },
+    "limitations": {
+      "physical": {
+        "text": "Illusions cannot cause physical effects (sword passes through target)",
+        "description": "Ilusões não podem causar efeitos físicos (espada passa através do alvo)"
+      }
+    },
+    "rules": {
+      "area": {
+        "text": "Follows same area creation rules as Ignis Fatuus",
+        "description": "Segue as mesmas regras de criação de área que Ignis Fatuus"
+      },
+      "duration": {
+        "text": "Follows same duration rules as Ignis Fatuus",
+        "description": "Segue as mesmas regras de duração que Ignis Fatuus"
+      }
+    }
+  }
+}

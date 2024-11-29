@@ -1,0 +1,16 @@
+{
+  "name": "Common Sense",
+  "namePtBr": "Bom Senso",
+  "category": "Mental",
+  "cost": 1,
+  "description": {
+    "text": "You have a significant amount of practical wisdom and a good head on your shoulders. When you are about to do something inadvisable, the Storyteller can step in and point out the potential consequences.",
+    "description": "Você tem uma quantidade significativa de sabedoria prática e uma boa cabeça sobre seus ombros. Quando você está prestes a fazer algo imprudente, o Narrador pode intervir e apontar as possíveis consequências."
+  },
+  "effects": {
+    "storyteller": {
+      "text": "The Storyteller can warn you when you are about to make a disastrous mistake, even if your character has no way of knowing the outcome",
+      "description": "O Narrador pode avisar você quando estiver prestes a cometer um erro desastroso, mesmo que seu personagem não tenha como saber o resultado"
+    }
+  }
+}
