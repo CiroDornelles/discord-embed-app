@@ -7,13 +7,26 @@ import UnitBlood from './UnitBlood';
 import { getBloodPoolByGeneration } from '../../rules/vampire/bloodPool';
 
 const CharacterStatusSection = ({ vantagens }) => {
+  // Debug props
+  console.log('CharacterStatusSection recebeu vantagens:', vantagens);
+
   // Calcula a geração baseada no antecedente
   const calcularGeracao = () => {
-    const geracaoAntecedente = vantagens?.antecedentes?.find(ant => ant?.id === 'generation')?.value || 0;
-    return 12 - geracaoAntecedente; // Começa na 12ª geração
+    const antecedentes = vantagens?.antecedentes || [];
+    console.log('Antecedentes encontrados:', antecedentes);
+    
+    const geracaoAntecedente = antecedentes.find(ant => {
+      console.log('Verificando antecedente:', ant);
+      return ant?.id === 'generation';
+    })?.value || 0;
+    
+    const geracao = 12 - geracaoAntecedente;
+    console.log('Geração calculada:', geracao, 'baseada em', geracaoAntecedente, 'pontos');
+    return geracao;
   };
 
   const bloodPool = getBloodPoolByGeneration(calcularGeracao());
+  console.log('Blood Pool:', bloodPool);
 
   // Estados
   const [pathRating, setPathRating] = useState(0);

@@ -45,7 +45,8 @@ const CharacterSheet = () => {
         consciencia: 0,
         autocontrole: 0,
         coragem: 0
-      }
+      },
+      antecedentes: [] // Inicializando o array de antecedentes
     }
   });
 
@@ -90,6 +91,7 @@ const CharacterSheet = () => {
   };
 
   const handleAdvantagesChange = (category, field, value) => {
+    console.log('handleAdvantagesChange:', { category, field, value });
     setCharacterData(prev => {
       const vantagens = { ...prev.vantagens };
       
@@ -124,10 +126,12 @@ const CharacterSheet = () => {
         };
       }
 
-      return {
+      const newState = {
         ...prev,
         vantagens
       };
+      console.log('Novo estado:', newState);
+      return newState;
     });
   };
 
@@ -264,7 +268,7 @@ const CharacterSheet = () => {
         <AttributesSection />
         <AbilitiesSection data={characterData.habilidades} onChange={handleAbilitiesChange} />
         <AdvantagesSection data={characterData.vantagens} onChange={handleAdvantagesChange} />
-        <CharacterStatusSection />
+        <CharacterStatusSection vantagens={characterData.vantagens} />
       </Box>
     </Box>
   );

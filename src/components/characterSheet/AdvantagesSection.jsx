@@ -109,6 +109,7 @@ const AdvantagesSection = ({ data = {}, onChange }) => {
   };
 
   const handleDotChange = (category, field) => (newValue) => {
+    console.log('Mudando dots:', { category, field, newValue });
     if (category === 'virtudes') {
       onChange(category, field, newValue);
     } else {
@@ -121,7 +122,9 @@ const AdvantagesSection = ({ data = {}, onChange }) => {
   };
 
   const handleBackgroundSelect = (background) => {
+    console.log('Selecionando background:', background);
     if (currentIndex !== null) {
+      console.log('No índice:', currentIndex);
       onChange('antecedentes', `${currentIndex}.name`, background.name);
       onChange('antecedentes', `${currentIndex}.id`, background.id);
       onChange('antecedentes', `${currentIndex}.value`, background.value || background.defaultValue || 1);
