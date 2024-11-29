@@ -29,8 +29,8 @@ const DotRating = ({
       <div
         onClick={() => handleClick(index + 1)}
         style={{
-          width: '12px',
-          height: '12px',
+          width: '16px',
+          height: '16px',
           borderRadius: '50%',
           backgroundColor: filled ? '#8b0000' : 'transparent',
           border: '2px solid #8b0000',

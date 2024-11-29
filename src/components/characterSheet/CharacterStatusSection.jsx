@@ -113,7 +113,16 @@ const CharacterStatusSection = () => {
 
       {/* Círculos e Quadrados */}
       <Box sx={{ mt: 2 }}>
-        <Box sx={{ display: 'flex', gap: 0.5, justifyContent: 'center' }}>
+        <Box sx={{ 
+          display: 'flex', 
+          gap: 1, 
+          justifyContent: 'center',
+          maxWidth: '95%',
+          margin: '0 auto',
+          '& .dot-rating': {
+            transform: 'scale(2.2)',
+          }
+        }}>
           {[...Array(10)].map((_, index) => (
             <DotRating
               key={`dot-${index}`}
@@ -121,6 +130,7 @@ const CharacterStatusSection = () => {
               max={1}
               onChange={() => {}}
               color="#8b0000"
+              className="dot-rating"
             />
           ))}
         </Box>

@@ -232,7 +232,7 @@ const AdvantagesSection = ({ data = {}, onChange }) => {
       >
         DISCIPLINAS
       </Typography>
-      {createAdvantageFields('disciplinas', 5, 9)}
+      {createAdvantageFields('disciplinas', 5, 5)}
     </Box>
   );
 
