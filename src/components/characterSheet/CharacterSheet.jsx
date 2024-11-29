@@ -11,6 +11,7 @@ import AttributesSection from './AttributesSection';
 import AbilitiesSection from './AbilitiesSection';
 import AdvantagesSection from './AdvantagesSection';
 import CharacterStatusSection from './CharacterStatusSection';
+import { CharacterProvider } from '../../contexts/CharacterContext';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -238,8 +239,8 @@ const CharacterSheet = () => {
   };
 
   return (
-    <Box 
-      sx={{ 
+    <CharacterProvider>
+      <Box sx={{ 
         width: '100%',
         minHeight: '100vh',
         backgroundColor: '#000',
@@ -248,29 +249,29 @@ const CharacterSheet = () => {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center'
-      }}
-    >
-      <Header />
-      
-      <Box 
-        sx={{ 
-          flex: 1,
-          p: { xs: 1, sm: 2, md: 3 },
-          display: 'flex',
-          flexDirection: 'column',
-          gap: 3,
-          maxWidth: '1200px',
-          width: '100%',
-          alignItems: 'center'
-        }}
-      >
-        {renderInfoCards()}
-        <AttributesSection />
-        <AbilitiesSection data={characterData.habilidades} onChange={handleAbilitiesChange} />
-        <AdvantagesSection data={characterData.vantagens} onChange={handleAdvantagesChange} />
-        <CharacterStatusSection vantagens={characterData.vantagens} />
+      }}>
+        <Header />
+        
+        <Box 
+          sx={{ 
+            flex: 1,
+            p: { xs: 1, sm: 2, md: 3 },
+            display: 'flex',
+            flexDirection: 'column',
+            gap: 3,
+            maxWidth: '1200px',
+            width: '100%',
+            alignItems: 'center'
+          }}
+        >
+          {renderInfoCards()}
+          <AttributesSection />
+          <AbilitiesSection data={characterData.habilidades} onChange={handleAbilitiesChange} />
+          <AdvantagesSection data={characterData.vantagens} onChange={handleAdvantagesChange} />
+          <CharacterStatusSection vantagens={characterData.vantagens} />
+        </Box>
       </Box>
-    </Box>
+    </CharacterProvider>
   );
 };
 

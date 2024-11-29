@@ -1,111 +1,69 @@
-import React, { useState, useEffect } from 'react';
+import React, { memo, useMemo } from 'react';
 import { Box } from '@mui/material';
 import UnitBlood from './UnitBlood';
+import { useBloodPoolAnimation } from '../../hooks/useBloodPoolAnimation';
+import { useCharacter } from '../../contexts/CharacterContext';
 
-const BloodPool = ({ value = 0, onChange, max, perTurn }) => {
-  const [animatingValue, setAnimatingValue] = useState(value);
-  const [isAnimating, setIsAnimating] = useState(false);
-  const [isSettling, setIsSettling] = useState(false);
-  
-  useEffect(() => {
-    if (!isAnimating && !isSettling) {
-      setAnimatingValue(value);
+const BloodPool = memo(({ max, perTurn }) => {
+  const { character, updateBloodPool } = useCharacter();
+  const value = character.status.bloodPool.current;
+
+  const {
+    animatingValue,
+    isAnimating,
+    isSettling,
+    handleBloodPointChange
+  } = useBloodPoolAnimation(value, updateBloodPool);
+
+  const bloodTooltips = useMemo(() => {
+    const tooltips = [];
+    for (let i = 0; i < max; i++) {
+      const points = i + 1;
+      const isMaxPerTurn = points === perTurn;
+      const tooltipText = `Ponto de Sangue ${points}${isMaxPerTurn ? ' (Máximo por turno)' : ''}`;
+      tooltips.push(tooltipText);
     }
-  }, [value, isAnimating, isSettling]);
-
-  const animateBloodFill = (startValue, targetValue) => {
-    setIsAnimating(true);
-    setIsSettling(false);
-    setAnimatingValue(startValue);
-
-    const fillNextSquare = (current) => {
-      if (current <= targetValue) {
-        setAnimatingValue(current);
-        setTimeout(() => fillNextSquare(current + 1), 150); // 150ms entre cada quadrado
-      } else {
-        setIsAnimating(false);
-        setIsSettling(true);
-        // Após 600ms (tempo para a última animação de preenchimento terminar)
-        setTimeout(() => {
-          setIsSettling(false);
-          onChange(targetValue);
-        }, 600);
-      }
-    };
-
-    fillNextSquare(startValue + 1);
-  };
-
-  const handleBloodPointChange = (index) => {
-    if (!onChange || isAnimating || isSettling) return;
-
-    const targetValue = index + 1;
-    
-    // Se clicar no mesmo valor, diminui em 1 (sem animação)
-    if (targetValue === value) {
-      onChange(index);
-      return;
-    }
-
-    // Se o valor alvo é maior que o atual, anima o preenchimento
-    if (targetValue > value) {
-      animateBloodFill(value, targetValue);
-    } else {
-      // Se está diminuindo, não anima
-      onChange(targetValue);
-    }
-  };
+    return tooltips;
+  }, [max, perTurn]);
 
   return (
     <Box
       sx={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        gap: '2px',
+        maxWidth: '200px',
+        padding: '8px',
+        border: '1px solid rgba(139, 0, 0, 0.3)',
+        borderRadius: '4px',
         position: 'relative',
         '&::before': {
           content: '""',
           position: 'absolute',
-          top: '-10px',
-          left: '-10px',
-          right: '-10px',
-          bottom: '-10px',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
           background: 'radial-gradient(circle at center, rgba(139, 0, 0, 0.1) 0%, transparent 70%)',
           pointerEvents: 'none'
         }
       }}
     >
-      <Box 
-        sx={{ 
-          display: 'grid',
-          gridTemplateColumns: 'repeat(10, auto)',
-          gap: '4px',
-          justifyContent: 'center',
-          padding: '10px',
-          position: 'relative',
-          '&::after': {
-            content: '""',
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            border: '1px solid rgba(139, 0, 0, 0.3)',
-            borderRadius: '4px',
-            pointerEvents: 'none'
-          }
-        }}
-      >
-        {Array.from({ length: max }).map((_, index) => (
-          <UnitBlood
-            key={index}
-            value={index < animatingValue ? 1 : 0}
-            onChange={() => handleBloodPointChange(index)}
-            readOnly={isAnimating || isSettling}
-            isAnimating={isAnimating && index === animatingValue - 1}
-            isSettling={isSettling && index < animatingValue}
-          />
-        ))}
-      </Box>
+      {Array.from({ length: max }).map((_, index) => (
+        <UnitBlood
+          key={index}
+          value={index < animatingValue ? 1 : 0}
+          onChange={() => handleBloodPointChange(index)}
+          isAnimating={isAnimating && index === animatingValue - 1}
+          isSettling={isSettling && index < animatingValue}
+          readOnly={index >= max}
+          tooltipText={bloodTooltips[index]}
+        />
+      ))}
     </Box>
   );
-};
+});
+
+BloodPool.displayName = 'BloodPool';
 
 export default BloodPool;

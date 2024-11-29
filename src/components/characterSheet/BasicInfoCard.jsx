@@ -1,22 +1,33 @@
-import React from 'react';
-import { Card, CardContent, TextField, Typography, Box } from '@mui/material';
+import React, { memo, useCallback } from 'react';
+import { Card, CardContent, Typography, Box } from '@mui/material';
+import { MemoizedTextField } from '../common/MemoizedFormFields';
+import { useCharacter } from '../../contexts/CharacterContext';
 
-const BasicInfoCard = ({ data, onChange }) => {
-  const handleChange = (field) => (event) => {
-    onChange(field, event.target.value);
-  };
+const BasicInfoCard = memo(() => {
+  const { character, updateCharacterInfo } = useCharacter();
+  const { basicInfo } = character;
+
+  const handleChange = useCallback((field) => (event) => {
+    updateCharacterInfo({
+      basicInfo: {
+        ...basicInfo,
+        [field]: event.target.value
+      }
+    });
+  }, [basicInfo, updateCharacterInfo]);
 
   return (
     <Card 
-      elevation={3} 
-      sx={{ 
+      elevation={3}
+      sx={{
+        height: '100%',
+        display: 'flex',
+        flexDirection: 'column',
         backgroundColor: '#000000',
         borderRadius: 2,
         border: '1px solid #3d0000',
-        height: '100%',
-        minWidth: '250px',
-        display: 'flex',
-        flexDirection: 'column',
+        backgroundImage: 'linear-gradient(rgba(139, 0, 0, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(139, 0, 0, 0.05) 1px, transparent 1px)',
+        backgroundSize: '20px 20px',
         '& .MuiInputBase-input': {
           color: '#ffffff',
         },
@@ -34,75 +45,59 @@ const BasicInfoCard = ({ data, onChange }) => {
             borderColor: '#8b0000',
           },
         },
-        backgroundImage: 'linear-gradient(rgba(139, 0, 0, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(139, 0, 0, 0.05) 1px, transparent 1px)',
-        backgroundSize: '20px 20px',
       }}
     >
-      <CardContent sx={{ 
-        flex: 1, 
-        display: 'flex', 
-        flexDirection: 'column',
-        justifyContent: 'space-between'
-      }}>
+      <CardContent>
         <Typography 
           variant="h6" 
           sx={{ 
-            textAlign: 'center', 
-            mb: 4,
             color: '#8b0000',
             fontFamily: 'MedievalSharp, cursive',
+            textTransform: 'uppercase',
+            letterSpacing: '0.1em',
+            marginBottom: '1em',
+            textAlign: 'center',
+            textShadow: '2px 2px 4px rgba(0,0,0,0.3)',
             position: 'relative',
-            '&::before, &::after': {
+            '&::after': {
               content: '""',
               position: 'absolute',
-              top: '50%',
-              width: '20%',
+              bottom: '-0.5em',
+              left: '50%',
+              transform: 'translateX(-50%)',
+              width: '60%',
               height: '2px',
-              backgroundColor: '#8b0000',
-            },
-            '&::before': {
-              left: 0,
-            },
-            '&::after': {
-              right: 0,
-            },
+              background: 'linear-gradient(90deg, transparent, #8b0000, transparent)',
+            }
           }}
         >
           Informações Básicas
         </Typography>
-        
-        <Box sx={{ 
-          display: 'flex', 
-          flexDirection: 'column', 
-          gap: 4,
-          flex: 1,
-          justifyContent: 'space-evenly'
-        }}>
-          <TextField
+        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+          <MemoizedTextField
             label="Nome"
-            fullWidth
-            value={data.nome}
+            value={basicInfo.nome}
             onChange={handleChange('nome')}
-            variant="outlined"
+            fullWidth
           />
-          <TextField
+          <MemoizedTextField
             label="Jogador"
-            fullWidth
-            value={data.jogador}
+            value={basicInfo.jogador}
             onChange={handleChange('jogador')}
-            variant="outlined"
-          />
-          <TextField
-            label="Crônica"
             fullWidth
-            value={data.cronica}
+          />
+          <MemoizedTextField
+            label="Crônica"
+            value={basicInfo.cronica}
             onChange={handleChange('cronica')}
-            variant="outlined"
+            fullWidth
           />
         </Box>
       </CardContent>
     </Card>
   );
-};
+});
+
+BasicInfoCard.displayName = 'BasicInfoCard';
 
 export default BasicInfoCard;
