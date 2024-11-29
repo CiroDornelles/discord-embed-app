@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Box, Paper, Typography, TextField, Grid, Checkbox } from '@mui/material';
+import React, { useState, useEffect } from 'react';
+import { Box, Paper, Typography, TextField, Grid, Checkbox, Tooltip } from '@mui/material';
 import DotRating from './DotRating';
 import WillpowerUnit from './WillpowerUnit';
 
@@ -7,6 +7,19 @@ const CharacterStatusSection = () => {
   const [pathRating, setPathRating] = useState(0);
   const [willpowerPermanent, setWillpowerPermanent] = useState(0);
   const [willpowerTemporary, setWillpowerTemporary] = useState(Array(10).fill(false));
+  const [willpowerData, setWillpowerData] = useState(null);
+
+  useEffect(() => {
+    const loadWillpowerData = async () => {
+      try {
+        const response = await import('../../data/wod/vampire/v20_dark_ages/core/willpower/willpower.json');
+        setWillpowerData(response);
+      } catch (error) {
+        console.error('Error loading willpower data:', error);
+      }
+    };
+    loadWillpowerData();
+  }, []);
 
   const handlePathChange = (newValue) => {
     setPathRating(newValue);
@@ -37,6 +50,12 @@ const CharacterStatusSection = () => {
         return newTemp;
       });
     }
+  };
+
+  const getWillpowerTooltip = (index) => {
+    if (!willpowerData || !willpowerData.system?.ratings?.[index + 1]) return '';
+    const rating = willpowerData.system.ratings[index + 1];
+    return `${rating.name}: ${rating.description}`;
   };
 
   const renderMeritsFlaws = () => (
@@ -190,14 +209,17 @@ const CharacterStatusSection = () => {
         gap: 0.5
       }}>
         {[...Array(10)].map((_, index) => (
-          <WillpowerUnit
-            key={index}
-            index={index}
-            permanentValue={index < willpowerPermanent}
-            temporaryValue={willpowerTemporary[index]}
-            onPermanentChange={() => handleWillpowerPermanentChange(index + 1)}
-            onTemporaryChange={(idx, value) => handleWillpowerTemporaryChange(idx, value)}
-          />
+          <Tooltip key={index} title={getWillpowerTooltip(index)}>
+            <Box>
+              <WillpowerUnit
+                index={index}
+                permanentValue={index < willpowerPermanent}
+                temporaryValue={willpowerTemporary[index]}
+                onPermanentChange={() => handleWillpowerPermanentChange(index + 1)}
+                onTemporaryChange={(idx, value) => handleWillpowerTemporaryChange(idx, value)}
+              />
+            </Box>
+          </Tooltip>
         ))}
       </Box>
 

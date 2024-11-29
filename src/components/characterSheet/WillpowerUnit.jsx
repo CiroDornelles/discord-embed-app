@@ -1,19 +1,22 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { Box } from '@mui/material';
 import DotRating from './DotRating';
 import Checkbox from '@mui/material/Checkbox';
 
-const WillpowerUnit = ({ index, permanentValue, temporaryValue, onPermanentChange, onTemporaryChange }) => {
+const WillpowerUnit = forwardRef(({ index, permanentValue, temporaryValue, onPermanentChange, onTemporaryChange }, ref) => {
   return (
-    <Box sx={{ 
-      display: 'flex', 
-      flexDirection: 'column', 
-      alignItems: 'center',
-      gap: 0.25,
-      '& .dot-rating': {
-        transform: 'scale(2.2)',
-      }
-    }}>
+    <Box 
+      ref={ref}
+      sx={{ 
+        display: 'flex', 
+        flexDirection: 'column', 
+        alignItems: 'center',
+        gap: 0.25,
+        '& .dot-rating': {
+          transform: 'scale(2.2)',
+        }
+      }}
+    >
       <DotRating
         value={permanentValue ? 1 : 0}
         max={1}
@@ -39,6 +42,8 @@ const WillpowerUnit = ({ index, permanentValue, temporaryValue, onPermanentChang
       />
     </Box>
   );
-};
+});
+
+WillpowerUnit.displayName = 'WillpowerUnit';
 
 export default WillpowerUnit;
