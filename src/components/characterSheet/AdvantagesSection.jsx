@@ -109,7 +109,11 @@ const AdvantagesSection = ({ data = {}, onChange }) => {
   };
 
   const handleDotChange = (category, field) => (newValue) => {
-    onChange(category, field, newValue);
+    if (category === 'virtudes') {
+      onChange(category, field, newValue);
+    } else {
+      onChange(category, `${field}.value`, newValue);
+    }
   };
 
   const handleTextChange = (category, field) => (event) => {

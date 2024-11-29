@@ -16,9 +16,11 @@ const DotRating = ({
       return;
     }
     
+    // Se clicar na mesma bolinha, diminui o valor
     if (newValue === value) {
-      onChange(newValue - 1);
+      onChange(value - 1);
     } else {
+      // Se clicar em uma bolinha diferente, atualiza para o novo valor
       onChange(newValue);
     }
   };
@@ -36,19 +38,26 @@ const DotRating = ({
           border: '2px solid #8b0000',
           cursor: 'pointer',
           transition: 'background-color 0.2s',
+          '&:hover': {
+            backgroundColor: filled ? '#8b0000' : 'rgba(139, 0, 0, 0.3)',
+          }
         }}
       />
     );
 
-    // Ajuste para acessar corretamente os níveis do atributo
-    const tooltipText = tooltips[index] || 
-      (attributeData?.levels ? 
-        Array.isArray(attributeData.levels) ?
-          // Se for um array de objetos (formato dos backgrounds)
-          attributeData.levels[index]?.description :
-          // Se for um objeto com chaves numéricas (formato dos atributos)
-          attributeData.levels[index + 1]
-        : '');
+    // Lógica para obter o texto do tooltip baseado no tipo de dado
+    let tooltipText = tooltips[index];
+    
+    if (!tooltipText && attributeData?.levels) {
+      if (Array.isArray(attributeData.levels)) {
+        // Para virtudes e backgrounds (array de objetos com level e description)
+        const levelData = attributeData.levels.find(level => level.level === index + 1);
+        tooltipText = levelData?.description;
+      } else if (typeof attributeData.levels === 'object') {
+        // Para atributos (objeto com chaves numéricas)
+        tooltipText = attributeData.levels[index + 1];
+      }
+    }
 
     if (tooltipText) {
       return (

@@ -7,7 +7,7 @@
             "range": {
                 "min": 3,
                 "max": 13,
-                "default": 13
+                "default": 12
             },
             "generations": {
                 "3": {

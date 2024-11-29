@@ -40,7 +40,13 @@ const CharacterSheet = () => {
       predador: ''
     },
     habilidades: {},
-    vantagens: {}
+    vantagens: {
+      virtudes: {
+        consciencia: 0,
+        autocontrole: 0,
+        coragem: 0
+      }
+    }
   });
 
   const handleBasicInfoChange = (field, value) => {
@@ -87,25 +93,36 @@ const CharacterSheet = () => {
     setCharacterData(prev => {
       const vantagens = { ...prev.vantagens };
       
-      // Inicializa a categoria se não existir
-      if (!vantagens[category]) {
-        vantagens[category] = [];
+      if (category === 'virtudes') {
+        // Para virtudes, atualizamos diretamente o valor
+        if (!vantagens[category]) {
+          vantagens[category] = {};
+        }
+        vantagens[category] = {
+          ...vantagens[category],
+          [field]: value
+        };
+      } else {
+        // Para outros casos (antecedentes, disciplinas)
+        if (!vantagens[category]) {
+          vantagens[category] = [];
+        }
+
+        // Extrai o índice e a propriedade do campo (ex: "0.name" -> index = 0, prop = "name")
+        const [indexStr, prop] = field.split('.');
+        const index = parseInt(indexStr, 10);
+
+        // Inicializa o objeto no índice se não existir
+        if (!vantagens[category][index]) {
+          vantagens[category][index] = {};
+        }
+
+        // Atualiza a propriedade específica
+        vantagens[category][index] = {
+          ...vantagens[category][index],
+          [prop]: value
+        };
       }
-
-      // Extrai o índice e a propriedade do campo (ex: "0.name" -> index = 0, prop = "name")
-      const [indexStr, prop] = field.split('.');
-      const index = parseInt(indexStr, 10);
-
-      // Inicializa o objeto no índice se não existir
-      if (!vantagens[category][index]) {
-        vantagens[category][index] = {};
-      }
-
-      // Atualiza a propriedade específica
-      vantagens[category][index] = {
-        ...vantagens[category][index],
-        [prop]: value
-      };
 
       return {
         ...prev,
