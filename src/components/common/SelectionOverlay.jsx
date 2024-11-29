@@ -14,44 +14,6 @@ const SelectionOverlay = ({
 }) => {
   if (!isOpen) return null;
 
-  const renderDots = (option) => {
-    return (
-      <Box sx={{ display: 'flex', gap: 1 }}>
-        {Array.from({ length: maxDots }).map((_, index) => (
-          <Tooltip
-            key={index}
-            title={option.levels?.[index]?.description || ''}
-            placement="top"
-            sx={{
-              tooltip: {
-                backgroundColor: '#000000',
-                border: '1px solid #3d0000',
-                color: '#ffffff',
-                fontFamily: 'MedievalSharp, cursive',
-                fontSize: '0.9rem',
-                maxWidth: 300
-              }
-            }}
-          >
-            <div
-              onClick={() => onSelect({ ...option, value: index + 1 })}
-              style={{
-                width: '12px',
-                height: '12px',
-                borderRadius: '50%',
-                backgroundColor: '#8b0000',
-                border: '2px solid #8b0000',
-                cursor: 'pointer',
-                opacity: option.value === index + 1 ? 1 : 0.5,
-                transition: 'opacity 0.2s'
-              }}
-            />
-          </Tooltip>
-        ))}
-      </Box>
-    );
-  };
-
   return (
     <Box
       sx={{
@@ -72,7 +34,7 @@ const SelectionOverlay = ({
       <Paper
         sx={{
           width: '90%',
-          maxWidth: '600px',
+          maxWidth: '800px',
           maxHeight: '80vh',
           overflow: 'auto',
           backgroundColor: '#1a1a1a',
@@ -95,24 +57,25 @@ const SelectionOverlay = ({
           <CloseIcon />
         </IconButton>
 
-        <Typography variant="h5" sx={{ mb: 3, color: '#8b0000' }}>
+        <Typography variant="h5" sx={{ mb: 2, color: '#8b0000', textAlign: 'center' }}>
           {title}
         </Typography>
 
         {description && (
-          <Typography variant="body2" sx={{ mb: 2, color: '#999' }}>
+          <Typography variant="body1" sx={{ mb: 3, color: '#ccc', textAlign: 'center', fontStyle: 'italic' }}>
             {description}
           </Typography>
         )}
 
         <Box sx={{ 
           display: 'grid', 
-          gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
+          gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
           gap: 2,
         }}>
           {options.map((option) => (
             <Paper
               key={option.id}
+              onClick={() => onSelect(option)}
               sx={{
                 p: 2,
                 backgroundColor: '#2a2a2a',
@@ -121,19 +84,47 @@ const SelectionOverlay = ({
                 '&:hover': {
                   backgroundColor: '#3a3a3a',
                   transform: 'translateY(-2px)',
+                  boxShadow: '0 4px 8px rgba(139, 0, 0, 0.2)',
                 },
                 border: '1px solid #444',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: 1,
               }}
             >
-              <Typography variant="subtitle1" sx={{ mb: 1, color: '#fff' }}>
+              <Typography 
+                variant="h6" 
+                sx={{ 
+                  color: '#fff',
+                  borderBottom: '1px solid #8b0000',
+                  pb: 1,
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center'
+                }}
+              >
                 {option.name}
+                <Typography variant="caption" sx={{ color: '#999' }}>
+                  ({option.originalName})
+                </Typography>
               </Typography>
+              
               {option.description && (
-                <Typography variant="body2" sx={{ color: '#ccc', mb: 1 }}>
+                <Typography variant="body2" sx={{ color: '#ccc', flex: 1 }}>
                   {option.description}
                 </Typography>
               )}
-              {renderDots(option)}
+              
+              {option.regainWillpower && (
+                <Box sx={{ mt: 1, p: 1, backgroundColor: 'rgba(139, 0, 0, 0.1)', borderRadius: 1 }}>
+                  <Typography variant="subtitle2" sx={{ color: '#8b0000', fontWeight: 'bold' }}>
+                    Recuperar Força de Vontade:
+                  </Typography>
+                  <Typography variant="body2" sx={{ color: '#ccc' }}>
+                    {option.regainWillpower}
+                  </Typography>
+                </Box>
+              )}
             </Paper>
           ))}
         </Box>

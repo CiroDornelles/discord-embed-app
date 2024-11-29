@@ -164,21 +164,39 @@ const PersonalityCard = ({ data, onChange }) => {
               fullWidth
             />
             <Tooltip 
-              title={selectedNature?.regainWillpower || ''}
+              title={
+                <Box sx={{ p: 1 }}>
+                  {selectedNature ? (
+                    <>
+                      <Typography variant="subtitle2" sx={{ color: '#8b0000', mb: 1 }}>
+                        {selectedNature.name} ({selectedNature.originalName})
+                      </Typography>
+                      <Typography variant="body2" sx={{ mb: 1 }}>
+                        {selectedNature.description}
+                      </Typography>
+                      <Typography variant="caption" sx={{ color: '#ccc' }}>
+                        <strong>Recuperar Força de Vontade:</strong> {selectedNature.regainWillpower}
+                      </Typography>
+                    </>
+                  ) : (
+                    'Selecione uma natureza'
+                  )}
+                </Box>
+              }
               placement="top"
               arrow
               enterDelay={500}
-              sx={{
-                '& .MuiTooltip-tooltip': {
-                  backgroundColor: '#1a1a1a',
-                  color: '#ffffff',
-                  border: '1px solid #8b0000',
-                  fontSize: '0.9rem',
-                  padding: '8px 12px',
-                  maxWidth: 300
-                },
-                '& .MuiTooltip-arrow': {
-                  color: '#8b0000'
+              componentsProps={{
+                tooltip: {
+                  sx: {
+                    bgcolor: 'rgba(0, 0, 0, 0.95)',
+                    maxWidth: 400,
+                    p: 2,
+                    border: '1px solid #8b0000',
+                    '& .MuiTooltip-arrow': {
+                      color: '#8b0000'
+                    }
+                  }
                 }
               }}
             >
@@ -195,21 +213,39 @@ const PersonalityCard = ({ data, onChange }) => {
               />
             </Tooltip>
             <Tooltip 
-              title={selectedDemeanor?.regainWillpower || ''}
+              title={
+                <Box sx={{ p: 1 }}>
+                  {selectedDemeanor ? (
+                    <>
+                      <Typography variant="subtitle2" sx={{ color: '#8b0000', mb: 1 }}>
+                        {selectedDemeanor.name} ({selectedDemeanor.originalName})
+                      </Typography>
+                      <Typography variant="body2" sx={{ mb: 1 }}>
+                        {selectedDemeanor.description}
+                      </Typography>
+                      <Typography variant="caption" sx={{ color: '#ccc' }}>
+                        <strong>Recuperar Força de Vontade:</strong> {selectedDemeanor.regainWillpower}
+                      </Typography>
+                    </>
+                  ) : (
+                    'Selecione um comportamento'
+                  )}
+                </Box>
+              }
               placement="top"
               arrow
               enterDelay={500}
-              sx={{
-                '& .MuiTooltip-tooltip': {
-                  backgroundColor: '#1a1a1a',
-                  color: '#ffffff',
-                  border: '1px solid #8b0000',
-                  fontSize: '0.9rem',
-                  padding: '8px 12px',
-                  maxWidth: 300
-                },
-                '& .MuiTooltip-arrow': {
-                  color: '#8b0000'
+              componentsProps={{
+                tooltip: {
+                  sx: {
+                    bgcolor: 'rgba(0, 0, 0, 0.95)',
+                    maxWidth: 400,
+                    p: 2,
+                    border: '1px solid #8b0000',
+                    '& .MuiTooltip-arrow': {
+                      color: '#8b0000'
+                    }
+                  }
                 }
               }}
             >
