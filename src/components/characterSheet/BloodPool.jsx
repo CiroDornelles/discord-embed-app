@@ -1,20 +1,18 @@
 import React from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 import UnitBlood from './UnitBlood';
 
 const BloodPool = ({ value = 0, onChange, max = 10, perTurn = 1 }) => {
-  const handleBloodPointChange = (index, isChecked) => {
+  const handleBloodPointChange = (index) => {
     if (!onChange) return;
 
-    let newValue = value;
-    if (isChecked) {
-      // Se está marcando, marca todos até o índice
-      newValue = index + 1;
+    // Se clicar no mesmo valor, diminui em 1
+    if (index + 1 === value) {
+      onChange(index);
     } else {
-      // Se está desmarcando, desmarca todos a partir do índice
-      newValue = index;
+      // Se clicar em outro valor, atualiza para o novo valor
+      onChange(index + 1);
     }
-    onChange(newValue);
   };
 
   return (
@@ -29,7 +27,7 @@ const BloodPool = ({ value = 0, onChange, max = 10, perTurn = 1 }) => {
           <UnitBlood
             key={index}
             value={index < value ? 1 : 0}
-            onChange={(isChecked) => handleBloodPointChange(index, isChecked)}
+            onChange={() => handleBloodPointChange(index)}
             readOnly={false}
           />
         ))}
