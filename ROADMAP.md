@@ -61,6 +61,42 @@
   - Lighting effects
   - Weather effects
 
+### Story & Campaign Management
+- [ ] Relationship Map
+  - Visual network of character relationships
+  - Customizable relationship types (ally, enemy, neutral, etc.)
+  - Relationship strength indicators
+  - Notes for each relationship
+  - Timeline integration
+  - Dynamic updates as story progresses
+
+- [ ] Campaign Calendar
+  - Custom calendar system for different settings
+  - Location-specific holidays and events
+  - Moon phases tracking
+  - Weather system integration
+  - Important date markers
+  - Event scheduling and reminders
+  - Regional variations in holidays and celebrations
+
+- [ ] Event Timeline
+  - Visual timeline of campaign events
+  - Multiple timeline tracks (main plot, side quests, character arcs)
+  - Event categorization and filtering
+  - Connection to relationship map
+  - Timeline branching for alternative paths
+  - Event impact tracking
+
+- [ ] Note Management System
+  - Rich text editor for notes
+  - Note categorization and tagging
+  - Search functionality
+  - Template system for common note types
+  - Link notes to characters, locations, or events
+  - Collaborative note-taking
+  - Export/import capabilities
+  - Auto-save feature
+
 ### Multiplayer Features
 - [ ] Real-time Collaboration
   - Synchronized map viewing
