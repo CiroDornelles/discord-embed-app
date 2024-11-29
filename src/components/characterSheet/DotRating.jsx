@@ -7,7 +7,8 @@ const DotRating = ({
   max = 5, 
   hasSelectedItem = true, 
   onEmptyClick,
-  tooltips = []
+  tooltips = [],
+  attributeData = {}
 }) => {
   const handleClick = (newValue) => {
     if (!hasSelectedItem && onEmptyClick) {
@@ -39,20 +40,28 @@ const DotRating = ({
       />
     );
 
-    if (tooltips[index]) {
+    // Ajuste para acessar corretamente os níveis do atributo
+    const tooltipText = tooltips[index] || (attributeData.levels && attributeData.levels[index + 1]);
+
+    if (tooltipText) {
       return (
         <Tooltip
           key={index}
-          title={tooltips[index]}
+          title={tooltipText}
           placement="top"
-          sx={{
+          arrow
+          componentsProps={{
             tooltip: {
-              backgroundColor: '#000000',
-              border: '1px solid #3d0000',
-              color: '#ffffff',
-              fontFamily: 'MedievalSharp, cursive',
-              fontSize: '0.9rem',
-              maxWidth: 300
+              sx: {
+                bgcolor: 'rgba(0, 0, 0, 0.87)',
+                color: 'white',
+                fontSize: '0.875rem',
+                padding: '8px 12px',
+                maxWidth: 300,
+                '& .MuiTooltip-arrow': {
+                  color: 'rgba(0, 0, 0, 0.87)'
+                }
+              }
             }
           }}
         >
