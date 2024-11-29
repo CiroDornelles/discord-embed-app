@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Typography, useTheme, useMediaQuery } from '@mui/material';
-import Grid2 from '@mui/material/Unstable_Grid2';
+import GridContainer from '../common/GridContainer';
+import GridItem from '../common/GridItem';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation, EffectCoverflow } from 'swiper/modules';
 import AttributeGroup from './AttributeGroup';
@@ -109,13 +110,13 @@ const AttributesSection = () => {
           </Swiper>
         </Box>
       ) : (
-        <Grid2 container spacing={4} justifyContent="center">
+        <GridContainer spacing={4} justifyContent="center">
           {attributeGroups.map((group, index) => (
-            <Grid2 key={index} xs={12} sm={6} md={4}>
+            <GridItem key={index} xs={12} sm={6} md={4}>
               <AttributeGroup title={group.title} category={group.category} />
-            </Grid2>
+            </GridItem>
           ))}
-        </Grid2>
+        </GridContainer>
       )}
     </Box>
   );

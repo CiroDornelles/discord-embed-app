@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Box, Typography, Paper, useTheme, useMediaQuery, Tooltip } from '@mui/material';
-import Grid2 from "@mui/material/Unstable_Grid2";
+import GridContainer from '../common/GridContainer';
+import GridItem from '../common/GridItem';
 import DotRating from "./DotRating";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, EffectCoverflow } from 'swiper/modules';
@@ -307,7 +308,7 @@ const AbilitiesSection = () => {
     }
 
     return (
-      <Box sx={{ 
+      <GridContainer sx={{ 
         display: 'flex',
         flexDirection: 'row',
         gap: 2,
@@ -315,11 +316,11 @@ const AbilitiesSection = () => {
         justifyContent: 'space-between'
       }}>
         {groups.map((group, index) => (
-          <Box key={index} sx={{ flex: 1 }}>
+          <GridItem key={index} sx={{ flex: 1 }}>
             <AbilityGroup title={group.title} abilities={group.abilities} />
-          </Box>
+          </GridItem>
         ))}
-      </Box>
+      </GridContainer>
     );
   };
 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useTheme, useMediaQuery, Box } from '@mui/material';
-import Grid2 from '@mui/material/Unstable_Grid2';
+import GridContainer from '../common/GridContainer';
+import GridItem from '../common/GridItem';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation, EffectCoverflow } from 'swiper/modules';
 import BasicInfoCard from './BasicInfoCard';
