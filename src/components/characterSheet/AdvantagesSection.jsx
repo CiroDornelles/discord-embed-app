@@ -366,70 +366,68 @@ const AdvantagesSection = ({ data = {}, onChange }) => {
       >
         VIRTUDES
       </Typography>
-      <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <Typography sx={{ color: '#fff' }}>Consciência</Typography>
-          <DotRating
-            value={data.virtudes?.consciencia || 0}
-            onChange={handleDotChange('virtudes', 'consciencia')}
-            max={5}
-          />
-          <IconButton
-            size="small"
-            onClick={(e) => handleMenuOpen(e, 'consciencia', 'virtudes')}
-            sx={{
-              padding: '4px',
-              color: '#8b0000',
-              '&:hover': {
-                backgroundColor: 'transparent'
-              }
-            }}
-          >
-            <MoreVertIcon fontSize="small" />
-          </IconButton>
-        </Box>
-        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <Typography sx={{ color: '#fff' }}>Autocontrole</Typography>
-          <DotRating
-            value={data.virtudes?.autocontrole || 0}
-            onChange={handleDotChange('virtudes', 'autocontrole')}
-            max={5}
-          />
-          <IconButton
-            size="small"
-            onClick={(e) => handleMenuOpen(e, 'autocontrole', 'virtudes')}
-            sx={{
-              padding: '4px',
-              color: '#8b0000',
-              '&:hover': {
-                backgroundColor: 'transparent'
-              }
-            }}
-          >
-            <MoreVertIcon fontSize="small" />
-          </IconButton>
-        </Box>
-        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <Typography sx={{ color: '#fff' }}>Coragem</Typography>
-          <DotRating
-            value={data.virtudes?.coragem || 0}
-            onChange={handleDotChange('virtudes', 'coragem')}
-            max={5}
-          />
-          <IconButton
-            size="small"
-            onClick={(e) => handleMenuOpen(e, 'coragem', 'virtudes')}
-            sx={{
-              padding: '4px',
-              color: '#8b0000',
-              '&:hover': {
-                backgroundColor: 'transparent'
-              }
-            }}
-          >
-            <MoreVertIcon fontSize="small" />
-          </IconButton>
-        </Box>
+      <Box sx={{ display: 'flex', gap: 2 }}>
+        <table style={{ width: '100%', borderSpacing: '0 16px' }}>
+          <tbody>
+            <tr>
+              <td style={{ 
+                width: '150px', 
+                textAlign: 'right', 
+                paddingRight: '24px',
+                color: '#fff',
+                fontFamily: 'MedievalSharp, cursive',
+                verticalAlign: 'middle'
+              }}>
+                Consciência
+              </td>
+              <td style={{ verticalAlign: 'middle' }}>
+                <DotRating
+                  value={data.virtudes?.consciencia || 0}
+                  onChange={handleDotChange('virtudes', 'consciencia')}
+                  max={5}
+                />
+              </td>
+            </tr>
+            <tr>
+              <td style={{ 
+                width: '150px', 
+                textAlign: 'right', 
+                paddingRight: '24px',
+                color: '#fff',
+                fontFamily: 'MedievalSharp, cursive',
+                verticalAlign: 'middle'
+              }}>
+                Autocontrole
+              </td>
+              <td style={{ verticalAlign: 'middle' }}>
+                <DotRating
+                  value={data.virtudes?.autocontrole || 0}
+                  onChange={handleDotChange('virtudes', 'autocontrole')}
+                  max={5}
+                />
+              </td>
+            </tr>
+            <tr>
+              <td style={{ 
+                width: '150px', 
+                textAlign: 'right', 
+                paddingRight: '24px',
+                color: '#fff',
+                fontFamily: 'MedievalSharp, cursive',
+                verticalAlign: 'middle'
+              }}>
+                Coragem
+              </td>
+              <td style={{ verticalAlign: 'middle' }}>
+                <DotRating
+                  value={data.virtudes?.coragem || 0}
+                  onChange={handleDotChange('virtudes', 'coragem')}
+                  max={5}
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </Box>
     </Box>
   );
