@@ -20,6 +20,11 @@ const AdvantagesSection = ({ data = {}, onChange }) => {
   const [anchorEl, setAnchorEl] = useState(null);
   const [selectedAdvantage, setSelectedAdvantage] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState(null);
+  const [virtuesData, setVirtuesData] = useState({
+    consciencia: null,
+    autocontrole: null,
+    coragem: null
+  });
 
   useEffect(() => {
     const loadBackgrounds = async () => {
@@ -53,6 +58,46 @@ const AdvantagesSection = ({ data = {}, onChange }) => {
     };
 
     loadBackgrounds();
+  }, []);
+
+  useEffect(() => {
+    const loadVirtuesData = async () => {
+      try {
+        const [conscienceData, selfControlData, courageData] = await Promise.all([
+          import('../../data/wod/vampire/v20_dark_ages/core/virtues/conscience.json'),
+          import('../../data/wod/vampire/v20_dark_ages/core/virtues/self-control.json'),
+          import('../../data/wod/vampire/v20_dark_ages/core/virtues/courage.json')
+        ]);
+
+        setVirtuesData({
+          consciencia: {
+            description: conscienceData.description,
+            levels: Object.entries(conscienceData.system.ratings).map(([level, data]) => ({
+              level: parseInt(level),
+              description: `${data.conscience}: ${data.description}`
+            }))
+          },
+          autocontrole: {
+            description: selfControlData.description,
+            levels: Object.entries(selfControlData.system.ratings).map(([level, data]) => ({
+              level: parseInt(level),
+              description: `${data.selfControl}: ${data.description}`
+            }))
+          },
+          coragem: {
+            description: courageData.description,
+            levels: Object.entries(courageData.system.ratings).map(([level, data]) => ({
+              level: parseInt(level),
+              description: `${data.name}: ${data.description}`
+            }))
+          }
+        });
+      } catch (error) {
+        console.error('Error loading virtues data:', error);
+      }
+    };
+
+    loadVirtuesData();
   }, []);
 
   const getLevelDescription = (backgroundName, level) => {
@@ -378,13 +423,39 @@ const AdvantagesSection = ({ data = {}, onChange }) => {
                 fontFamily: 'MedievalSharp, cursive',
                 verticalAlign: 'middle'
               }}>
-                Consciência
+                <Tooltip
+                  title={virtuesData.consciencia?.description || ''}
+                  placement="left"
+                  arrow
+                  componentsProps={{
+                    tooltip: {
+                      sx: {
+                        bgcolor: 'rgba(0, 0, 0, 0.95)',
+                        color: 'white',
+                        fontSize: '0.875rem',
+                        padding: '8px 12px',
+                        maxWidth: 300,
+                        border: '1px solid #8b0000',
+                        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.3)',
+                        '& .MuiTooltip-arrow': {
+                          color: 'rgba(0, 0, 0, 0.95)',
+                          '&::before': {
+                            border: '1px solid #8b0000'
+                          }
+                        }
+                      }
+                    }
+                  }}
+                >
+                  <span style={{ cursor: 'help' }}>Consciência</span>
+                </Tooltip>
               </td>
               <td style={{ verticalAlign: 'middle' }}>
                 <DotRating
                   value={data.virtudes?.consciencia || 0}
                   onChange={handleDotChange('virtudes', 'consciencia')}
                   max={5}
+                  attributeData={virtuesData.consciencia}
                 />
               </td>
             </tr>
@@ -397,13 +468,39 @@ const AdvantagesSection = ({ data = {}, onChange }) => {
                 fontFamily: 'MedievalSharp, cursive',
                 verticalAlign: 'middle'
               }}>
-                Autocontrole
+                <Tooltip
+                  title={virtuesData.autocontrole?.description || ''}
+                  placement="left"
+                  arrow
+                  componentsProps={{
+                    tooltip: {
+                      sx: {
+                        bgcolor: 'rgba(0, 0, 0, 0.95)',
+                        color: 'white',
+                        fontSize: '0.875rem',
+                        padding: '8px 12px',
+                        maxWidth: 300,
+                        border: '1px solid #8b0000',
+                        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.3)',
+                        '& .MuiTooltip-arrow': {
+                          color: 'rgba(0, 0, 0, 0.95)',
+                          '&::before': {
+                            border: '1px solid #8b0000'
+                          }
+                        }
+                      }
+                    }
+                  }}
+                >
+                  <span style={{ cursor: 'help' }}>Autocontrole</span>
+                </Tooltip>
               </td>
               <td style={{ verticalAlign: 'middle' }}>
                 <DotRating
                   value={data.virtudes?.autocontrole || 0}
                   onChange={handleDotChange('virtudes', 'autocontrole')}
                   max={5}
+                  attributeData={virtuesData.autocontrole}
                 />
               </td>
             </tr>
@@ -416,13 +513,39 @@ const AdvantagesSection = ({ data = {}, onChange }) => {
                 fontFamily: 'MedievalSharp, cursive',
                 verticalAlign: 'middle'
               }}>
-                Coragem
+                <Tooltip
+                  title={virtuesData.coragem?.description || ''}
+                  placement="left"
+                  arrow
+                  componentsProps={{
+                    tooltip: {
+                      sx: {
+                        bgcolor: 'rgba(0, 0, 0, 0.95)',
+                        color: 'white',
+                        fontSize: '0.875rem',
+                        padding: '8px 12px',
+                        maxWidth: 300,
+                        border: '1px solid #8b0000',
+                        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.3)',
+                        '& .MuiTooltip-arrow': {
+                          color: 'rgba(0, 0, 0, 0.95)',
+                          '&::before': {
+                            border: '1px solid #8b0000'
+                          }
+                        }
+                      }
+                    }
+                  }}
+                >
+                  <span style={{ cursor: 'help' }}>Coragem</span>
+                </Tooltip>
               </td>
               <td style={{ verticalAlign: 'middle' }}>
                 <DotRating
                   value={data.virtudes?.coragem || 0}
                   onChange={handleDotChange('virtudes', 'coragem')}
                   max={5}
+                  attributeData={virtuesData.coragem}
                 />
               </td>
             </tr>
