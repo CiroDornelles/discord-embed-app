@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Box, Typography, Paper, Tooltip } from '@mui/material';
+import { Box, Typography, Paper } from '@mui/material';
 import DotRating from './DotRating';
 
 // Ordem específica dos atributos conforme o livro
@@ -104,9 +104,53 @@ const AttributeGroup = ({ title, category }) => {
         gap: 2
       }}
     >
-      <Typography variant="h6" sx={{ color: 'primary.main', borderBottom: '2px solid', borderColor: 'primary.main', mb: 1 }}>
-        {title}
-      </Typography>
+      <Paper
+        elevation={3}
+        sx={{
+          p: 2,
+          backgroundColor: '#000000',
+          borderRadius: 2,
+          border: '1px solid #3d0000',
+          backgroundImage: 'linear-gradient(rgba(139, 0, 0, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(139, 0, 0, 0.05) 1px, transparent 1px)',
+          backgroundSize: '20px 20px',
+          height: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: 2
+        }}
+      >
+        <Typography
+          variant="h6"
+          align="center"
+          sx={{
+            color: '#8b0000',
+            fontFamily: 'MedievalSharp, cursive',
+            textTransform: 'uppercase',
+            letterSpacing: '0.2em',
+            textShadow: '2px 2px 4px rgba(0,0,0,0.3)',
+            mb: 2,
+            position: 'relative',
+            '&::before, &::after': {
+              content: '""',
+              position: 'absolute',
+              top: '50%',
+              width: '20%',
+              height: '2px',
+              backgroundColor: '#8b0000',
+            },
+            '&::before': {
+              left: 0,
+            },
+            '&::after': {
+              right: 0,
+            },
+            textTransform: 'uppercase',
+            textAlign: 'center'
+          }}
+        >
+          {title.toUpperCase()}
+        </Typography>
+      </Paper>
       <Box sx={{ 
         display: 'flex',
         flexDirection: 'column',
@@ -131,35 +175,15 @@ const AttributeGroup = ({ title, category }) => {
               }
             }}
           >
-            <Tooltip
-              title={attribute.description}
-              placement="right"
-              arrow
-              componentsProps={{
-                tooltip: {
-                  sx: {
-                    bgcolor: 'rgba(0, 0, 0, 0.87)',
-                    color: 'white',
-                    fontSize: '0.875rem',
-                    padding: '8px 12px',
-                    maxWidth: 300,
-                    '& .MuiTooltip-arrow': {
-                      color: 'rgba(0, 0, 0, 0.87)'
-                    }
-                  }
-                }
+            <Typography
+              sx={{
+                minWidth: '120px',
+                color: 'white',
+                cursor: 'help'
               }}
             >
-              <Typography
-                sx={{
-                  minWidth: '120px',
-                  color: 'white',
-                  cursor: 'help'
-                }}
-              >
-                {attribute.name}
-              </Typography>
-            </Tooltip>
+              {attribute.name}
+            </Typography>
             <DotRating
               value={values[attribute.key] || 0}
               onChange={(newValue) => {
