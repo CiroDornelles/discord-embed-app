@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { ThemeProvider, CssBaseline, Box } from '@mui/material';
+import { ThemeProvider, CssBaseline, Box, Fab } from '@mui/material';
 import theme from './components/thema';
 import CharacterSheet from './components/characterSheet/CharacterSheet';
+import DiceRoller from './components/DiceRoller/DiceRoller';
 
 function App() {
   const [sdk, setSdk] = useState(null);
+  const [showDiceRoller, setShowDiceRoller] = useState(false);
 
   useEffect(() => {
     if (new URLSearchParams(window.location.search).has('frame_id')) {
@@ -27,6 +29,34 @@ function App() {
         backgroundColor: theme.palette.background.default
       }}>
         <CharacterSheet />
+        
+        {/* Botão flutuante para abrir o rolador de dados */}
+        <Fab
+          color="primary"
+          aria-label="roll dice"
+          onClick={() => setShowDiceRoller(!showDiceRoller)}
+          sx={{
+            position: 'fixed',
+            bottom: 16,
+            right: 16,
+          }}
+        >
+          🎲
+        </Fab>
+
+        {/* Modal do rolador de dados */}
+        {showDiceRoller && (
+          <Box
+            sx={{
+              position: 'fixed',
+              bottom: 80,
+              right: 16,
+              zIndex: 1000,
+            }}
+          >
+            <DiceRoller />
+          </Box>
+        )}
       </Box>
     </ThemeProvider>
   );
