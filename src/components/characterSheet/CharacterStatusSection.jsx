@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Box, Paper, Typography, TextField, Grid, Checkbox, Tooltip } from '@mui/material';
 import DotRating from './DotRating';
 import WillpowerUnit from './WillpowerUnit';
+import BloodPool from './BloodPool';
+import UnitBlood from './UnitBlood';
 import { getBloodPoolByGeneration } from '../../rules/vampire/bloodPool';
 
 const CharacterStatusSection = ({ vantagens }) => {
@@ -18,7 +20,7 @@ const CharacterStatusSection = ({ vantagens }) => {
   const [willpowerPermanent, setWillpowerPermanent] = useState(0);
   const [willpowerTemporary, setWillpowerTemporary] = useState(Array(10).fill(false));
   const [willpowerData, setWillpowerData] = useState(null);
-  const [bloodPoints, setBloodPoints] = useState(Array(bloodPool.max).fill(false));
+  const [bloodPoints, setBloodPoints] = useState(0);
 
   useEffect(() => {
     const loadWillpowerData = async () => {
@@ -29,6 +31,7 @@ const CharacterStatusSection = ({ vantagens }) => {
         console.error('Error loading willpower data:', error);
       }
     };
+
     loadWillpowerData();
   }, []);
 
@@ -38,22 +41,20 @@ const CharacterStatusSection = ({ vantagens }) => {
 
   const handleWillpowerPermanentChange = (newValue) => {
     setWillpowerPermanent(newValue);
-    // Quando o valor permanente diminui, remove os temporários além do novo limite
     if (newValue < willpowerPermanent) {
       setWillpowerTemporary(prev => prev.map((value, index) => index < newValue ? value : false));
     }
   };
 
   const handleWillpowerTemporaryChange = (index, checked) => {
-    if (index < willpowerPermanent) { // Só permite marcar até o limite do permanente
+    if (index < willpowerPermanent) {
       setWillpowerTemporary(prev => {
         const newTemp = [...prev];
-        // Se estiver marcando, marca todos até o índice
         if (checked) {
           for (let i = 0; i <= index; i++) {
             newTemp[i] = true;
           }
-        } else { // Se estiver desmarcando, desmarca todos a partir do índice
+        } else {
           for (let i = index; i < prev.length; i++) {
             newTemp[i] = false;
           }
@@ -63,10 +64,8 @@ const CharacterStatusSection = ({ vantagens }) => {
     }
   };
 
-  const handleBloodPointChange = (index) => {
-    const newBloodPoints = [...bloodPoints];
-    newBloodPoints[index] = !newBloodPoints[index];
-    setBloodPoints(newBloodPoints);
+  const handleBloodPointChange = (newValue) => {
+    setBloodPoints(newValue);
   };
 
   const getWillpowerTooltip = (index) => {
@@ -263,37 +262,17 @@ const CharacterStatusSection = ({ vantagens }) => {
         </Typography>
       </Box>
       <Grid container spacing={1}>
-        {renderBloodPoints()}
+        <Grid item xs={12} md={12}>
+          <BloodPool
+            value={bloodPoints}
+            onChange={handleBloodPointChange}
+            max={bloodPool.max}
+            perTurn={bloodPool.perTurn}
+          />
+        </Grid>
       </Grid>
     </Paper>
   );
-
-  const renderBloodPoints = () => {
-    const maxBloodPoints = bloodPool.max;
-    const rows = Math.ceil(maxBloodPoints / 10); // Divide em linhas de 10 quadrados
-    
-    return Array.from({ length: rows }).map((_, rowIndex) => (
-      <Grid item xs={12} key={rowIndex} style={{ display: 'flex', gap: '4px' }}>
-        {Array.from({ length: Math.min(10, maxBloodPoints - rowIndex * 10) }).map((_, index) => {
-          const actualIndex = rowIndex * 10 + index;
-          return (
-            <Checkbox
-              key={actualIndex}
-              checked={bloodPoints[actualIndex]}
-              onChange={() => handleBloodPointChange(actualIndex)}
-              sx={{
-                color: '#3d0000',
-                '&.Mui-checked': {
-                  color: '#8b0000',
-                },
-                padding: '2px',
-              }}
-            />
-          );
-        })}
-      </Grid>
-    ));
-  };
 
   const renderVitalityCard = () => (
     <Paper
