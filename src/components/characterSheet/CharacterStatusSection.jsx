@@ -23,6 +23,13 @@ const CharacterStatusSection = ({ vantagens }) => {
   const [bloodPoints, setBloodPoints] = useState(0);
 
   useEffect(() => {
+    // Garante que bloodPoints não exceda o máximo da nova geração
+    if (bloodPoints > bloodPool.max) {
+      setBloodPoints(bloodPool.max);
+    }
+  }, [vantagens?.antecedentes]);
+
+  useEffect(() => {
     const loadWillpowerData = async () => {
       try {
         const response = await import('../../data/wod/vampire/v20_dark_ages/core/willpower/willpower.json');
@@ -268,6 +275,7 @@ const CharacterStatusSection = ({ vantagens }) => {
             onChange={handleBloodPointChange}
             max={bloodPool.max}
             perTurn={bloodPool.perTurn}
+            generation={String(calcularGeracao())}
           />
         </Grid>
       </Grid>
