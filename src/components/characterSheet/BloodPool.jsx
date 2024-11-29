@@ -1,17 +1,51 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Box } from '@mui/material';
 import UnitBlood from './UnitBlood';
 
 const BloodPool = ({ value = 0, onChange, max = 10, perTurn = 1 }) => {
-  const handleBloodPointChange = (index) => {
-    if (!onChange) return;
+  const [animatingValue, setAnimatingValue] = useState(value);
+  const [isAnimating, setIsAnimating] = useState(false);
+  
+  useEffect(() => {
+    if (!isAnimating) {
+      setAnimatingValue(value);
+    }
+  }, [value, isAnimating]);
 
-    // Se clicar no mesmo valor, diminui em 1
-    if (index + 1 === value) {
+  const animateBloodFill = (startValue, targetValue) => {
+    setIsAnimating(true);
+    setAnimatingValue(startValue);
+
+    const fillNextSquare = (current) => {
+      if (current <= targetValue) {
+        setAnimatingValue(current);
+        setTimeout(() => fillNextSquare(current + 1), 150); // 150ms entre cada quadrado
+      } else {
+        setIsAnimating(false);
+        onChange(targetValue);
+      }
+    };
+
+    fillNextSquare(startValue + 1);
+  };
+
+  const handleBloodPointChange = (index) => {
+    if (!onChange || isAnimating) return;
+
+    const targetValue = index + 1;
+    
+    // Se clicar no mesmo valor, diminui em 1 (sem animação)
+    if (targetValue === value) {
       onChange(index);
+      return;
+    }
+
+    // Se o valor alvo é maior que o atual, anima o preenchimento
+    if (targetValue > value) {
+      animateBloodFill(value, targetValue);
     } else {
-      // Se clicar em outro valor, atualiza para o novo valor
-      onChange(index + 1);
+      // Se está diminuindo, não anima
+      onChange(targetValue);
     }
   };
 
@@ -55,9 +89,10 @@ const BloodPool = ({ value = 0, onChange, max = 10, perTurn = 1 }) => {
         {Array.from({ length: max }).map((_, index) => (
           <UnitBlood
             key={index}
-            value={index < value ? 1 : 0}
+            value={index < animatingValue ? 1 : 0}
             onChange={() => handleBloodPointChange(index)}
-            readOnly={false}
+            readOnly={isAnimating}
+            isAnimating={isAnimating && index === animatingValue - 1}
           />
         ))}
       </Box>
