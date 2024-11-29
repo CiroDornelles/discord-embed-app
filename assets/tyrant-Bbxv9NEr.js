@@ -1,0 +1,1 @@
+const o="Tirano",a="Tyrant",n="O Tirano busca estar no comando ou guiar um grupo, trazendo ordem a partir do conflito.",r="Recupere um ponto de Força de Vontade quando influenciar ou ajudar um grupo na conclusão de uma tarefa difícil.",e={name:o,originalName:a,description:n,regainWillpower:r};export{e as default,n as description,o as name,a as originalName,r as regainWillpower};

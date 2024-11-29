@@ -1,0 +1,1 @@
+const o="Autocrata",e="Autocrat",r="O Autocrata busca poder e controle por si só.",a="Recupere um ponto de Força de Vontade quando exercer controle sobre um grupo ou organização.",t={name:o,originalName:e,description:r,regainWillpower:a};export{t as default,r as description,o as name,e as originalName,a as regainWillpower};
