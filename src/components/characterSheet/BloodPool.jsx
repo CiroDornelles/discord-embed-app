@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Box } from '@mui/material';
 import UnitBlood from './UnitBlood';
 
-const BloodPool = ({ value = 0, onChange, max = 10, perTurn = 1 }) => {
+const BloodPool = ({ value = 0, onChange, max, perTurn }) => {
   const [animatingValue, setAnimatingValue] = useState(value);
   const [isAnimating, setIsAnimating] = useState(false);
   const [isSettling, setIsSettling] = useState(false);
