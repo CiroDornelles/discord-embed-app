@@ -268,7 +268,7 @@ const AbilitiesSection = () => {
             effect={"coverflow"}
             grabCursor={true}
             centeredSlides={true}
-            slidesPerView={"auto"}
+            slidesPerView={1.2}
             initialSlide={1}
             coverflowEffect={{
               rotate: 50,

@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useTheme, useMediaQuery, Box } from '@mui/material';
 import Grid2 from '@mui/material/Unstable_Grid2';
@@ -167,7 +166,7 @@ const CharacterSheet = () => {
             effect="coverflow"
             grabCursor={true}
             centeredSlides={true}
-            slidesPerView="auto"
+            slidesPerView={1.2}
             coverflowEffect={{
               rotate: 50,
               stretch: 0,

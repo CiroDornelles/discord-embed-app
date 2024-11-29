@@ -88,7 +88,8 @@ const AttributesSection = () => {
             effect="coverflow"
             grabCursor={true}
             centeredSlides={true}
-            slidesPerView="auto"
+            slidesPerView={1.2}
+            initialSlide={1}
             coverflowEffect={{
               rotate: 50,
               stretch: 0,
@@ -96,9 +97,10 @@ const AttributesSection = () => {
               modifier: 1,
               slideShadows: true,
             }}
+            navigation={true}
             pagination={{ clickable: true }}
-            navigation
-            modules={[EffectCoverflow, Pagination, Navigation]}
+            modules={[EffectCoverflow, Navigation, Pagination]}
+            className="mySwiper"
           >
             {attributeGroups.map((group, index) => (
               <SwiperSlide key={index}>
