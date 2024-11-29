@@ -1,0 +1,76 @@
+# Adaptação da Ficha de Personagem para Múltiplos Sistemas WoD
+
+## Checklist de Tarefas
+
+### 1. Reestruturação de Diretórios
+- [ ] Criar estrutura de pastas para componentes comuns
+  - /components/characterSheet/common
+  - /components/characterSheet/vampire
+  - /components/characterSheet/werewolf
+- [ ] Mover componentes genéricos para pasta common
+  - DotRating
+  - AttributeGroup (após refatoração)
+  - BasicInfoCard
+- [ ] Criar versões específicas dos componentes para cada sistema
+
+### 2. Refatoração de Componentes
+- [ ] Transformar VampireInfoCard em um componente genérico SystemInfoCard
+- [ ] Adaptar AttributesSection para usar configuração dinâmica
+- [ ] Criar HOC (Higher Order Component) para injetar configurações específicas do sistema
+- [ ] Implementar seletor de sistema/versão no topo da ficha
+
+### 3. Sistema de Configuração
+- [ ] Criar estrutura de configuração para cada sistema
+  - /config/vampire/v20
+  - /config/vampire/v3
+  - /config/werewolf/w20
+- [ ] Definir schemas JSON para cada tipo de configuração
+  - attributes.json
+  - abilities.json
+  - advantages.json
+  - system-specific.json
+
+### 4. Gerenciamento de Estado
+- [ ] Refatorar CharacterSheet para usar estado baseado no sistema
+- [ ] Implementar context para compartilhar configurações do sistema
+- [ ] Criar hooks personalizados para lógica específica de cada sistema
+- [ ] Adicionar sistema de persistência local
+
+### 5. Estilização
+- [ ] Criar temas específicos para cada sistema
+- [ ] Implementar sistema de troca de temas
+- [ ] Adaptar componentes visuais para cada sistema
+
+## Ordem de Implementação Sugerida
+
+1. Começar pela reestruturação de diretórios
+2. Criar sistema de configuração básico
+3. Adaptar componentes um por um, começando pelos mais simples
+4. Implementar gerenciamento de estado
+5. Adicionar estilos específicos por sistema
+
+## Notas Importantes
+
+- Manter compatibilidade com dados existentes
+- Documentar todas as mudanças na estrutura
+- Criar testes para novas funcionalidades
+- Manter backup dos dados antes de cada refatoração
+
+## Comandos Úteis
+
+```bash
+# Criar nova estrutura de diretórios
+mkdir -p src/components/characterSheet/{common,vampire,werewolf}
+
+# Mover componentes
+git mv src/components/characterSheet/DotRating.jsx src/components/characterSheet/common/
+
+# Criar arquivos de configuração
+mkdir -p src/config/{vampire,werewolf}/{v20,v3,w20}
+```
+
+## Links Úteis
+
+- Material-UI Components: https://mui.com/components/
+- React Context API: https://reactjs.org/docs/context.html
+- TypeScript Handbook: https://www.typescriptlang.org/docs/handbook/intro.html
