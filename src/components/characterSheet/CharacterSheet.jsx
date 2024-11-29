@@ -166,7 +166,7 @@ const CharacterSheet = () => {
             effect="coverflow"
             grabCursor={true}
             centeredSlides={true}
-            slidesPerView={1.2}
+            slidesPerView="auto"
             coverflowEffect={{
               rotate: 50,
               stretch: 0,
