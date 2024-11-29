@@ -41,6 +41,122 @@
 - [ ] Implementar sistema de troca de temas
 - [ ] Adaptar componentes visuais para cada sistema
 
+## Integração com Google Drive
+
+### 1. Configuração do Google Cloud Project
+- [ ] Criar projeto no Google Cloud Console
+- [ ] Habilitar Google Drive API
+- [ ] Configurar tela de consentimento OAuth
+- [ ] Criar credenciais OAuth 2.0
+  - Tipo: Aplicação Web
+  - URIs de redirecionamento autorizados
+  - Origens JavaScript autorizadas
+
+### 2. Implementação da Autenticação
+- [ ] Instalar dependências necessárias
+  ```bash
+  npm install @react-oauth/google @googleapis/drive
+  ```
+- [ ] Criar componente de login com Google
+- [ ] Implementar fluxo OAuth2
+- [ ] Armazenar tokens de acesso de forma segura
+- [ ] Criar context para estado de autenticação
+
+### 3. Gerenciamento de Arquivos
+- [ ] Criar estrutura de pasta padrão no Drive
+  ```
+  /WoD Character Sheets
+    /Vampire
+      /V20
+      /V3
+    /Werewolf
+      /W20
+  ```
+- [ ] Implementar funções de CRUD
+  - Criar novo personagem (createFile)
+  - Carregar personagem (readFile)
+  - Atualizar personagem (updateFile)
+  - Deletar personagem (deleteFile)
+- [ ] Adicionar versionamento de personagens
+- [ ] Implementar sistema de backup automático
+
+### 4. Interface do Usuário
+- [ ] Criar modal de seleção de personagens
+- [ ] Implementar preview de personagens
+- [ ] Adicionar opções de compartilhamento
+- [ ] Criar interface de gerenciamento de arquivos
+
+### 5. Tratamento Offline
+- [ ] Implementar cache local dos personagens
+- [ ] Criar sistema de sincronização
+- [ ] Adicionar indicador de status de sincronização
+- [ ] Tratar conflitos de versão
+
+### Exemplo de Código Base
+
+```javascript
+// src/services/googleDrive.js
+export class GoogleDriveService {
+  constructor(accessToken) {
+    this.drive = google.drive({ version: 'v3', auth: accessToken });
+  }
+
+  async createCharacterSheet(character) {
+    const metadata = {
+      name: `${character.name}.json`,
+      mimeType: 'application/json',
+      parents: [await this.getOrCreateFolder('WoD Character Sheets')]
+    };
+
+    const media = {
+      mimeType: 'application/json',
+      body: JSON.stringify(character)
+    };
+
+    return await this.drive.files.create({
+      resource: metadata,
+      media: media,
+      fields: 'id'
+    });
+  }
+
+  async getOrCreateFolder(folderName) {
+    // Implementar lógica de criação/busca de pasta
+  }
+}
+
+// src/hooks/useGoogleDrive.js
+export const useGoogleDrive = () => {
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(null);
+
+  const saveCharacter = async (character) => {
+    try {
+      setIsLoading(true);
+      // Implementar lógica de salvamento
+    } catch (err) {
+      setError(err);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  return { isLoading, error, saveCharacter };
+};
+```
+
+### Notas de Segurança
+- Nunca armazenar tokens de acesso em localStorage
+- Implementar refresh token adequadamente
+- Usar scope mínimo necessário nas permissões
+- Validar dados antes de salvar/carregar
+- Implementar rate limiting para chamadas à API
+
+### Links Úteis
+- Google Drive API Reference: https://developers.google.com/drive/api/v3/reference
+- Google OAuth 2.0: https://developers.google.com/identity/protocols/oauth2
+- React OAuth2 Client: https://github.com/MomenSherif/react-oauth
+
 ## Ordem de Implementação Sugerida
 
 1. Começar pela reestruturação de diretórios
@@ -48,6 +164,7 @@
 3. Adaptar componentes um por um, começando pelos mais simples
 4. Implementar gerenciamento de estado
 5. Adicionar estilos específicos por sistema
+6. Implementar integração com Google Drive
 
 ## Notas Importantes
 
