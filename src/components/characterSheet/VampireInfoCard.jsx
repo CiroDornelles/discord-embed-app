@@ -1,10 +1,25 @@
 import React from 'react';
-import { Card, CardContent, TextField, Typography, Box } from '@mui/material';
+import { Card, CardContent, TextField, Typography, Box, Tooltip } from '@mui/material';
 
-const VampireInfoCard = ({ data, onChange }) => {
+const VampireInfoCard = ({ data, onChange, vantagens }) => {
   const handleChange = (field) => (event) => {
     onChange(field, event.target.value);
   };
+
+  // Calcula a geração baseada no antecedente
+  const calcularGeracao = () => {
+    const geracaoAntecedente = vantagens?.antecedentes?.find(ant => ant?.id === 'generation')?.value || 0;
+    // Começa na 12ª geração e diminui baseado no valor do antecedente
+    return 12 - geracaoAntecedente;
+  };
+
+  // Formata o texto da geração com o número ordinal
+  const formatarGeracao = (numero) => {
+    return `${numero}º`;
+  };
+
+  const geracao = calcularGeracao();
+  const geracaoTexto = formatarGeracao(geracao);
 
   return (
     <Card 
@@ -98,26 +113,37 @@ const VampireInfoCard = ({ data, onChange }) => {
               }
             }}
           />
-          <TextField
-            label="Geração"
-            fullWidth
-            value={data.geracao}
-            onChange={handleChange('geracao')}
-            variant="outlined"
-            sx={{ 
-              '& .MuiOutlinedInput-root': {
-                '& fieldset': {
-                  borderColor: '#3d0000',
+          <Tooltip 
+            title="A geração é determinada pelo Antecedente 'Geração'. Por padrão, todos os personagens começam na 12ª geração."
+            arrow
+            placement="top"
+          >
+            <TextField
+              label="Geração"
+              fullWidth
+              value={geracaoTexto}
+              InputProps={{
+                readOnly: true,
+              }}
+              variant="outlined"
+              sx={{ 
+                '& .MuiOutlinedInput-root': {
+                  '& fieldset': {
+                    borderColor: '#3d0000',
+                  },
+                  '&:hover fieldset': {
+                    borderColor: '#8b0000',
+                  },
+                  '& input': {
+                    cursor: 'default',
+                  }
                 },
-                '&:hover fieldset': {
-                  borderColor: '#8b0000',
-                },
-              },
-              '& .MuiInputLabel-root': {
-                color: '#8b0000',
-              }
-            }}
-          />
+                '& .MuiInputLabel-root': {
+                  color: '#8b0000',
+                }
+              }}
+            />
+          </Tooltip>
           <TextField
             label="Senhor"
             fullWidth

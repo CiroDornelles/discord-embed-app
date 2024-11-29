@@ -148,7 +148,8 @@ const CharacterSheet = () => {
       <SwiperSlide key="vampire">
         <VampireInfoCard 
           data={characterData.vampireInfo} 
-          onChange={handleVampireInfoChange} 
+          onChange={handleVampireInfoChange}
+          vantagens={characterData.vantagens}
         />
       </SwiperSlide>
     ];
@@ -225,7 +226,8 @@ const CharacterSheet = () => {
         />
         <VampireInfoCard 
           data={characterData.vampireInfo} 
-          onChange={handleVampireInfoChange} 
+          onChange={handleVampireInfoChange}
+          vantagens={characterData.vantagens}
         />
       </Box>
     );
