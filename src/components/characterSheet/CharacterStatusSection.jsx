@@ -1,9 +1,44 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Box, Paper, Typography, TextField, Grid, Checkbox } from '@mui/material';
 import DotRating from './DotRating';
 import WillpowerUnit from './WillpowerUnit';
 
 const CharacterStatusSection = () => {
+  const [pathRating, setPathRating] = useState(0);
+  const [willpowerPermanent, setWillpowerPermanent] = useState(0);
+  const [willpowerTemporary, setWillpowerTemporary] = useState(Array(10).fill(false));
+
+  const handlePathChange = (newValue) => {
+    setPathRating(newValue);
+  };
+
+  const handleWillpowerPermanentChange = (newValue) => {
+    setWillpowerPermanent(newValue);
+    // Quando o valor permanente diminui, remove os temporários além do novo limite
+    if (newValue < willpowerPermanent) {
+      setWillpowerTemporary(prev => prev.map((value, index) => index < newValue ? value : false));
+    }
+  };
+
+  const handleWillpowerTemporaryChange = (index, checked) => {
+    if (index < willpowerPermanent) { // Só permite marcar até o limite do permanente
+      setWillpowerTemporary(prev => {
+        const newTemp = [...prev];
+        // Se estiver marcando, marca todos até o índice
+        if (checked) {
+          for (let i = 0; i <= index; i++) {
+            newTemp[i] = true;
+          }
+        } else { // Se estiver desmarcando, desmarca todos a partir do índice
+          for (let i = index; i < prev.length; i++) {
+            newTemp[i] = false;
+          }
+        }
+        return newTemp;
+      });
+    }
+  };
+
   const renderMeritsFlaws = () => (
     <Paper
       elevation={3}
@@ -123,16 +158,13 @@ const CharacterStatusSection = () => {
             transform: 'scale(2.2)',
           }
         }}>
-          {[...Array(10)].map((_, index) => (
-            <DotRating
-              key={`dot-${index}`}
-              value={0}
-              max={1}
-              onChange={() => {}}
-              color="#8b0000"
-              className="dot-rating"
-            />
-          ))}
+          <DotRating
+            value={pathRating}
+            max={10}
+            onChange={handlePathChange}
+            color="#8b0000"
+            className="dot-rating"
+          />
         </Box>
       </Box>
 
@@ -161,10 +193,10 @@ const CharacterStatusSection = () => {
           <WillpowerUnit
             key={index}
             index={index}
-            permanentValue={0}
-            temporaryValue={false}
-            onPermanentChange={(idx) => {}}
-            onTemporaryChange={(idx, value) => {}}
+            permanentValue={index < willpowerPermanent}
+            temporaryValue={willpowerTemporary[index]}
+            onPermanentChange={() => handleWillpowerPermanentChange(index + 1)}
+            onTemporaryChange={(idx, value) => handleWillpowerTemporaryChange(idx, value)}
           />
         ))}
       </Box>

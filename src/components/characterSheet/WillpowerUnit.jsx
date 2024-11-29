@@ -11,11 +11,11 @@ const WillpowerUnit = ({ index, permanentValue, temporaryValue, onPermanentChang
       alignItems: 'center',
       gap: 0.25,
       '& .dot-rating': {
-        transform: 'scale(1.2)',
+        transform: 'scale(2.2)',
       }
     }}>
       <DotRating
-        value={permanentValue}
+        value={permanentValue ? 1 : 0}
         max={1}
         onChange={() => onPermanentChange(index)}
         color="#8b0000"
@@ -24,10 +24,15 @@ const WillpowerUnit = ({ index, permanentValue, temporaryValue, onPermanentChang
       <Checkbox
         checked={temporaryValue}
         onChange={(e) => onTemporaryChange(index, e.target.checked)}
+        disabled={!permanentValue}
         sx={{
           color: '#3d0000',
           '&.Mui-checked': {
             color: '#8b0000',
+          },
+          '&.Mui-disabled': {
+            color: '#3d0000',
+            opacity: 0.5,
           },
           padding: '2px'
         }}
