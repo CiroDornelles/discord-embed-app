@@ -5,15 +5,17 @@ import UnitBlood from './UnitBlood';
 const BloodPool = ({ value = 0, onChange, max = 10, perTurn = 1 }) => {
   const [animatingValue, setAnimatingValue] = useState(value);
   const [isAnimating, setIsAnimating] = useState(false);
+  const [isSettling, setIsSettling] = useState(false);
   
   useEffect(() => {
-    if (!isAnimating) {
+    if (!isAnimating && !isSettling) {
       setAnimatingValue(value);
     }
-  }, [value, isAnimating]);
+  }, [value, isAnimating, isSettling]);
 
   const animateBloodFill = (startValue, targetValue) => {
     setIsAnimating(true);
+    setIsSettling(false);
     setAnimatingValue(startValue);
 
     const fillNextSquare = (current) => {
@@ -22,7 +24,12 @@ const BloodPool = ({ value = 0, onChange, max = 10, perTurn = 1 }) => {
         setTimeout(() => fillNextSquare(current + 1), 150); // 150ms entre cada quadrado
       } else {
         setIsAnimating(false);
-        onChange(targetValue);
+        setIsSettling(true);
+        // Após 600ms (tempo para a última animação de preenchimento terminar)
+        setTimeout(() => {
+          setIsSettling(false);
+          onChange(targetValue);
+        }, 600);
       }
     };
 
@@ -30,7 +37,7 @@ const BloodPool = ({ value = 0, onChange, max = 10, perTurn = 1 }) => {
   };
 
   const handleBloodPointChange = (index) => {
-    if (!onChange || isAnimating) return;
+    if (!onChange || isAnimating || isSettling) return;
 
     const targetValue = index + 1;
     
@@ -91,8 +98,9 @@ const BloodPool = ({ value = 0, onChange, max = 10, perTurn = 1 }) => {
             key={index}
             value={index < animatingValue ? 1 : 0}
             onChange={() => handleBloodPointChange(index)}
-            readOnly={isAnimating}
+            readOnly={isAnimating || isSettling}
             isAnimating={isAnimating && index === animatingValue - 1}
+            isSettling={isSettling && index < animatingValue}
           />
         ))}
       </Box>
