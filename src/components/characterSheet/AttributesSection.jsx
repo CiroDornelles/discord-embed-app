@@ -84,7 +84,6 @@ const AttributesSection = () => {
           }
         }}>
           <Swiper
-            className="swiper-parent"
             effect="coverflow"
             grabCursor={true}
             centeredSlides={true}
