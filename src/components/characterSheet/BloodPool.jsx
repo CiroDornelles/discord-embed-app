@@ -30,9 +30,9 @@ const BloodPool = memo(({ max, perTurn }) => {
     <Box
       sx={{
         display: 'flex',
-        flexWrap: 'wrap',
-        gap: '2px',
-        maxWidth: '200px',
+        flexDirection: 'column',
+        alignItems: 'center',
+        gap: '4px',
         padding: '8px',
         border: '1px solid rgba(139, 0, 0, 0.3)',
         borderRadius: '4px',
@@ -49,16 +49,30 @@ const BloodPool = memo(({ max, perTurn }) => {
         }
       }}
     >
-      {Array.from({ length: max }).map((_, index) => (
-        <UnitBlood
-          key={index}
-          value={index < animatingValue ? 1 : 0}
-          onChange={() => handleBloodPointChange(index)}
-          isAnimating={isAnimating && index === animatingValue - 1}
-          isSettling={isSettling && index < animatingValue}
-          readOnly={index >= max}
-          tooltipText={bloodTooltips[index]}
-        />
+      {Array.from({ length: Math.ceil(max / 10) }).map((_, rowIndex) => (
+        <Box
+          key={rowIndex}
+          sx={{
+            display: 'flex',
+            flexWrap: 'nowrap',
+            gap: '2px',
+          }}
+        >
+          {Array.from({ length: Math.min(10, max - rowIndex * 10) }).map((_, colIndex) => {
+            const index = rowIndex * 10 + colIndex;
+            return (
+              <UnitBlood
+                key={index}
+                value={index < animatingValue ? 1 : 0}
+                onChange={() => handleBloodPointChange(index)}
+                isAnimating={isAnimating && index === animatingValue - 1}
+                isSettling={isSettling && index < animatingValue}
+                readOnly={index >= max}
+                tooltipText={bloodTooltips[index]}
+              />
+            );
+          })}
+        </Box>
       ))}
     </Box>
   );
