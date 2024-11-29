@@ -379,27 +379,54 @@ const AdvantagesSection = ({ data = {}, onChange }) => {
   return (
     <>
       {isMobile ? (
-        <Swiper
-          effect={'coverflow'}
-          grabCursor={true}
-          centeredSlides={true}
-          slidesPerView={'auto'}
-          coverflowEffect={{
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: false,
-          }}
-          pagination={true}
-          navigation={true}
-          modules={[EffectCoverflow, Pagination, Navigation]}
-          className="mySwiper"
-        >
-          <SwiperSlide>{renderDisciplinas()}</SwiperSlide>
-          <SwiperSlide>{renderAntecedentes()}</SwiperSlide>
-          <SwiperSlide>{renderVirtudes()}</SwiperSlide>
-        </Swiper>
+        <Box sx={{ 
+          width: '100%',
+          '.swiper': {
+            width: '100%',
+            padding: '50px 0',
+          },
+          '.swiper-slide': {
+            width: '300px',
+            height: 'auto',
+            background: 'transparent',
+          },
+          '.swiper-button-next, .swiper-button-prev': {
+            color: '#8b0000',
+            '&:after': {
+              fontSize: '24px',
+            }
+          },
+          '.swiper-pagination-bullet': {
+            backgroundColor: '#8b0000',
+            opacity: 0.5,
+          },
+          '.swiper-pagination-bullet-active': {
+            backgroundColor: '#8b0000',
+            opacity: 1,
+          }
+        }}>
+          <Swiper
+            effect={'coverflow'}
+            grabCursor={true}
+            centeredSlides={true}
+            slidesPerView={'auto'}
+            coverflowEffect={{
+              rotate: 50,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: false,
+            }}
+            pagination={true}
+            navigation={true}
+            modules={[EffectCoverflow, Pagination, Navigation]}
+            className="mySwiper"
+          >
+            <SwiperSlide>{renderDisciplinas()}</SwiperSlide>
+            <SwiperSlide>{renderAntecedentes()}</SwiperSlide>
+            <SwiperSlide>{renderVirtudes()}</SwiperSlide>
+          </Swiper>
+        </Box>
       ) : (
         <Box sx={{ display: 'flex', gap: 2, justifyContent: 'space-between' }}>
           {renderDisciplinas()}
