@@ -7,10 +7,10 @@ const VampireInfoCard = ({ data, onChange, vantagens }) => {
   };
 
   // Calcula a geração baseada no antecedente
-  const calcularGeracao = () => {
-    const geracaoAntecedente = vantagens?.antecedentes?.find(ant => ant?.id === 'generation')?.value || 0;
-    // Começa na 12ª geração e diminui baseado no valor do antecedente
-    return 12 - geracaoAntecedente;
+  const calculateGeneration = (vantagens) => {
+    const geracao = vantagens?.antecedentes?.find(ant => ant.id === 'generation');
+    const pontos = geracao?.value || 0;
+    return 12 - pontos; // Começa na 12ª geração e diminui baseado nos pontos
   };
 
   // Formata o texto da geração com o número ordinal
@@ -18,7 +18,7 @@ const VampireInfoCard = ({ data, onChange, vantagens }) => {
     return `${numero}º`;
   };
 
-  const geracao = calcularGeracao();
+  const geracao = calculateGeneration(vantagens);
   const geracaoTexto = formatarGeracao(geracao);
 
   return (
@@ -114,7 +114,7 @@ const VampireInfoCard = ({ data, onChange, vantagens }) => {
             }}
           />
           <Tooltip 
-            title="A geração é determinada pelo Antecedente 'Geração'. Por padrão, todos os personagens começam na 12ª geração."
+            title="A geração é determinada pelo Antecedente 'Geração'. Por padrão, todos os personagens começam na 13ª geração."
             arrow
             placement="top"
           >

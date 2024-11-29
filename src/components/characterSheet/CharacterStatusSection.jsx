@@ -2,12 +2,23 @@ import React, { useState, useEffect } from 'react';
 import { Box, Paper, Typography, TextField, Grid, Checkbox, Tooltip } from '@mui/material';
 import DotRating from './DotRating';
 import WillpowerUnit from './WillpowerUnit';
+import { getBloodPoolByGeneration } from '../../rules/vampire/bloodPool';
 
-const CharacterStatusSection = () => {
+const CharacterStatusSection = ({ vantagens }) => {
+  // Calcula a geração baseada no antecedente
+  const calcularGeracao = () => {
+    const geracaoAntecedente = vantagens?.antecedentes?.find(ant => ant?.id === 'generation')?.value || 0;
+    return 12 - geracaoAntecedente; // Começa na 12ª geração
+  };
+
+  const bloodPool = getBloodPoolByGeneration(calcularGeracao());
+
+  // Estados
   const [pathRating, setPathRating] = useState(0);
   const [willpowerPermanent, setWillpowerPermanent] = useState(0);
   const [willpowerTemporary, setWillpowerTemporary] = useState(Array(10).fill(false));
   const [willpowerData, setWillpowerData] = useState(null);
+  const [bloodPoints, setBloodPoints] = useState(Array(bloodPool.max).fill(false));
 
   useEffect(() => {
     const loadWillpowerData = async () => {
@@ -52,10 +63,17 @@ const CharacterStatusSection = () => {
     }
   };
 
+  const handleBloodPointChange = (index) => {
+    const newBloodPoints = [...bloodPoints];
+    newBloodPoints[index] = !newBloodPoints[index];
+    setBloodPoints(newBloodPoints);
+  };
+
   const getWillpowerTooltip = (index) => {
-    if (!willpowerData || !willpowerData.system?.ratings?.[index + 1]) return '';
-    const rating = willpowerData.system.ratings[index + 1];
-    return `${rating.name}: ${rating.description}`;
+    if (!willpowerData) return '';
+    const level = index + 1;
+    const levelData = willpowerData.system?.mechanics?.levels?.[level];
+    return levelData ? levelData.description : '';
   };
 
   const renderMeritsFlaws = () => (
@@ -239,23 +257,43 @@ const CharacterStatusSection = () => {
       >
         Pontos de Sangue
       </Typography>
+      <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', mb: 1 }}>
+        <Typography sx={{ color: '#fff', fontSize: '0.8rem' }}>
+          (Máx: {bloodPool.max} | Por Turno: {bloodPool.perTurn})
+        </Typography>
+      </Box>
       <Grid container spacing={1}>
-        {[...Array(20)].map((_, index) => (
-          <Grid item key={index}>
+        {renderBloodPoints()}
+      </Grid>
+    </Paper>
+  );
+
+  const renderBloodPoints = () => {
+    const maxBloodPoints = bloodPool.max;
+    const rows = Math.ceil(maxBloodPoints / 10); // Divide em linhas de 10 quadrados
+    
+    return Array.from({ length: rows }).map((_, rowIndex) => (
+      <Grid item xs={12} key={rowIndex} style={{ display: 'flex', gap: '4px' }}>
+        {Array.from({ length: Math.min(10, maxBloodPoints - rowIndex * 10) }).map((_, index) => {
+          const actualIndex = rowIndex * 10 + index;
+          return (
             <Checkbox
+              key={actualIndex}
+              checked={bloodPoints[actualIndex]}
+              onChange={() => handleBloodPointChange(actualIndex)}
               sx={{
                 color: '#3d0000',
                 '&.Mui-checked': {
                   color: '#8b0000',
                 },
-                padding: '4px'
+                padding: '2px',
               }}
             />
-          </Grid>
-        ))}
+          );
+        })}
       </Grid>
-    </Paper>
-  );
+    ));
+  };
 
   const renderVitalityCard = () => (
     <Paper
