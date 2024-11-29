@@ -68,7 +68,7 @@ const VampireInfoCard = ({ data, onChange }) => {
             },
           }}
         >
-          Informações Vampíricas
+          Info Vampíricas
         </Typography>
         
         <Box sx={{ 

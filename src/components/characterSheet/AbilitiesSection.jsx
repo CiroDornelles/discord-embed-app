@@ -99,16 +99,30 @@ const AbilityGroup = ({ title, abilities = [] }) => {
     >
       <Typography
         variant="h6"
+        align="center"
         sx={{
-          textAlign: 'center',
           color: '#8b0000',
           fontFamily: 'MedievalSharp, cursive',
-          mb: 2,
           textTransform: 'uppercase',
-          letterSpacing: '0.1em',
+          letterSpacing: '0.2em',
           textShadow: '2px 2px 4px rgba(0,0,0,0.3)',
-          borderBottom: '2px solid #8b0000',
-          pb: 1
+          mb: 2,
+          position: 'relative',
+          px: 4,
+          '&::before, &::after': {
+            content: '""',
+            position: 'absolute',
+            top: '50%',
+            width: '15%',
+            height: '2px',
+            backgroundColor: '#8b0000',
+          },
+          '&::before': {
+            left: 0,
+          },
+          '&::after': {
+            right: 0,
+          },
         }}
       >
         {title}

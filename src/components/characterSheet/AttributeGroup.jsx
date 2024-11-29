@@ -130,11 +130,12 @@ const AttributeGroup = ({ title, category }) => {
             textShadow: '2px 2px 4px rgba(0,0,0,0.3)',
             mb: 2,
             position: 'relative',
+            px: 4,
             '&::before, &::after': {
               content: '""',
               position: 'absolute',
               top: '50%',
-              width: '20%',
+              width: '15%',
               height: '2px',
               backgroundColor: '#8b0000',
             },
@@ -144,11 +145,9 @@ const AttributeGroup = ({ title, category }) => {
             '&::after': {
               right: 0,
             },
-            textTransform: 'uppercase',
-            textAlign: 'center'
           }}
         >
-          {title.toUpperCase()}
+          {title}
         </Typography>
       </Paper>
       <Box sx={{ 
