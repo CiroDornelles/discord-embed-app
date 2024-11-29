@@ -10,6 +10,7 @@ import Header from './Header';
 import AttributesSection from './AttributesSection';
 import AbilitiesSection from './AbilitiesSection';
 import AdvantagesSection from './AdvantagesSection';
+import CharacterStatusSection from './CharacterStatusSection';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -241,36 +242,10 @@ const CharacterSheet = () => {
         }}
       >
         {renderInfoCards()}
-
-        <Box 
-          sx={{ 
-            width: '100%',
-            visibility: 'visible',
-            minHeight: { xs: 'auto', sm: '300px' }
-          }}
-        >
-          <AttributesSection />
-        </Box>
-
-        <Box 
-          sx={{ 
-            width: '100%',
-            visibility: 'visible',
-            minHeight: { xs: 'auto', sm: '300px' }
-          }}
-        >
-          <AbilitiesSection data={characterData.habilidades} onChange={handleAbilitiesChange} />
-        </Box>
-
-        <Box 
-          sx={{ 
-            width: '100%',
-            visibility: 'visible',
-            minHeight: { xs: 'auto', sm: '300px' }
-          }}
-        >
-          <AdvantagesSection data={characterData.vantagens} onChange={handleAdvantagesChange} />
-        </Box>
+        <AttributesSection />
+        <AbilitiesSection data={characterData.habilidades} onChange={handleAbilitiesChange} />
+        <AdvantagesSection data={characterData.vantagens} onChange={handleAdvantagesChange} />
+        <CharacterStatusSection />
       </Box>
     </Box>
   );
