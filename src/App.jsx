@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ThemeProvider, CssBaseline, Box, Fab } from '@mui/material';
-import theme from './components/thema';
+import { CssBaseline, Box, Fab } from '@mui/material';
 import CharacterSheet from './components/characterSheet/CharacterSheet';
 import DiceRoller from './components/DiceRoller/DiceRoller';
 
@@ -15,7 +14,7 @@ function App() {
   }, []);
 
   return (
-    <ThemeProvider theme={theme}>
+    <>
       <CssBaseline />
       <Box sx={{ 
         minHeight: '100vh',
@@ -26,14 +25,13 @@ function App() {
         overflow: 'hidden',
         display: 'flex',
         flexDirection: 'column',
-        backgroundColor: theme.palette.background.default
+        bgcolor: 'background.default'
       }}>
         <CharacterSheet />
-        
-        {/* Botão flutuante para abrir o rolador de dados */}
+        {showDiceRoller && <DiceRoller onClose={() => setShowDiceRoller(false)} />}
         <Fab
           color="primary"
-          aria-label="roll dice"
+          aria-label="dice"
           onClick={() => setShowDiceRoller(!showDiceRoller)}
           sx={{
             position: 'fixed',
@@ -43,22 +41,8 @@ function App() {
         >
           🎲
         </Fab>
-
-        {/* Modal do rolador de dados */}
-        {showDiceRoller && (
-          <Box
-            sx={{
-              position: 'fixed',
-              bottom: 80,
-              right: 16,
-              zIndex: 1000,
-            }}
-          >
-            <DiceRoller />
-          </Box>
-        )}
       </Box>
-    </ThemeProvider>
+    </>
   );
 }
 
