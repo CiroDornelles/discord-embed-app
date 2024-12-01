@@ -20,7 +20,42 @@ export const mixins = {
       transform: 'translateX(-50%)',
       width: '60%',
       height: '2px',
-      background: 'linear-gradient(90deg, transparent, #8b0000, transparent)',
+      backgroundColor: '#8b0000',
+      opacity: 0.7,
+    }
+  },
+  statDot: {
+    borderRadius: '50%',
+    border: '2px solid',
+    borderColor: 'primary.main',
+    cursor: 'pointer',
+    transition: 'all 0.2s ease-in-out',
+    '&:hover': {
+      borderColor: 'rgba(139, 0, 0, 0.7)',
+      transform: 'scale(1.05)',
+    },
+    '&.filled': {
+      backgroundColor: 'primary.main',
+      '&:hover': {
+        backgroundColor: 'rgba(139, 0, 0, 0.95)',
+        borderColor: 'rgba(139, 0, 0, 0.7)',
+        transform: 'scale(1.05)',
+      }
+    },
+    '&.empty': {
+      backgroundColor: 'transparent',
+      '&:hover': {
+        backgroundColor: 'rgba(139, 0, 0, 0.03)',
+        borderColor: 'rgba(139, 0, 0, 0.7)',
+        transform: 'scale(1.05)',
+      }
+    },
+    '&.disabled': {
+      cursor: 'default',
+      '&:hover': {
+        transform: 'none',
+        borderColor: 'primary.main',
+      }
     }
   },
   inputField: {

@@ -1,43 +1,38 @@
 import React from 'react';
-import { Box, Rating } from '@mui/material';
-import CircleIcon from '@mui/icons-material/Circle';
-import CircleOutlinedIcon from '@mui/icons-material/CircleOutlined';
-import { styled } from '@mui/material/styles';
+import { Box } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 
-const StyledRating = styled(Rating)(({ theme }) => ({
-  '& .MuiRating-icon': {
-    color: theme.palette.primary.main,
-  },
-  '& .MuiRating-iconFilled': {
-    color: theme.palette.primary.main,
-  },
-  '& .MuiRating-iconHover': {
-    color: theme.palette.primary.light,
-  },
-}));
-
-export const StatDots = ({ 
-  value, 
-  onChange, 
+export const StatDots = ({
+  value = 0,
   max = 5,
-  size = 'small',
-  readOnly = false,
-  disabled = false
+  onChange,
+  disabled = false,
+  size = 20
 }) => {
+  const theme = useTheme();
+
   return (
-    <Box sx={{ display: 'inline-flex', alignItems: 'center' }}>
-      <StyledRating
-        name="stat-rating"
-        value={value}
-        max={max}
-        onChange={(event, newValue) => {
-          onChange?.(newValue);
-        }}
-        icon={<CircleIcon fontSize={size} />}
-        emptyIcon={<CircleOutlinedIcon fontSize={size} />}
-        readOnly={readOnly}
-        disabled={disabled}
-      />
+    <Box sx={{ 
+      display: 'flex',
+      gap: 0.5
+    }}>
+      {Array(max).fill(0).map((_, index) => (
+        <Box
+          key={index}
+          onClick={() => !disabled && onChange?.(index + 1)}
+          onContextMenu={(e) => {
+            e.preventDefault();
+            !disabled && onChange?.(index);
+          }}
+          sx={{
+            width: size,
+            height: size,
+            ...theme.mixins.statDot,
+            ...(disabled && theme.mixins.statDot['&.disabled']),
+            ...(index < value ? theme.mixins.statDot['&.filled'] : theme.mixins.statDot['&.empty'])
+          }}
+        />
+      ))}
     </Box>
   );
 };
