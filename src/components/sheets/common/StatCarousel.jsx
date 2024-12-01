@@ -1,18 +1,36 @@
 import React from 'react';
 import { Box } from '@mui/material';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation } from 'swiper/modules';
+import { EffectCoverflow, Pagination } from 'swiper/modules';
+
+// Import Swiper styles
 import 'swiper/css';
+import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
-import 'swiper/css/navigation';
 
 export const StatCarousel = ({ items }) => {
   return (
     <Box sx={{
+      width: '100%',
+      minHeight: '400px', // Altura mínima para garantir que os cards sejam visíveis
       '& .swiper': {
         width: '100%',
         height: '100%',
-        pb: 4,
+        padding: '20px 0',
+      },
+      '& .swiper-slide': {
+        width: '300px',
+        height: 'auto', // Altura automática baseada no conteúdo
+        '& > *': { // Aplica estilos a todos os filhos diretos do slide
+          height: '100%',
+          width: '100%',
+        }
+      },
+      '& .swiper-slide-active': {
+        transform: 'scale(1)',
+      },
+      '& .swiper-slide-prev, & .swiper-slide-next': {
+        transform: 'scale(0.85)',
       },
       '& .swiper-pagination': {
         bottom: 0,
@@ -20,38 +38,34 @@ export const StatCarousel = ({ items }) => {
       '& .swiper-pagination-bullet': {
         backgroundColor: 'primary.main',
       },
-      '& .swiper-button-next, & .swiper-button-prev': {
-        color: 'primary.main',
-        '&:hover': {
-          color: 'primary.light',
-        },
-        '&.swiper-button-disabled': {
-          opacity: 0.35,
-          cursor: 'auto',
-          pointerEvents: 'none',
-        },
-      },
     }}>
       <Swiper
-        modules={[Pagination, Navigation]}
-        pagination={{ clickable: true }}
-        navigation={true}
-        spaceBetween={30}
-        breakpoints={{
-          0: {
-            slidesPerView: 1,
-          },
-          600: {
-            slidesPerView: 2,
-          },
-          960: {
-            slidesPerView: 3,
-          },
+        effect="coverflow"
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView="auto"
+        initialSlide={1}
+        coverflowEffect={{
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 2,
+          slideShadows: false,
         }}
+        pagination={{ clickable: true }}
+        modules={[EffectCoverflow, Pagination]}
       >
-        {items.map((item, index) => (
+        {items?.map((item, index) => (
           <SwiperSlide key={index}>
-            {item}
+            <Box sx={{ 
+              height: '100%',
+              '& > *': { // Garante que o card ocupe todo o espaço disponível
+                height: '100%',
+                width: '100%',
+              }
+            }}>
+              {item}
+            </Box>
           </SwiperSlide>
         ))}
       </Swiper>

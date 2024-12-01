@@ -1,0 +1,54 @@
+graph TD
+    %% Definição dos subgráficos
+    subgraph Components
+        App
+        ThemeProvider
+        CharacterProvider
+
+        subgraph CharacterSheetComponents
+            CharacterSheet
+            BasicInfoCard
+            PersonalityCard
+            VampireInfoCard
+            AttributesSection
+            AbilitiesSection
+            AdvantagesSection
+            CharacterStatusSection
+            Header
+        end
+
+        subgraph UIComponents
+            AdaptiveCardLayout
+            VampireCard
+            CardCoverflow
+            GridContainer
+            GridItem
+        end
+
+        subgraph V20DarkAgesComponents
+            V20DarkAgesSheet
+            AttributeCard
+            AttributesCard
+        end
+    end
+
+    %% Relacionamentos
+    App --> ThemeProvider
+    App --> V20DarkAgesSheet
+    CharacterSheet --> CharacterProvider
+    CharacterSheet --> AdaptiveCardLayout
+    CharacterSheet --> BasicInfoCard
+    CharacterSheet --> PersonalityCard
+    CharacterSheet --> VampireInfoCard
+    CharacterSheet --> Header
+    CharacterSheet --> AttributesSection
+    CharacterSheet --> AbilitiesSection
+    CharacterSheet --> AdvantagesSection
+    CharacterSheet --> CharacterStatusSection
+    AdaptiveCardLayout --> CardCoverflow
+    AdaptiveCardLayout --> GridContainer
+    GridContainer --> GridItem
+    AttributesCard --> VampireCard
+    AttributesCard --> AttributeCard
+    AttributesCard --> AdaptiveCardLayout
+    V20DarkAgesSheet --> CharacterSheet

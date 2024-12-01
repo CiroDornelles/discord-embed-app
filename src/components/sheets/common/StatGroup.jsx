@@ -15,9 +15,6 @@ export const StatGroup = ({
 
   return (
     <Box>
-      <Typography variant="h6" color="primary" gutterBottom sx={{ mb: 2 }}>
-        {title}
-      </Typography>
       <Grid container spacing={1}>
         {Object.entries(stats).map(([statName, value]) => (
           <Grid item xs={12} key={statName}>

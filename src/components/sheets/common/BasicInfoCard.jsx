@@ -1,7 +1,8 @@
 import React from 'react';
-import { CardContent, CardHeader, Grid } from '@mui/material';
+import { CardContent, CardHeader, Grid, useTheme, useMediaQuery } from '@mui/material';
 import { VampireCard } from '../../ui/VampireCard';
 import { VampireTextField } from '../../ui/VampireTextField';
+import { StatCarousel } from '../common/StatCarousel';
 
 export const BasicInfoCard = ({ 
   characterName,
@@ -16,16 +17,20 @@ export const BasicInfoCard = ({
   onFieldChange,
   disabled = false 
 }) => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
   const handleChange = (field) => (event) => {
     onFieldChange?.(field, event.target.value);
   };
 
-  return (
+  const cards = [
+    // Card 1: Character Information
     <VampireCard>
-      <CardHeader title="Basic Information" />
+      <CardHeader title="Character Information" />
       <CardContent>
         <Grid container spacing={2}>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12}>
             <VampireTextField
               fullWidth
               label="Character Name"
@@ -34,7 +39,7 @@ export const BasicInfoCard = ({
               disabled={disabled}
             />
           </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12}>
             <VampireTextField
               fullWidth
               label="Player"
@@ -43,7 +48,7 @@ export const BasicInfoCard = ({
               disabled={disabled}
             />
           </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12}>
             <VampireTextField
               fullWidth
               label="Chronicle"
@@ -52,7 +57,16 @@ export const BasicInfoCard = ({
               disabled={disabled}
             />
           </Grid>
-          <Grid item xs={12} sm={6}>
+        </Grid>
+      </CardContent>
+    </VampireCard>,
+
+    // Card 2: Personality
+    <VampireCard>
+      <CardHeader title="Personality" />
+      <CardContent>
+        <Grid container spacing={2}>
+          <Grid item xs={12}>
             <VampireTextField
               fullWidth
               label="Nature"
@@ -61,7 +75,7 @@ export const BasicInfoCard = ({
               disabled={disabled}
             />
           </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12}>
             <VampireTextField
               fullWidth
               label="Demeanor"
@@ -70,16 +84,7 @@ export const BasicInfoCard = ({
               disabled={disabled}
             />
           </Grid>
-          <Grid item xs={12} sm={6}>
-            <VampireTextField
-              fullWidth
-              label="Concept"
-              value={concept}
-              onChange={handleChange('concept')}
-              disabled={disabled}
-            />
-          </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12}>
             <VampireTextField
               fullWidth
               label="Clan"
@@ -88,7 +93,25 @@ export const BasicInfoCard = ({
               disabled={disabled}
             />
           </Grid>
-          <Grid item xs={12} sm={3}>
+        </Grid>
+      </CardContent>
+    </VampireCard>,
+
+    // Card 3: Background
+    <VampireCard>
+      <CardHeader title="Background" />
+      <CardContent>
+        <Grid container spacing={2}>
+          <Grid item xs={12}>
+            <VampireTextField
+              fullWidth
+              label="Concept"
+              value={concept}
+              onChange={handleChange('concept')}
+              disabled={disabled}
+            />
+          </Grid>
+          <Grid item xs={12}>
             <VampireTextField
               fullWidth
               label="Generation"
@@ -97,7 +120,7 @@ export const BasicInfoCard = ({
               disabled={disabled}
             />
           </Grid>
-          <Grid item xs={12} sm={3}>
+          <Grid item xs={12}>
             <VampireTextField
               fullWidth
               label="Sire"
@@ -109,5 +132,21 @@ export const BasicInfoCard = ({
         </Grid>
       </CardContent>
     </VampireCard>
+  ];
+
+  return (
+    <>
+      {isMobile ? (
+        <StatCarousel items={cards} />
+      ) : (
+        <Grid container spacing={2}>
+          {cards.map((card, index) => (
+            <Grid item xs={12} md={4} key={index}>
+              {card}
+            </Grid>
+          ))}
+        </Grid>
+      )}
+    </>
   );
 };

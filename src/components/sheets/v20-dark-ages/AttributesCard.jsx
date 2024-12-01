@@ -1,8 +1,9 @@
 import React from 'react';
-import { CardContent, CardHeader } from '@mui/material';
+import { CardContent, CardHeader, useTheme, useMediaQuery } from '@mui/material';
 import { VampireCard } from '../../ui/VampireCard';
 import { AttributeCard } from './AttributeCard';
 import { AdaptiveCardLayout } from '../../ui/AdaptiveCardLayout';
+import { StatCarousel } from '../common/StatCarousel';
 
 export const AttributesCard = ({
   physical,
@@ -11,6 +12,9 @@ export const AttributesCard = ({
   onAttributeChange,
   disabled = false
 }) => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
   const handleAttributeChange = (category) => (attribute, value) => {
     onAttributeChange?.(category, attribute, value);
   };
@@ -25,7 +29,7 @@ export const AttributesCard = ({
     />,
     <AttributeCard
       key="social"
-      title="Social"
+      title='Social'
       stats={social}
       onStatChange={handleAttributeChange('social')}
       disabled={disabled}
@@ -43,11 +47,15 @@ export const AttributesCard = ({
     <VampireCard>
       <CardHeader title="Attributes" />
       <CardContent>
-        <AdaptiveCardLayout 
-          cards={attributeCards}
-          spacing={4}
-          minCardWidth={300}
-        />
+        {isMobile ? (
+          <StatCarousel items={attributeCards} />
+        ) : (
+          <AdaptiveCardLayout 
+            cards={attributeCards}
+            spacing={4}
+            minCardWidth={300}
+          />
+        )}
       </CardContent>
     </VampireCard>
   );

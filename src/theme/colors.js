@@ -2,7 +2,7 @@ export const colors = {
   primary: {
     main: '#8b0000',
     dark: '#3d0000',
-    light: '#a52a2a',
+    light: '#000000',
     hover: 'rgba(139, 0, 0, 0.2)',
   },
   background: {
@@ -12,7 +12,7 @@ export const colors = {
   },
   text: {
     primary: '#ffffff',
-    secondary: '#cccccc',
+    secondary: '#000000',
   },
   border: {
     primary: '#3d0000',

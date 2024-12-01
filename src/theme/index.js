@@ -3,8 +3,25 @@ import { colors } from './colors';
 import { typography } from './typography';
 import { spacing } from './spacing';
 import { mixins } from './mixins';
+import { getTheme } from './themes';
 
-export const theme = createTheme({
+// Tipos de tema disponíveis
+export const themeTypes = {
+  DARK: 'dark',
+  LIGHT: 'light',
+  VAMPIRE_DARK_AGES: 'vampireDarkAges'
+};
+
+// Configurações base do tema
+const baseTheme = createTheme({
+  typography: typography,
+  shape: {
+    borderRadius: 4,
+  },
+  spacing: spacing.unit,
+});
+
+export const theme = createTheme(baseTheme, {
   palette: {
     mode: 'dark',
     primary: {
@@ -21,8 +38,6 @@ export const theme = createTheme({
       secondary: colors.text.secondary,
     },
   },
-  typography,
-  spacing: spacing.unit,
   components: {
     MuiCard: {
       styleOverrides: {
@@ -54,3 +69,11 @@ export const theme = createTheme({
 });
 
 export { colors, typography, spacing, mixins };
+
+// Função para obter o tema atual
+export const getCurrentTheme = (themeType = themeTypes.VAMPIRE_DARK_AGES) => {
+  return getTheme(themeType);
+};
+
+// Exporta o tema padrão
+export default getCurrentTheme();

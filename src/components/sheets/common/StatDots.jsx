@@ -27,9 +27,32 @@ export const StatDots = ({
           sx={{
             width: size,
             height: size,
-            ...theme.mixins.statDot,
-            ...(disabled && theme.mixins.statDot['&.disabled']),
-            ...(index < value ? theme.mixins.statDot['&.filled'] : theme.mixins.statDot['&.empty'])
+            borderRadius: '50%',
+            cursor: disabled ? 'default' : 'pointer',
+            transition: 'all 0.2s ease-in-out',
+            ...(index < value ? {
+              backgroundColor: theme.palette.primary.main,
+              '&:hover': {
+                opacity: 0.8,
+                boxShadow: `0 0 8px ${theme.palette.primary.main}`,
+              },
+            } : {
+              backgroundColor: 'transparent',
+              border: `2px solid ${theme.palette.primary.main}`,
+              '&:hover': {
+                backgroundColor: theme.palette.primary.main,
+                opacity: 0.3,
+                boxShadow: `0 0 8px ${theme.palette.primary.main}`,
+              },
+            }),
+            ...(disabled && {
+              opacity: 0.5,
+              cursor: 'default',
+              '&:hover': {
+                opacity: 0.5,
+                boxShadow: 'none',
+              },
+            }),
           }}
         />
       ))}

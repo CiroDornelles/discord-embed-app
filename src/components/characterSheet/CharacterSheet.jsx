@@ -1,278 +1,98 @@
-import React, { useState } from 'react';
-import { useTheme, useMediaQuery, Box } from '@mui/material';
-import GridContainer from '../common/GridContainer';
-import GridItem from '../common/GridItem';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation, EffectCoverflow } from 'swiper/modules';
-import BasicInfoCard from './BasicInfoCard';
-import PersonalityCard from './PersonalityCard';
-import VampireInfoCard from './VampireInfoCard';
+import React, { Suspense } from 'react';
+import { Box, Grid, CircularProgress, useTheme, useMediaQuery } from '@mui/material';
 import Header from './Header';
-import AttributesSection from './AttributesSection';
-import AbilitiesSection from './AbilitiesSection';
-import AdvantagesSection from './AdvantagesSection';
-import CharacterStatusSection from './CharacterStatusSection';
-import { CharacterProvider } from '../../contexts/CharacterContext';
 
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import 'swiper/css/effect-coverflow';
+// Lazy load components for better performance
+const BasicInfoCard = React.lazy(() => import('./cards/BasicInfoCard'));
+const PersonalityCard = React.lazy(() => import('./cards/PersonalityCard'));
+const VampireInfoCard = React.lazy(() => import('./cards/VampireInfoCard'));
+const AttributesSection = React.lazy(() => import('./AttributesSection'));
+const AbilitiesSection = React.lazy(() => import('./AbilitiesSection'));
+const AdvantagesSection = React.lazy(() => import('./AdvantagesSection'));
+const BackgroundsSection = React.lazy(() => import('./BackgroundsSection'));
+const CharacterStatusSection = React.lazy(() => import('./CharacterStatusSection'));
+
+const LoadingFallback = () => (
+  <Box
+    sx={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      minHeight: 200,
+    }}
+  >
+    <CircularProgress color="primary" />
+  </Box>
+);
 
 const CharacterSheet = () => {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
-
-  const [characterData, setCharacterData] = useState({
-    basicInfo: {
-      nome: '',
-      jogador: '',
-      cronica: ''
-    },
-    personalityInfo: {
-      natureza: '',
-      comportamento: '',
-      conceito: ''
-    },
-    vampireInfo: {
-      cla: '',
-      geracao: '',
-      senhor: '',
-      predador: ''
-    },
-    habilidades: {},
-    vantagens: {
-      virtudes: {
-        consciencia: 0,
-        autocontrole: 0,
-        coragem: 0
-      },
-      antecedentes: [] // Inicializando o array de antecedentes
-    }
-  });
-
-  const handleBasicInfoChange = (field, value) => {
-    setCharacterData(prev => ({
-      ...prev,
-      basicInfo: {
-        ...prev.basicInfo,
-        [field]: value
-      }
-    }));
-  };
-
-  const handlePersonalityInfoChange = (field, value) => {
-    setCharacterData(prev => ({
-      ...prev,
-      personalityInfo: {
-        ...prev.personalityInfo,
-        [field]: value
-      }
-    }));
-  };
-
-  const handleVampireInfoChange = (field, value) => {
-    setCharacterData(prev => ({
-      ...prev,
-      vampireInfo: {
-        ...prev.vampireInfo,
-        [field]: value
-      }
-    }));
-  };
-
-  const handleAbilitiesChange = (field, value) => {
-    setCharacterData(prev => ({
-      ...prev,
-      habilidades: {
-        ...prev.habilidades,
-        [field]: value
-      }
-    }));
-  };
-
-  const handleAdvantagesChange = (category, field, value) => {
-    console.log('handleAdvantagesChange:', { category, field, value });
-    setCharacterData(prev => {
-      const vantagens = { ...prev.vantagens };
-      
-      if (category === 'virtudes') {
-        // Para virtudes, atualizamos diretamente o valor
-        if (!vantagens[category]) {
-          vantagens[category] = {};
-        }
-        vantagens[category] = {
-          ...vantagens[category],
-          [field]: value
-        };
-      } else {
-        // Para outros casos (antecedentes, disciplinas)
-        if (!vantagens[category]) {
-          vantagens[category] = [];
-        }
-
-        // Extrai o índice e a propriedade do campo (ex: "0.name" -> index = 0, prop = "name")
-        const [indexStr, prop] = field.split('.');
-        const index = parseInt(indexStr, 10);
-
-        // Inicializa o objeto no índice se não existir
-        if (!vantagens[category][index]) {
-          vantagens[category][index] = {};
-        }
-
-        // Atualiza a propriedade específica
-        vantagens[category][index] = {
-          ...vantagens[category][index],
-          [prop]: value
-        };
-      }
-
-      const newState = {
-        ...prev,
-        vantagens
-      };
-      console.log('Novo estado:', newState);
-      return newState;
-    });
-  };
-
-  const renderInfoCards = () => {
-    const cards = [
-      <SwiperSlide key="basic">
-        <BasicInfoCard 
-          data={characterData.basicInfo} 
-          onChange={handleBasicInfoChange} 
-        />
-      </SwiperSlide>,
-      <SwiperSlide key="personality">
-        <PersonalityCard 
-          data={characterData.personalityInfo} 
-          onChange={handlePersonalityInfoChange} 
-        />
-      </SwiperSlide>,
-      <SwiperSlide key="vampire">
-        <VampireInfoCard 
-          data={characterData.vampireInfo} 
-          onChange={handleVampireInfoChange}
-          vantagens={characterData.vantagens}
-        />
-      </SwiperSlide>
-    ];
-
-    if (isMobile) {
-      return (
-        <Box sx={{ 
-          width: '100%',
-          '.swiper': {
-            width: '100%',
-            padding: '20px 0',
-          },
-          '.swiper-slide': {
-            width: '300px',
-            height: 'auto',
-          },
-          '.swiper-button-next, .swiper-button-prev': {
-            color: '#8b0000',
-            '&:after': {
-              fontSize: '24px',
-            }
-          },
-          '.swiper-pagination-bullet': {
-            backgroundColor: '#8b0000',
-            opacity: 0.5,
-          },
-          '.swiper-pagination-bullet-active': {
-            backgroundColor: '#8b0000',
-            opacity: 1,
-          }
-        }}>
-          <Swiper
-            effect="coverflow"
-            grabCursor={true}
-            centeredSlides={true}
-            slidesPerView="auto"
-            coverflowEffect={{
-              rotate: 50,
-              stretch: 0,
-              depth: 100,
-              modifier: 1,
-              slideShadows: true,
-            }}
-            pagination={{ clickable: true }}
-            navigation={true}
-            modules={[EffectCoverflow, Pagination, Navigation]}
-          >
-            {cards}
-          </Swiper>
-        </Box>
-      );
-    }
-
-    return (
-      <Box sx={{ 
-        display: 'flex',
-        flexDirection: 'row',
-        gap: 1,
-        width: '100%',
-        justifyContent: 'center',
-        maxWidth: '1200px',
-        margin: '0 auto',
-        '& > *': {
-          flex: '0 1 350px',
-        }
-      }}>
-        <BasicInfoCard 
-          data={characterData.basicInfo} 
-          onChange={handleBasicInfoChange} 
-        />
-        <PersonalityCard 
-          data={characterData.personalityInfo} 
-          onChange={handlePersonalityInfoChange} 
-        />
-        <VampireInfoCard 
-          data={characterData.vampireInfo} 
-          onChange={handleVampireInfoChange}
-          vantagens={characterData.vantagens}
-        />
-      </Box>
-    );
-  };
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const isTablet = useMediaQuery(theme.breakpoints.down('md'));
 
   return (
-    <CharacterProvider>
-      <Box sx={{ 
+    <Box
+      sx={{
         width: '100%',
         minHeight: '100vh',
-        backgroundColor: '#000',
-        color: '#fff',
-        overflowX: 'hidden',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center'
-      }}>
-        <Header />
+        bgcolor: 'background.default',
+        p: { xs: 2, sm: 3, md: 4 },
+      }}
+    >
+      <Header />
+      
+      <Grid container spacing={{ xs: 2, sm: 3, md: 4 }} sx={{ mb: 4 }}>
+        <Grid item xs={12} md={6} lg={4}>
+          <Suspense fallback={<LoadingFallback />}>
+            <BasicInfoCard />
+          </Suspense>
+        </Grid>
         
-        <Box 
-          sx={{ 
-            flex: 1,
-            p: { xs: 1, sm: 2, md: 3 },
-            display: 'flex',
-            flexDirection: 'column',
-            gap: 3,
-            maxWidth: '1200px',
-            width: '100%',
-            alignItems: 'center'
-          }}
-        >
-          {renderInfoCards()}
-          <AttributesSection />
-          <AbilitiesSection data={characterData.habilidades} onChange={handleAbilitiesChange} />
-          <AdvantagesSection data={characterData.vantagens} onChange={handleAdvantagesChange} />
-          <CharacterStatusSection vantagens={characterData.vantagens} />
-        </Box>
-      </Box>
-    </CharacterProvider>
+        <Grid item xs={12} md={6} lg={4}>
+          <Suspense fallback={<LoadingFallback />}>
+            <PersonalityCard />
+          </Suspense>
+        </Grid>
+        
+        <Grid item xs={12} lg={4}>
+          <Suspense fallback={<LoadingFallback />}>
+            <VampireInfoCard />
+          </Suspense>
+        </Grid>
+      </Grid>
+
+      <Grid container spacing={{ xs: 2, sm: 3, md: 4 }}>
+        <Grid item xs={12} lg={6}>
+          <Suspense fallback={<LoadingFallback />}>
+            <AttributesSection />
+          </Suspense>
+        </Grid>
+        
+        <Grid item xs={12} lg={6}>
+          <Suspense fallback={<LoadingFallback />}>
+            <AbilitiesSection />
+          </Suspense>
+        </Grid>
+        
+        <Grid item xs={12} md={6}>
+          <Suspense fallback={<LoadingFallback />}>
+            <AdvantagesSection />
+          </Suspense>
+        </Grid>
+        
+        <Grid item xs={12} md={6}>
+          <Suspense fallback={<LoadingFallback />}>
+            <BackgroundsSection />
+          </Suspense>
+        </Grid>
+        
+        <Grid item xs={12}>
+          <Suspense fallback={<LoadingFallback />}>
+            <CharacterStatusSection />
+          </Suspense>
+        </Grid>
+      </Grid>
+    </Box>
   );
 };
 

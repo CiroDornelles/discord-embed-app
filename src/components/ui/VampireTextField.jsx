@@ -1,33 +1,46 @@
 import { TextField, styled } from '@mui/material';
-import { colors } from '../../theme/colors';
 
 export const VampireTextField = styled(TextField)(({ theme }) => ({
   '& .MuiInputBase-root': {
-    backgroundColor: colors.background.paper,
+    backgroundColor: theme.palette.background.paper,
     borderRadius: theme.shape.borderRadius,
-    transition: theme.transitions.create(['border-color', 'box-shadow']),
+    transition: theme.transitions.create([
+      'border-color',
+      'box-shadow',
+      'background-color'
+    ]),
     '&:hover': {
-      backgroundColor: colors.background.elevated,
+      backgroundColor: theme.palette.action.hover,
     },
     '&.Mui-focused': {
-      backgroundColor: colors.background.elevated,
-      boxShadow: `0 0 0 2px ${colors.primary.main}33`,
+      backgroundColor: theme.palette.action.hover,
+      boxShadow: `0 0 0 2px ${theme.palette.primary.main}33`,
     },
   },
   '& .MuiInputLabel-root': {
-    color: colors.primary.main,
+    color: theme.palette.text.primary,
+    fontFamily: theme.typography.fontFamily,
     '&.Mui-focused': {
-      color: colors.primary.light,
+      color: theme.palette.primary.main,
     },
   },
   '& .MuiOutlinedInput-notchedOutline': {
-    borderColor: colors.border.primary,
+    borderColor: theme.palette.divider,
+    transition: theme.transitions.create('border-color'),
   },
   '& .Mui-focused .MuiOutlinedInput-notchedOutline': {
-    borderColor: colors.primary.main,
+    borderColor: theme.palette.primary.main,
     borderWidth: 2,
   },
   '& .MuiInputBase-input': {
-    color: colors.text.primary,
+    color: theme.palette.text.primary,
+    '&::placeholder': {
+      color: theme.palette.text.secondary,
+      opacity: 0.7,
+    },
+  },
+  '& .MuiFormHelperText-root': {
+    marginLeft: 0,
+    color: theme.palette.text.secondary,
   },
 }));
