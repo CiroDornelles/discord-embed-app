@@ -14,7 +14,6 @@
     "@emotion/react": "^11.13.5",
     "@emotion/styled": "^11.13.5",
     "@mui/icons-material": "^5.16.8",
-    "@mui/lab": "^6.0.0-beta.17",
     "@mui/material": "^5.16.8",
     "@mui/styled-engine": "^6.1.9",
     "@react-three/drei": "^9.118.0",
