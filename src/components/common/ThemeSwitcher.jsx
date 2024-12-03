@@ -3,6 +3,12 @@ import { IconButton, Menu, MenuItem, Typography } from '@mui/material';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import { useThemeContext } from '../../context/ThemeContext';
 
+const themeLabels = {
+  light: 'Light Mode',
+  dark: 'Dark Mode',
+  vampireDarkAges: 'Vampire Dark Ages',
+};
+
 export const ThemeSwitcher = () => {
   const { currentThemeType, setTheme, availableThemes } = useThemeContext();
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -22,73 +28,33 @@ export const ThemeSwitcher = () => {
     handleClose();
   }, [currentThemeType, setTheme, handleClose]);
 
-  const getThemeDisplayName = useCallback((themeType) => {
-    switch (themeType) {
-      case 'light':
-        return 'Light Theme';
-      case 'dark':
-        return 'Dark Theme';
-      case 'vampireDarkAges':
-        return 'Vampire Dark Ages';
-      default:
-        return themeType;
-    }
-  }, []);
-
   return (
     <>
       <IconButton
         color="inherit"
         onClick={handleClick}
-        aria-label="change theme"
-        sx={{
-          backgroundColor: 'background.paper',
-          '&:hover': {
-            backgroundColor: 'action.hover',
-          },
-        }}
+        edge="end"
+        aria-label="theme switcher"
+        aria-controls="theme-menu"
+        aria-haspopup="true"
       >
         <Brightness4Icon />
       </IconButton>
       <Menu
         id="theme-menu"
         anchorEl={anchorEl}
+        keepMounted
         open={Boolean(anchorEl)}
         onClose={handleClose}
-        anchorOrigin={{
-          vertical: 'bottom',
-          horizontal: 'right',
-        }}
-        transformOrigin={{
-          vertical: 'top',
-          horizontal: 'right',
-        }}
-        PaperProps={{
-          elevation: 8,
-          sx: {
-            backgroundColor: 'background.paper',
-            color: 'text.primary',
-            minWidth: 180,
-          },
-        }}
       >
         {availableThemes.map((themeType) => (
           <MenuItem
             key={themeType}
             onClick={() => handleThemeChange(themeType)}
-            selected={currentThemeType === themeType}
-            sx={{
-              py: 1,
-              '&.Mui-selected': {
-                backgroundColor: 'action.selected',
-              },
-              '&:hover': {
-                backgroundColor: 'action.hover',
-              },
-            }}
+            selected={themeType === currentThemeType}
           >
             <Typography variant="body1">
-              {getThemeDisplayName(themeType)}
+              {themeLabels[themeType] || themeType}
             </Typography>
           </MenuItem>
         ))}

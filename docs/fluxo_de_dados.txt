@@ -1,0 +1,81 @@
+# Análise do Fluxo de Dados - Aplicação de Ficha de RPG
+
+## 1. Estrutura do Projeto
+O projeto é uma aplicação de ficha de RPG com foco em Vampire: Dark Ages, organizada nas seguintes camadas:
+
+### 1.1 Interface do Usuário (/src)
+#### Componentes Principais
+- /components/characterSheet/: Componentes específicos da ficha de personagem
+- /components/DiceRoller/: Sistema de rolagem de dados
+- /components/sheets/: Templates de fichas diferentes
+- /components/common/: Componentes compartilhados
+- /components/ui/: Elementos de interface básicos
+
+### 1.2 Gerenciamento de Temas (/src/theme)
+- Temas específicos para diferentes ambientações:
+  - vampireDarkAges.js: Tema específico para Vampire Dark Ages
+  - dark.js e light.js: Temas base alternativos
+- Sistema de cores personalizado em colors.js
+- Temas base com configurações compartilhadas
+
+### 1.3 Dados e Regras (/src/data, /src/rules)
+- Regras do sistema de RPG
+- Dados estáticos (atributos, habilidades, disciplinas)
+- Configurações de personagem
+
+## 2. Fluxo de Dados Principal
+
+### 2.1 Gerenciamento de Estado
+- Contexts (/src/contexts): Gerencia estados globais como:
+  - Dados do personagem
+  - Configurações do sistema
+  - Estado da ficha
+  - Histórico de rolagens
+
+### 2.2 Fluxo da Ficha de Personagem
+1. Criação/Carregamento de Personagem
+2. Manipulação de Atributos e Habilidades
+3. Sistema de Rolagem de Dados
+4. Salvamento e Persistência
+
+### 2.3 Sistema de Temas
+1. Tema base define estrutura comum
+2. Temas específicos (como vampireDarkAges) estendem o tema base
+3. Sistema de cores unificado
+4. Adaptação visual para diferentes sistemas de RPG
+
+## 3. Componentes Principais
+
+### 3.1 Ficha de Personagem
+- Seções modulares para diferentes aspectos do personagem
+- Sistema de edição e atualização de valores
+- Visualização de informações do personagem
+
+### 3.2 Sistema de Dados
+- Interface de rolagem
+- Cálculos baseados nas regras do sistema
+- Histórico de rolagens
+
+## 4. Integração de Dados
+
+### 4.1 Persistência
+- Salvamento local de fichas
+- Possível integração com sistemas externos
+- Cache de dados importantes
+
+### 4.2 Importação/Exportação
+- Formato de dados padronizado
+- Compatibilidade entre diferentes versões
+- Backup de fichas
+
+## 5. Recomendações
+1. Manter consistência nas regras do sistema
+2. Documentar cálculos e mecânicas específicas
+3. Testar diferentes configurações de personagem
+4. Manter separação clara entre lógica de negócio e interface
+
+## 6. Pontos de Atenção
+1. Validação de dados da ficha
+2. Performance com múltiplas fichas
+3. Consistência visual entre temas
+4. Precisão nas regras do sistema
