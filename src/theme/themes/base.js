@@ -19,98 +19,130 @@ const baseTheme = createTheme({
     fontWeightMedium: 500,
     fontWeightBold: 700,
     h1: {
+      fontFamily: '"Cinzel Decorative", serif',
       fontSize: '2.5rem',
       fontWeight: 700,
     },
     h2: {
+      fontFamily: '"Cinzel Decorative", serif',
       fontSize: '2rem',
       fontWeight: 700,
     },
     h3: {
+      fontFamily: '"Cinzel Decorative", serif',
       fontSize: '1.75rem',
       fontWeight: 600,
     },
     h4: {
+      fontFamily: '"Cinzel Decorative", serif',
       fontSize: '1.5rem',
       fontWeight: 600,
     },
     h5: {
+      fontFamily: '"Cinzel Decorative", serif',
       fontSize: '1.25rem',
       fontWeight: 600,
     },
     h6: {
+      fontFamily: '"Cinzel Decorative", serif',
       fontSize: '1rem',
       fontWeight: 600,
     },
-    body1: {
-      fontSize: '1rem',
-    },
-    body2: {
-      fontSize: '0.875rem',
+    sectionTitle: {
+      fontFamily: '"Cinzel Decorative", serif',
+      fontSize: '1.25rem',
+      fontWeight: 600,
+      textAlign: 'center',
+      marginBottom: 24,
+      borderBottom: '1px solid',
+      borderColor: 'divider',
     },
   },
   shape: {
     borderRadius: 4,
   },
-  mixins: {
-    toolbar: {
-      minHeight: 56,
-      '@media (min-width:0px) and (orientation: landscape)': {
-        minHeight: 48,
-      },
-      '@media (min-width:600px)': {
-        minHeight: 64,
-      },
-    },
-    statDots: {
-      dot: {
-        width: 15,
-        height: 15,
-        margin: '0 2px',
-        borderRadius: '50%',
-        cursor: 'pointer',
-        transition: 'all 0.2s ease-in-out',
-      },
-      filled: {
-        backgroundColor: 'currentColor',
-        '&:hover': {
-          opacity: 0.8,
-        },
-      },
-      empty: {
-        backgroundColor: 'transparent',
-        border: '2px solid currentColor',
-        '&:hover': {
-          backgroundColor: 'currentColor',
-          opacity: 0.3,
-        },
-      },
-    },
-    card: {
-      root: {
-        borderRadius: 8,
-        padding: 16,
-        height: '100%',
-      },
-      title: {
-        marginBottom: 16,
-        fontWeight: 'bold',
-      },
-      content: {
-        padding: 0,
-      },
-    },
-    section: {
-      root: {
-        marginBottom: 24,
-      },
-      title: {
-        marginBottom: 16,
-        fontWeight: 'bold',
-      },
-    },
-  },
   components: {
+    MuiCard: {
+      styleOverrides: {
+        root: ({ theme }) => ({
+          position: 'relative',
+          borderRadius: theme.shape.borderRadius * 2,
+          border: `1px solid ${theme.palette.divider}`,
+          overflow: 'visible',
+          transition: theme.transitions.create(
+            ['box-shadow', 'transform', 'border-color'],
+            {
+              duration: theme.transitions.duration.shorter,
+            }
+          ),
+          '&::before': {
+            content: '""',
+            position: 'absolute',
+            top: -1,
+            left: -1,
+            right: -1,
+            bottom: -1,
+            background: `linear-gradient(45deg, ${theme.palette.primary.main}40, transparent)`,
+            borderRadius: 'inherit',
+            zIndex: 0,
+            transition: theme.transitions.create('opacity', {
+              duration: theme.transitions.duration.shorter,
+            }),
+            opacity: 0.5,
+          },
+          '&:hover': {
+            transform: 'translateY(-4px)',
+            boxShadow: theme.shadows[8],
+            '&::before': {
+              opacity: 1,
+            },
+          },
+        }),
+      },
+    },
+    MuiCardContent: {
+      styleOverrides: {
+        root: ({ theme }) => ({
+          position: 'relative',
+          zIndex: 1,
+          padding: theme.spacing(3),
+          backgroundColor: theme.palette.background.paper,
+          '&:last-child': {
+            paddingBottom: theme.spacing(3),
+          },
+        }),
+      },
+    },
+    MuiCardHeader: {
+      styleOverrides: {
+        root: ({ theme }) => ({
+          position: 'relative',
+          zIndex: 1,
+          backgroundColor: theme.palette.background.paper,
+          padding: theme.spacing(2, 3),
+          '& .MuiTypography-root': {
+            fontFamily: '"Cinzel Decorative", serif',
+          },
+        }),
+      },
+    },
+    MuiTextField: {
+      styleOverrides: {
+        root: ({ theme }) => ({
+          marginBottom: theme.spacing(2),
+          '& .MuiOutlinedInput-root': {
+            backgroundColor: theme.palette.background.paper,
+            transition: theme.transitions.create(['border-color', 'box-shadow']),
+            '&:hover': {
+              borderColor: theme.palette.primary.main,
+            },
+            '&.Mui-focused': {
+              boxShadow: `0 0 0 2px ${theme.palette.primary.main}40`,
+            },
+          },
+        }),
+      },
+    },
     MuiCssBaseline: {
       styleOverrides: {
         body: {
@@ -143,8 +175,4 @@ const baseTheme = createTheme({
   },
 });
 
-// Add the pxToRem utility function to the theme
-baseTheme.typography.pxToRem = (size) => `${size / 16}rem`;
-
-// Export the enhanced theme
 export { baseTheme };
