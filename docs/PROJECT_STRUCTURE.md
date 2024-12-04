@@ -16,6 +16,9 @@ Main source code directory containing all application code.
       - `BasicInfoCard`: Basic character information
       - `PersonalityCard`: Character personality traits
       - `VampireInfoCard`: Vampire-specific information
+    - `/layout`: Layout management components
+      - `CharacterInfoLayout.jsx`: Responsive layout manager
+      - `CardGrid.jsx`: Desktop grid layout
     - `/AttributeGroup`: Attribute management components
   - `/ui`: Reusable UI components
     - `VampireCard.jsx`: Custom themed card component

@@ -54,6 +54,62 @@ O sistema de temas da aplicação Vampire Dark Ages é construído sobre o Mater
   - Fonte MedievalSharp para títulos
   - Elementos estilizados para atmosfera vampírica
 
+### 4. Tema Base
+- **Arquivo**: `src/theme/themes/base.js`
+- **Características**:
+  - Configurações base para todos os temas
+  - Mixins personalizados para elementos comuns
+  - Customizações do Swiper para layout mobile
+  - Estilos responsivos para cards e carrossel
+
+### 5. Customizações do Swiper
+- **Localização**: `src/theme/themes/base.js`
+- **Propósito**: Estilização do carrossel mobile
+- **Características**:
+  - Efeito coverflow personalizado
+  - Estilos de slide ativos e inativos
+  - Animações suaves de transição
+  - Paginação customizada
+- **Exemplo**:
+  ```javascript
+  MuiCssBaseline: {
+    styleOverrides: {
+      '.swiper': {
+        width: '100%',
+        padding: '50px 0',
+      },
+      '.swiper-slide': {
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        width: '300px',
+        '&-active': {
+          transform: 'scale(1.1)',
+          transition: 'transform 0.3s',
+        }
+      }
+    }
+  }
+  ```
+
+## Layouts Responsivos
+
+### 1. Grid Layout (Desktop)
+- Layout em grid com 3 colunas
+- Espaçamento uniforme entre cards
+- Altura consistente dos cards
+- Breakpoint em `md` (900px)
+
+### 2. Carrossel Layout (Mobile)
+- Swiper com efeito coverflow
+- Navegação por gestos touch
+- Indicadores de paginação
+- Animações suaves de transição
+
+### 3. Componentes de Layout
+- **CharacterInfoLayout**: Gerencia a troca entre layouts
+- **Breakpoints**: Utiliza sistema de breakpoints do MUI
+- **Transições**: Animações suaves entre estados
+
 ## Estrutura de Arquivos
 ```
 src/
@@ -64,7 +120,8 @@ src/
 │   │   ├── index.js        # Exporta todos os temas
 │   │   ├── light.js        # Tema claro
 │   │   ├── dark.js         # Tema escuro
-│   │   └── vampireDarkAges.js # Tema principal
+│   │   ├── vampireDarkAges.js # Tema principal
+│   │   └── base.js         # Tema base
 │   └── colors.js           # Definições de cores
 └── components/
     └── common/

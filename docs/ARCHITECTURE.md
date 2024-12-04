@@ -32,6 +32,19 @@ graph TD
 
 ### 2.1 Componentes Core
 
+#### CharacterInfoLayout
+- **Responsabilidade**: Gerencia o layout responsivo dos cards de informação
+- **Features**:
+  - Alterna entre grid e carrossel baseado no viewport
+  - Implementa Swiper para visualização mobile
+  - Gerencia transições suaves entre layouts
+- **Props**:
+  - children: Componentes card a serem renderizados
+- **Implementação**:
+  - Usa useMediaQuery do MUI para detecção de viewport
+  - Implementa efeito coverflow no Swiper
+  - Mantém consistência visual entre layouts
+
 #### CharacterSheet
 - **Responsabilidade**: Componente raiz que gerencia o layout geral e o estado do personagem
 - **Estado**: 
