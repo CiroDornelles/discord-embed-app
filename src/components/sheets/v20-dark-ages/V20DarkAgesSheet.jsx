@@ -34,10 +34,26 @@ export const V20DarkAgesSheet = ({
     });
   };
 
+  const handleAbilityChange = (category, ability, value) => {
+    onCharacterDataChange?.({
+      ...characterData,
+      abilities: {
+        ...characterData.abilities,
+        [category]: {
+          ...characterData.abilities?.[category],
+          [ability]: {
+            ...characterData.abilities?.[category]?.[ability],
+            value
+          }
+        }
+      }
+    });
+  };
+
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="xl">
       <Box sx={{ py: 4 }}>
-        <Grid container spacing={3}>
+        <Grid container spacing={4}>
           <Grid item xs={12}>
             <CharacterInformationCard
               {...characterData.basicInfo}
@@ -58,10 +74,7 @@ export const V20DarkAgesSheet = ({
 
           <Grid item xs={12}>
             <AbilitiesCard
-              {...characterData.abilities}
-              onAbilityChange={(category, ability, value) =>
-                handleNestedFieldChange('abilities', category, ability, value)
-              }
+              onAbilityChange={handleAbilityChange}
               disabled={disabled}
             />
           </Grid>
