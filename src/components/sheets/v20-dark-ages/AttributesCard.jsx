@@ -1,10 +1,30 @@
 import React from 'react';
-import { CardContent, CardHeader, useTheme, useMediaQuery, CircularProgress, Box } from '@mui/material';
+import { 
+  Box,
+  CardContent, 
+  CardHeader, 
+  CircularProgress,
+  useTheme,
+  useMediaQuery,
+  styled
+} from '@mui/material';
 import { VampireCard } from '../../ui/VampireCard';
 import { AttributeCard } from './AttributeCard';
 import { AdaptiveCardLayout } from '../../ui/AdaptiveCardLayout';
 import { StatCarousel } from '../common/StatCarousel';
 import { useAttributes } from '../../../hooks/useAttributes';
+
+const LoadingBox = styled(Box)(({ theme }) => ({
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  padding: theme.spacing(4)
+}));
+
+const ErrorBox = styled(Box)(({ theme }) => ({
+  color: theme.palette.error.main,
+  padding: theme.spacing(2)
+}));
 
 export const AttributesCard = ({
   onAttributeChange,
@@ -23,9 +43,9 @@ export const AttributesCard = ({
       <VampireCard>
         <CardHeader title="Attributes" />
         <CardContent>
-          <Box display="flex" justifyContent="center" alignItems="center" p={4}>
+          <LoadingBox>
             <CircularProgress />
-          </Box>
+          </LoadingBox>
         </CardContent>
       </VampireCard>
     );
@@ -36,9 +56,9 @@ export const AttributesCard = ({
       <VampireCard>
         <CardHeader title="Attributes" />
         <CardContent>
-          <Box color="error.main" p={2}>
+          <ErrorBox>
             Error loading attributes data. Please try again.
-          </Box>
+          </ErrorBox>
         </CardContent>
       </VampireCard>
     );
@@ -54,7 +74,7 @@ export const AttributesCard = ({
     />, 
     <AttributeCard
       key="social"
-      title='Social'
+      title="Social"
       stats={attributeData.social}
       onStatChange={handleAttributeChange('social')}
       disabled={disabled}

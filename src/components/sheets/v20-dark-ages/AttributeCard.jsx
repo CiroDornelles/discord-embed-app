@@ -1,7 +1,39 @@
 import React from 'react';
-import { CardContent, CardHeader, Typography, Tooltip, Box } from '@mui/material';
+import { 
+  Box,
+  CardContent, 
+  CardHeader, 
+  Typography,
+  Tooltip,
+  styled
+} from '@mui/material';
 import { VampireCard } from '../../ui/VampireCard';
-import { StatGroup } from '../common/StatGroup';
+import { StatDots } from '../common/StatDots';
+
+const AttributeBox = styled(Box)(({ theme }) => ({
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+  padding: theme.spacing(0.5, 0)
+}));
+
+const AttributeLabel = styled(Typography)(({ theme }) => ({
+  minWidth: 120,
+  '& span': {
+    cursor: 'help'
+  }
+}));
+
+const AttributeTooltip = ({ name, description }) => (
+  <Box>
+    <Typography variant="subtitle1" sx={{ fontWeight: 'bold' }}>
+      {name}
+    </Typography>
+    <Typography variant="body2" sx={{ fontStyle: 'italic', mb: 1 }}>
+      {description}
+    </Typography>
+  </Box>
+);
 
 export const AttributeCard = ({
   title,
@@ -11,46 +43,38 @@ export const AttributeCard = ({
 }) => {
   const renderAttributeName = (attribute, attributeData) => (
     <Tooltip
-      title={
-        <Box>
-          <Typography variant="subtitle1" sx={{ fontWeight: 'bold' }}>
-            {attributeData.name}
-          </Typography>
-          <Typography variant="body2" sx={{ fontStyle: 'italic', mb: 1 }}>
-            {attributeData.description}
-          </Typography>
-        </Box>
-      }
+      title={<AttributeTooltip name={attributeData.name} description={attributeData.description} />}
       arrow
     >
       <span>{attributeData.name}</span>
     </Tooltip>
   );
 
-  const formattedStats = Object.entries(stats).map(([key, data]) => ({
-    name: key,
-    label: renderAttributeName(key, data),
-    value: data.value || 0,
-    max: 5
-  }));
-
   return (
     <VampireCard sx={{ 
       width: '100%',
-      maxWidth: '400px',
+      maxWidth: 400,
       margin: '0 auto',
-      height: '100%',
-      display: 'flex',
-      flexDirection: 'column'
     }}>
-      <CardHeader title={title} />
-      <CardContent sx={{ flexGrow: 1 }}>
-        <StatGroup
-          title={title}
-          stats={formattedStats}
-          onStatChange={onStatChange}
-          disabled={disabled}
-        />
+      <CardHeader 
+        title={title} 
+        sx={{ textAlign: 'center' }} 
+      />
+      <CardContent>
+        {Object.entries(stats || {}).map(([name, data]) => (
+          <AttributeBox key={name}>
+            <AttributeLabel>
+              {renderAttributeName(name, data)}
+            </AttributeLabel>
+            <StatDots
+              value={data.value || 0}
+              max={5}
+              onChange={(newValue) => onStatChange(name, newValue)}
+              disabled={disabled}
+              descriptions={data.levels || {}}
+            />
+          </AttributeBox>
+        ))}
       </CardContent>
     </VampireCard>
   );
