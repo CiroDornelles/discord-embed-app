@@ -1,9 +1,24 @@
 import React from 'react';
 import { Box, Typography, Grid } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import { StatDots } from './StatDots';
 
+const StatItem = styled(Box)(({ theme }) => ({
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+  padding: theme.spacing(0.5, 0)
+}));
+
+const StatLabel = styled(Typography)(({ theme }) => ({
+  minWidth: 120,
+  '& > span': {
+    cursor: 'help'
+  }
+}));
+
 export const StatGroup = ({
-  stats,
+  stats = {}, // Default to an empty object to prevent undefined errors
   onStatChange,
   disabled = false
 }) => {
@@ -18,7 +33,8 @@ export const StatGroup = ({
         name,
         label: data.name || name.charAt(0).toUpperCase() + name.slice(1), // Use localized name if available
         value: data.value || 0,
-        max: data.max || 5 // Default max value
+        max: data.max || 5, // Default max value
+        descriptions: data.levels || {} // Use levels for descriptions
       }));
 
   return (
@@ -26,27 +42,18 @@ export const StatGroup = ({
       <Grid container spacing={1}>
         {statsArray.map((stat) => (
           <Grid item xs={12} key={stat.name}>
-            <Box sx={{ 
-              display: 'flex', 
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              py: 0.5
-            }}>
-              <Typography sx={{ 
-                minWidth: '120px',
-                '& > span': {
-                  cursor: 'help'
-                }
-              }}>
+            <StatItem>
+              <StatLabel>
                 {stat.label}
-              </Typography>
+              </StatLabel>
               <StatDots
                 value={stat.value}
-                maxDots={stat.max}
+                max={stat.max}
                 onChange={handleStatChange(stat.name)}
                 disabled={disabled}
+                descriptions={stat.descriptions}
               />
-            </Box>
+            </StatItem>
           </Grid>
         ))}
       </Grid>
