@@ -1,17 +1,16 @@
 import React from 'react';
-import { CardContent, CardHeader, useTheme, useMediaQuery } from '@mui/material';
+import { CardContent, CardHeader, useTheme, useMediaQuery, CircularProgress, Box } from '@mui/material';
 import { VampireCard } from '../../ui/VampireCard';
 import { AttributeCard } from './AttributeCard';
 import { AdaptiveCardLayout } from '../../ui/AdaptiveCardLayout';
 import { StatCarousel } from '../common/StatCarousel';
+import { useAttributes } from '../../../hooks/useAttributes';
 
 export const AttributesCard = ({
-  physical,
-  social,
-  mental,
   onAttributeChange,
   disabled = false
 }) => {
+  const { attributeData, loading, error } = useAttributes();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
@@ -19,25 +18,51 @@ export const AttributesCard = ({
     onAttributeChange?.(category, attribute, value);
   };
 
+  if (loading) {
+    return (
+      <VampireCard>
+        <CardHeader title="Attributes" />
+        <CardContent>
+          <Box display="flex" justifyContent="center" alignItems="center" p={4}>
+            <CircularProgress />
+          </Box>
+        </CardContent>
+      </VampireCard>
+    );
+  }
+
+  if (error) {
+    return (
+      <VampireCard>
+        <CardHeader title="Attributes" />
+        <CardContent>
+          <Box color="error.main" p={2}>
+            Error loading attributes data. Please try again.
+          </Box>
+        </CardContent>
+      </VampireCard>
+    );
+  }
+
   const attributeCards = [
     <AttributeCard
       key="physical"
       title="Physical"
-      stats={physical}
+      stats={attributeData.physical}
       onStatChange={handleAttributeChange('physical')}
       disabled={disabled}
-    />,
+    />, 
     <AttributeCard
       key="social"
       title='Social'
-      stats={social}
+      stats={attributeData.social}
       onStatChange={handleAttributeChange('social')}
       disabled={disabled}
-    />,
+    />, 
     <AttributeCard
       key="mental"
       title="Mental"
-      stats={mental}
+      stats={attributeData.mental}
       onStatChange={handleAttributeChange('mental')}
       disabled={disabled}
     />

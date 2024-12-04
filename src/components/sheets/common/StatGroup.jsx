@@ -14,11 +14,11 @@ export const StatGroup = ({
   // Convert stats object to array if it's not already an array
   const statsArray = Array.isArray(stats) 
     ? stats 
-    : Object.entries(stats).map(([name, value]) => ({
+    : Object.entries(stats).map(([name, data]) => ({
         name,
-        label: name.charAt(0).toUpperCase() + name.slice(1),
-        value: value,
-        max: 5 // Default max value
+        label: data.name || name.charAt(0).toUpperCase() + name.slice(1), // Use localized name if available
+        value: data.value || 0,
+        max: data.max || 5 // Default max value
       }));
 
   return (
