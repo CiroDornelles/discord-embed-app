@@ -3,21 +3,29 @@ import { Box, Typography, Grid } from '@mui/material';
 import { StatDots } from './StatDots';
 
 export const StatGroup = ({
-  title,
   stats,
   onStatChange,
-  maxDots = 5,
   disabled = false
 }) => {
   const handleStatChange = (statName) => (newValue) => {
     onStatChange?.(statName, newValue);
   };
 
+  // Convert stats object to array if it's not already an array
+  const statsArray = Array.isArray(stats) 
+    ? stats 
+    : Object.entries(stats).map(([name, value]) => ({
+        name,
+        label: name.charAt(0).toUpperCase() + name.slice(1),
+        value: value,
+        max: 5 // Default max value
+      }));
+
   return (
     <Box>
       <Grid container spacing={1}>
-        {Object.entries(stats).map(([statName, value]) => (
-          <Grid item xs={12} key={statName}>
+        {statsArray.map((stat) => (
+          <Grid item xs={12} key={stat.name}>
             <Box sx={{ 
               display: 'flex', 
               justifyContent: 'space-between',
@@ -25,15 +33,17 @@ export const StatGroup = ({
               py: 0.5
             }}>
               <Typography sx={{ 
-                textTransform: 'capitalize',
-                minWidth: '100px'
+                minWidth: '120px',
+                '& > span': {
+                  cursor: 'help'
+                }
               }}>
-                {statName.replace(/([A-Z])/g, ' $1').toLowerCase()}
+                {stat.label}
               </Typography>
               <StatDots
-                value={value}
-                onChange={handleStatChange(statName)}
-                max={maxDots}
+                value={stat.value}
+                maxDots={stat.max}
+                onChange={handleStatChange(stat.name)}
                 disabled={disabled}
               />
             </Box>
