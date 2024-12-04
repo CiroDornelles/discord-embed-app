@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, CardContent, Typography, TextField, Grid } from '@mui/material';
+import CharacterInfoLayout from './CharacterInfoLayout';
 
 const CharacterInformationCard = ({ 
   characterName,
@@ -19,8 +20,8 @@ const CharacterInformationCard = ({
   };
 
   return (
-    <>
-      <Card sx={{ backgroundColor: 'background.paper', borderRadius: 2, boxShadow: 3, marginBottom: 3 }}>
+    <CharacterInfoLayout>
+      <Card sx={{ backgroundColor: 'background.paper', borderRadius: 2, boxShadow: 3, height: '100%' }}>
         <CardContent>
           <Typography variant="h5" sx={{ textAlign: 'center', fontFamily: '"Cinzel Decorative", serif', color: 'primary.main', marginBottom: 3, padding: 1, borderBottom: `1px solid ${'divider'}` }}>CHARACTER INFORMATION</Typography>
           <Grid container spacing={2}>
@@ -34,7 +35,7 @@ const CharacterInformationCard = ({
                 sx={{ marginBottom: 2, '& .MuiOutlinedInput-root': { backgroundColor: 'background.paper' } }}
               />
             </Grid>
-            <Grid item xs={12} sm={6}>
+            <Grid item xs={12}>
               <TextField
                 fullWidth
                 label="Player"
@@ -44,7 +45,7 @@ const CharacterInformationCard = ({
                 sx={{ marginBottom: 2, '& .MuiOutlinedInput-root': { backgroundColor: 'background.paper' } }}
               />
             </Grid>
-            <Grid item xs={12} sm={6}>
+            <Grid item xs={12}>
               <TextField
                 fullWidth
                 label="Chronicle"
@@ -58,7 +59,7 @@ const CharacterInformationCard = ({
         </CardContent>
       </Card>
 
-      <Card sx={{ backgroundColor: 'background.paper', borderRadius: 2, boxShadow: 3, marginBottom: 3 }}>
+      <Card sx={{ backgroundColor: 'background.paper', borderRadius: 2, boxShadow: 3, height: '100%' }}>
         <CardContent>
           <Typography variant="h5" sx={{ textAlign: 'center', fontFamily: '"Cinzel Decorative", serif', color: 'primary.main', marginBottom: 3, padding: 1, borderBottom: `1px solid ${'divider'}` }}>PERSONALITY</Typography>
           <Grid container spacing={2}>
@@ -96,7 +97,7 @@ const CharacterInformationCard = ({
         </CardContent>
       </Card>
 
-      <Card sx={{ backgroundColor: 'background.paper', borderRadius: 2, boxShadow: 3, marginBottom: 3 }}>
+      <Card sx={{ backgroundColor: 'background.paper', borderRadius: 2, boxShadow: 3, height: '100%' }}>
         <CardContent>
           <Typography variant="h5" sx={{ textAlign: 'center', fontFamily: '"Cinzel Decorative", serif', color: 'primary.main', marginBottom: 3, padding: 1, borderBottom: `1px solid ${'divider'}` }}>BACKGROUND</Typography>
           <Grid container spacing={2}>
@@ -133,7 +134,7 @@ const CharacterInformationCard = ({
           </Grid>
         </CardContent>
       </Card>
-    </>
+    </CharacterInfoLayout>
   );
 };
 

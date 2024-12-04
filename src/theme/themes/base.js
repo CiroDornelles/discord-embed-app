@@ -11,6 +11,20 @@ const baseTheme = createTheme({
       xl: 1536,
     },
   },
+  mixins: {
+    statDots: {
+      dot: {
+        width: 20,
+        height: 20,
+        borderRadius: '50%',
+        border: '2px solid',
+        margin: '0 2px',
+      },
+      filled: {
+        backgroundColor: 'currentColor',
+      }
+    }
+  },
   typography: {
     fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
     fontSize: 14,
@@ -169,6 +183,25 @@ const baseTheme = createTheme({
           "&::-webkit-scrollbar-corner, & *::-webkit-scrollbar-corner": {
             backgroundColor: "transparent",
           },
+          backgroundColor: 'background.default',
+          backgroundImage: 'none',
+        },
+        '.swiper': {
+          width: '100%',
+          padding: '50px 0',
+        },
+        '.swiper-slide': {
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          width: '300px',
+          '&-active': {
+            transform: 'scale(1.1)',
+            transition: 'transform 0.3s',
+          }
+        },
+        '.swiper-pagination': {
+          position: 'relative',
+          marginTop: '20px',
         },
       },
     },

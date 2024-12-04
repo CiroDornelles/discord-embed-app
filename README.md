@@ -92,6 +92,15 @@ Uma aplicação web para criar e gerenciar fichas de personagem do Vampire: The 
 - [x] Servidores (Retainers)
 - [x] Status (Status)
 
+### Interface do Usuário
+
+### Layout Responsivo
+- Layout adaptativo para diferentes tamanhos de tela
+- Desktop: Cards organizados em grid de 3 colunas
+- Mobile: Carrossel interativo com efeito coverflow
+- Transições suaves entre layouts
+- Navegação intuitiva em dispositivos móveis
+
 ### Funcionalidades Planejadas 
 - Exportação para diferentes VTTs (Foundry, Roll20)
 - Exportação para PDF
@@ -325,5 +334,3 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 - Material UI team for the amazing component library
 - React team for the excellent frontend library
 - The Vampire: Dark Ages community for inspiration and support
-
-```
