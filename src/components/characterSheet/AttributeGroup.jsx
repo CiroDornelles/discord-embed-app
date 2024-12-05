@@ -1,20 +1,19 @@
-import React, { useEffect, useState } from 'react';
-import { Box, Typography, Paper, Tooltip } from '@mui/material';
+import React, { useEffect, useState, useMemo, useCallback } from 'react';
+import { Box, Typography, Paper, Tooltip, useTheme, useMediaQuery } from '@mui/material';
+import PropTypes from 'prop-types';
 import DotRating from './DotRating';
 
-// Ordem específica dos atributos conforme o livro
-const PHYSICAL_ORDER = ['strength', 'dexterity', 'stamina'];
-const SOCIAL_ORDER = ['charisma', 'manipulation', 'appearance'];
-const MENTAL_ORDER = ['perception', 'intelligence', 'wits'];
+// Attribute order constants as defined in the book
+const ATTRIBUTE_ORDERS = {
+  physical: ['strength', 'dexterity', 'stamina'],
+  social: ['charisma', 'manipulation', 'appearance'],
+  mental: ['perception', 'intelligence', 'wits']
+};
 
 const loadAttributes = async (category) => {
   try {
     const modules = import.meta.glob('../../data/wod/vampire/v20_dark_ages/attributes/*.json');
     const filePath = `../../data/wod/vampire/v20_dark_ages/attributes/${category}.json`;
-    
-    console.log('Loading attributes for category:', category);
-    console.log('File path:', filePath);
-    console.log('Available modules:', modules);
     
     const module = modules[filePath];
     if (!module) {
@@ -24,23 +23,19 @@ const loadAttributes = async (category) => {
 
     const response = await module();
     const data = response.default;
-    console.log('Loaded attribute data:', data);
 
     if (!data) {
       console.error(`No data found in attribute file for category: ${category}`);
       return [];
     }
 
-    const attributes = Object.entries(data).map(([key, attr]) => ({
+    return Object.entries(data).map(([key, attr]) => ({
       name: attr.name,
       description: attr.description,
       key: key,
       nameOriginal: attr.nameOriginal,
       levels: attr.levels
     }));
-    
-    console.log('Processed attributes:', attributes);
-    return attributes;
   } catch (error) {
     console.error('Error loading attributes:', error);
     return [];
@@ -50,32 +45,22 @@ const loadAttributes = async (category) => {
 const AttributeGroup = ({ title, category }) => {
   const [attributes, setAttributes] = useState([]);
   const [values, setValues] = useState({});
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   useEffect(() => {
     const loadAttributesByCategory = async () => {
       try {
-        const orderMap = {
-          physical: PHYSICAL_ORDER,
-          social: SOCIAL_ORDER,
-          mental: MENTAL_ORDER
-        };
-
         const loadedAttributes = await loadAttributes(category);
-        // Ordenar os atributos de acordo com a ordem definida
-        const orderedAttributes = orderMap[category].map(key => 
-          loadedAttributes.find(attr => attr.key === key)
-        ).filter(Boolean);
+        const orderedAttributes = ATTRIBUTE_ORDERS[category]
+          ?.map(key => loadedAttributes.find(attr => attr.key === key))
+          .filter(Boolean) || [];
         
         setAttributes(orderedAttributes);
-        
-        // Inicializa os valores preservando os valores existentes
-        setValues(prev => {
-          const newValues = orderedAttributes.reduce((acc, attr) => ({
-            ...acc,
-            [attr.key]: prev[attr.key] || 1
-          }), {});
-          return newValues;
-        });
+        setValues(prev => ({
+          ...prev,
+          ...Object.fromEntries(orderedAttributes.map(attr => [attr.key, prev[attr.key] || 1]))
+        }));
       } catch (error) {
         console.error('Error loading attributes by category:', error);
       }
@@ -86,15 +71,52 @@ const AttributeGroup = ({ title, category }) => {
     }
   }, [category]);
 
-  const handleChange = (attrKey, value) => {
+  const handleChange = useCallback((attrKey, value) => {
     setValues(prev => ({
       ...prev,
       [attrKey]: value
     }));
-  };
+  }, []);
+
+  const paperStyles = useMemo(() => ({
+    p: 2,
+    backgroundColor: theme.palette.background.paper,
+    borderRadius: theme.shape.borderRadius,
+    border: `1px solid ${theme.palette.primary.dark}`,
+    backgroundImage: `linear-gradient(rgba(139, 0, 0, 0.05) 1px, transparent 1px), 
+                     linear-gradient(90deg, rgba(139, 0, 0, 0.05) 1px, transparent 1px)`,
+    backgroundSize: '20px 20px',
+    height: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    gap: 2
+  }), [theme]);
+
+  const titleStyles = useMemo(() => ({
+    color: theme.palette.primary.main,
+    fontFamily: 'MedievalSharp, cursive',
+    textTransform: 'uppercase',
+    letterSpacing: '0.2em',
+    textShadow: '2px 2px 4px rgba(0,0,0,0.3)',
+    mb: 2,
+    position: 'relative',
+    px: 4,
+    '&::before, &::after': {
+      content: '""',
+      position: 'absolute',
+      top: '50%',
+      width: '15%',
+      height: '2px',
+      backgroundColor: theme.palette.primary.main,
+    },
+    '&::before': { left: 0 },
+    '&::after': { right: 0 },
+  }), [theme]);
 
   return (
     <Box 
+      component="section"
+      aria-labelledby={`${category}-attributes-title`}
       sx={{ 
         width: '100%',
         minWidth: { xs: '300px', sm: '350px' },
@@ -104,74 +126,40 @@ const AttributeGroup = ({ title, category }) => {
         gap: 2
       }}
     >
-      <Paper
-        elevation={3}
-        sx={{
-          p: 2,
-          backgroundColor: '#000000',
-          borderRadius: 2,
-          border: '1px solid #3d0000',
-          backgroundImage: 'linear-gradient(rgba(139, 0, 0, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(139, 0, 0, 0.05) 1px, transparent 1px)',
-          backgroundSize: '20px 20px',
-          height: '100%',
-          display: 'flex',
-          flexDirection: 'column',
-          gap: 2
-        }}
-      >
+      <Paper elevation={3} sx={paperStyles}>
         <Typography
+          id={`${category}-attributes-title`}
           variant="h6"
           align="center"
-          sx={{
-            color: '#8b0000',
-            fontFamily: 'MedievalSharp, cursive',
-            textTransform: 'uppercase',
-            letterSpacing: '0.2em',
-            textShadow: '2px 2px 4px rgba(0,0,0,0.3)',
-            mb: 2,
-            position: 'relative',
-            px: 4,
-            '&::before, &::after': {
-              content: '""',
-              position: 'absolute',
-              top: '50%',
-              width: '15%',
-              height: '2px',
-              backgroundColor: '#8b0000',
-            },
-            '&::before': {
-              left: 0,
-            },
-            '&::after': {
-              right: 0,
-            },
-          }}
+          sx={titleStyles}
         >
           {title}
         </Typography>
       </Paper>
-      <Box sx={{ 
-        display: 'flex',
-        flexDirection: 'column',
-        gap: 2,
-        '@media (max-width: 600px)': {
+      <Box 
+        component="div"
+        role="group"
+        aria-label={`${title} attributes group`}
+        sx={{ 
+          display: 'flex',
           flexDirection: 'column',
-          alignItems: 'stretch'
-        }
-      }}>
+          gap: 2,
+          flexDirection: isMobile ? 'column' : 'column',
+          alignItems: isMobile ? 'stretch' : 'initial'
+        }}
+      >
         {attributes.map((attribute) => (
           <Box
             key={attribute.key}
+            component="div"
+            role="group"
+            aria-label={`${attribute.name} attribute rating`}
             sx={{
               display: 'flex',
-              flexDirection: 'row',
-              alignItems: 'center',
+              flexDirection: isMobile ? 'column' : 'row',
+              alignItems: isMobile ? 'stretch' : 'center',
               gap: 2,
-              width: '100%',
-              '@media (max-width: 600px)': {
-                flexDirection: 'column',
-                alignItems: 'stretch'
-              }
+              width: '100%'
             }}
           >
             <Tooltip 
@@ -181,17 +169,17 @@ const AttributeGroup = ({ title, category }) => {
               componentsProps={{
                 tooltip: {
                   sx: {
-                    bgcolor: 'rgba(0, 0, 0, 0.95)',
-                    color: 'white',
-                    fontSize: '0.875rem',
-                    padding: '8px 12px',
+                    bgcolor: theme.palette.grey[900],
+                    color: theme.palette.common.white,
+                    fontSize: theme.typography.pxToRem(14),
+                    padding: theme.spacing(1, 1.5),
                     maxWidth: 300,
-                    border: '1px solid #8b0000',
-                    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.3)',
+                    border: `1px solid ${theme.palette.primary.main}`,
+                    boxShadow: theme.shadows[4],
                     '& .MuiTooltip-arrow': {
-                      color: 'rgba(0, 0, 0, 0.95)',
+                      color: theme.palette.grey[900],
                       '&::before': {
-                        border: '1px solid #8b0000'
+                        border: `1px solid ${theme.palette.primary.main}`
                       }
                     }
                   }
@@ -199,9 +187,11 @@ const AttributeGroup = ({ title, category }) => {
               }}
             >
               <Typography
+                component="label"
+                htmlFor={`${attribute.key}-rating`}
                 sx={{
                   minWidth: '120px',
-                  color: 'white',
+                  color: theme.palette.common.white,
                   cursor: 'help'
                 }}
               >
@@ -209,10 +199,9 @@ const AttributeGroup = ({ title, category }) => {
               </Typography>
             </Tooltip>
             <DotRating
+              id={`${attribute.key}-rating`}
               value={values[attribute.key] || 0}
-              onChange={(newValue) => {
-                handleChange(attribute.key, newValue);
-              }}
+              onChange={(newValue) => handleChange(attribute.key, newValue)}
               attributeData={attribute}
             />
           </Box>
@@ -220,6 +209,11 @@ const AttributeGroup = ({ title, category }) => {
       </Box>
     </Box>
   );
+};
+
+AttributeGroup.propTypes = {
+  title: PropTypes.string.isRequired,
+  category: PropTypes.oneOf(['physical', 'social', 'mental']).isRequired
 };
 
 export default AttributeGroup;
